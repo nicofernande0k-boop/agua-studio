@@ -1,0 +1,30 @@
+{
+  "name": "agua-studio",
+  "version": "0.1.0",
+  "private": true,
+  "description": "AGUA STUDIO: videos explicativos animados en 3D (Remotion + React Three Fiber) para Instagram Reels.",
+  "scripts": {
+    "studio": "remotion studio",
+    "typecheck": "tsc --noEmit",
+    "render:demo": "remotion render AguaDemo out/agua-demo.mp4",
+    "still:demo": "remotion still AguaDemo out/fotograma.png"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@fontsource/inter": "5.3.0",
+    "@react-three/fiber": "9.8.2",
+    "@remotion/cli": "4.0.543",
+    "@remotion/three": "4.0.543",
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "remotion": "4.0.543",
+    "three": "0.187.0"
+  },
+  "devDependencies": {
+    "@types/react": "^19.3.0",
+    "@types/three": "0.187.0",
+    "typescript": "^6.0.3"
+  }
+}

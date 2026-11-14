@@ -1,0 +1,82 @@
+# Renderiza los videos de AGUA STUDIO en GitHub Actions y deja el MP4
+# listo para descargar desde el iPhone.
+#
+# - Se ejecuta en cada push que cambie el proyecto (no solo la documentación).
+# - También se puede lanzar a mano: Actions → "AGUA STUDIO · Render" → Run workflow.
+# - El MP4 queda como artefacto de la ejecución y, además, en la publicación
+#   (Release) "agua-studio-ultimo", con un enlace directo al archivo.
+#
+# No usa servicios pagos ni claves: solo el GITHUB_TOKEN que GitHub crea
+# automáticamente en cada ejecución.
+
+name: "AGUA STUDIO · Render"
+
+on:
+  workflow_dispatch:
+    inputs:
+      composicion:
+        description: "Composición de Remotion a renderizar"
+        required: true
+        default: "AguaDemo"
+  push:
+    paths-ignore:
+      - "**.md"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: agua-studio-render-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    env:
+      COMPOSICION: ${{ inputs.composicion || 'AguaDemo' }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: package-lock.json
+
+      - name: Instalar dependencias
+        run: npm ci --no-audit --no-fund
+
+      - name: Verificar tipos
+        run: npm run typecheck
+
+      - name: Preparar navegador de Remotion
+        run: npx remotion browser ensure
+
+      - name: Renderizar MP4 (1080×1920, 30 fps)
+        run: npx remotion render src/index.ts "$COMPOSICION" "out/$COMPOSICION.mp4"
+
+      - name: Fotograma de muestra
+        run: npx remotion still src/index.ts "$COMPOSICION" "out/$COMPOSICION-portada.jpg" --frame=150 --image-format=jpeg
+
+      - name: Subir artefacto
+        uses: actions/upload-artifact@v4
+        with:
+          name: ${{ env.COMPOSICION }}-mp4
+          path: |
+            out/*.mp4
+            out/*.jpg
+          retention-days: 30
+
+      - name: Publicar en "agua-studio-ultimo" (enlace directo para el iPhone)
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release delete agua-studio-ultimo --yes --cleanup-tag || true
+          gh release create agua-studio-ultimo "out/$COMPOSICION.mp4" "out/$COMPOSICION-portada.jpg" \
+            --prerelease \
+            --target "$GITHUB_SHA" \
+            --title "AGUA STUDIO · último render" \
+            --notes "Render automático de \`$COMPOSICION\` desde la rama \`$GITHUB_REF_NAME\` (commit $GITHUB_SHA)."
+          echo "### MP4 listo" >> "$GITHUB_STEP_SUMMARY"
+          echo "Descargalo en: ${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}/releases/tag/agua-studio-ultimo" >> "$GITHUB_STEP_SUMMARY"
