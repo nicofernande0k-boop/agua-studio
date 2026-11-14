@@ -7,7 +7,11 @@
     "studio": "remotion studio",
     "typecheck": "tsc --noEmit",
     "render:demo": "remotion render AguaDemo out/agua-demo.mp4",
-    "still:demo": "remotion still AguaDemo out/fotograma.png"
+    "still:demo": "remotion still AguaDemo out/fotograma.png",
+    "temporizar": "node scripts/temporizar.mjs producciones/001-agua",
+    "audio": "python3 scripts/audio/sintetizar.py producciones/001-agua",
+    "fotogramas": "node scripts/fotogramas.mjs",
+    "render:produccion": "remotion render Produccion001 out/001-agua-mudo.mp4 --muted"
   },
   "engines": {
     "node": ">=20"
@@ -15,7 +19,9 @@
   "dependencies": {
     "@fontsource/inter": "5.3.0",
     "@react-three/fiber": "9.8.2",
+    "@remotion/bundler": "4.0.543",
     "@remotion/cli": "4.0.543",
+    "@remotion/renderer": "4.0.543",
     "@remotion/three": "4.0.543",
     "react": "19.3.1",
     "react-dom": "19.3.1",
