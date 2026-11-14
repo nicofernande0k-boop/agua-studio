@@ -1,0 +1,166 @@
+# Render de una producción completa de AGUA STUDIO, en segmentos paralelos.
+#
+# Cómo lanzarlo desde el iPhone:
+#   App de GitHub o Safari → repositorio → Actions → «AGUA STUDIO · Producción»
+#   → Run workflow → (dejar los valores por defecto) → Run workflow.
+#
+# Qué hace:
+#   1. preparar: verifica que los tiempos del guion estén actualizados y arma
+#      un segmento por escena (con su rango de fotogramas).
+#   2. render: renderiza cada segmento en paralelo (sin audio).
+#   3. unir: genera la banda sonora sintetizada, une los segmentos con FFmpeg
+#      sin recomprimir, agrega el audio normalizado (-14 LUFS), verifica el
+#      archivo final y lo publica en la Release «produccion-<id>».
+#
+# No usa servicios pagos ni claves: solo el GITHUB_TOKEN automático.
+
+name: "AGUA STUDIO · Producción"
+
+on:
+  workflow_dispatch:
+    inputs:
+      produccion:
+        description: "Carpeta de la producción (dentro de producciones/)"
+        required: true
+        default: "001-agua"
+      composicion:
+        description: "Composición de Remotion"
+        required: true
+        default: "Produccion001"
+      escala:
+        description: "Escala del render (1 = 1080×1920)"
+        required: true
+        default: "1"
+
+permissions:
+  contents: write
+
+# Una sola ejecución por producción: si se lanza otra, la anterior se cancela.
+concurrency:
+  group: produccion-${{ inputs.produccion }}
+  cancel-in-progress: true
+
+env:
+  PRODUCCION: ${{ inputs.produccion }}
+  COMPOSICION: ${{ inputs.composicion }}
+  ESCALA: ${{ inputs.escala }}
+
+jobs:
+  preparar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    outputs:
+      segmentos: ${{ steps.segmentos.outputs.lista }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Verificar que tiempos.json coincide con el guion
+        run: |
+          node scripts/temporizar.mjs "producciones/$PRODUCCION"
+          git diff --exit-code "producciones/$PRODUCCION" || (echo "::error::tiempos.json desactualizado: correr node scripts/temporizar.mjs y subir el resultado" && exit 1)
+      - name: Armar segmentos (uno por escena)
+        id: segmentos
+        run: |
+          lista=$(node -e '
+            const t = require("./producciones/" + process.env.PRODUCCION + "/tiempos.json");
+            const s = t.escenas.map(e => ({ id: e.id, desde: e.desde, hasta: e.desde + e.frames - 1 }));
+            const total = s.at(-1).hasta + 1;
+            if (total !== t.frames) { console.error("Los segmentos no cubren el video"); process.exit(1); }
+            console.log(JSON.stringify(s));')
+          echo "lista=$lista" >> "$GITHUB_OUTPUT"
+          echo "### Segmentos" >> "$GITHUB_STEP_SUMMARY"
+          echo "\`$lista\`" >> "$GITHUB_STEP_SUMMARY"
+
+  render:
+    needs: preparar
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    strategy:
+      fail-fast: true
+      max-parallel: 6
+      matrix:
+        segmento: ${{ fromJSON(needs.preparar.outputs.segmentos) }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: package-lock.json
+      - run: npm ci --no-audit --no-fund
+      - run: npm run typecheck
+      - run: npx remotion browser ensure
+      - name: Renderizar ${{ matrix.segmento.id }} (fotogramas ${{ matrix.segmento.desde }}–${{ matrix.segmento.hasta }})
+        run: |
+          npx remotion render src/index.ts "$COMPOSICION" "out/${{ matrix.segmento.id }}.mp4" \
+            --frames=${{ matrix.segmento.desde }}-${{ matrix.segmento.hasta }} --muted --scale="$ESCALA"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: segmento-${{ matrix.segmento.id }}
+          path: out/${{ matrix.segmento.id }}.mp4
+          retention-days: 7
+
+  unir:
+    needs: [preparar, render]
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - name: Instalar FFmpeg y numpy
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg imagemagick
+          python3 -m pip install --quiet numpy
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: segmento-*
+          path: out/segmentos
+          merge-multiple: true
+      - name: Banda sonora (sintetizada, sin samples)
+        run: python3 scripts/audio/sintetizar.py "producciones/$PRODUCCION"
+      - name: Unir segmentos y agregar audio
+        run: |
+          echo '${{ needs.preparar.outputs.segmentos }}' | jq -r '.[] | "file segmentos/\(.id).mp4"' > out/lista.txt
+          cat out/lista.txt
+          ffmpeg -v error -y -f concat -safe 0 -i out/lista.txt -c copy out/video-mudo.mp4
+          ffmpeg -v error -y -i out/video-mudo.mp4 -i "producciones/$PRODUCCION/audio/mezcla.wav" \
+            -map 0:v -map 1:a -c:v copy \
+            -af "loudnorm=I=-14:TP=-1.5:LRA=11,aresample=48000" -c:a aac -b:a 192k \
+            -shortest -movflags +faststart "out/$PRODUCCION.mp4"
+      - name: Verificar el MP4 final
+        run: node scripts/verificar-video.mjs "out/$PRODUCCION.mp4" "producciones/$PRODUCCION/tiempos.json" | tee -a "$GITHUB_STEP_SUMMARY"
+      - name: Portada y hoja de contacto por escena
+        run: |
+          node -e '
+            const t = require("./producciones/" + process.env.PRODUCCION + "/tiempos.json");
+            for (const e of t.escenas) console.log(e.id, ((e.inicio + e.duracion * 0.6)).toFixed(2));
+          ' | while read id seg; do
+            ffmpeg -v error -y -ss "$seg" -i "out/$PRODUCCION.mp4" -frames:v 1 -vf scale=360:-1 "out/hoja-$id.jpg"
+          done
+          montage out/hoja-e*.jpg -tile 6x1 -geometry +4+4 -background '#111' "out/$PRODUCCION-escenas.jpg"
+          ffmpeg -v error -y -ss 4 -i "out/$PRODUCCION.mp4" -frames:v 1 "out/$PRODUCCION-portada.jpg"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: ${{ env.PRODUCCION }}-final
+          path: |
+            out/${{ env.PRODUCCION }}.mp4
+            out/${{ env.PRODUCCION }}-escenas.jpg
+          retention-days: 30
+      - name: Publicar en la Release «produccion-${{ env.PRODUCCION }}»
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          etiqueta="produccion-$PRODUCCION"
+          gh release delete "$etiqueta" --yes --cleanup-tag || true
+          cp "producciones/$PRODUCCION/subtitulos.srt" "out/$PRODUCCION-subtitulos.srt"
+          cp "producciones/$PRODUCCION/guia-locucion.md" "out/$PRODUCCION-guia-locucion.md"
+          gh release create "$etiqueta" \
+            "out/$PRODUCCION.mp4" "out/$PRODUCCION-portada.jpg" "out/$PRODUCCION-escenas.jpg" \
+            "out/$PRODUCCION-subtitulos.srt" "out/$PRODUCCION-guia-locucion.md" \
+            --prerelease --target "$GITHUB_SHA" \
+            --title "AGUA STUDIO · $PRODUCCION" \
+            --notes "Render de \`$COMPOSICION\` (escala $ESCALA) desde \`$GITHUB_REF_NAME\` · commit $GITHUB_SHA. Música y efectos sintetizados por código. Narración: pendiente (subtítulos con tiempos estimados)."
+          echo "### MP4 publicado" >> "$GITHUB_STEP_SUMMARY"
+          echo "${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}/releases/tag/$etiqueta" >> "$GITHUB_STEP_SUMMARY"

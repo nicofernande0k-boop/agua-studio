@@ -49,7 +49,21 @@ function Cajas({ cajas, material, sombra = true }: { cajas: Caja[]; material: TH
   );
 }
 
-export function Casa({ frame, oculta }: { frame: number; oculta: boolean }) {
+/** Momentos (en fotogramas) de las animaciones de la casa. */
+export interface TiemposCasa {
+  techoDesvanece: readonly [number, number];
+  abreCanilla: readonly [number, number];
+  gota: readonly [number, number];
+}
+
+/** Tiempos que nunca ocurren: casa quieta, con techo. */
+export const CASA_QUIETA: TiemposCasa = {
+  techoDesvanece: [1e9, 1e9 + 1],
+  abreCanilla: [1e9, 1e9 + 1],
+  gota: [1e9, 1e9 + 1],
+};
+
+export function Casa({ frame, oculta, tiempos = T }: { frame: number; oculta: boolean; tiempos?: TiemposCasa }) {
   const m = useMemo(() => {
     const tejas = texturaTejas();
     tejas.center.set(0.5, 0.5);
@@ -83,13 +97,13 @@ export function Casa({ frame, oculta }: { frame: number; oculta: boolean }) {
   }, []);
 
   // Fundido del techo al atravesarlo.
-  const opTecho = 1 - progreso(frame, T.techoDesvanece[0], T.techoDesvanece[1], easeInOutCubic);
+  const opTecho = 1 - progreso(frame, tiempos.techoDesvanece[0], tiempos.techoDesvanece[1], easeInOutCubic);
   for (const x of [m.tejas, m.cielorraso, m.hastial, m.tanque, m.hierro]) {
     x.opacity = opTecho;
     x.depthWrite = opTecho > 0.98;
     x.visible = opTecho > 0.01;
   }
-  const techoProyectaSombra = frame < T.techoDesvanece[0];
+  const techoProyectaSombra = frame < tiempos.techoDesvanece[0];
 
   const H = ALTURA_PARED - PISO; // alto de pared sobre el piso
   const yP = (y: number) => PISO + y;
@@ -197,7 +211,7 @@ export function Casa({ frame, oculta }: { frame: number; oculta: boolean }) {
         </mesh>
       ))}
 
-      <Bano frame={frame} azulejos={m.azulejos} salvia={m.salvia} damero={m.damero} />
+      <Bano frame={frame} tiempos={tiempos} azulejos={m.azulejos} salvia={m.salvia} damero={m.damero} />
 
       {/* Cielorraso + techo + tanque: se desvanecen juntos */}
       <group>
@@ -259,11 +273,13 @@ export function Casa({ frame, oculta }: { frame: number; oculta: boolean }) {
 /** Baño completo con la canilla protagonista. */
 function Bano({
   frame,
+  tiempos,
   azulejos,
   salvia,
   damero,
 }: {
   frame: number;
+  tiempos: TiemposCasa;
   azulejos: THREE.Texture;
   salvia: THREE.Material;
   damero: THREE.Material;
@@ -322,18 +338,18 @@ function Bano({
   }, []);
 
   // --- Animación de la canilla ---
-  const giro = progreso(frame, T.abreCanilla[0], T.abreCanilla[1], easeInOutCubic) * (Math.PI * 0.75);
+  const giro = progreso(frame, tiempos.abreCanilla[0], tiempos.abreCanilla[1], easeInOutCubic) * (Math.PI * 0.75);
   // Después de abrir: la cañería "tose" (vibra) pero no sale agua.
-  const tTos = progreso(frame, T.abreCanilla[1], T.abreCanilla[1] + 22);
+  const tTos = progreso(frame, tiempos.abreCanilla[1], tiempos.abreCanilla[1] + 22);
   const vibracion = tTos > 0 && tTos < 1 ? Math.sin(frame * 2.6) * 0.004 * (1 - tTos) : 0;
   // Una única gota que se forma y cae.
-  const [g0, g1] = T.gota;
+  const [g0, g1] = tiempos.gota;
   const forma = progreso(frame, g0, g1 - 10, easeOutCubic);
   const caida = progreso(frame, g1 - 10, g1, (t) => t * t);
   const gotaVisible = frame >= g0 && frame < g1;
   const yGota = 0.15 - 0.012 - forma * 0.01 - caida * 0.17;
   // Bocanada de aire.
-  const tAire = progreso(frame, T.abreCanilla[1] - 2, T.abreCanilla[1] + 14, easeOutCubic);
+  const tAire = progreso(frame, tiempos.abreCanilla[1] - 2, tiempos.abreCanilla[1] + 14, easeOutCubic);
 
   const base: Vec3 = [2.35, PISO + 0.88, z0 + 0.1];
 

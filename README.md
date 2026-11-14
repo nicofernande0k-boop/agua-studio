@@ -6,7 +6,28 @@ Producción de videos explicativos animados en 3D para Instagram Reels
 Repositorio independiente. Nació dentro de `patria-en-disputa-studio` y se
 trasladó acá con su historial; no comparte código ni dependencias con esa app.
 
-## Demo actual: «¿Y si mañana no tenés agua?» (8 s)
+## Producción 001: «¿Y si mañana no tenés agua?» (85,5 s)
+
+Cortometraje completo en seis escenas, composición `Produccion001`:
+
+| # | Escena | Tiempo |
+| --- | --- | --- |
+| 1 | ¿Y si mañana no tenés agua? — ciudad, calle, techo, baño, canilla seca | 0:00 – 0:12 |
+| 2 | Una ciudad sin agua — subsuelo, red con rayos X, hospital, escuela, la ciudad se apaga | 0:12 – 0:24,5 |
+| 3 | ¿Un derecho o un negocio? — torre corporativa, facturas y dinero, válvula gigante | 0:24,5 – 0:39 |
+| 4 | Argentina, años 90 — mapa 3D, línea de tiempo, contratos, recorrido por el país | 0:39 – 0:57 |
+| 5 | Los que hacen posible el agua — planta potabilizadora, cuadrilla, el agua vuelve | 0:57 – 1:10 |
+| 6 | El agua no se vende — red iluminada, gota gigante, «EL AGUA NO SE VENDE. SE DEFIENDE.» | 1:10 – 1:25,5 |
+
+- **Narración:** pendiente de grabar. Subtítulos y guía de locución con tiempos estimados
+  (ver `producciones/001-agua/guia-locucion.md`).
+- **Música y efectos:** sintetizados por código (sin samples ni descargas).
+- **Render:** workflow «AGUA STUDIO · Producción» (seis segmentos en paralelo + unión con FFmpeg).
+- **Descarga:** Releases → `produccion-001-agua`.
+
+Ver `producciones/README.md` para crear nuevos videos con el mismo sistema.
+
+## Demo: «¿Y si mañana no tenés agua?» (8 s)
 
 | Tiempo | Toma |
 | --- | --- |
@@ -30,8 +51,16 @@ agua-studio/
 │   ├── demo/
 │   │   ├── escena.ts       Medidas, tiempos clave y recorrido de cámara
 │   │   └── AguaDemo.tsx    Composición: lienzo 3D + título + viñeta + transición
+│   ├── producciones/agua001/  Producción 001: seis escenas + composición
+│   ├── ui/Superposiciones.tsx Subtítulos, títulos de escena, cierre, fundidos
 │   ├── three/
-│   │   ├── Mundo.tsx       Cámara, sol con sombras, niebla, entorno de reflejos
+│   │   ├── Escenario.tsx   Escenario reutilizable: cámara, luz, rayos X, red, subsuelo
+│   │   ├── RedAgua.tsx     Red de agua de toda la ciudad (llenar, vaciar, válvula, brillo)
+│   │   ├── Edificios.tsx   Hospital, escuela, torre, válvula gigante, planta potabilizadora
+│   │   ├── Personaje.tsx   Trabajadores sanitaristas con poses animadas
+│   │   ├── Simbolos.tsx    Facturas, monedas, billetes, gráfico de ganancias
+│   │   ├── MapaArgentina.tsx Mapa 3D con ciudades, línea de tiempo y contratos
+│   │   ├── Mundo.tsx       Escenario de la demo
 │   │   ├── Ciudad.tsx      Ciudad procedural con instancias (rápida sin GPU)
 │   │   ├── Casa.tsx        Casa protagonista y baño con la canilla animada
 │   │   ├── Subsuelo.tsx    Red de agua, manómetro, cloaca, gas, fibra
@@ -44,10 +73,12 @@ Todo es determinista: depende solo del número de fotograma, así cada render sa
 
 ## Ver el resultado desde el iPhone
 
-Cada vez que se sube un cambio de código, GitHub Actions renderiza el video
-(workflow `.github/workflows/render.yml`):
+Los renders se lanzan a mano desde GitHub Actions (así no se gastan minutos en cada cambio):
 
-1. App de GitHub o Safari → repositorio → **Actions** → «AGUA STUDIO · Render».
+**Producción completa:** Actions → «AGUA STUDIO · Producción» → Run workflow; el MP4 queda en
+Releases → `produccion-001-agua`. **Demo de 8 s:**
+
+1. App de GitHub o Safari → repositorio → **Actions** → «AGUA STUDIO · Render» → Run workflow.
 2. Cuando termina (✓ verde), abrí **Releases → agua-studio-ultimo** y tocá
    el `.mp4`: se reproduce en Safari. Para guardarlo: Compartir → **Guardar video**.
    Enlace directo: https://github.com/nicofernande0k-boop/agua-studio/releases/tag/agua-studio-ultimo

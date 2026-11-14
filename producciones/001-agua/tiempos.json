@@ -1,0 +1,1715 @@
+{
+  "id": "001-agua",
+  "titulo": "¿Y si mañana no tenés agua?",
+  "fps": 30,
+  "duracion": 85.5,
+  "frames": 2565,
+  "escenas": [
+    {
+      "id": "e1",
+      "indice": 1,
+      "titulo": "¿Y SI MAÑANA NO TENÉS AGUA?",
+      "inicio": 0,
+      "duracion": 12,
+      "desde": 0,
+      "frames": 360,
+      "finNarracion": 9.438,
+      "cierre": null
+    },
+    {
+      "id": "e2",
+      "indice": 2,
+      "titulo": "UNA CIUDAD SIN AGUA",
+      "inicio": 12,
+      "duracion": 12.5,
+      "desde": 360,
+      "frames": 375,
+      "finNarracion": 23.048,
+      "cierre": null
+    },
+    {
+      "id": "e3",
+      "indice": 3,
+      "titulo": "¿UN DERECHO O UN NEGOCIO?",
+      "inicio": 24.5,
+      "duracion": 14.5,
+      "desde": 735,
+      "frames": 435,
+      "finNarracion": 38.05,
+      "cierre": null
+    },
+    {
+      "id": "e4",
+      "indice": 4,
+      "titulo": "ARGENTINA, AÑOS 90",
+      "inicio": 39,
+      "duracion": 18,
+      "desde": 1170,
+      "frames": 540,
+      "finNarracion": 56.35,
+      "cierre": null
+    },
+    {
+      "id": "e5",
+      "indice": 5,
+      "titulo": "LOS QUE HACEN POSIBLE EL AGUA",
+      "inicio": 57,
+      "duracion": 13,
+      "desde": 1710,
+      "frames": 390,
+      "finNarracion": 66.828,
+      "cierre": null
+    },
+    {
+      "id": "e6",
+      "indice": 6,
+      "titulo": "EL AGUA NO SE VENDE",
+      "inicio": 70,
+      "duracion": 15.5,
+      "desde": 2100,
+      "frames": 465,
+      "finNarracion": 81.732,
+      "cierre": {
+        "inicio": 82,
+        "texto": "EL AGUA NO SE VENDE.\nSE DEFIENDE."
+      }
+    }
+  ],
+  "palabras": [
+    {
+      "texto": "¿Qué",
+      "inicio": 4,
+      "fin": 4.266,
+      "escena": "e1",
+      "destacada": false
+    },
+    {
+      "texto": "pasaría",
+      "inicio": 4.266,
+      "fin": 4.74,
+      "escena": "e1",
+      "destacada": false
+    },
+    {
+      "texto": "si",
+      "inicio": 4.74,
+      "fin": 4.954,
+      "escena": "e1",
+      "destacada": false
+    },
+    {
+      "texto": "mañana",
+      "inicio": 4.954,
+      "fin": 5.376,
+      "escena": "e1",
+      "destacada": false
+    },
+    {
+      "texto": "te",
+      "inicio": 5.376,
+      "fin": 5.59,
+      "escena": "e1",
+      "destacada": false
+    },
+    {
+      "texto": "levantás,",
+      "inicio": 5.59,
+      "fin": 6.116,
+      "escena": "e1",
+      "destacada": false
+    },
+    {
+      "texto": "abrís",
+      "inicio": 6.356,
+      "fin": 6.726,
+      "escena": "e1",
+      "destacada": false
+    },
+    {
+      "texto": "la",
+      "inicio": 6.726,
+      "fin": 6.94,
+      "escena": "e1",
+      "destacada": false
+    },
+    {
+      "texto": "canilla",
+      "inicio": 6.94,
+      "fin": 7.414,
+      "escena": "e1",
+      "destacada": false
+    },
+    {
+      "texto": "y",
+      "inicio": 7.414,
+      "fin": 7.576,
+      "escena": "e1",
+      "destacada": false
+    },
+    {
+      "texto": "no",
+      "inicio": 7.576,
+      "fin": 7.79,
+      "escena": "e1",
+      "destacada": false
+    },
+    {
+      "texto": "sale",
+      "inicio": 7.79,
+      "fin": 8.108,
+      "escena": "e1",
+      "destacada": false
+    },
+    {
+      "texto": "ni",
+      "inicio": 8.108,
+      "fin": 8.322,
+      "escena": "e1",
+      "destacada": false
+    },
+    {
+      "texto": "una",
+      "inicio": 8.322,
+      "fin": 8.588,
+      "escena": "e1",
+      "destacada": false
+    },
+    {
+      "texto": "gota",
+      "inicio": 8.588,
+      "fin": 8.906,
+      "escena": "e1",
+      "destacada": false
+    },
+    {
+      "texto": "de",
+      "inicio": 8.906,
+      "fin": 9.12,
+      "escena": "e1",
+      "destacada": false
+    },
+    {
+      "texto": "agua?",
+      "inicio": 9.12,
+      "fin": 9.438,
+      "escena": "e1",
+      "destacada": true
+    },
+    {
+      "texto": "No",
+      "inicio": 12.7,
+      "fin": 12.914,
+      "escena": "e2",
+      "destacada": false
+    },
+    {
+      "texto": "podés",
+      "inicio": 12.914,
+      "fin": 13.284,
+      "escena": "e2",
+      "destacada": false
+    },
+    {
+      "texto": "cocinar.",
+      "inicio": 13.284,
+      "fin": 13.758,
+      "escena": "e2",
+      "destacada": false
+    },
+    {
+      "texto": "No",
+      "inicio": 14.3,
+      "fin": 14.514,
+      "escena": "e2",
+      "destacada": false
+    },
+    {
+      "texto": "podés",
+      "inicio": 14.514,
+      "fin": 14.884,
+      "escena": "e2",
+      "destacada": false
+    },
+    {
+      "texto": "bañarte.",
+      "inicio": 14.884,
+      "fin": 15.358,
+      "escena": "e2",
+      "destacada": false
+    },
+    {
+      "texto": "Los",
+      "inicio": 16,
+      "fin": 16.266,
+      "escena": "e2",
+      "destacada": false
+    },
+    {
+      "texto": "hospitales",
+      "inicio": 16.266,
+      "fin": 16.896,
+      "escena": "e2",
+      "destacada": false
+    },
+    {
+      "texto": "la",
+      "inicio": 16.896,
+      "fin": 17.11,
+      "escena": "e2",
+      "destacada": false
+    },
+    {
+      "texto": "necesitan.",
+      "inicio": 17.11,
+      "fin": 17.688,
+      "escena": "e2",
+      "destacada": false
+    },
+    {
+      "texto": "Las",
+      "inicio": 18.1,
+      "fin": 18.366,
+      "escena": "e2",
+      "destacada": false
+    },
+    {
+      "texto": "escuelas",
+      "inicio": 18.366,
+      "fin": 18.892,
+      "escena": "e2",
+      "destacada": false
+    },
+    {
+      "texto": "también.",
+      "inicio": 18.892,
+      "fin": 19.366,
+      "escena": "e2",
+      "destacada": false
+    },
+    {
+      "texto": "Sin",
+      "inicio": 19.9,
+      "fin": 20.166,
+      "escena": "e2",
+      "destacada": false
+    },
+    {
+      "texto": "agua,",
+      "inicio": 20.166,
+      "fin": 20.484,
+      "escena": "e2",
+      "destacada": true
+    },
+    {
+      "texto": "una",
+      "inicio": 20.724,
+      "fin": 20.99,
+      "escena": "e2",
+      "destacada": false
+    },
+    {
+      "texto": "ciudad",
+      "inicio": 20.99,
+      "fin": 21.412,
+      "escena": "e2",
+      "destacada": false
+    },
+    {
+      "texto": "entera",
+      "inicio": 21.412,
+      "fin": 21.834,
+      "escena": "e2",
+      "destacada": false
+    },
+    {
+      "texto": "empieza",
+      "inicio": 21.834,
+      "fin": 22.308,
+      "escena": "e2",
+      "destacada": false
+    },
+    {
+      "texto": "a",
+      "inicio": 22.308,
+      "fin": 22.47,
+      "escena": "e2",
+      "destacada": false
+    },
+    {
+      "texto": "detenerse.",
+      "inicio": 22.47,
+      "fin": 23.048,
+      "escena": "e2",
+      "destacada": false
+    },
+    {
+      "texto": "Ahora",
+      "inicio": 25.1,
+      "fin": 25.47,
+      "escena": "e3",
+      "destacada": false
+    },
+    {
+      "texto": "imaginá",
+      "inicio": 25.47,
+      "fin": 25.944,
+      "escena": "e3",
+      "destacada": false
+    },
+    {
+      "texto": "que",
+      "inicio": 25.944,
+      "fin": 26.21,
+      "escena": "e3",
+      "destacada": false
+    },
+    {
+      "texto": "el",
+      "inicio": 26.21,
+      "fin": 26.424,
+      "escena": "e3",
+      "destacada": false
+    },
+    {
+      "texto": "agua",
+      "inicio": 26.424,
+      "fin": 26.742,
+      "escena": "e3",
+      "destacada": true
+    },
+    {
+      "texto": "está,",
+      "inicio": 26.742,
+      "fin": 27.06,
+      "escena": "e3",
+      "destacada": false
+    },
+    {
+      "texto": "pero",
+      "inicio": 27.3,
+      "fin": 27.618,
+      "escena": "e3",
+      "destacada": false
+    },
+    {
+      "texto": "las",
+      "inicio": 27.618,
+      "fin": 27.884,
+      "escena": "e3",
+      "destacada": false
+    },
+    {
+      "texto": "decisiones",
+      "inicio": 27.884,
+      "fin": 28.514,
+      "escena": "e3",
+      "destacada": false
+    },
+    {
+      "texto": "sobre",
+      "inicio": 28.514,
+      "fin": 28.884,
+      "escena": "e3",
+      "destacada": false
+    },
+    {
+      "texto": "el",
+      "inicio": 28.884,
+      "fin": 29.098,
+      "escena": "e3",
+      "destacada": false
+    },
+    {
+      "texto": "servicio",
+      "inicio": 29.098,
+      "fin": 29.624,
+      "escena": "e3",
+      "destacada": false
+    },
+    {
+      "texto": "quedan",
+      "inicio": 29.624,
+      "fin": 30.046,
+      "escena": "e3",
+      "destacada": false
+    },
+    {
+      "texto": "en",
+      "inicio": 30.046,
+      "fin": 30.26,
+      "escena": "e3",
+      "destacada": false
+    },
+    {
+      "texto": "manos",
+      "inicio": 30.26,
+      "fin": 30.63,
+      "escena": "e3",
+      "destacada": false
+    },
+    {
+      "texto": "de",
+      "inicio": 30.63,
+      "fin": 30.844,
+      "escena": "e3",
+      "destacada": false
+    },
+    {
+      "texto": "una",
+      "inicio": 30.844,
+      "fin": 31.11,
+      "escena": "e3",
+      "destacada": false
+    },
+    {
+      "texto": "empresa",
+      "inicio": 31.11,
+      "fin": 31.584,
+      "escena": "e3",
+      "destacada": false
+    },
+    {
+      "texto": "que",
+      "inicio": 31.584,
+      "fin": 31.85,
+      "escena": "e3",
+      "destacada": false
+    },
+    {
+      "texto": "busca",
+      "inicio": 31.85,
+      "fin": 32.22,
+      "escena": "e3",
+      "destacada": false
+    },
+    {
+      "texto": "ganancias.",
+      "inicio": 32.22,
+      "fin": 32.798,
+      "escena": "e3",
+      "destacada": false
+    },
+    {
+      "texto": "¿Qué",
+      "inicio": 33.5,
+      "fin": 33.766,
+      "escena": "e3",
+      "destacada": false
+    },
+    {
+      "texto": "pasa",
+      "inicio": 33.766,
+      "fin": 34.084,
+      "escena": "e3",
+      "destacada": false
+    },
+    {
+      "texto": "cuando",
+      "inicio": 34.084,
+      "fin": 34.506,
+      "escena": "e3",
+      "destacada": false
+    },
+    {
+      "texto": "la",
+      "inicio": 34.506,
+      "fin": 34.72,
+      "escena": "e3",
+      "destacada": false
+    },
+    {
+      "texto": "rentabilidad",
+      "inicio": 34.72,
+      "fin": 35.454,
+      "escena": "e3",
+      "destacada": false
+    },
+    {
+      "texto": "pesa",
+      "inicio": 35.454,
+      "fin": 35.772,
+      "escena": "e3",
+      "destacada": false
+    },
+    {
+      "texto": "más",
+      "inicio": 35.772,
+      "fin": 36.038,
+      "escena": "e3",
+      "destacada": false
+    },
+    {
+      "texto": "que",
+      "inicio": 36.038,
+      "fin": 36.304,
+      "escena": "e3",
+      "destacada": false
+    },
+    {
+      "texto": "las",
+      "inicio": 36.304,
+      "fin": 36.57,
+      "escena": "e3",
+      "destacada": false
+    },
+    {
+      "texto": "necesidades",
+      "inicio": 36.57,
+      "fin": 37.252,
+      "escena": "e3",
+      "destacada": false
+    },
+    {
+      "texto": "de",
+      "inicio": 37.252,
+      "fin": 37.466,
+      "escena": "e3",
+      "destacada": false
+    },
+    {
+      "texto": "la",
+      "inicio": 37.466,
+      "fin": 37.68,
+      "escena": "e3",
+      "destacada": false
+    },
+    {
+      "texto": "gente?",
+      "inicio": 37.68,
+      "fin": 38.05,
+      "escena": "e3",
+      "destacada": false
+    },
+    {
+      "texto": "En",
+      "inicio": 39.6,
+      "fin": 39.814,
+      "escena": "e4",
+      "destacada": false
+    },
+    {
+      "texto": "los",
+      "inicio": 39.814,
+      "fin": 40.08,
+      "escena": "e4",
+      "destacada": false
+    },
+    {
+      "texto": "años",
+      "inicio": 40.08,
+      "fin": 40.398,
+      "escena": "e4",
+      "destacada": false
+    },
+    {
+      "texto": "90,",
+      "inicio": 40.398,
+      "fin": 40.872,
+      "escena": "e4",
+      "destacada": false
+    },
+    {
+      "texto": "Argentina",
+      "inicio": 41.112,
+      "fin": 41.69,
+      "escena": "e4",
+      "destacada": false
+    },
+    {
+      "texto": "vivió",
+      "inicio": 41.69,
+      "fin": 42.06,
+      "escena": "e4",
+      "destacada": false
+    },
+    {
+      "texto": "una",
+      "inicio": 42.06,
+      "fin": 42.326,
+      "escena": "e4",
+      "destacada": false
+    },
+    {
+      "texto": "ola",
+      "inicio": 42.326,
+      "fin": 42.592,
+      "escena": "e4",
+      "destacada": false
+    },
+    {
+      "texto": "de",
+      "inicio": 42.592,
+      "fin": 42.806,
+      "escena": "e4",
+      "destacada": false
+    },
+    {
+      "texto": "privatizaciones.",
+      "inicio": 42.806,
+      "fin": 43.696,
+      "escena": "e4",
+      "destacada": true
+    },
+    {
+      "texto": "Nos",
+      "inicio": 44.2,
+      "fin": 44.466,
+      "escena": "e4",
+      "destacada": false
+    },
+    {
+      "texto": "prometieron",
+      "inicio": 44.466,
+      "fin": 45.148,
+      "escena": "e4",
+      "destacada": false
+    },
+    {
+      "texto": "inversiones,",
+      "inicio": 45.148,
+      "fin": 45.83,
+      "escena": "e4",
+      "destacada": false
+    },
+    {
+      "texto": "eficiencia",
+      "inicio": 46.07,
+      "fin": 46.7,
+      "escena": "e4",
+      "destacada": false
+    },
+    {
+      "texto": "y",
+      "inicio": 46.7,
+      "fin": 46.862,
+      "escena": "e4",
+      "destacada": false
+    },
+    {
+      "texto": "mejores",
+      "inicio": 46.862,
+      "fin": 47.336,
+      "escena": "e4",
+      "destacada": false
+    },
+    {
+      "texto": "servicios.",
+      "inicio": 47.336,
+      "fin": 47.914,
+      "escena": "e4",
+      "destacada": false
+    },
+    {
+      "texto": "Pero",
+      "inicio": 48.5,
+      "fin": 48.818,
+      "escena": "e4",
+      "destacada": false
+    },
+    {
+      "texto": "la",
+      "inicio": 48.818,
+      "fin": 49.032,
+      "escena": "e4",
+      "destacada": false
+    },
+    {
+      "texto": "experiencia",
+      "inicio": 49.032,
+      "fin": 49.714,
+      "escena": "e4",
+      "destacada": false
+    },
+    {
+      "texto": "también",
+      "inicio": 49.714,
+      "fin": 50.188,
+      "escena": "e4",
+      "destacada": false
+    },
+    {
+      "texto": "dejó",
+      "inicio": 50.188,
+      "fin": 50.506,
+      "escena": "e4",
+      "destacada": false
+    },
+    {
+      "texto": "conflictos,",
+      "inicio": 50.506,
+      "fin": 51.136,
+      "escena": "e4",
+      "destacada": false
+    },
+    {
+      "texto": "desigualdades",
+      "inicio": 51.376,
+      "fin": 52.162,
+      "escena": "e4",
+      "destacada": false
+    },
+    {
+      "texto": "y",
+      "inicio": 52.162,
+      "fin": 52.324,
+      "escena": "e4",
+      "destacada": false
+    },
+    {
+      "texto": "una",
+      "inicio": 52.324,
+      "fin": 52.59,
+      "escena": "e4",
+      "destacada": false
+    },
+    {
+      "texto": "pregunta",
+      "inicio": 52.59,
+      "fin": 53.116,
+      "escena": "e4",
+      "destacada": false
+    },
+    {
+      "texto": "que",
+      "inicio": 53.116,
+      "fin": 53.382,
+      "escena": "e4",
+      "destacada": false
+    },
+    {
+      "texto": "sigue",
+      "inicio": 53.382,
+      "fin": 53.752,
+      "escena": "e4",
+      "destacada": false
+    },
+    {
+      "texto": "vigente:",
+      "inicio": 53.752,
+      "fin": 54.226,
+      "escena": "e4",
+      "destacada": false
+    },
+    {
+      "texto": "¿el",
+      "inicio": 54.546,
+      "fin": 54.76,
+      "escena": "e4",
+      "destacada": false
+    },
+    {
+      "texto": "agua",
+      "inicio": 54.76,
+      "fin": 55.078,
+      "escena": "e4",
+      "destacada": true
+    },
+    {
+      "texto": "debe",
+      "inicio": 55.078,
+      "fin": 55.396,
+      "escena": "e4",
+      "destacada": false
+    },
+    {
+      "texto": "ser",
+      "inicio": 55.396,
+      "fin": 55.662,
+      "escena": "e4",
+      "destacada": false
+    },
+    {
+      "texto": "un",
+      "inicio": 55.662,
+      "fin": 55.876,
+      "escena": "e4",
+      "destacada": false
+    },
+    {
+      "texto": "negocio?",
+      "inicio": 55.876,
+      "fin": 56.35,
+      "escena": "e4",
+      "destacada": false
+    },
+    {
+      "texto": "Detrás",
+      "inicio": 58.2,
+      "fin": 58.622,
+      "escena": "e5",
+      "destacada": false
+    },
+    {
+      "texto": "de",
+      "inicio": 58.622,
+      "fin": 58.836,
+      "escena": "e5",
+      "destacada": false
+    },
+    {
+      "texto": "cada",
+      "inicio": 58.836,
+      "fin": 59.154,
+      "escena": "e5",
+      "destacada": false
+    },
+    {
+      "texto": "canilla",
+      "inicio": 59.154,
+      "fin": 59.628,
+      "escena": "e5",
+      "destacada": false
+    },
+    {
+      "texto": "hay",
+      "inicio": 59.628,
+      "fin": 59.894,
+      "escena": "e5",
+      "destacada": false
+    },
+    {
+      "texto": "kilómetros",
+      "inicio": 59.894,
+      "fin": 60.524,
+      "escena": "e5",
+      "destacada": false
+    },
+    {
+      "texto": "de",
+      "inicio": 60.524,
+      "fin": 60.738,
+      "escena": "e5",
+      "destacada": false
+    },
+    {
+      "texto": "cañerías,",
+      "inicio": 60.738,
+      "fin": 61.264,
+      "escena": "e5",
+      "destacada": false
+    },
+    {
+      "texto": "plantas",
+      "inicio": 61.504,
+      "fin": 61.978,
+      "escena": "e5",
+      "destacada": false
+    },
+    {
+      "texto": "potabilizadoras",
+      "inicio": 61.978,
+      "fin": 62.868,
+      "escena": "e5",
+      "destacada": false
+    },
+    {
+      "texto": "y",
+      "inicio": 62.868,
+      "fin": 63.03,
+      "escena": "e5",
+      "destacada": false
+    },
+    {
+      "texto": "trabajadores",
+      "inicio": 63.03,
+      "fin": 63.764,
+      "escena": "e5",
+      "destacada": true
+    },
+    {
+      "texto": "que",
+      "inicio": 63.764,
+      "fin": 64.03,
+      "escena": "e5",
+      "destacada": false
+    },
+    {
+      "texto": "todos",
+      "inicio": 64.03,
+      "fin": 64.4,
+      "escena": "e5",
+      "destacada": false
+    },
+    {
+      "texto": "los",
+      "inicio": 64.4,
+      "fin": 64.666,
+      "escena": "e5",
+      "destacada": false
+    },
+    {
+      "texto": "días",
+      "inicio": 64.666,
+      "fin": 64.984,
+      "escena": "e5",
+      "destacada": false
+    },
+    {
+      "texto": "sostienen",
+      "inicio": 64.984,
+      "fin": 65.562,
+      "escena": "e5",
+      "destacada": false
+    },
+    {
+      "texto": "un",
+      "inicio": 65.562,
+      "fin": 65.776,
+      "escena": "e5",
+      "destacada": false
+    },
+    {
+      "texto": "servicio",
+      "inicio": 65.776,
+      "fin": 66.302,
+      "escena": "e5",
+      "destacada": false
+    },
+    {
+      "texto": "esencial.",
+      "inicio": 66.302,
+      "fin": 66.828,
+      "escena": "e5",
+      "destacada": false
+    },
+    {
+      "texto": "Porque",
+      "inicio": 70.6,
+      "fin": 71.022,
+      "escena": "e6",
+      "destacada": false
+    },
+    {
+      "texto": "el",
+      "inicio": 71.022,
+      "fin": 71.236,
+      "escena": "e6",
+      "destacada": false
+    },
+    {
+      "texto": "agua",
+      "inicio": 71.236,
+      "fin": 71.554,
+      "escena": "e6",
+      "destacada": true
+    },
+    {
+      "texto": "no",
+      "inicio": 71.554,
+      "fin": 71.768,
+      "escena": "e6",
+      "destacada": false
+    },
+    {
+      "texto": "es",
+      "inicio": 71.768,
+      "fin": 71.982,
+      "escena": "e6",
+      "destacada": false
+    },
+    {
+      "texto": "una",
+      "inicio": 71.982,
+      "fin": 72.248,
+      "escena": "e6",
+      "destacada": false
+    },
+    {
+      "texto": "mercancía",
+      "inicio": 72.248,
+      "fin": 72.826,
+      "escena": "e6",
+      "destacada": false
+    },
+    {
+      "texto": "más.",
+      "inicio": 72.826,
+      "fin": 73.092,
+      "escena": "e6",
+      "destacada": false
+    },
+    {
+      "texto": "Es",
+      "inicio": 73.6,
+      "fin": 73.814,
+      "escena": "e6",
+      "destacada": false
+    },
+    {
+      "texto": "salud,",
+      "inicio": 73.814,
+      "fin": 74.184,
+      "escena": "e6",
+      "destacada": false
+    },
+    {
+      "texto": "es",
+      "inicio": 74.424,
+      "fin": 74.638,
+      "escena": "e6",
+      "destacada": false
+    },
+    {
+      "texto": "vida",
+      "inicio": 74.638,
+      "fin": 74.956,
+      "escena": "e6",
+      "destacada": false
+    },
+    {
+      "texto": "y",
+      "inicio": 74.956,
+      "fin": 75.118,
+      "escena": "e6",
+      "destacada": false
+    },
+    {
+      "texto": "es",
+      "inicio": 75.118,
+      "fin": 75.332,
+      "escena": "e6",
+      "destacada": false
+    },
+    {
+      "texto": "un",
+      "inicio": 75.332,
+      "fin": 75.546,
+      "escena": "e6",
+      "destacada": false
+    },
+    {
+      "texto": "derecho",
+      "inicio": 75.546,
+      "fin": 76.02,
+      "escena": "e6",
+      "destacada": true
+    },
+    {
+      "texto": "humano.",
+      "inicio": 76.02,
+      "fin": 76.442,
+      "escena": "e6",
+      "destacada": false
+    },
+    {
+      "texto": "Y",
+      "inicio": 77,
+      "fin": 77.162,
+      "escena": "e6",
+      "destacada": false
+    },
+    {
+      "texto": "cuando",
+      "inicio": 77.162,
+      "fin": 77.584,
+      "escena": "e6",
+      "destacada": false
+    },
+    {
+      "texto": "hablamos",
+      "inicio": 77.584,
+      "fin": 78.11,
+      "escena": "e6",
+      "destacada": false
+    },
+    {
+      "texto": "del",
+      "inicio": 78.11,
+      "fin": 78.376,
+      "escena": "e6",
+      "destacada": false
+    },
+    {
+      "texto": "agua,",
+      "inicio": 78.376,
+      "fin": 78.694,
+      "escena": "e6",
+      "destacada": true
+    },
+    {
+      "texto": "hablamos",
+      "inicio": 78.934,
+      "fin": 79.46,
+      "escena": "e6",
+      "destacada": false
+    },
+    {
+      "texto": "del",
+      "inicio": 79.46,
+      "fin": 79.726,
+      "escena": "e6",
+      "destacada": false
+    },
+    {
+      "texto": "futuro",
+      "inicio": 79.726,
+      "fin": 80.148,
+      "escena": "e6",
+      "destacada": false
+    },
+    {
+      "texto": "de",
+      "inicio": 80.148,
+      "fin": 80.362,
+      "escena": "e6",
+      "destacada": false
+    },
+    {
+      "texto": "millones",
+      "inicio": 80.362,
+      "fin": 80.888,
+      "escena": "e6",
+      "destacada": false
+    },
+    {
+      "texto": "de",
+      "inicio": 80.888,
+      "fin": 81.102,
+      "escena": "e6",
+      "destacada": false
+    },
+    {
+      "texto": "argentinos.",
+      "inicio": 81.102,
+      "fin": 81.732,
+      "escena": "e6",
+      "destacada": false
+    }
+  ],
+  "bloques": [
+    {
+      "palabras": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "inicio": 4,
+      "fin": 5.59,
+      "escena": "e1",
+      "salida": 5.69
+    },
+    {
+      "palabras": [
+        5
+      ],
+      "inicio": 5.59,
+      "fin": 6.116,
+      "escena": "e1",
+      "salida": 6.306
+    },
+    {
+      "palabras": [
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "inicio": 6.356,
+      "fin": 7.79,
+      "escena": "e1",
+      "salida": 7.89
+    },
+    {
+      "palabras": [
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "inicio": 7.79,
+      "fin": 9.12,
+      "escena": "e1",
+      "salida": 9.22
+    },
+    {
+      "palabras": [
+        16
+      ],
+      "inicio": 9.12,
+      "fin": 9.438,
+      "escena": "e1",
+      "salida": 10.038
+    },
+    {
+      "palabras": [
+        17,
+        18,
+        19
+      ],
+      "inicio": 12.7,
+      "fin": 13.758,
+      "escena": "e2",
+      "salida": 14.25
+    },
+    {
+      "palabras": [
+        20,
+        21,
+        22
+      ],
+      "inicio": 14.3,
+      "fin": 15.358,
+      "escena": "e2",
+      "salida": 15.95
+    },
+    {
+      "palabras": [
+        23,
+        24,
+        25,
+        26
+      ],
+      "inicio": 16,
+      "fin": 17.688,
+      "escena": "e2",
+      "salida": 18.05
+    },
+    {
+      "palabras": [
+        27,
+        28,
+        29
+      ],
+      "inicio": 18.1,
+      "fin": 19.366,
+      "escena": "e2",
+      "salida": 19.85
+    },
+    {
+      "palabras": [
+        30,
+        31
+      ],
+      "inicio": 19.9,
+      "fin": 20.484,
+      "escena": "e2",
+      "salida": 20.674
+    },
+    {
+      "palabras": [
+        32,
+        33,
+        34,
+        35,
+        36
+      ],
+      "inicio": 20.724,
+      "fin": 22.47,
+      "escena": "e2",
+      "salida": 22.57
+    },
+    {
+      "palabras": [
+        37
+      ],
+      "inicio": 22.47,
+      "fin": 23.048,
+      "escena": "e2",
+      "salida": 23.648
+    },
+    {
+      "palabras": [
+        38,
+        39,
+        40,
+        41,
+        42
+      ],
+      "inicio": 25.1,
+      "fin": 26.742,
+      "escena": "e3",
+      "salida": 26.842
+    },
+    {
+      "palabras": [
+        43
+      ],
+      "inicio": 26.742,
+      "fin": 27.06,
+      "escena": "e3",
+      "salida": 27.25
+    },
+    {
+      "palabras": [
+        44,
+        45,
+        46,
+        47,
+        48
+      ],
+      "inicio": 27.3,
+      "fin": 29.098,
+      "escena": "e3",
+      "salida": 29.198
+    },
+    {
+      "palabras": [
+        49,
+        50,
+        51,
+        52,
+        53
+      ],
+      "inicio": 29.098,
+      "fin": 30.844,
+      "escena": "e3",
+      "salida": 30.944
+    },
+    {
+      "palabras": [
+        54,
+        55,
+        56,
+        57
+      ],
+      "inicio": 30.844,
+      "fin": 32.22,
+      "escena": "e3",
+      "salida": 32.32
+    },
+    {
+      "palabras": [
+        58
+      ],
+      "inicio": 32.22,
+      "fin": 32.798,
+      "escena": "e3",
+      "salida": 33.398
+    },
+    {
+      "palabras": [
+        59,
+        60,
+        61,
+        62
+      ],
+      "inicio": 33.5,
+      "fin": 34.72,
+      "escena": "e3",
+      "salida": 34.82
+    },
+    {
+      "palabras": [
+        63,
+        64,
+        65,
+        66
+      ],
+      "inicio": 34.72,
+      "fin": 36.304,
+      "escena": "e3",
+      "salida": 36.404
+    },
+    {
+      "palabras": [
+        67,
+        68,
+        69,
+        70,
+        71
+      ],
+      "inicio": 36.304,
+      "fin": 38.05,
+      "escena": "e3",
+      "salida": 38.65
+    },
+    {
+      "palabras": [
+        72,
+        73,
+        74,
+        75
+      ],
+      "inicio": 39.6,
+      "fin": 40.872,
+      "escena": "e4",
+      "salida": 41.062
+    },
+    {
+      "palabras": [
+        76,
+        77,
+        78,
+        79,
+        80
+      ],
+      "inicio": 41.112,
+      "fin": 42.806,
+      "escena": "e4",
+      "salida": 42.906
+    },
+    {
+      "palabras": [
+        81
+      ],
+      "inicio": 42.806,
+      "fin": 43.696,
+      "escena": "e4",
+      "salida": 44.15
+    },
+    {
+      "palabras": [
+        82,
+        83,
+        84
+      ],
+      "inicio": 44.2,
+      "fin": 45.83,
+      "escena": "e4",
+      "salida": 46.02
+    },
+    {
+      "palabras": [
+        85,
+        86,
+        87
+      ],
+      "inicio": 46.07,
+      "fin": 47.336,
+      "escena": "e4",
+      "salida": 47.436
+    },
+    {
+      "palabras": [
+        88
+      ],
+      "inicio": 47.336,
+      "fin": 47.914,
+      "escena": "e4",
+      "salida": 48.45
+    },
+    {
+      "palabras": [
+        89,
+        90,
+        91,
+        92
+      ],
+      "inicio": 48.5,
+      "fin": 50.188,
+      "escena": "e4",
+      "salida": 50.288
+    },
+    {
+      "palabras": [
+        93,
+        94
+      ],
+      "inicio": 50.188,
+      "fin": 51.136,
+      "escena": "e4",
+      "salida": 51.326
+    },
+    {
+      "palabras": [
+        95,
+        96,
+        97,
+        98
+      ],
+      "inicio": 51.376,
+      "fin": 53.116,
+      "escena": "e4",
+      "salida": 53.216
+    },
+    {
+      "palabras": [
+        99,
+        100,
+        101
+      ],
+      "inicio": 53.116,
+      "fin": 54.226,
+      "escena": "e4",
+      "salida": 54.496
+    },
+    {
+      "palabras": [
+        102,
+        103,
+        104,
+        105,
+        106
+      ],
+      "inicio": 54.546,
+      "fin": 55.876,
+      "escena": "e4",
+      "salida": 55.976
+    },
+    {
+      "palabras": [
+        107
+      ],
+      "inicio": 55.876,
+      "fin": 56.35,
+      "escena": "e4",
+      "salida": 56.95
+    },
+    {
+      "palabras": [
+        108,
+        109,
+        110,
+        111,
+        112
+      ],
+      "inicio": 58.2,
+      "fin": 59.894,
+      "escena": "e5",
+      "salida": 59.994
+    },
+    {
+      "palabras": [
+        113,
+        114,
+        115
+      ],
+      "inicio": 59.894,
+      "fin": 61.264,
+      "escena": "e5",
+      "salida": 61.454
+    },
+    {
+      "palabras": [
+        116,
+        117,
+        118
+      ],
+      "inicio": 61.504,
+      "fin": 63.03,
+      "escena": "e5",
+      "salida": 63.13
+    },
+    {
+      "palabras": [
+        119,
+        120,
+        121,
+        122
+      ],
+      "inicio": 63.03,
+      "fin": 64.666,
+      "escena": "e5",
+      "salida": 64.766
+    },
+    {
+      "palabras": [
+        123,
+        124,
+        125,
+        126
+      ],
+      "inicio": 64.666,
+      "fin": 66.302,
+      "escena": "e5",
+      "salida": 66.402
+    },
+    {
+      "palabras": [
+        127
+      ],
+      "inicio": 66.302,
+      "fin": 66.828,
+      "escena": "e5",
+      "salida": 67.428
+    },
+    {
+      "palabras": [
+        128,
+        129,
+        130,
+        131,
+        132
+      ],
+      "inicio": 70.6,
+      "fin": 71.982,
+      "escena": "e6",
+      "salida": 72.082
+    },
+    {
+      "palabras": [
+        133,
+        134,
+        135
+      ],
+      "inicio": 71.982,
+      "fin": 73.092,
+      "escena": "e6",
+      "salida": 73.55
+    },
+    {
+      "palabras": [
+        136,
+        137
+      ],
+      "inicio": 73.6,
+      "fin": 74.184,
+      "escena": "e6",
+      "salida": 74.374
+    },
+    {
+      "palabras": [
+        138,
+        139,
+        140,
+        141,
+        142
+      ],
+      "inicio": 74.424,
+      "fin": 75.546,
+      "escena": "e6",
+      "salida": 75.646
+    },
+    {
+      "palabras": [
+        143,
+        144
+      ],
+      "inicio": 75.546,
+      "fin": 76.442,
+      "escena": "e6",
+      "salida": 76.95
+    },
+    {
+      "palabras": [
+        145,
+        146,
+        147,
+        148,
+        149
+      ],
+      "inicio": 77,
+      "fin": 78.694,
+      "escena": "e6",
+      "salida": 78.884
+    },
+    {
+      "palabras": [
+        150,
+        151,
+        152,
+        153
+      ],
+      "inicio": 78.934,
+      "fin": 80.362,
+      "escena": "e6",
+      "salida": 80.462
+    },
+    {
+      "palabras": [
+        154,
+        155,
+        156
+      ],
+      "inicio": 80.362,
+      "fin": 81.732,
+      "escena": "e6",
+      "salida": 82.332
+    }
+  ],
+  "estimado": true
+}

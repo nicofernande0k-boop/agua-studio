@@ -1,0 +1,122 @@
+{
+  "id": "001-agua",
+  "titulo": "¿Y si mañana no tenés agua?",
+  "fps": 30,
+  "destacadas": [
+    "agua",
+    "derecho",
+    "privatizaciones",
+    "trabajadores"
+  ],
+  "dichas": {
+    "90": "noventa"
+  },
+  "escenas": [
+    {
+      "id": "e1",
+      "titulo": "¿Y SI MAÑANA NO TENÉS AGUA?",
+      "duracion": 12,
+      "narracion": [
+        {
+          "inicio": 4.0,
+          "texto": "¿Qué pasaría si mañana te levantás, abrís la canilla y no sale ni una gota de agua?"
+        }
+      ]
+    },
+    {
+      "id": "e2",
+      "titulo": "UNA CIUDAD SIN AGUA",
+      "duracion": 12.5,
+      "narracion": [
+        {
+          "inicio": 0.7,
+          "texto": "No podés cocinar."
+        },
+        {
+          "inicio": 2.3,
+          "texto": "No podés bañarte."
+        },
+        {
+          "inicio": 4.0,
+          "texto": "Los hospitales la necesitan."
+        },
+        {
+          "inicio": 6.1,
+          "texto": "Las escuelas también."
+        },
+        {
+          "inicio": 7.9,
+          "texto": "Sin agua, una ciudad entera empieza a detenerse."
+        }
+      ]
+    },
+    {
+      "id": "e3",
+      "titulo": "¿UN DERECHO O UN NEGOCIO?",
+      "duracion": 14.5,
+      "narracion": [
+        {
+          "inicio": 0.6,
+          "texto": "Ahora imaginá que el agua está, pero las decisiones sobre el servicio quedan en manos de una empresa que busca ganancias."
+        },
+        {
+          "inicio": 9.0,
+          "texto": "¿Qué pasa cuando la rentabilidad pesa más que las necesidades de la gente?"
+        }
+      ]
+    },
+    {
+      "id": "e4",
+      "titulo": "ARGENTINA, AÑOS 90",
+      "duracion": 18,
+      "narracion": [
+        {
+          "inicio": 0.6,
+          "texto": "En los años 90, Argentina vivió una ola de privatizaciones."
+        },
+        {
+          "inicio": 5.2,
+          "texto": "Nos prometieron inversiones, eficiencia y mejores servicios."
+        },
+        {
+          "inicio": 9.5,
+          "texto": "Pero la experiencia también dejó conflictos, desigualdades y una pregunta que sigue vigente: ¿el agua debe ser un negocio?"
+        }
+      ]
+    },
+    {
+      "id": "e5",
+      "titulo": "LOS QUE HACEN POSIBLE EL AGUA",
+      "duracion": 13,
+      "narracion": [
+        {
+          "inicio": 1.2,
+          "texto": "Detrás de cada canilla hay kilómetros de cañerías, plantas potabilizadoras y trabajadores que todos los días sostienen un servicio esencial."
+        }
+      ]
+    },
+    {
+      "id": "e6",
+      "titulo": "EL AGUA NO SE VENDE",
+      "duracion": 15.5,
+      "narracion": [
+        {
+          "inicio": 0.6,
+          "texto": "Porque el agua no es una mercancía más."
+        },
+        {
+          "inicio": 3.6,
+          "texto": "Es salud, es vida y es un derecho humano."
+        },
+        {
+          "inicio": 7.0,
+          "texto": "Y cuando hablamos del agua, hablamos del futuro de millones de argentinos."
+        }
+      ],
+      "cierre": {
+        "inicio": 12.0,
+        "texto": "EL AGUA NO SE VENDE.\nSE DEFIENDE."
+      }
+    }
+  ]
+}

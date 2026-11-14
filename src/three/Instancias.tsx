@@ -14,6 +14,25 @@ export interface Instancia {
 
 const tmp = new THREE.Object3D();
 const color = new THREE.Color();
+const NOCHE = new THREE.Color("#1d2433");
+
+/**
+ * Brillo de cada instancia (1 = color original, 0 = apagada).
+ * Recibe la posición para poder encender o apagar edificios por zonas.
+ */
+export type Tinte = (x: number, z: number) => number;
+
+export function teñirInstancias(malla: THREE.InstancedMesh, items: Instancia[], tinte: Tinte) {
+  if (!malla.instanceColor) return;
+  items.forEach((it, i) => {
+    if (!it.c) return;
+    const f = tinte(it.p[0], it.p[2]);
+    color.set(it.c);
+    if (f < 0.999) color.lerp(NOCHE, (1 - f) * 0.78);
+    malla.setColorAt(i, color);
+  });
+  malla.instanceColor.needsUpdate = true;
+}
 
 export function escribirInstancias(malla: THREE.InstancedMesh, items: Instancia[]) {
   items.forEach((it, i) => {
@@ -40,12 +59,14 @@ export function Instancias({
   material,
   sombra = true,
   recibe = true,
+  tinte,
 }: {
   items: Instancia[];
   geometria: THREE.BufferGeometry;
   material: THREE.Material;
   sombra?: boolean;
   recibe?: boolean;
+  tinte?: Tinte;
 }) {
   const ref = useRef<THREE.InstancedMesh>(null);
   const cantidad = items.length;
@@ -57,6 +78,7 @@ export function Instancias({
     return m;
   }, [geometria, material, cantidad]);
   useMemo(() => escribirInstancias(malla, items), [malla, items]);
+  if (tinte) teñirInstancias(malla, items, tinte);
   useLayoutEffect(() => () => malla.dispose(), [malla]);
   return (
     <primitive ref={ref} object={malla} castShadow={sombra} receiveShadow={recibe} />

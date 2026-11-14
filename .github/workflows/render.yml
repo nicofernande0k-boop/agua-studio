@@ -1,8 +1,8 @@
 # Renderiza los videos de AGUA STUDIO en GitHub Actions y deja el MP4
 # listo para descargar desde el iPhone.
 #
-# - Se ejecuta en cada push que cambie el proyecto (no solo la documentación).
-# - También se puede lanzar a mano: Actions → "AGUA STUDIO · Render" → Run workflow.
+# - Se lanza a mano: Actions → "AGUA STUDIO · Render" → Run workflow.
+# - Para videos largos usar «AGUA STUDIO · Producción» (render en segmentos).
 # - El MP4 queda como artefacto de la ejecución y, además, en la publicación
 #   (Release) "agua-studio-ultimo", con un enlace directo al archivo.
 #
@@ -12,15 +12,13 @@
 name: "AGUA STUDIO · Render"
 
 on:
+  # Solo manual: evita renders automáticos en cada push.
   workflow_dispatch:
     inputs:
       composicion:
         description: "Composición de Remotion a renderizar"
         required: true
         default: "AguaDemo"
-  push:
-    paths-ignore:
-      - "**.md"
 
 permissions:
   contents: write

@@ -41,7 +41,20 @@ function Tubo({ tramo, material, lados = 20 }: { tramo: Tramo; material: THREE.M
   );
 }
 
-export function Subsuelo({ frame, oculto }: { frame: number; oculto: boolean }) {
+export function Subsuelo({
+  frame,
+  oculto,
+  sinRed = false,
+  manometro = T.manometro,
+  finPulsos = T.bajoTierra[1],
+}: {
+  frame: number;
+  oculto: boolean;
+  /** Sin caños propios: la red completa la dibuja RedAgua. */
+  sinRed?: boolean;
+  manometro?: readonly [number, number];
+  finPulsos?: number;
+}) {
   const m = useMemo(() => {
     const suelo = texturaSuelo();
     suelo.repeat.set(6, 1);
@@ -98,11 +111,11 @@ export function Subsuelo({ frame, oculto }: { frame: number; oculto: boolean }) 
   const t0 = 150;
   const tau = 16;
   const avance = (f: number) => (f < t0 ? 0 : 0.22 * tau * (1 - Math.exp(-(f - t0) / tau)));
-  const apagado = 1 - progreso(frame, T.bajoTierra[1], T.bajoTierra[1] + 30);
+  const apagado = 1 - progreso(frame, finPulsos, finPulsos + 30);
   m.pulso.opacity = apagado;
 
   // Manómetro: la aguja cae a cero y rebota contra el tope.
-  const caida = progreso(frame, T.manometro[0], T.manometro[1], easeOutBack);
+  const caida = progreso(frame, manometro[0], manometro[1], easeOutBack);
   const valor = 0.62 * (1 - caida);
   const anguloAguja = -(Math.PI * 0.75 + Math.max(-0.03, valor) * Math.PI * 1.5);
   const aCamara = Math.atan2(-2.8 - MANOMETRO[0], -1.6 - MANOMETRO[2]);
@@ -115,7 +128,7 @@ export function Subsuelo({ frame, oculto }: { frame: number; oculto: boolean }) 
       </mesh>
 
       {/* Caño maestro bajo la calle */}
-      <group>
+      <group visible={!sinRed}>
         <Tubo tramo={{ a: [-28, CANO_MAESTRO.y, CANO_MAESTRO.z], b: [32, CANO_MAESTRO.y, CANO_MAESTRO.z], r: CANO_MAESTRO.radio }} material={m.vidrio} lados={36} />
         <Tubo tramo={{ a: [-28, CANO_MAESTRO.y, CANO_MAESTRO.z], b: [32, CANO_MAESTRO.y, CANO_MAESTRO.z], r: CANO_MAESTRO.radio - 0.02 }} material={m.vidrioInterior} lados={36} />
         <mesh position={[2, CANO_MAESTRO.y - CANO_MAESTRO.radio + 0.06, CANO_MAESTRO.z]} material={m.sedimento}>
@@ -130,7 +143,7 @@ export function Subsuelo({ frame, oculto }: { frame: number; oculto: boolean }) 
 
       {/* Conexiones domiciliarias */}
       {conexiones.map((pts, i) => (
-        <group key={i}>
+        <group key={i} visible={!sinRed}>
           {pts.slice(1).map((b, k) => (
             <group key={k}>
               <Tubo tramo={{ a: pts[k], b, r: 0.13 }} material={m.vidrio} />
@@ -178,7 +191,7 @@ export function Subsuelo({ frame, oculto }: { frame: number; oculto: boolean }) 
       </group>
 
       {/* Pulsos de agua (se frenan y desaparecen) */}
-      {apagado > 0.01 ? (
+      {apagado > 0.01 && !sinRed ? (
         <group>
           {Array.from({ length: 12 }, (_, i) => {
             const x = ((-20 + i * 4.4 + avance(frame) * 2.2 + 48) % 48) - 20;

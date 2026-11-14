@@ -1,0 +1,247 @@
+{
+  "descripcion": "Marcas de sonido en segundos globales. Música y efectos 100 % sintetizados por scripts/audio/sintetizar.py (sin samples ni descargas).",
+  "musica": [
+    {
+      "desde": 0.0,
+      "hasta": 8.6,
+      "estilo": "misterio",
+      "nivel": 0.55
+    },
+    {
+      "desde": 12.3,
+      "hasta": 24.5,
+      "estilo": "tension",
+      "nivel": 0.6
+    },
+    {
+      "desde": 24.5,
+      "hasta": 39.0,
+      "estilo": "mecanico",
+      "nivel": 0.6
+    },
+    {
+      "desde": 39.0,
+      "hasta": 57.0,
+      "estilo": "reflexivo",
+      "nivel": 0.6
+    },
+    {
+      "desde": 57.0,
+      "hasta": 70.0,
+      "estilo": "esperanza",
+      "nivel": 0.62
+    },
+    {
+      "desde": 70.0,
+      "hasta": 85.5,
+      "estilo": "epico",
+      "nivel": 0.7
+    }
+  ],
+  "efectos": [
+    {
+      "t": 0.0,
+      "dur": 6.2,
+      "tipo": "ambiente_ciudad",
+      "nivel": 0.5
+    },
+    {
+      "t": 4.9,
+      "dur": 0.9,
+      "tipo": "whoosh",
+      "nivel": 0.5
+    },
+    {
+      "t": 6.6,
+      "dur": 0.6,
+      "tipo": "chirrido_canilla",
+      "nivel": 0.45
+    },
+    {
+      "t": 7.25,
+      "dur": 0.7,
+      "tipo": "tos_canieria",
+      "nivel": 0.55
+    },
+    {
+      "t": 8.35,
+      "dur": 0.6,
+      "tipo": "gota",
+      "nivel": 0.7
+    },
+    {
+      "t": 8.7,
+      "dur": 3.7,
+      "tipo": "tono_sala",
+      "nivel": 0.5
+    },
+    {
+      "t": 12.2,
+      "dur": 0.8,
+      "tipo": "whoosh_grave",
+      "nivel": 0.6
+    },
+    {
+      "t": 12.7,
+      "dur": 2.0,
+      "tipo": "agua_fluye",
+      "nivel": 0.5
+    },
+    {
+      "t": 14.0,
+      "dur": 7.5,
+      "tipo": "agua_se_va",
+      "nivel": 0.45
+    },
+    {
+      "t": 15.6,
+      "dur": 0.8,
+      "tipo": "whoosh",
+      "nivel": 0.5
+    },
+    {
+      "t": 16.5,
+      "dur": 7.5,
+      "tipo": "ambiente_se_apaga",
+      "nivel": 0.4
+    },
+    {
+      "t": 24.5,
+      "dur": 2.2,
+      "tipo": "agua_vuelve",
+      "nivel": 0.45
+    },
+    {
+      "t": 26.5,
+      "dur": 2.3,
+      "tipo": "rumor_grave",
+      "nivel": 0.55
+    },
+    {
+      "t": 28.8,
+      "dur": 1.2,
+      "tipo": "impacto",
+      "nivel": 0.5
+    },
+    {
+      "t": 29.1,
+      "dur": 4.5,
+      "tipo": "monedas",
+      "nivel": 0.35
+    },
+    {
+      "t": 33.3,
+      "dur": 1.2,
+      "tipo": "rumor_grave",
+      "nivel": 0.5
+    },
+    {
+      "t": 34.5,
+      "dur": 0.8,
+      "tipo": "golpe_metal",
+      "nivel": 0.55
+    },
+    {
+      "t": 34.7,
+      "dur": 3.0,
+      "tipo": "valvula_cierra",
+      "nivel": 0.5
+    },
+    {
+      "t": 37.9,
+      "dur": 1.2,
+      "tipo": "whoosh",
+      "nivel": 0.55
+    },
+    {
+      "t": 39.2,
+      "dur": 2.6,
+      "tipo": "pops",
+      "nivel": 0.3
+    },
+    {
+      "t": 44.4,
+      "dur": 3.4,
+      "tipo": "papeles",
+      "nivel": 0.35
+    },
+    {
+      "t": 56.2,
+      "dur": 1.0,
+      "tipo": "whoosh_grave",
+      "nivel": 0.5
+    },
+    {
+      "t": 62.0,
+      "dur": 1.2,
+      "tipo": "valvula_abre",
+      "nivel": 0.45
+    },
+    {
+      "t": 62.2,
+      "dur": 1.5,
+      "tipo": "agua_fluye",
+      "nivel": 0.4
+    },
+    {
+      "t": 63.2,
+      "dur": 1.5,
+      "tipo": "fuga",
+      "nivel": 0.35
+    },
+    {
+      "t": 63.4,
+      "dur": 1.3,
+      "tipo": "herramientas",
+      "nivel": 0.5
+    },
+    {
+      "t": 64.6,
+      "dur": 0.6,
+      "tipo": "golpe_metal",
+      "nivel": 0.45
+    },
+    {
+      "t": 64.9,
+      "dur": 5.0,
+      "tipo": "agua_fluye",
+      "nivel": 0.5
+    },
+    {
+      "t": 66.0,
+      "dur": 4.0,
+      "tipo": "ambiente_ciudad",
+      "nivel": 0.35
+    },
+    {
+      "t": 70.3,
+      "dur": 4.0,
+      "tipo": "brillo",
+      "nivel": 0.4
+    },
+    {
+      "t": 76.4,
+      "dur": 3.0,
+      "tipo": "convergen",
+      "nivel": 0.45
+    },
+    {
+      "t": 79.3,
+      "dur": 2.5,
+      "tipo": "timbal",
+      "nivel": 0.6
+    },
+    {
+      "t": 81.2,
+      "dur": 0.8,
+      "tipo": "reverso",
+      "nivel": 0.5
+    },
+    {
+      "t": 82.0,
+      "dur": 3.5,
+      "tipo": "impacto_final",
+      "nivel": 0.7
+    }
+  ]
+}

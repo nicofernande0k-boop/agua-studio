@@ -1,7 +1,7 @@
 import { useMemo } from "react";
 import * as THREE from "three";
 import { crearAzar, type Vec3 } from "../lib/anim";
-import { Instancias, escribirInstancias, type Instancia } from "./Instancias";
+import { Instancias, escribirInstancias, type Instancia, type Tinte } from "./Instancias";
 import { CALLE_Z } from "../demo/escena";
 
 /**
@@ -37,6 +37,23 @@ export interface DatosCiudad {
   rayas: Instancia[];
   postes: Instancia[];
   vehiculos: Vehiculo[];
+  /** Lotes construidos: centro del edificio y punto del caño maestro frente a él. */
+  lotes: Lote[];
+}
+
+export interface Lote {
+  x: number;
+  z: number;
+  /** Punto sobre el eje de la calle de enfrente (donde corre el caño maestro). */
+  calle: [number, number];
+  tipo: "casa" | "ph" | "torre";
+}
+
+export interface OpcionesCiudad {
+  /** Lados de manzana que no se construyen (para edificios especiales). */
+  reservado?: (i: number, j: number, nx: number, nz: number) => boolean;
+  /** Manzanas que son plazas: sin construcciones, con árboles. */
+  plazas?: [number, number][];
 }
 
 export interface Vehiculo {
@@ -49,11 +66,11 @@ export interface Vehiculo {
   colectivo: boolean;
 }
 
-export function generarCiudad(): DatosCiudad {
+export function generarCiudad(opciones: OpcionesCiudad = {}): DatosCiudad {
   const azar = crearAzar(2024);
   const d: DatosCiudad = {
     cuerpos: [], techos: [], tanques: [], tapas: [], ventanas: [], balcones: [], veredas: [],
-    patios: [], piletas: [], troncos: [], copas: [], rayas: [], postes: [], vehiculos: [],
+    patios: [], piletas: [], troncos: [], copas: [], rayas: [], postes: [], vehiculos: [], lotes: [],
   };
 
   const centro = { x: -70, z: -75 };
@@ -88,6 +105,7 @@ export function generarCiudad(): DatosCiudad {
     const base = NIVEL_VEREDA;
     const fx = cx + tx * a + nx * frente;
     const fz = cz + tz * a + nz * frente;
+    d.lotes.push({ x: px, z: pz, calle: [cx + tx * a + nx * (MEDIA + 3.5), cz + tz * a + nz * (MEDIA + 3.5)], tipo });
     const enFrente = (u: number, y: number, sx: number, sy: number, salida = 0.05, c?: string, lista = d.ventanas) =>
       lista.push({ p: [fx + tx * u + nx * salida, y, fz + tz * u + nz * salida], s: [sx, sy, 0.1], ry, c });
 
@@ -152,7 +170,9 @@ export function generarCiudad(): DatosCiudad {
       };
 
       const lados: [number, number][] = [[0, 1], [0, -1], [1, 0], [-1, 0]];
+      const plaza = opciones.plazas?.some(([pi, pj]) => pi === i && pj === j) ?? false;
       for (const [nx, nz] of lados) {
+        if (plaza || opciones.reservado?.(i, j, nx, nz)) continue;
         const largo = nx === 0 ? LINEA : 2.2;
         if (protagonista && nz === 1) {
           // Frente de la casa protagonista: dos vecinas a los costados.
@@ -176,8 +196,15 @@ export function generarCiudad(): DatosCiudad {
         const x = cx + azar.entre(-7, 7);
         const z = cz + azar.entre(-1.6, 1.6);
         if (protagonista && Math.abs(x) < 5) continue;
+        if (plaza) continue;
         if (azar.n() < 0.35) d.piletas.push({ p: [x, NIVEL_VEREDA + 0.03, z], s: [azar.entre(2.5, 4), 0.06, 1.8], c: "#59c3e8" });
         else arbol(x, z, 1.1);
+      }
+      if (plaza) {
+        for (let k = 0; k < 14; k++) {
+          const ang = (k / 14) * Math.PI * 2;
+          arbol(cx + Math.cos(ang) * 9, cz + Math.sin(ang) * 9, 1.2);
+        }
       }
       // Arbolado de vereda.
       for (const [nx, nz] of lados) {
@@ -286,29 +313,61 @@ function useMateriales() {
   }, []);
 }
 
-export function Ciudad({ frame, fps, oculta = false }: { frame: number; fps: number; oculta?: boolean }) {
-  const datos = useMemo(generarCiudad, []);
+export interface PropsCiudad {
+  frame: number;
+  fps: number;
+  oculta?: boolean;
+  opciones?: OpcionesCiudad;
+  /** Brillo por posición: 1 normal, 0 apagado (ciudad sin agua). */
+  brillo?: Tinte;
+  /** 0 = suelo opaco; 1 = suelo casi transparente para ver la red de agua. */
+  rayosX?: number;
+}
+
+const cacheCiudad = new Map<OpcionesCiudad | undefined, DatosCiudad>();
+/** Datos de la ciudad (memorizados) para que otros módulos, como la red de agua, usen los mismos lotes. */
+export function datosCiudad(opciones?: OpcionesCiudad) {
+  if (!cacheCiudad.has(opciones)) cacheCiudad.set(opciones, generarCiudad(opciones));
+  return cacheCiudad.get(opciones)!;
+}
+
+export function Ciudad({ frame, fps, oculta = false, opciones, brillo, rayosX = 0 }: PropsCiudad) {
+  const datos = useMemo(() => datosCiudad(opciones), [opciones]);
   const g = useGeometrias();
   const mat = useMateriales();
+  const suelo = useMemo(
+    () => ({
+      asfalto: new THREE.MeshStandardMaterial({ color: "#4b5058", roughness: 0.95, transparent: true }),
+      mate: new THREE.MeshStandardMaterial({ color: "#ffffff", roughness: 0.85, transparent: true }),
+      agua: mat.agua.clone(),
+    }),
+    [mat],
+  );
+  const opacidadSuelo = 1 - 0.8 * rayosX;
+  for (const m of [suelo.asfalto, suelo.mate, suelo.agua]) {
+    m.transparent = true;
+    m.opacity = opacidadSuelo;
+    m.depthWrite = rayosX < 0.01;
+  }
+  // Las ventanas iluminadas se apagan primero; sin brillo, todo tiende a la noche.
   return (
     <group visible={!oculta}>
       {/* Asfalto */}
-      <mesh rotation={[-Math.PI / 2, 0, 0]} receiveShadow>
+      <mesh rotation={[-Math.PI / 2, 0, 0]} receiveShadow material={suelo.asfalto}>
         <planeGeometry args={[520, 520]} />
-        <meshStandardMaterial color="#4b5058" roughness={0.95} />
       </mesh>
-      <Instancias items={datos.veredas} geometria={g.caja} material={mat.mate} sombra={false} />
-      <Instancias items={datos.patios} geometria={g.caja} material={mat.mate} sombra={false} />
-      <Instancias items={datos.rayas} geometria={g.caja} material={mat.mate} sombra={false} />
-      <Instancias items={datos.piletas} geometria={g.caja} material={mat.agua} sombra={false} />
-      <Instancias items={datos.cuerpos} geometria={g.caja} material={mat.mate} />
-      <Instancias items={datos.techos} geometria={g.dosAguas} material={mat.teja} />
-      <Instancias items={datos.ventanas} geometria={g.caja} material={mat.vidrio} sombra={false} />
-      <Instancias items={datos.balcones} geometria={g.caja} material={mat.mate} />
+      <Instancias items={datos.veredas} geometria={g.caja} material={suelo.mate} sombra={false} />
+      <Instancias items={datos.patios} geometria={g.caja} material={suelo.mate} sombra={false} />
+      <Instancias items={datos.rayas} geometria={g.caja} material={suelo.mate} sombra={false} />
+      <Instancias items={datos.piletas} geometria={g.caja} material={suelo.agua} sombra={false} tinte={brillo} />
+      <Instancias items={datos.cuerpos} geometria={g.caja} material={mat.mate} tinte={brillo} />
+      <Instancias items={datos.techos} geometria={g.dosAguas} material={mat.teja} tinte={brillo} />
+      <Instancias items={datos.ventanas} geometria={g.caja} material={mat.vidrio} sombra={false} tinte={brillo} />
+      <Instancias items={datos.balcones} geometria={g.caja} material={mat.mate} tinte={brillo} />
       <Instancias items={datos.tanques} geometria={g.cilindro} material={mat.plastico} />
       <Instancias items={datos.tapas} geometria={g.cono} material={mat.plastico} />
       <Instancias items={datos.troncos} geometria={g.cilindro} material={mat.mate} />
-      <Instancias items={datos.copas} geometria={g.copa} material={mat.copa} />
+      <Instancias items={datos.copas} geometria={g.copa} material={mat.copa} tinte={brillo ? (x, z) => 0.55 + 0.45 * brillo(x, z) : undefined} />
       <Instancias items={datos.postes} geometria={g.cilindro} material={mat.mate} />
       <Transito vehiculos={datos.vehiculos} frame={frame} fps={fps} caja={g.caja} material={mat.pintura} vidrio={mat.vidrio} />
     </group>

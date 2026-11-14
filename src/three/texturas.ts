@@ -156,3 +156,69 @@ export function texturaManometro() {
   tex.wrapS = tex.wrapT = THREE.ClampToEdgeWrapping;
   return tex;
 }
+
+/**
+ * Cartel con texto. Usa Inter (cargada antes de crear la escena) y cae en
+ * sans-serif si no estuviera disponible.
+ */
+export function texturaTexto(
+  texto: string,
+  {
+    ancho = 512,
+    alto = 128,
+    fondo = "#ffffff",
+    color = "#1d2433",
+    peso = 800,
+    tamano = 64,
+    borde,
+  }: { ancho?: number; alto?: number; fondo?: string | null; color?: string; peso?: number; tamano?: number; borde?: string } = {},
+) {
+  const tex = lienzo(ancho, alto, (c) => {
+    if (fondo) {
+      c.fillStyle = fondo;
+      c.beginPath();
+      c.roundRect(0, 0, ancho, alto, alto * 0.12);
+      c.fill();
+    }
+    if (borde) {
+      c.strokeStyle = borde;
+      c.lineWidth = alto * 0.06;
+      c.beginPath();
+      c.roundRect(c.lineWidth / 2, c.lineWidth / 2, ancho - c.lineWidth, alto - c.lineWidth, alto * 0.12);
+      c.stroke();
+    }
+    c.fillStyle = color;
+    c.font = `${peso} ${tamano}px Inter, sans-serif`;
+    c.textAlign = "center";
+    c.textBaseline = "middle";
+    const lineas = texto.split("\n");
+    lineas.forEach((l, i) => c.fillText(l, ancho / 2, alto / 2 + (i - (lineas.length - 1) / 2) * tamano * 1.1));
+  });
+  tex.wrapS = tex.wrapT = THREE.ClampToEdgeWrapping;
+  return tex;
+}
+
+/** Bandera argentina con Sol de Mayo simplificado. */
+export function texturaBandera() {
+  const tex = lienzo(300, 190, (c) => {
+    c.fillStyle = "#74acdf";
+    c.fillRect(0, 0, 300, 190);
+    c.fillStyle = "#ffffff";
+    c.fillRect(0, 63, 300, 64);
+    c.fillStyle = "#f6b40e";
+    c.beginPath();
+    c.arc(150, 95, 17, 0, Math.PI * 2);
+    c.fill();
+    c.strokeStyle = "#f6b40e";
+    c.lineWidth = 3;
+    for (let i = 0; i < 16; i++) {
+      const a = (i / 16) * Math.PI * 2;
+      c.beginPath();
+      c.moveTo(150 + Math.cos(a) * 19, 95 + Math.sin(a) * 19);
+      c.lineTo(150 + Math.cos(a) * 28, 95 + Math.sin(a) * 28);
+      c.stroke();
+    }
+  });
+  tex.wrapS = tex.wrapT = THREE.ClampToEdgeWrapping;
+  return tex;
+}
