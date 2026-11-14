@@ -36,6 +36,8 @@ export interface TramoRed {
   d0: number;
   largo: number;
   maestro: boolean;
+  /** Edificio al que llega (solo conexiones domiciliarias). */
+  casa?: [number, number];
 }
 
 export interface ConexionExtra {
@@ -86,6 +88,7 @@ export function generarRed(opciones?: OpcionesCiudad, extras: ConexionExtra[] = 
     const t2 = tramo(p2, p3, 0.15, d, false);
     d += t2.largo;
     const t3 = tramo(p3, p4, 0.15, d, false);
+    for (const t of [t1, t2, t3]) t.casa = [c.x, c.z];
     red.push(t1, t2, t3);
   }
   return red;
@@ -138,9 +141,11 @@ export interface PropsRed {
   visible?: boolean;
   opciones?: OpcionesCiudad;
   extras?: ConexionExtra[];
+  /** Agua en cada conexión domiciliaria (0..1), según la posición de la casa. */
+  conexion?: (x: number, z: number) => number;
 }
 
-export function RedAgua({ frame, frente, valvula, brillo = 1, vidrio = 0.3, visible = true, opciones, extras }: PropsRed) {
+export function RedAgua({ frame, frente, valvula, brillo = 1, vidrio = 0.3, visible = true, opciones, extras, conexion }: PropsRed) {
   const red = useMemo(() => generarRed(opciones, extras), [opciones, extras]);
   const recursos = useMemo(() => {
     const cilindro = new THREE.CylinderGeometry(1, 1, 1, 14, 1, true);
@@ -179,7 +184,8 @@ export function RedAgua({ frame, frente, valvula, brillo = 1, vidrio = 0.3, visi
   red.forEach((t) => {
     let f = frente;
     if (valvula && t.d0 >= valvula.d) f = valvula.d + (frente - valvula.d) * (1 - valvula.cierre);
-    const fraccion = clamp01((f - t.d0) / t.largo);
+    let fraccion = clamp01((f - t.d0) / t.largo);
+    if (conexion && t.casa) fraccion = Math.min(fraccion, conexion(t.casa[0], t.casa[1]));
     if (fraccion <= 0.001) return;
     const radio = t.r * 0.72;
     ubicar(recursos.agua, visibles, t.a, t.b, radio, fraccion);

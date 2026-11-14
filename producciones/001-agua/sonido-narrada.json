@@ -1,0 +1,472 @@
+{
+ "descripcion": "Versión narrada: música y efectos sintetizados por código, en segundos del video (voz desde 1,0 s).",
+ "musica": [
+  {
+   "desde": 0.0,
+   "hasta": 10.9,
+   "estilo": "misterio",
+   "nivel": 0.55
+  },
+  {
+   "desde": 11.5,
+   "hasta": 24.5,
+   "estilo": "tension",
+   "nivel": 0.6
+  },
+  {
+   "desde": 24.5,
+   "hasta": 52.0,
+   "estilo": "reflexivo",
+   "nivel": 0.6
+  },
+  {
+   "desde": 52.0,
+   "hasta": 65.8,
+   "estilo": "mecanico",
+   "nivel": 0.6
+  },
+  {
+   "desde": 66.2,
+   "hasta": 76.0,
+   "estilo": "emotivo",
+   "nivel": 0.62
+  },
+  {
+   "desde": 76.0,
+   "hasta": 99.9,
+   "estilo": "esperanza",
+   "nivel": 0.62
+  },
+  {
+   "desde": 99.9,
+   "hasta": 111.9,
+   "estilo": "reflexivo",
+   "nivel": 0.55
+  },
+  {
+   "desde": 111.9,
+   "hasta": 125.45,
+   "estilo": "epico",
+   "nivel": 0.66,
+   "final": 13.55,
+   "golpes": [
+    125.16
+   ]
+  },
+  {
+   "desde": 126.6,
+   "hasta": 151.5,
+   "estilo": "epico",
+   "nivel": 0.72,
+   "final": 19.7,
+   "golpes": [
+    139.9,
+    146.34
+   ]
+  }
+ ],
+ "efectos": [
+  {
+   "t": 0.0,
+   "dur": 4.6,
+   "tipo": "ambiente_ciudad",
+   "nivel": 0.35
+  },
+  {
+   "t": 3.8,
+   "dur": 0.9,
+   "tipo": "whoosh",
+   "nivel": 0.5
+  },
+  {
+   "t": 6.15,
+   "dur": 0.5,
+   "tipo": "chirrido_canilla",
+   "nivel": 0.36
+  },
+  {
+   "t": 6.75,
+   "dur": 0.7,
+   "tipo": "tos_canieria",
+   "nivel": 0.413
+  },
+  {
+   "t": 9.95,
+   "dur": 0.6,
+   "tipo": "gota",
+   "nivel": 0.75
+  },
+  {
+   "t": 10.9,
+   "dur": 0.8,
+   "tipo": "tono_sala",
+   "nivel": 0.5
+  },
+  {
+   "t": 11.9,
+   "dur": 0.8,
+   "tipo": "whoosh_grave",
+   "nivel": 0.6
+  },
+  {
+   "t": 12.6,
+   "dur": 2.4,
+   "tipo": "agua_fluye",
+   "nivel": 0.293
+  },
+  {
+   "t": 14.6,
+   "dur": 0.8,
+   "tipo": "whoosh",
+   "nivel": 0.5
+  },
+  {
+   "t": 15.6,
+   "dur": 3.4,
+   "tipo": "monedas",
+   "nivel": 0.135
+  },
+  {
+   "t": 17.0,
+   "dur": 3.0,
+   "tipo": "agua_se_va",
+   "nivel": 0.22
+  },
+  {
+   "t": 19.6,
+   "dur": 2.3,
+   "tipo": "rumor_grave",
+   "nivel": 0.3
+  },
+  {
+   "t": 21.2,
+   "dur": 3.0,
+   "tipo": "monedas",
+   "nivel": 0.113
+  },
+  {
+   "t": 22.0,
+   "dur": 1.2,
+   "tipo": "impacto",
+   "nivel": 0.293
+  },
+  {
+   "t": 24.0,
+   "dur": 0.9,
+   "tipo": "whoosh",
+   "nivel": 0.55
+  },
+  {
+   "t": 24.8,
+   "dur": 2.4,
+   "tipo": "pops",
+   "nivel": 0.3
+  },
+  {
+   "t": 32.5,
+   "dur": 3.0,
+   "tipo": "papeles",
+   "nivel": 0.35
+  },
+  {
+   "t": 36.3,
+   "dur": 3.5,
+   "tipo": "pops",
+   "nivel": 0.2
+  },
+  {
+   "t": 41.6,
+   "dur": 0.6,
+   "tipo": "golpe_metal",
+   "nivel": 0.28
+  },
+  {
+   "t": 43.7,
+   "dur": 0.6,
+   "tipo": "golpe_metal",
+   "nivel": 0.28
+  },
+  {
+   "t": 46.0,
+   "dur": 0.6,
+   "tipo": "golpe_metal",
+   "nivel": 0.28
+  },
+  {
+   "t": 49.0,
+   "dur": 0.9,
+   "tipo": "whoosh",
+   "nivel": 0.5
+  },
+  {
+   "t": 51.6,
+   "dur": 0.9,
+   "tipo": "whoosh",
+   "nivel": 0.55
+  },
+  {
+   "t": 52.2,
+   "dur": 1.2,
+   "tipo": "rumor_grave",
+   "nivel": 0.3
+  },
+  {
+   "t": 53.3,
+   "dur": 0.8,
+   "tipo": "golpe_metal",
+   "nivel": 0.5
+  },
+  {
+   "t": 53.6,
+   "dur": 2.7,
+   "tipo": "valvula_cierra",
+   "nivel": 0.45
+  },
+  {
+   "t": 56.3,
+   "dur": 0.6,
+   "tipo": "whoosh",
+   "nivel": 0.45
+  },
+  {
+   "t": 59.4,
+   "dur": 0.6,
+   "tipo": "whoosh",
+   "nivel": 0.45
+  },
+  {
+   "t": 63.0,
+   "dur": 0.6,
+   "tipo": "whoosh",
+   "nivel": 0.45
+  },
+  {
+   "t": 65.8,
+   "dur": 0.5,
+   "tipo": "tono_sala",
+   "nivel": 0.5
+  },
+  {
+   "t": 67.3,
+   "dur": 3.5,
+   "tipo": "rumor_grave",
+   "nivel": 0.27
+  },
+  {
+   "t": 71.4,
+   "dur": 0.6,
+   "tipo": "whoosh",
+   "nivel": 0.4
+  },
+  {
+   "t": 72.9,
+   "dur": 0.6,
+   "tipo": "whoosh",
+   "nivel": 0.4
+  },
+  {
+   "t": 74.2,
+   "dur": 1.8,
+   "tipo": "brillo",
+   "nivel": 0.4
+  },
+  {
+   "t": 74.6,
+   "dur": 1.5,
+   "tipo": "agua_fluye",
+   "nivel": 0.293
+  },
+  {
+   "t": 77.2,
+   "dur": 3.5,
+   "tipo": "agua_fluye",
+   "nivel": 0.26
+  },
+  {
+   "t": 80.7,
+   "dur": 0.6,
+   "tipo": "whoosh",
+   "nivel": 0.45
+  },
+  {
+   "t": 81.0,
+   "dur": 2.2,
+   "tipo": "rumor_grave",
+   "nivel": 0.24
+  },
+  {
+   "t": 83.1,
+   "dur": 0.6,
+   "tipo": "whoosh",
+   "nivel": 0.4
+  },
+  {
+   "t": 83.2,
+   "dur": 2.3,
+   "tipo": "lluvia",
+   "nivel": 0.5
+  },
+  {
+   "t": 83.6,
+   "dur": 1.6,
+   "tipo": "herramientas",
+   "nivel": 0.45
+  },
+  {
+   "t": 85.3,
+   "dur": 0.6,
+   "tipo": "whoosh",
+   "nivel": 0.4
+  },
+  {
+   "t": 85.6,
+   "dur": 3.6,
+   "tipo": "agua_fluye",
+   "nivel": 0.26
+  },
+  {
+   "t": 85.8,
+   "dur": 1.2,
+   "tipo": "valvula_abre",
+   "nivel": 0.4
+  },
+  {
+   "t": 89.0,
+   "dur": 0.6,
+   "tipo": "whoosh",
+   "nivel": 0.4
+  },
+  {
+   "t": 89.4,
+   "dur": 4.5,
+   "tipo": "agua_fluye",
+   "nivel": 0.325
+  },
+  {
+   "t": 93.6,
+   "dur": 0.6,
+   "tipo": "whoosh",
+   "nivel": 0.4
+  },
+  {
+   "t": 93.8,
+   "dur": 6.0,
+   "tipo": "ambiente_ciudad",
+   "nivel": 0.245
+  },
+  {
+   "t": 99.6,
+   "dur": 0.9,
+   "tipo": "whoosh",
+   "nivel": 0.5
+  },
+  {
+   "t": 100.4,
+   "dur": 6.0,
+   "tipo": "brillo",
+   "nivel": 0.4
+  },
+  {
+   "t": 111.7,
+   "dur": 0.6,
+   "tipo": "whoosh",
+   "nivel": 0.45
+  },
+  {
+   "t": 112.0,
+   "dur": 3.6,
+   "tipo": "agua_fluye",
+   "nivel": 0.26
+  },
+  {
+   "t": 115.4,
+   "dur": 0.6,
+   "tipo": "whoosh",
+   "nivel": 0.4
+  },
+  {
+   "t": 116.4,
+   "dur": 2.0,
+   "tipo": "papeles",
+   "nivel": 0.35
+  },
+  {
+   "t": 118.3,
+   "dur": 0.5,
+   "tipo": "whoosh",
+   "nivel": 0.4
+  },
+  {
+   "t": 118.6,
+   "dur": 1.3,
+   "tipo": "agua_fluye",
+   "nivel": 0.26
+  },
+  {
+   "t": 119.6,
+   "dur": 0.5,
+   "tipo": "whoosh",
+   "nivel": 0.4
+  },
+  {
+   "t": 121.0,
+   "dur": 0.5,
+   "tipo": "whoosh",
+   "nivel": 0.4
+  },
+  {
+   "t": 122.4,
+   "dur": 0.5,
+   "tipo": "whoosh",
+   "nivel": 0.4
+  },
+  {
+   "t": 123.9,
+   "dur": 0.5,
+   "tipo": "whoosh",
+   "nivel": 0.4
+  },
+  {
+   "t": 125.5,
+   "dur": 1.1,
+   "tipo": "tono_sala",
+   "nivel": 0.5
+  },
+  {
+   "t": 126.4,
+   "dur": 0.8,
+   "tipo": "whoosh",
+   "nivel": 0.45
+  },
+  {
+   "t": 131.0,
+   "dur": 5.0,
+   "tipo": "brillo",
+   "nivel": 0.4
+  },
+  {
+   "t": 137.6,
+   "dur": 3.5,
+   "tipo": "convergen",
+   "nivel": 0.45
+  },
+  {
+   "t": 145.5,
+   "dur": 0.8,
+   "tipo": "reverso",
+   "nivel": 0.5
+  },
+  {
+   "t": 146.34,
+   "dur": 2.0,
+   "tipo": "impacto_final",
+   "nivel": 0.65
+  },
+  {
+   "t": 148.2,
+   "dur": 3.3,
+   "tipo": "impacto",
+   "nivel": 0.8
+  }
+ ]
+}

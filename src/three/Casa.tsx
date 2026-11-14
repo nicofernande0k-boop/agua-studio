@@ -63,7 +63,20 @@ export const CASA_QUIETA: TiemposCasa = {
   gota: [1e9, 1e9 + 1],
 };
 
-export function Casa({ frame, oculta, tiempos = T }: { frame: number; oculta: boolean; tiempos?: TiemposCasa }) {
+export function Casa({
+  frame,
+  oculta,
+  tiempos = T,
+  cocina,
+  sinMesa = false,
+}: {
+  frame: number;
+  oculta: boolean;
+  tiempos?: TiemposCasa;
+  cocina?: TiemposCocina;
+  /** Sin mesa ni sillas (la cocina ocupa ese lugar en la versión narrada). */
+  sinMesa?: boolean;
+}) {
   const m = useMemo(() => {
     const tejas = texturaTejas();
     tejas.center.set(0.5, 0.5);
@@ -197,6 +210,8 @@ export function Casa({ frame, oculta, tiempos = T }: { frame: number; oculta: bo
       <mesh position={[-2.3, yP(0.38), -3.2]} material={m.cama} castShadow receiveShadow>
         <boxGeometry args={[1.6, 0.55, 2.0]} />
       </mesh>
+      {!sinMesa ? (
+        <>
       <mesh position={[1.5, yP(0.75), 2.2]} material={m.mesa} castShadow receiveShadow>
         <boxGeometry args={[1.6, 0.06, 0.9]} />
       </mesh>
@@ -210,8 +225,11 @@ export function Casa({ frame, oculta, tiempos = T }: { frame: number; oculta: bo
           <boxGeometry args={[0.42, 0.9, 0.42]} />
         </mesh>
       ))}
+        </>
+      ) : null}
 
       <Bano frame={frame} tiempos={tiempos} azulejos={m.azulejos} salvia={m.salvia} damero={m.damero} />
+      {cocina ? <Cocina frame={frame} tiempos={cocina} /> : null}
 
       {/* Cielorraso + techo + tanque: se desvanecen juntos */}
       <group>
@@ -526,6 +544,171 @@ function Bano({
       <mesh material={m.alfombra} position={[2.35, PISO + 0.02, z0 + 0.95]} receiveShadow>
         <boxGeometry args={[0.7, 0.015, 0.45]} />
       </mesh>
+    </group>
+  );
+}
+
+/** Momentos de la canilla de la cocina. */
+export interface TiemposCocina {
+  abre: readonly [number, number];
+  gota: readonly [number, number];
+}
+export const COCINA_QUIETA: TiemposCocina = { abre: [1e9, 1e9 + 1], gota: [1e9, 1e9 + 1] };
+
+/** Posición del pico de la canilla de la cocina (para encuadrar la cámara). */
+export const PICO_COCINA: Vec3 = [3.05, PISO + 1.19, -1.16];
+
+/** Cocina contra la pared del baño: mesada, bacha, canilla, anafe con pava y mate. */
+export function Cocina({ frame, tiempos = COCINA_QUIETA }: { frame: number; tiempos?: TiemposCocina }) {
+  const z0 = BANO.z1 + 0.12; // cara de la pared que da a la cocina
+  const m = useMemo(() => {
+    const azulejos = texturaAzulejos();
+    azulejos.repeat.set(1.8, 0.6);
+    const pico = new THREE.TubeGeometry(
+      new THREE.CubicBezierCurve3(
+        new THREE.Vector3(0, 0.28, 0),
+        new THREE.Vector3(0, 0.46, 0.02),
+        new THREE.Vector3(0, 0.44, 0.24),
+        new THREE.Vector3(0, 0.3, 0.24),
+      ),
+      40,
+      0.016,
+      14,
+      false,
+    );
+    return {
+      mueble: mat({ color: "#f4efe6", roughness: 0.6 }),
+      mesada: mat({ color: "#3a3d42", roughness: 0.25, metalness: 0.1 }),
+      acero: mat({ color: "#c9d0d6", roughness: 0.2, metalness: 0.9 }),
+      bacha: mat({ color: "#8d959c", roughness: 0.3, metalness: 0.8 }),
+      madera: mat({ color: "#d9b48a", roughness: 0.6 }),
+      junta: mat({ color: "#b9b1a4", roughness: 0.8 }),
+      vidrio: mat({ color: "#1d2024", roughness: 0.1, metalness: 0.3 }),
+      hornalla: mat({ color: "#55595f", roughness: 0.5, metalness: 0.6 }),
+      calabaza: mat({ color: "#8a5a35", roughness: 0.6 }),
+      yerbera: mat({ color: "#e0403a", roughness: 0.4 }),
+      azulejos: mat({ map: azulejos, roughness: 0.3 }),
+      gota: mat({ color: "#bfe9ff", roughness: 0.02, metalness: 0.1, transparent: true, opacity: 0.85 }),
+      aire: mat({ color: "#ffffff", roughness: 1, transparent: true, opacity: 0.5, depthWrite: false }),
+      pico,
+    };
+  }, []);
+
+  const palanca = progreso(frame, tiempos.abre[0], tiempos.abre[1], easeInOutCubic) * 0.7;
+  const tTos = progreso(frame, tiempos.abre[1], tiempos.abre[1] + 22);
+  const vibracion = tTos > 0 && tTos < 1 ? Math.sin(frame * 2.6) * 0.004 * (1 - tTos) : 0;
+  const [g0, g1] = tiempos.gota;
+  const forma = progreso(frame, g0, g1 - 10, easeOutCubic);
+  const caida = progreso(frame, g1 - 10, g1, (t) => t * t);
+  const gotaVisible = frame >= g0 && frame < g1;
+  const tAire = progreso(frame, tiempos.abre[1] - 2, tiempos.abre[1] + 14, easeOutCubic);
+
+  const x0 = 1.95;
+  const x1 = 3.76;
+  const cx = (x0 + x1) / 2;
+  const ancho = x1 - x0;
+  const base: Vec3 = [3.05, PISO + 0.9, z0 + 0.1];
+  return (
+    <group>
+      {/* Bajo mesada y mesada */}
+      <mesh position={[cx, PISO + 0.43, z0 + 0.3]} material={m.mueble} castShadow receiveShadow>
+        <boxGeometry args={[ancho, 0.86, 0.6]} />
+      </mesh>
+      {[2.4, 2.85, 3.3].map((x) => (
+        <mesh key={x} position={[x, PISO + 0.45, z0 + 0.605]} material={m.junta}>
+          <boxGeometry args={[0.012, 0.78, 0.01]} />
+        </mesh>
+      ))}
+      <mesh position={[cx, PISO + 0.88, z0 + 0.31]} material={m.mesada} castShadow receiveShadow>
+        <boxGeometry args={[ancho + 0.04, 0.04, 0.64]} />
+      </mesh>
+      {/* Revestimiento y alacenas */}
+      <mesh position={[cx, PISO + 1.2, z0 + 0.004]} material={m.azulejos}>
+        <planeGeometry args={[ancho, 0.6]} />
+      </mesh>
+      <mesh position={[cx, PISO + 1.95, z0 + 0.18]} material={m.madera} castShadow>
+        <boxGeometry args={[ancho, 0.6, 0.35]} />
+      </mesh>
+      {/* Bacha */}
+      <mesh position={[3.05, PISO + 0.903, z0 + 0.33]} material={m.acero}>
+        <boxGeometry args={[0.6, 0.006, 0.44]} />
+      </mesh>
+      <mesh position={[3.05, PISO + 0.906, z0 + 0.34]} material={m.bacha}>
+        <boxGeometry args={[0.5, 0.004, 0.34]} />
+      </mesh>
+      {/* Anafe con pava */}
+      <mesh position={[2.3, PISO + 0.903, z0 + 0.32]} material={m.vidrio}>
+        <boxGeometry args={[0.56, 0.006, 0.48]} />
+      </mesh>
+      {[-0.13, 0.13].map((dx) => (
+        <mesh key={dx} position={[2.3 + dx, PISO + 0.908, z0 + 0.32]} rotation={[Math.PI / 2, 0, 0]} material={m.hornalla}>
+          <torusGeometry args={[0.07, 0.008, 6, 24]} />
+        </mesh>
+      ))}
+      <group position={[2.17, PISO + 0.91, z0 + 0.32]}>
+        <mesh position={[0, 0.07, 0]} material={m.acero} castShadow>
+          <cylinderGeometry args={[0.07, 0.095, 0.14, 24]} />
+        </mesh>
+        <mesh position={[0, 0.15, 0]} material={m.acero}>
+          <sphereGeometry args={[0.07, 20, 10, 0, Math.PI * 2, 0, Math.PI / 2]} />
+        </mesh>
+        <mesh position={[0.1, 0.1, 0]} rotation={[0, 0, -0.9]} material={m.acero}>
+          <cylinderGeometry args={[0.012, 0.018, 0.12, 10]} />
+        </mesh>
+        <mesh position={[0, 0.2, 0]} rotation={[0, 0, 0]} material={m.mesada}>
+          <torusGeometry args={[0.06, 0.008, 8, 20, Math.PI]} />
+        </mesh>
+      </group>
+      {/* Mate y yerbera */}
+      <group position={[2.62, PISO + 0.9, z0 + 0.42]}>
+        <mesh position={[0, 0.045, 0]} material={m.calabaza} castShadow>
+          <sphereGeometry args={[0.045, 16, 12]} />
+        </mesh>
+        <mesh position={[0.012, 0.1, 0]} rotation={[0, 0, -0.25]} material={m.acero}>
+          <cylinderGeometry args={[0.004, 0.004, 0.14, 8]} />
+        </mesh>
+        <mesh position={[0.13, 0.08, -0.06]} material={m.yerbera} castShadow>
+          <boxGeometry args={[0.1, 0.16, 0.08]} />
+        </mesh>
+      </group>
+      {/* Canilla de cocina con palanca */}
+      <group position={[base[0] + vibracion, base[1], base[2]]}>
+        <mesh material={m.acero} position={[0, 0.012, 0]}>
+          <cylinderGeometry args={[0.032, 0.036, 0.024, 20]} />
+        </mesh>
+        <mesh material={m.acero} position={[0, 0.14, 0]} castShadow>
+          <cylinderGeometry args={[0.022, 0.026, 0.28, 18]} />
+        </mesh>
+        <mesh geometry={m.pico} material={m.acero} castShadow />
+        <mesh material={m.acero} position={[0, 0.29, 0.24]}>
+          <cylinderGeometry args={[0.019, 0.019, 0.03, 14]} />
+        </mesh>
+        <group position={[0.03, 0.16, 0]} rotation={[0, 0, -palanca]}>
+          <mesh material={m.acero} position={[0.06, 0, 0]} rotation={[0, 0, Math.PI / 2]}>
+            <cylinderGeometry args={[0.008, 0.01, 0.12, 10]} />
+          </mesh>
+        </group>
+        <mesh
+          material={m.gota}
+          visible={gotaVisible}
+          position={[0, 0.275 - forma * 0.01 - caida * 0.35, 0.24]}
+          scale={[0.6 + forma * 0.4, 0.7 + forma * 0.5 + caida * 0.4, 0.6 + forma * 0.4]}
+        >
+          <sphereGeometry args={[0.016, 16, 12]} />
+        </mesh>
+        {tAire > 0 && tAire < 1
+          ? [0, 1, 2, 3, 4, 5].map((k) => {
+              const a = (k / 6) * Math.PI * 2;
+              const r = 0.014 + tAire * 0.06;
+              return (
+                <mesh key={k} material={m.aire} position={[Math.cos(a) * r, 0.27 - tAire * 0.06, 0.24 + Math.sin(a) * r]} scale={1 - tAire}>
+                  <sphereGeometry args={[0.008, 8, 6]} />
+                </mesh>
+              );
+            })
+          : null}
+      </group>
+      <pointLight position={[2.9, PISO + 2.3, -0.2]} color="#ffd2a1" intensity={4} distance={6} decay={2} />
     </group>
   );
 }

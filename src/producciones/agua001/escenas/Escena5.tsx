@@ -51,7 +51,7 @@ export function estadoE5(frame: number): EstadoEscenario {
 }
 
 /** Zanja con la cuadrilla reparando el caño maestro. */
-function Zanja({ frame }: { frame: number }) {
+export function Zanja({ frame }: { frame: number }) {
   const r = useMemo(() => {
     const t = texturaSuelo();
     t.repeat.set(2, 1);
@@ -156,7 +156,7 @@ function Zanja({ frame }: { frame: number }) {
 }
 
 /** Operador abriendo la válvula de salida en la planta. */
-function Operador({ frame }: { frame: number }) {
+export function Operador({ frame }: { frame: number }) {
   const r = useMemo(() => ({ rojo: new THREE.MeshStandardMaterial({ color: "#d33b2c", roughness: 0.35 }) }), []);
   const giro = easeInOutCubic(progreso(frame, s(5.0), s(6.2))) * Math.PI * 2;
   const mano = Math.sin(giro) * 0.15;

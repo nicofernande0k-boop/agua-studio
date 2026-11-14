@@ -4,7 +4,7 @@ import * as THREE from "three";
 import { RoomEnvironment } from "three/examples/jsm/environments/RoomEnvironment.js";
 import { clamp01, lerp, muestrearCamara, type ClaveCamara, type Vec3 } from "../lib/anim";
 import { PISO } from "../demo/escena";
-import { Casa, type TiemposCasa } from "./Casa";
+import { Casa, type TiemposCasa, type TiemposCocina } from "./Casa";
 import { Ciudad, type OpcionesCiudad } from "./Ciudad";
 import type { Tinte } from "./Instancias";
 import { RedAgua, type ConexionExtra, type PropsRed } from "./RedAgua";
@@ -32,9 +32,15 @@ export interface EstadoEscenario {
   /** Estado de la red; null para no dibujarla. */
   red?: Omit<PropsRed, "frame" | "opciones" | "extras" | "visible"> | null;
   casa?: TiemposCasa;
+  /** Cocina en la casa protagonista (versión narrada). */
+  cocina?: TiemposCocina;
   manometro?: readonly [number, number];
   /** Ocultar la ciudad (por ejemplo, para escenas fuera de ella). */
   sinCiudad?: boolean;
+  /** Cielo y sol (amanecer, madrugada, atardecer). Por defecto, día claro. */
+  cielo?: { color?: string; sol?: string; intensidad?: number; direccion?: Vec3 };
+  /** Agua por conexión domiciliaria (0..1) según su posición. */
+  conexion?: (x: number, z: number) => number;
 }
 
 export function calcularCamara(claves: ClaveCamara[], frame: number) {
@@ -76,6 +82,7 @@ export function Escenario({
 
   const rayosX = estado.rayosX ?? 0;
   const oscuridad = estado.oscuridad ?? 0;
+  scene.environmentIntensity = 0.45 * (1 - 0.8 * oscuridad);
 
   // --- Cámara ---
   const c = muestrearCamara(estado.camara, frame);
@@ -91,7 +98,7 @@ export function Escenario({
   const bajoTierra = c.pos[1] < 0 && rayosX < 0.5;
 
   // --- Cielo y niebla ---
-  const cielo = CIELO.clone().lerp(CIELO_NOCHE, oscuridad * 0.85);
+  const cielo = (estado.cielo?.color ? new THREE.Color(estado.cielo.color) : CIELO.clone()).lerp(CIELO_NOCHE, oscuridad * 0.85);
   if (!scene.fog) scene.fog = new THREE.Fog(CIELO, 90, 280);
   const fog = scene.fog as THREE.Fog;
   if (bajoTierra) {
@@ -118,7 +125,7 @@ export function Escenario({
     l.shadow.normalBias = 0.03;
     return l;
   }, []);
-  const dirSol = new THREE.Vector3(-30, 46, 24).normalize();
+  const dirSol = new THREE.Vector3(...(estado.cielo?.direccion ?? [-30, 46, 24])).normalize();
   sol.position.copy(centroSombra).addScaledVector(dirSol, 140);
   sol.target.position.copy(centroSombra);
   sol.target.updateMatrixWorld();
@@ -130,8 +137,8 @@ export function Escenario({
   sc.near = 1;
   sc.far = 320;
   sc.updateProjectionMatrix();
-  sol.intensity = bajoTierra ? 0 : 2.6 * (1 - 0.75 * oscuridad);
-  sol.color.set("#fff0d6").lerp(new THREE.Color("#9fb4ff"), oscuridad * 0.6);
+  sol.intensity = bajoTierra ? 0 : (estado.cielo?.intensidad ?? 2.6) * (1 - 0.75 * oscuridad);
+  sol.color.set(estado.cielo?.sol ?? "#fff0d6").lerp(new THREE.Color("#9fb4ff"), oscuridad * 0.6);
 
   const suelo = useMemo(() => {
     const t = texturaSuelo();
@@ -152,7 +159,7 @@ export function Escenario({
       {!estado.sinCiudad ? (
         <>
           <Ciudad frame={frame} fps={fps} oculta={bajoTierra} opciones={opciones} brillo={estado.brillo} rayosX={rayosX} />
-          <Casa frame={frame} oculta={bajoTierra} tiempos={estado.casa} />
+          <Casa frame={frame} oculta={bajoTierra} tiempos={estado.casa} cocina={estado.cocina} sinMesa={!!estado.cocina} />
           <Subsuelo frame={frame} oculto={!bajoTierra} sinRed={!!red} manometro={estado.manometro} />
           {/* Fondo de tierra bajo el suelo transparente */}
           <mesh rotation={[-Math.PI / 2, 0, 0]} position={[0, -4.8, 0]} material={suelo} visible={!bajoTierra && rayosX > 0.02}>
@@ -160,7 +167,7 @@ export function Escenario({
           </mesh>
         </>
       ) : null}
-      {red ? <RedAgua frame={frame} {...red} visible={verRed} opciones={opciones} extras={conexiones} /> : null}
+      {red ? <RedAgua frame={frame} {...red} visible={verRed} opciones={opciones} extras={conexiones} conexion={estado.conexion} /> : null}
       {children?.({ bajoTierra, camara: c.pos })}
     </>
   );

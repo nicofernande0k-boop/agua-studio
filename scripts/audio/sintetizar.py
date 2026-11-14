@@ -23,9 +23,18 @@ from pathlib import Path
 import numpy as np
 
 SR = 48000
-carpeta = Path(sys.argv[1] if len(sys.argv) > 1 else "producciones/001-agua")
-tiempos = json.loads((carpeta / "tiempos.json").read_text())
-sonido = json.loads((carpeta / "sonido.json").read_text())
+import argparse
+
+_p = argparse.ArgumentParser(description="Música, efectos y mezcla de AGUA STUDIO")
+_p.add_argument("carpeta", nargs="?", default="producciones/001-agua")
+_p.add_argument("--tiempos", default="tiempos.json")
+_p.add_argument("--sonido", default="sonido.json")
+_p.add_argument("--voz", default=None, help="narración completa (se ubica en desfaseVoz de los tiempos)")
+_p.add_argument("--salida", default="mezcla.wav")
+ARGS = _p.parse_args()
+carpeta = Path(ARGS.carpeta)
+tiempos = json.loads((carpeta / ARGS.tiempos).read_text())
+sonido = json.loads((carpeta / ARGS.sonido).read_text())
 DUR = float(tiempos["duracion"])
 N = int(DUR * SR)
 rng = np.random.default_rng(2025)
@@ -275,14 +284,28 @@ def musica():
         elif est == "epico":
             prog = [[41, 48, 53, 57, 60], [43, 50, 55, 59, 62], [45, 52, 57, 60, 64], [48, 55, 60, 64, 67]]
             seg = 3.0
-            for k, ac in enumerate(prog):
-                pegar(m, pad(ac, seg + 1.0, brillo=1800 + k * 500, nivel=0.13 + k * 0.02), a + k * seg, nv)
+            final = sec.get("final", min(12.0, d - 3.5))
+            k = 0
+            while k * seg < final - 0.5:
+                ac = prog[k % 4]
+                crece = min(1.0, k * seg / max(final, 1))
+                pegar(m, pad(ac, min(seg + 1.0, final - k * seg + 1.0), brillo=1800 + 1400 * crece, nivel=0.13 + 0.06 * crece), a + k * seg, nv)
                 pegar(m, bajo_pulso(ac[0] - 12, 2.5, 0.35), a + k * seg, nv)
-            # acorde final sostenido bajo el título
-            final = b - (a + 12.0)
-            pegar(m, pad([36, 48, 55, 60, 64, 67, 72], final, brillo=3200, nivel=0.2), a + 12.0, nv)
-            pegar(m, campana(84, 0.08, 4), a + 12.2, nv, pan=0.4)
-            pegar(m, campana(79, 0.08, 4), a + 12.5, nv, pan=-0.4)
+                k += 1
+            if final < d - 0.3:
+                resto = b - (a + final)
+                pegar(m, pad([36, 48, 55, 60, 64, 67, 72], resto, brillo=3200, nivel=0.2), a + final, nv)
+                pegar(m, campana(84, 0.08, 4), a + final + 0.2, nv, pan=0.4)
+                pegar(m, campana(79, 0.08, 4), a + final + 0.5, nv, pan=-0.4)
+            for g in sec.get("golpes", []):
+                pegar(m, timbal(0.9, 2.6), g, nv)
+        elif est == "emotivo":
+            prog = [[53, 57, 60], [48, 52, 55], [50, 53, 57], [46, 50, 53]]
+            seg = d / 4
+            for k, ac in enumerate(prog):
+                pegar(m, pad([ac[0] - 12] + ac, seg + 0.8, brillo=1600 + 300 * k, nivel=0.12 + 0.02 * k), a + k * seg, nv)
+                for j, nota in enumerate(ac + [ac[1] + 12]):
+                    pegar(m, piano(nota + 12, 2.2, 0.13), a + k * seg + j * seg / 4, nv, pan=-0.3 + 0.2 * j)
     # Corte en seco del "silencio repentino" (fin de la música del inicio).
     return m
 
@@ -342,6 +365,14 @@ def fx(tipo, dur):
                 tt = np.arange(w) / SR
                 y[c : c + w] += np.sin(2 * np.pi * np.cumsum(260 + 300 * np.exp(-tt * 12)) / SR) * np.exp(-tt * 14) * 0.35
         return y * env_adsr(n, 0.2, 0.1, 1, dur * 0.4)
+    if tipo == "lluvia":
+        base = fft_filtrar(ruido(n), bajo=500, alto=7000) * 1.4
+        for k in range(int(dur * 40)):
+            c = int(rng.uniform(0, dur - 0.02) * SR)
+            w = int(0.012 * SR)
+            if c + w < n:
+                base[c : c + w] += rng.standard_normal(w) * np.hanning(w) * 0.6
+        return base * env_adsr(n, 0.25, 0.1, 1, 0.4)
     if tipo == "tono_sala":
         # Silencio "habitado": casi imperceptible, evita el cero digital absoluto.
         return fft_filtrar(ruido(n, "marron"), alto=400) * env_adsr(n, 0.3, 0.1, 1, 0.4) * 0.05
@@ -457,30 +488,57 @@ def main():
     m = reverb(musica(), 2.8, 0.3)
     e = reverb(efectos(), 1.6, 0.18)
 
-    # Locución (opcional): voz/e1-1.wav, voz/e2-1.wav, ... en el orden del guion.
     voz = np.zeros((2, N))
     hay_voz = False
-    guion = json.loads((carpeta / "guion.json").read_text())
-    for esc in tiempos["escenas"]:
-        g = next(x for x in guion["escenas"] if x["id"] == esc["id"])
-        for k, frase in enumerate(g["narracion"]):
-            p = carpeta / "voz" / f"{esc['id']}-{k + 1}.wav"
-            if p.exists():
-                pegar(voz, leer_wav(p), esc["inicio"] + frase["inicio"], 1.0)
-                hay_voz = True
+    if ARGS.voz:
+        import subprocess
+        crudo = subprocess.run(["ffmpeg", "-v", "error", "-i", str(carpeta / ARGS.voz), "-ac", "1", "-ar", str(SR), "-f", "f64le", "-"], capture_output=True, check=True).stdout
+        v = np.frombuffer(crudo, dtype=np.float64)
+        activo = np.abs(v) > 0.02
+        rms_activo = np.sqrt(np.mean(v[activo] ** 2)) if activo.any() else 0.1
+        v = v * (0.11 / max(rms_activo, 1e-6))
+        pegar(voz, v / 1.414, float(tiempos.get("desfaseVoz", 0.0)), 1.0)
+        hay_voz = True
+    else:
+        # Locución por frases (opcional): voz/e1-1.wav, voz/e2-1.wav, ...
+        guion = json.loads((carpeta / "guion.json").read_text())
+        for esc in tiempos["escenas"]:
+            g = next((x for x in guion["escenas"] if x["id"] == esc["id"]), None)
+            if not g:
+                continue
+            for k, frase in enumerate(g["narracion"]):
+                p = carpeta / "voz" / f"{esc['id']}-{k + 1}.wav"
+                if p.exists():
+                    pegar(voz, leer_wav(p), esc["inicio"] + frase["inicio"], 1.0)
+                    hay_voz = True
 
-    # Ducking: la música baja ~8 dB cuando hay narración (o habría).
+    # Ducking: la música y los efectos bajan según la energía real de la voz.
     ducking = np.ones(N)
+    ducking_fx = np.ones(N)
     if hay_voz:
-        for b in tiempos["bloques"]:
-            i, j = int((b["inicio"] - 0.15) * SR), int((b["fin"] + 0.25) * SR)
-            ducking[max(i, 0) : j] = 0.4
-        ducking = np.convolve(ducking, np.ones(int(0.12 * SR)) / int(0.12 * SR), mode="same")
+        ventana = int(0.05 * SR)
+        energia = np.convolve(np.abs(voz[0]) + np.abs(voz[1]), np.ones(ventana) / ventana, mode="same")
+        energia = np.clip(energia / (np.percentile(energia[energia > 1e-4], 90) + 1e-9), 0, 1)
+        suave = int(0.35 * SR)
+        energia = np.convolve(energia, np.ones(suave) / suave, mode="same")
+        energia = np.clip(energia * 1.6, 0, 1)
+        ducking = 1 - 0.86 * energia
+        ducking_fx = 1 - 0.7 * energia
 
-    mezcla = m * ducking * 0.9 + e * 0.85 + voz * 1.0
+    def rms(x):
+        return np.sqrt(np.mean(x**2)) + 1e-9
+
+    m = m * (0.045 / rms(m))
+    e = e * (0.02 / rms(e))
+    mezcla = m * ducking + e * ducking_fx + voz
     escribir_wav(salida / "musica.wav", normalizar(m, 0.7))
     escribir_wav(salida / "efectos.wav", normalizar(e, 0.7))
-    escribir_wav(salida / "mezcla.wav", normalizar(mezcla, 0.89))
+    escala = 0.89 / (np.abs(mezcla).max() + 1e-9)
+    escribir_wav(salida / ARGS.salida, mezcla * escala)
+    if hay_voz:
+        # Pistas por separado (misma escala) para medir la relación voz/fondo.
+        escribir_wav(salida / ARGS.salida.replace(".wav", "-voz.wav"), voz * escala)
+        escribir_wav(salida / ARGS.salida.replace(".wav", "-fondo.wav"), (m * ducking + e * ducking_fx) * escala)
     print(f"Audio generado en {salida} · {DUR} s · locución: {'sí' if hay_voz else 'no (pendiente)'}")
 
 

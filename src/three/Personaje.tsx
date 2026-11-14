@@ -27,7 +27,18 @@ export interface Pose {
   bajar?: number;
 }
 
-export type Herramienta = "llave" | "pala" | "linterna" | "tablet" | null;
+export type Herramienta = "llave" | "pala" | "linterna" | "tablet" | "vaso" | null;
+
+/** Ropa: por defecto, de trabajo (overol, chaleco, casco). */
+export interface Ropa {
+  torso: string;
+  piernas: string;
+  chaleco?: boolean;
+  casco?: boolean;
+  pelo?: string;
+}
+
+export const ROPA_TRABAJO: Ropa = { torso: "#24406b", piernas: "#24406b", chaleco: true, casco: true };
 
 const PIEL = ["#c68c5d", "#8d5a3b", "#e0ac7e", "#a8714b", "#f0c9a0"];
 
@@ -39,6 +50,7 @@ export function Trabajador({
   casco = "#f7f7f2",
   herramienta = null,
   escala = 1,
+  ropa = ROPA_TRABAJO,
 }: {
   position: Vec3;
   rotacion?: number;
@@ -47,10 +59,14 @@ export function Trabajador({
   casco?: string;
   herramienta?: Herramienta;
   escala?: number;
+  ropa?: Ropa;
 }) {
   const r = useMemo(
     () => ({
-      overol: new THREE.MeshStandardMaterial({ color: "#24406b", roughness: 0.85 }),
+      overol: new THREE.MeshStandardMaterial({ color: ropa.piernas, roughness: 0.85 }),
+      remera: new THREE.MeshStandardMaterial({ color: ropa.torso, roughness: 0.85 }),
+      pelo: new THREE.MeshStandardMaterial({ color: ropa.pelo ?? "#2b1d14", roughness: 0.9 }),
+      vaso: new THREE.MeshStandardMaterial({ color: "#dff4ff", roughness: 0.05, transparent: true, opacity: 0.55 }),
       chaleco: new THREE.MeshStandardMaterial({ color: "#ff7a1a", roughness: 0.7 }),
       reflectivo: new THREE.MeshStandardMaterial({ color: "#eef3f3", roughness: 0.3, emissive: "#ffffff", emissiveIntensity: 0.25 }),
       piel: new THREE.MeshStandardMaterial({ color: PIEL[piel % PIEL.length], roughness: 0.7 }),
@@ -63,7 +79,7 @@ export function Trabajador({
       pantalla: new THREE.MeshBasicMaterial({ color: "#7fd8ff", toneMapped: false }),
       luz: new THREE.MeshBasicMaterial({ color: "#fff3c4", toneMapped: false }),
     }),
-    [piel, casco],
+    [piel, casco, ropa],
   );
   const p = {
     hombroD: [0, 0], hombroI: [0, 0], codoD: 0, codoI: 0, caderaD: 0, caderaI: 0,
@@ -88,11 +104,11 @@ export function Trabajador({
 
   const brazo = (lado: 1 | -1, hombro: [number, number], codo: number, mano: Herramienta) => (
     <group position={[lado * 0.27, 1.38, 0]} rotation={[-hombro[0], 0, lado * hombro[1]]}>
-      <mesh position={[0, -0.15, 0]} material={r.overol} castShadow>
+      <mesh position={[0, -0.15, 0]} material={r.remera} castShadow>
         <capsuleGeometry args={[0.065, 0.2, 4, 10]} />
       </mesh>
       <group position={[0, -0.3, 0]} rotation={[-codo, 0, 0]}>
-        <mesh position={[0, -0.13, 0]} material={r.overol} castShadow>
+        <mesh position={[0, -0.13, 0]} material={r.remera} castShadow>
           <capsuleGeometry args={[0.058, 0.18, 4, 10]} />
         </mesh>
         <mesh position={[0, -0.28, 0]} material={r.guante}>
@@ -116,6 +132,11 @@ export function Trabajador({
             <mesh material={r.luz} position={[0, 0.095, 0]}><cylinderGeometry args={[0.04, 0.03, 0.02, 12]} /></mesh>
           </group>
         ) : null}
+        {mano === "vaso" ? (
+          <mesh material={r.vaso} position={[0, -0.33, 0.06]}>
+            <cylinderGeometry args={[0.045, 0.035, 0.12, 14, 1, true]} />
+          </mesh>
+        ) : null}
         {mano === "tablet" ? (
           <group position={[0, -0.33, 0.1]} rotation={[0.9, 0, 0]}>
             <mesh material={r.bota}><boxGeometry args={[0.26, 0.02, 0.18]} /></mesh>
@@ -134,17 +155,21 @@ export function Trabajador({
         <group position={[0, 0.9, 0]} rotation={[p.torso, 0, 0]}>
           <group position={[0, -0.9, 0]}>
             {/* Torso: overol + chaleco con bandas */}
-            <mesh position={[0, 1.15, 0]} material={r.overol} castShadow>
+            <mesh position={[0, 1.15, 0]} material={r.remera} castShadow>
               <boxGeometry args={[0.44, 0.56, 0.25]} />
             </mesh>
-            <mesh position={[0, 1.2, 0]} material={r.chaleco} castShadow>
-              <boxGeometry args={[0.46, 0.42, 0.27]} />
-            </mesh>
-            {[1.1, 1.26].map((y) => (
-              <mesh key={y} position={[0, y, 0]} material={r.reflectivo}>
-                <boxGeometry args={[0.47, 0.035, 0.28]} />
-              </mesh>
-            ))}
+            {ropa.chaleco ? (
+              <>
+                <mesh position={[0, 1.2, 0]} material={r.chaleco} castShadow>
+                  <boxGeometry args={[0.46, 0.42, 0.27]} />
+                </mesh>
+                {[1.1, 1.26].map((y) => (
+                  <mesh key={y} position={[0, y, 0]} material={r.reflectivo}>
+                    <boxGeometry args={[0.47, 0.035, 0.28]} />
+                  </mesh>
+                ))}
+              </>
+            ) : null}
             {brazo(1, p.hombroD, p.codoD, herramienta)}
             {brazo(-1, p.hombroI, p.codoI, null)}
             {/* Cabeza, cara y casco */}
@@ -160,12 +185,20 @@ export function Trabajador({
                   <sphereGeometry args={[0.014, 8, 6]} />
                 </mesh>
               ))}
-              <mesh position={[0, 0.045, 0]} material={r.casco} castShadow>
-                <sphereGeometry args={[0.135, 20, 12, 0, Math.PI * 2, 0, Math.PI / 2]} />
-              </mesh>
-              <mesh position={[0, 0.05, 0.04]} material={r.casco}>
-                <cylinderGeometry args={[0.165, 0.165, 0.02, 24]} />
-              </mesh>
+              {ropa.casco ? (
+                <>
+                  <mesh position={[0, 0.045, 0]} material={r.casco} castShadow>
+                    <sphereGeometry args={[0.135, 20, 12, 0, Math.PI * 2, 0, Math.PI / 2]} />
+                  </mesh>
+                  <mesh position={[0, 0.05, 0.04]} material={r.casco}>
+                    <cylinderGeometry args={[0.165, 0.165, 0.02, 24]} />
+                  </mesh>
+                </>
+              ) : (
+                <mesh position={[0, 0.02, -0.01]} material={r.pelo}>
+                  <sphereGeometry args={[0.127, 20, 12, 0, Math.PI * 2, 0, Math.PI / 1.8]} />
+                </mesh>
+              )}
             </group>
           </group>
         </group>

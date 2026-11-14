@@ -222,3 +222,42 @@ export function texturaBandera() {
   tex.wrapS = tex.wrapT = THREE.ClampToEdgeWrapping;
   return tex;
 }
+
+/** Sol de Mayo simplificado (sin rostro), con rayos rectos y ondulados. */
+export function texturaSol() {
+  const tex = lienzo(512, 512, (c) => {
+    const g = c.createRadialGradient(256, 256, 40, 256, 256, 250);
+    g.addColorStop(0, "rgba(255,214,90,0.9)");
+    g.addColorStop(0.35, "rgba(246,180,14,0.35)");
+    g.addColorStop(1, "rgba(246,180,14,0)");
+    c.fillStyle = g;
+    c.fillRect(0, 0, 512, 512);
+    c.strokeStyle = "#f6b40e";
+    c.lineCap = "round";
+    for (let i = 0; i < 32; i++) {
+      const a = (i / 32) * Math.PI * 2;
+      c.lineWidth = 9;
+      c.beginPath();
+      if (i % 2 === 0) {
+        c.moveTo(256 + Math.cos(a) * 90, 256 + Math.sin(a) * 90);
+        c.lineTo(256 + Math.cos(a) * 200, 256 + Math.sin(a) * 200);
+      } else {
+        for (let k = 0; k <= 12; k++) {
+          const r = 90 + k * 8.5;
+          const off = Math.sin(k * 1.4) * 0.05;
+          const x = 256 + Math.cos(a + off) * r;
+          const y = 256 + Math.sin(a + off) * r;
+          if (k === 0) c.moveTo(x, y);
+          else c.lineTo(x, y);
+        }
+      }
+      c.stroke();
+    }
+    c.fillStyle = "#f6b40e";
+    c.beginPath();
+    c.arc(256, 256, 80, 0, Math.PI * 2);
+    c.fill();
+  });
+  tex.wrapS = tex.wrapT = THREE.ClampToEdgeWrapping;
+  return tex;
+}

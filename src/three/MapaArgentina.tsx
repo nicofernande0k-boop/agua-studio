@@ -1,7 +1,7 @@
 import { useMemo } from "react";
 import * as THREE from "three";
 import { clamp01, crearAzar, easeInOutCubic, easeOutBack, easeOutCubic, progreso, type Vec3 } from "../lib/anim";
-import { texturaTexto } from "./texturas";
+import { texturaSol, texturaTexto } from "./texturas";
 
 /**
  * Mapa tridimensional de la República Argentina, estilizado: contorno
@@ -112,7 +112,26 @@ export interface EstadoMapa {
   empresas: number;
   /** 0..1 redes que titilan (conflictos), solo en algunas ciudades. */
   tension: number;
+  /** 0..1 carteles con las promesas (inversiones, servicio mejor, futuro diferente). */
+  promesas?: number;
+  /** 0..1 los carteles giran y muestran «?». */
+  pregunta?: number;
+  /** 0..1 líneas de luz que unen las ciudades. */
+  luzRed?: number;
+  /** 0..1 el país se ilumina en celeste y blanco (soberanía). */
+  soberania?: number;
+  /** 0..1 trabajadores junto a las ciudades. */
+  trabajadores?: number;
+  /** 0..1 ocultar línea de tiempo, contratos y empresas (otra secuencia). */
+  limpiar?: number;
 }
+
+const PROMESAS = ["INVERSIONES", "SERVICIO MEJOR", "FUTURO DIFERENTE"];
+const POS_CARTELES: Vec3[] = [
+  [1, ALTO_MAPA, -30],
+  [3, ALTO_MAPA, -20],
+  [1, ALTO_MAPA, -10],
+];
 
 export function MapaArgentina({ frame, estado }: { frame: number; estado: EstadoMapa }) {
   const r = useMemo(() => {
@@ -158,6 +177,35 @@ export function MapaArgentina({ frame, estado }: { frame: number; estado: Estado
       regla: new THREE.MeshStandardMaterial({ color: "#f4f1e8", roughness: 0.6 }),
       noventa: new THREE.MeshStandardMaterial({ color: "#ff8a3d", emissive: "#ff6a00", emissiveIntensity: 0.6, roughness: 0.4 }),
       etiqueta,
+      cartel: new THREE.MeshStandardMaterial({ color: "#ffffff", roughness: 0.6 }),
+      poste: new THREE.MeshStandardMaterial({ color: "#3b4148", roughness: 0.5, metalness: 0.5 }),
+      frentes: PROMESAS.map((p) => new THREE.MeshBasicMaterial({ map: texturaTexto(p, { ancho: 768, alto: 256, tamano: 84, color: "#0f2236", fondo: "#ffffff", borde: "#74acdf" }), toneMapped: false })),
+      dorso: new THREE.MeshBasicMaterial({ map: texturaTexto("?", { ancho: 768, alto: 256, tamano: 210, color: "#ffffff", fondo: "#e0403a" }), toneMapped: false }),
+      arcos: (() => {
+        // Cadena de ciudades vecinas: cada una se une con la más cercana ya conectada.
+        const pts = CIUDADES.map((c) => proyectar(c.lon, c.lat));
+        const unidos = [0];
+        const tubos: THREE.TubeGeometry[] = [];
+        while (unidos.length < pts.length) {
+          let mejor = [-1, -1, Infinity];
+          for (let i = 0; i < pts.length; i++) {
+            if (unidos.includes(i)) continue;
+            for (const j of unidos) {
+              const d = Math.hypot(pts[i][0] - pts[j][0], pts[i][1] - pts[j][1]);
+              if (d < mejor[2]) mejor = [i, j, d];
+            }
+          }
+          const [i, j, d] = mejor;
+          unidos.push(i);
+          const a = new THREE.Vector3(pts[j][0], ALTO_MAPA + 0.3, pts[j][1]);
+          const b = new THREE.Vector3(pts[i][0], ALTO_MAPA + 0.3, pts[i][1]);
+          const medio = a.clone().add(b).multiplyScalar(0.5).setY(ALTO_MAPA + 0.6 + d * 0.22);
+          tubos.push(new THREE.TubeGeometry(new THREE.QuadraticBezierCurve3(a, medio, b), 32, 0.16, 6, false));
+        }
+        return tubos;
+      })(),
+      luz: new THREE.MeshBasicMaterial({ color: "#7fdcff", toneMapped: false, transparent: true, blending: THREE.AdditiveBlending, depthWrite: false }),
+      sol: new THREE.SpriteMaterial({ map: texturaSol(), toneMapped: false, transparent: true, depthWrite: false }),
       casas: CIUDADES.map((c, i) => {
         const az = crearAzar(100 + i);
         const n = Math.round(5 + c.tamano * 5);
@@ -174,12 +222,24 @@ export function MapaArgentina({ frame, estado }: { frame: number; estado: Estado
   const pasoCiudad = (i: number) => easeOutBack(progreso(estado.ciudades, i / CIUDADES.length * 0.7, i / CIUDADES.length * 0.7 + 0.3));
   r.redTension.opacity = 1 - estado.tension * (0.45 + 0.45 * Math.sin(frame * 0.5));
 
+  const sob = estado.soberania ?? 0;
+  const limpiar = estado.limpiar ?? 0;
+  r.tierra.color.set("#dfe9c8").lerp(new THREE.Color("#8cc4ef"), sob * 0.85);
+  r.tierra.emissive.set("#74acdf");
+  r.tierra.emissiveIntensity = sob * (0.25 + 0.1 * Math.sin(frame * 0.15));
+  r.luz.opacity = 0.9;
+  r.arcos.forEach((g, i) => {
+    const p = progreso(estado.luzRed ?? 0, (i / r.arcos.length) * 0.75, (i / r.arcos.length) * 0.75 + 0.25);
+    const total = g.index ? g.index.count : 0;
+    g.setDrawRange(0, Math.floor((total * p) / 36) * 36);
+  });
+
   // Línea de tiempo sobre el Atlántico Sur.
   const xLinea = 22;
   const zIni = -6;
   const zFin = 40;
   const anio = (a: number) => zIni + ((a - 1980) / 30) * (zFin - zIni);
-  const lt = estado.lineaTiempo;
+  const lt = estado.lineaTiempo * (1 - limpiar);
   const resalte = easeInOutCubic(progreso(lt, 0.35, 0.8));
 
   return (
@@ -229,9 +289,44 @@ export function MapaArgentina({ frame, estado }: { frame: number; estado: Estado
         );
       })}
 
+      {/* Red de luz entre ciudades */}
+      {(estado.luzRed ?? 0) > 0 ? r.arcos.map((g, i) => <mesh key={i} geometry={g} material={r.luz} />) : null}
+
+      {/* Carteles con las promesas, que giran para mostrar la pregunta */}
+      {PROMESAS.map((_, i) => {
+        const s = easeOutBack(progreso(estado.promesas ?? 0, i * 0.3, i * 0.3 + 0.25)) * (1 - limpiar);
+        if (s <= 0.001) return null;
+        const giro = easeInOutCubic(progreso(estado.pregunta ?? 0, i * 0.12, i * 0.12 + 0.6)) * Math.PI;
+        return (
+          <group key={i} position={POS_CARTELES[i]} scale={s}>
+            {[-3.2, 3.2].map((x) => (
+              <mesh key={x} position={[x, 3, 0]} material={r.poste}>
+                <cylinderGeometry args={[0.18, 0.18, 6, 10]} />
+              </mesh>
+            ))}
+            <group position={[0, 6.6, 0]} rotation={[0, giro, 0]}>
+              <mesh material={r.cartel}>
+                <boxGeometry args={[9.4, 3.2, 0.3]} />
+              </mesh>
+              <mesh material={r.frentes[i]} position={[0, 0, 0.16]}>
+                <planeGeometry args={[9.2, 3.0]} />
+              </mesh>
+              <mesh material={r.dorso} position={[0, 0, -0.16]} rotation={[0, Math.PI, 0]}>
+                <planeGeometry args={[9.2, 3.0]} />
+              </mesh>
+            </group>
+          </group>
+        );
+      })}
+
+      {/* Sol de Mayo sobre el país iluminado */}
+      {sob > 0.01 ? (
+        <sprite material={r.sol} position={[2, 26 + 6 * sob, -6]} scale={[18 * sob, 18 * sob, 1]} />
+      ) : null}
+
       {/* Símbolos de empresas privadas (solo en algunas ciudades) */}
       {CIUDADES.filter((c) => c.empresa).map((c, i) => {
-        const s = easeOutBack(progreso(estado.empresas, i * 0.09, i * 0.09 + 0.35));
+        const s = easeOutBack(progreso(estado.empresas, i * 0.09, i * 0.09 + 0.35)) * (1 - limpiar);
         if (s <= 0.001) return null;
         const [x, z] = proyectar(c.lon, c.lat);
         return (
@@ -254,7 +349,7 @@ export function MapaArgentina({ frame, estado }: { frame: number; estado: Estado
       {/* Contratos que caen y se apoyan sobre el mapa */}
       {["Buenos Aires", "Córdoba", "Mendoza", "Salta", "Santa Fe", "Corrientes"].map((n, i) => {
         const t = progreso(estado.contratos, i * 0.1, i * 0.1 + 0.45);
-        if (t <= 0) return null;
+        if (t <= 0 || limpiar > 0.5) return null;
         const [x, , z] = posCiudad(n);
         const caida = easeOutCubic(t);
         const y = ALTO_MAPA + 0.2 + (1 - caida) * 22;

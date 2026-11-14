@@ -31,19 +31,39 @@ on:
         description: "Escala del render (1 = 1080×1920)"
         required: true
         default: "1"
+      tiempos:
+        description: "Archivo de tiempos (tiempos.json o tiempos-narrada.json)"
+        required: true
+        default: "tiempos.json"
+      sonido:
+        description: "Hoja de sonido (sonido.json o sonido-narrada.json)"
+        required: true
+        default: "sonido.json"
+      voz:
+        description: "Narración completa dentro de la carpeta (vacío = sin voz)"
+        required: false
+        default: ""
+      etiqueta:
+        description: "Release donde publicar (vacío = produccion-<carpeta>)"
+        required: false
+        default: ""
 
 permissions:
   contents: write
 
 # Una sola ejecución por producción: si se lanza otra, la anterior se cancela.
 concurrency:
-  group: produccion-${{ inputs.produccion }}
+  group: produccion-${{ inputs.produccion }}-${{ inputs.tiempos }}
   cancel-in-progress: true
 
 env:
   PRODUCCION: ${{ inputs.produccion }}
   COMPOSICION: ${{ inputs.composicion }}
   ESCALA: ${{ inputs.escala }}
+  TIEMPOS: ${{ inputs.tiempos }}
+  SONIDO: ${{ inputs.sonido }}
+  VOZ: ${{ inputs.voz }}
+  ETIQUETA: ${{ inputs.etiqueta != '' && inputs.etiqueta || format('produccion-{0}', inputs.produccion) }}
 
 jobs:
   preparar:
@@ -56,18 +76,28 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22
-      - name: Verificar que tiempos.json coincide con el guion
+      - name: Verificar que los tiempos coinciden con el guion o la voz
         run: |
-          node scripts/temporizar.mjs "producciones/$PRODUCCION"
-          git diff --exit-code "producciones/$PRODUCCION" || (echo "::error::tiempos.json desactualizado: correr node scripts/temporizar.mjs y subir el resultado" && exit 1)
-      - name: Armar segmentos (uno por escena)
+          if [ "$TIEMPOS" = "tiempos-narrada.json" ]; then
+            sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+            node scripts/alinear-voz.mjs "producciones/$PRODUCCION"
+          else
+            node scripts/temporizar.mjs "producciones/$PRODUCCION"
+          fi
+          if [ "$TIEMPOS" = "tiempos-narrada.json" ]; then
+            git diff --quiet "producciones/$PRODUCCION" || echo "::warning::La alineación recalculada en GitHub difiere levemente; se usa la versión del repositorio."
+            git checkout -- "producciones/$PRODUCCION"
+          else
+            git diff --exit-code "producciones/$PRODUCCION" || (echo "::error::$TIEMPOS desactualizado: regenerarlo y subir el resultado" && exit 1)
+          fi
+      - name: Armar segmentos (hasta 300 fotogramas cada uno)
         id: segmentos
         run: |
           lista=$(node -e '
-            const t = require("./producciones/" + process.env.PRODUCCION + "/tiempos.json");
-            const s = t.escenas.map(e => ({ id: e.id, desde: e.desde, hasta: e.desde + e.frames - 1 }));
-            const total = s.at(-1).hasta + 1;
-            if (total !== t.frames) { console.error("Los segmentos no cubren el video"); process.exit(1); }
+            const t = require("./producciones/" + process.env.PRODUCCION + "/" + process.env.TIEMPOS);
+            const s = [];
+            for (let d = 0, k = 1; d < t.frames; d += 300, k++) s.push({ id: "s" + String(k).padStart(2, "0"), desde: d, hasta: Math.min(t.frames, d + 300) - 1 });
+            if (s.at(-1).hasta + 1 !== t.frames) { console.error("Los segmentos no cubren el video"); process.exit(1); }
             console.log(JSON.stringify(s));')
           echo "lista=$lista" >> "$GITHUB_OUTPUT"
           echo "### Segmentos" >> "$GITHUB_STEP_SUMMARY"
@@ -79,7 +109,7 @@ jobs:
     timeout-minutes: 60
     strategy:
       fail-fast: true
-      max-parallel: 6
+      max-parallel: 20
       matrix:
         segmento: ${{ fromJSON(needs.preparar.outputs.segmentos) }}
     steps:
@@ -118,28 +148,31 @@ jobs:
           pattern: segmento-*
           path: out/segmentos
           merge-multiple: true
-      - name: Banda sonora (sintetizada, sin samples)
-        run: python3 scripts/audio/sintetizar.py "producciones/$PRODUCCION"
+      - name: Banda sonora (sintetizada, sin samples) y mezcla con la voz
+        run: |
+          extra=""
+          if [ -n "$VOZ" ]; then extra="--voz $VOZ"; fi
+          python3 scripts/audio/sintetizar.py "producciones/$PRODUCCION" --tiempos "$TIEMPOS" --sonido "$SONIDO" --salida mezcla-final.wav $extra
       - name: Unir segmentos y agregar audio
         run: |
           echo '${{ needs.preparar.outputs.segmentos }}' | jq -r '.[] | "file segmentos/\(.id).mp4"' > out/lista.txt
           cat out/lista.txt
           ffmpeg -v error -y -f concat -safe 0 -i out/lista.txt -c copy out/video-mudo.mp4
-          ffmpeg -v error -y -i out/video-mudo.mp4 -i "producciones/$PRODUCCION/audio/mezcla.wav" \
+          ffmpeg -v error -y -i out/video-mudo.mp4 -i "producciones/$PRODUCCION/audio/mezcla-final.wav" \
             -map 0:v -map 1:a -c:v copy \
             -af "loudnorm=I=-14:TP=-1.5:LRA=11,aresample=48000" -c:a aac -b:a 192k \
             -shortest -movflags +faststart "out/$PRODUCCION.mp4"
       - name: Verificar el MP4 final
-        run: node scripts/verificar-video.mjs "out/$PRODUCCION.mp4" "producciones/$PRODUCCION/tiempos.json" | tee -a "$GITHUB_STEP_SUMMARY"
+        run: node scripts/verificar-video.mjs "out/$PRODUCCION.mp4" "producciones/$PRODUCCION/$TIEMPOS" | tee -a "$GITHUB_STEP_SUMMARY"
       - name: Portada y hoja de contacto por escena
         run: |
           node -e '
-            const t = require("./producciones/" + process.env.PRODUCCION + "/tiempos.json");
+            const t = require("./producciones/" + process.env.PRODUCCION + "/" + process.env.TIEMPOS);
             for (const e of t.escenas) console.log(e.id, ((e.inicio + e.duracion * 0.6)).toFixed(2));
           ' | while read id seg; do
             ffmpeg -v error -y -ss "$seg" -i "out/$PRODUCCION.mp4" -frames:v 1 -vf scale=360:-1 "out/hoja-$id.jpg"
           done
-          montage out/hoja-e*.jpg -tile 6x1 -geometry +4+4 -background '#111' "out/$PRODUCCION-escenas.jpg"
+          montage out/hoja-*.jpg -tile 8x1 -geometry +4+4 -background '#111' "out/$PRODUCCION-escenas.jpg"
           ffmpeg -v error -y -ss 4 -i "out/$PRODUCCION.mp4" -frames:v 1 "out/$PRODUCCION-portada.jpg"
       - uses: actions/upload-artifact@v4
         with:
@@ -148,19 +181,22 @@ jobs:
             out/${{ env.PRODUCCION }}.mp4
             out/${{ env.PRODUCCION }}-escenas.jpg
           retention-days: 30
-      - name: Publicar en la Release «produccion-${{ env.PRODUCCION }}»
+      - name: Publicar en la Release «${{ env.ETIQUETA }}»
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          etiqueta="produccion-$PRODUCCION"
+          etiqueta="$ETIQUETA"
           gh release delete "$etiqueta" --yes --cleanup-tag || true
-          cp "producciones/$PRODUCCION/subtitulos.srt" "out/$PRODUCCION-subtitulos.srt"
-          cp "producciones/$PRODUCCION/guia-locucion.md" "out/$PRODUCCION-guia-locucion.md"
+          srt="subtitulos.srt"
+          if [ "$TIEMPOS" = "tiempos-narrada.json" ]; then srt="subtitulos-narrada.srt"; fi
+          cp "producciones/$PRODUCCION/$srt" "out/$PRODUCCION-subtitulos.srt"
+          extra=""
+          if [ -f "producciones/$PRODUCCION/guia-locucion.md" ] && [ -z "$VOZ" ]; then cp "producciones/$PRODUCCION/guia-locucion.md" "out/$PRODUCCION-guia-locucion.md"; extra="out/$PRODUCCION-guia-locucion.md"; fi
           gh release create "$etiqueta" \
             "out/$PRODUCCION.mp4" "out/$PRODUCCION-portada.jpg" "out/$PRODUCCION-escenas.jpg" \
-            "out/$PRODUCCION-subtitulos.srt" "out/$PRODUCCION-guia-locucion.md" \
+            "out/$PRODUCCION-subtitulos.srt" $extra \
             --prerelease --target "$GITHUB_SHA" \
             --title "AGUA STUDIO · $PRODUCCION" \
-            --notes "Render de \`$COMPOSICION\` (escala $ESCALA) desde \`$GITHUB_REF_NAME\` · commit $GITHUB_SHA. Música y efectos sintetizados por código. Narración: pendiente (subtítulos con tiempos estimados)."
+            --notes "Render de \`$COMPOSICION\` (escala $ESCALA) desde \`$GITHUB_REF_NAME\` · commit $GITHUB_SHA. Música y efectos sintetizados por código. Voz: ${VOZ:-sin narración (subtítulos con tiempos estimados)}."
           echo "### MP4 publicado" >> "$GITHUB_STEP_SUMMARY"
           echo "${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}/releases/tag/$etiqueta" >> "$GITHUB_STEP_SUMMARY"

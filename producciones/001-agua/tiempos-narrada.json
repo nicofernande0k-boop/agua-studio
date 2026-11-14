@@ -1,0 +1,3277 @@
+{
+ "id": "001-agua-narrada",
+ "titulo": "El agua no se vende",
+ "fps": 30,
+ "duracion": 151.5,
+ "frames": 4545,
+ "desfaseVoz": 1,
+ "escenas": [
+  {
+   "id": "a1",
+   "indice": 1,
+   "titulo": "¿Y SI MAÑANA NO TENÉS AGUA?",
+   "inicio": 0,
+   "duracion": 11.6,
+   "desde": 0,
+   "frames": 348
+  },
+  {
+   "id": "a2",
+   "indice": 2,
+   "titulo": "¿UN DERECHO O UN NEGOCIO?",
+   "inicio": 11.6,
+   "duracion": 12.9,
+   "desde": 348,
+   "frames": 387
+  },
+  {
+   "id": "a3",
+   "indice": 3,
+   "titulo": "ARGENTINA, AÑOS 90",
+   "inicio": 24.5,
+   "duracion": 27.5,
+   "desde": 735,
+   "frames": 825
+  },
+  {
+   "id": "a4",
+   "indice": 4,
+   "titulo": "LAS PREGUNTAS",
+   "inicio": 52,
+   "duracion": 14.2,
+   "desde": 1560,
+   "frames": 426
+  },
+  {
+   "id": "a5",
+   "indice": 5,
+   "titulo": "SALUD, DIGNIDAD, VIDA",
+   "inicio": 66.2,
+   "duracion": 9.8,
+   "desde": 1986,
+   "frames": 294
+  },
+  {
+   "id": "a6",
+   "indice": 6,
+   "titulo": "LOS QUE HACEN POSIBLE EL AGUA",
+   "inicio": 76,
+   "duracion": 23.9,
+   "desde": 2280,
+   "frames": 717
+  },
+  {
+   "id": "a7",
+   "indice": 7,
+   "titulo": "SOBERANÍA",
+   "inicio": 99.9,
+   "duracion": 26.7,
+   "desde": 2997,
+   "frames": 801
+  },
+  {
+   "id": "a8",
+   "indice": 8,
+   "titulo": "EL AGUA NO SE VENDE",
+   "inicio": 126.6,
+   "duracion": 24.9,
+   "desde": 3798,
+   "frames": 747
+  }
+ ],
+ "palabras": [
+  {
+   "texto": "Imaginate",
+   "inicio": 1,
+   "fin": 1.76,
+   "destacada": false
+  },
+  {
+   "texto": "que",
+   "inicio": 1.76,
+   "fin": 1.98,
+   "destacada": false
+  },
+  {
+   "texto": "mañana",
+   "inicio": 1.98,
+   "fin": 2.36,
+   "destacada": false
+  },
+  {
+   "texto": "te",
+   "inicio": 2.36,
+   "fin": 2.64,
+   "destacada": false
+  },
+  {
+   "texto": "despertás,",
+   "inicio": 2.64,
+   "fin": 3.294,
+   "destacada": false
+  },
+  {
+   "texto": "caminás",
+   "inicio": 4.14,
+   "fin": 4.4,
+   "destacada": false
+  },
+  {
+   "texto": "hasta",
+   "inicio": 4.4,
+   "fin": 4.68,
+   "destacada": false
+  },
+  {
+   "texto": "la",
+   "inicio": 4.68,
+   "fin": 4.86,
+   "destacada": false
+  },
+  {
+   "texto": "cocina,",
+   "inicio": 4.86,
+   "fin": 5.266,
+   "destacada": false
+  },
+  {
+   "texto": "abrís",
+   "inicio": 6.12,
+   "fin": 6.32,
+   "destacada": false
+  },
+  {
+   "texto": "la",
+   "inicio": 6.32,
+   "fin": 6.5,
+   "destacada": false
+  },
+  {
+   "texto": "canilla",
+   "inicio": 6.5,
+   "fin": 6.955,
+   "destacada": false
+  },
+  {
+   "texto": "y",
+   "inicio": 7.955,
+   "fin": 8.12,
+   "destacada": false
+  },
+  {
+   "texto": "no",
+   "inicio": 8.12,
+   "fin": 8.42,
+   "destacada": false
+  },
+  {
+   "texto": "sale",
+   "inicio": 8.42,
+   "fin": 8.66,
+   "destacada": false
+  },
+  {
+   "texto": "una",
+   "inicio": 8.66,
+   "fin": 9.32,
+   "destacada": false
+  },
+  {
+   "texto": "sola",
+   "inicio": 9.32,
+   "fin": 9.66,
+   "destacada": false
+  },
+  {
+   "texto": "gota",
+   "inicio": 9.66,
+   "fin": 10,
+   "destacada": false
+  },
+  {
+   "texto": "de",
+   "inicio": 10,
+   "fin": 10.28,
+   "destacada": false
+  },
+  {
+   "texto": "agua.",
+   "inicio": 10.28,
+   "fin": 10.485,
+   "destacada": true
+  },
+  {
+   "texto": "Ahora",
+   "inicio": 11.549,
+   "fin": 11.92,
+   "destacada": false
+  },
+  {
+   "texto": "imaginá",
+   "inicio": 11.92,
+   "fin": 12.38,
+   "destacada": false
+  },
+  {
+   "texto": "que",
+   "inicio": 12.38,
+   "fin": 12.58,
+   "destacada": false
+  },
+  {
+   "texto": "eso",
+   "inicio": 12.58,
+   "fin": 13.029,
+   "destacada": false
+  },
+  {
+   "texto": "no",
+   "inicio": 13.258,
+   "fin": 13.5,
+   "destacada": false
+  },
+  {
+   "texto": "es",
+   "inicio": 13.5,
+   "fin": 13.74,
+   "destacada": false
+  },
+  {
+   "texto": "un",
+   "inicio": 13.74,
+   "fin": 13.92,
+   "destacada": false
+  },
+  {
+   "texto": "accidente,",
+   "inicio": 13.92,
+   "fin": 14.438,
+   "destacada": false
+  },
+  {
+   "texto": "que",
+   "inicio": 15.38,
+   "fin": 15.48,
+   "destacada": false
+  },
+  {
+   "texto": "tener",
+   "inicio": 15.48,
+   "fin": 15.76,
+   "destacada": false
+  },
+  {
+   "texto": "agua",
+   "inicio": 15.76,
+   "fin": 15.98,
+   "destacada": true
+  },
+  {
+   "texto": "en",
+   "inicio": 15.98,
+   "fin": 16.1,
+   "destacada": false
+  },
+  {
+   "texto": "tu",
+   "inicio": 16.1,
+   "fin": 16.28,
+   "destacada": false
+  },
+  {
+   "texto": "casa",
+   "inicio": 16.28,
+   "fin": 16.648,
+   "destacada": false
+  },
+  {
+   "texto": "depende",
+   "inicio": 16.897,
+   "fin": 17.28,
+   "destacada": false
+  },
+  {
+   "texto": "de",
+   "inicio": 17.28,
+   "fin": 17.6,
+   "destacada": false
+  },
+  {
+   "texto": "cuánto",
+   "inicio": 17.6,
+   "fin": 18.04,
+   "destacada": false
+  },
+  {
+   "texto": "podés",
+   "inicio": 18.04,
+   "fin": 18.32,
+   "destacada": false
+  },
+  {
+   "texto": "pagar",
+   "inicio": 18.32,
+   "fin": 18.719,
+   "destacada": false
+  },
+  {
+   "texto": "y",
+   "inicio": 19.434,
+   "fin": 19.54,
+   "destacada": false
+  },
+  {
+   "texto": "que",
+   "inicio": 19.54,
+   "fin": 19.72,
+   "destacada": false
+  },
+  {
+   "texto": "algo",
+   "inicio": 19.72,
+   "fin": 20,
+   "destacada": false
+  },
+  {
+   "texto": "tan",
+   "inicio": 20,
+   "fin": 20.3,
+   "destacada": false
+  },
+  {
+   "texto": "esencial",
+   "inicio": 20.3,
+   "fin": 20.9,
+   "destacada": false
+  },
+  {
+   "texto": "para",
+   "inicio": 20.9,
+   "fin": 21.14,
+   "destacada": false
+  },
+  {
+   "texto": "vivir",
+   "inicio": 21.14,
+   "fin": 21.554,
+   "destacada": false
+  },
+  {
+   "texto": "se",
+   "inicio": 22.236,
+   "fin": 22.5,
+   "destacada": false
+  },
+  {
+   "texto": "convierte",
+   "inicio": 22.5,
+   "fin": 22.88,
+   "destacada": false
+  },
+  {
+   "texto": "en",
+   "inicio": 22.88,
+   "fin": 23.04,
+   "destacada": false
+  },
+  {
+   "texto": "un",
+   "inicio": 23.04,
+   "fin": 23.28,
+   "destacada": false
+  },
+  {
+   "texto": "negocio.",
+   "inicio": 23.28,
+   "fin": 23.642,
+   "destacada": false
+  },
+  {
+   "texto": "Durante",
+   "inicio": 24.54,
+   "fin": 24.88,
+   "destacada": false
+  },
+  {
+   "texto": "los",
+   "inicio": 24.88,
+   "fin": 25.08,
+   "destacada": false
+  },
+  {
+   "texto": "años",
+   "inicio": 25.08,
+   "fin": 25.3,
+   "destacada": false
+  },
+  {
+   "texto": "90,",
+   "inicio": 25.3,
+   "fin": 25.78,
+   "destacada": false
+  },
+  {
+   "texto": "la",
+   "inicio": 26.04,
+   "fin": 26.16,
+   "destacada": false
+  },
+  {
+   "texto": "Argentina",
+   "inicio": 26.16,
+   "fin": 26.48,
+   "destacada": false
+  },
+  {
+   "texto": "vivió",
+   "inicio": 26.48,
+   "fin": 26.84,
+   "destacada": false
+  },
+  {
+   "texto": "una",
+   "inicio": 26.84,
+   "fin": 27.18,
+   "destacada": false
+  },
+  {
+   "texto": "profunda",
+   "inicio": 27.18,
+   "fin": 27.7,
+   "destacada": false
+  },
+  {
+   "texto": "transformación.",
+   "inicio": 27.7,
+   "fin": 28.471,
+   "destacada": false
+  },
+  {
+   "texto": "Bajo",
+   "inicio": 28.916,
+   "fin": 29.12,
+   "destacada": false
+  },
+  {
+   "texto": "las",
+   "inicio": 29.12,
+   "fin": 29.36,
+   "destacada": false
+  },
+  {
+   "texto": "promesas",
+   "inicio": 29.36,
+   "fin": 29.7,
+   "destacada": false
+  },
+  {
+   "texto": "de",
+   "inicio": 29.7,
+   "fin": 29.86,
+   "destacada": false
+  },
+  {
+   "texto": "modernización,",
+   "inicio": 29.86,
+   "fin": 30.7,
+   "destacada": false
+  },
+  {
+   "texto": "eficiencia",
+   "inicio": 31.12,
+   "fin": 31.56,
+   "destacada": false
+  },
+  {
+   "texto": "y",
+   "inicio": 31.56,
+   "fin": 31.8,
+   "destacada": false
+  },
+  {
+   "texto": "progreso,",
+   "inicio": 31.8,
+   "fin": 32.221,
+   "destacada": false
+  },
+  {
+   "texto": "numerosas",
+   "inicio": 32.76,
+   "fin": 33.08,
+   "destacada": false
+  },
+  {
+   "texto": "empresas",
+   "inicio": 33.08,
+   "fin": 33.5,
+   "destacada": false
+  },
+  {
+   "texto": "y",
+   "inicio": 33.5,
+   "fin": 33.68,
+   "destacada": false
+  },
+  {
+   "texto": "servicios",
+   "inicio": 33.68,
+   "fin": 34.14,
+   "destacada": false
+  },
+  {
+   "texto": "públicos",
+   "inicio": 34.14,
+   "fin": 34.6,
+   "destacada": false
+  },
+  {
+   "texto": "fueron",
+   "inicio": 34.6,
+   "fin": 34.86,
+   "destacada": false
+  },
+  {
+   "texto": "privatizados.",
+   "inicio": 34.86,
+   "fin": 35.28,
+   "destacada": true
+  },
+  {
+   "texto": "El",
+   "inicio": 36.28,
+   "fin": 36.46,
+   "destacada": false
+  },
+  {
+   "texto": "agua",
+   "inicio": 36.46,
+   "fin": 36.68,
+   "destacada": true
+  },
+  {
+   "texto": "también",
+   "inicio": 36.68,
+   "fin": 37.18,
+   "destacada": false
+  },
+  {
+   "texto": "pasó",
+   "inicio": 37.18,
+   "fin": 37.58,
+   "destacada": false
+  },
+  {
+   "texto": "en",
+   "inicio": 37.58,
+   "fin": 38.06,
+   "destacada": false
+  },
+  {
+   "texto": "distintos",
+   "inicio": 38.06,
+   "fin": 38.42,
+   "destacada": false
+  },
+  {
+   "texto": "lugares",
+   "inicio": 38.42,
+   "fin": 38.74,
+   "destacada": false
+  },
+  {
+   "texto": "del",
+   "inicio": 38.74,
+   "fin": 38.94,
+   "destacada": false
+  },
+  {
+   "texto": "país",
+   "inicio": 38.94,
+   "fin": 39.32,
+   "destacada": false
+  },
+  {
+   "texto": "a",
+   "inicio": 39.32,
+   "fin": 39.78,
+   "destacada": false
+  },
+  {
+   "texto": "manos",
+   "inicio": 39.78,
+   "fin": 39.98,
+   "destacada": false
+  },
+  {
+   "texto": "de",
+   "inicio": 39.98,
+   "fin": 40.22,
+   "destacada": false
+  },
+  {
+   "texto": "empresas",
+   "inicio": 40.22,
+   "fin": 40.5,
+   "destacada": false
+  },
+  {
+   "texto": "privadas.",
+   "inicio": 40.5,
+   "fin": 41.095,
+   "destacada": false
+  },
+  {
+   "texto": "Se",
+   "inicio": 41.68,
+   "fin": 41.84,
+   "destacada": false
+  },
+  {
+   "texto": "prometieron",
+   "inicio": 41.84,
+   "fin": 42.26,
+   "destacada": false
+  },
+  {
+   "texto": "inversiones,",
+   "inicio": 42.26,
+   "fin": 42.98,
+   "destacada": false
+  },
+  {
+   "texto": "se",
+   "inicio": 43.34,
+   "fin": 43.58,
+   "destacada": false
+  },
+  {
+   "texto": "prometió",
+   "inicio": 43.58,
+   "fin": 43.82,
+   "destacada": false
+  },
+  {
+   "texto": "un",
+   "inicio": 43.82,
+   "fin": 44,
+   "destacada": false
+  },
+  {
+   "texto": "servicio",
+   "inicio": 44,
+   "fin": 44.34,
+   "destacada": false
+  },
+  {
+   "texto": "mejor,",
+   "inicio": 44.34,
+   "fin": 44.757,
+   "destacada": false
+  },
+  {
+   "texto": "se",
+   "inicio": 45.2,
+   "fin": 45.46,
+   "destacada": false
+  },
+  {
+   "texto": "prometió",
+   "inicio": 45.46,
+   "fin": 46,
+   "destacada": false
+  },
+  {
+   "texto": "un",
+   "inicio": 46,
+   "fin": 46.4,
+   "destacada": false
+  },
+  {
+   "texto": "futuro",
+   "inicio": 46.4,
+   "fin": 46.7,
+   "destacada": false
+  },
+  {
+   "texto": "diferente.",
+   "inicio": 46.7,
+   "fin": 47.341,
+   "destacada": false
+  },
+  {
+   "texto": "Pero",
+   "inicio": 47.92,
+   "fin": 48.12,
+   "destacada": false
+  },
+  {
+   "texto": "detrás",
+   "inicio": 48.12,
+   "fin": 48.48,
+   "destacada": false
+  },
+  {
+   "texto": "de",
+   "inicio": 48.48,
+   "fin": 48.64,
+   "destacada": false
+  },
+  {
+   "texto": "aquellas",
+   "inicio": 48.64,
+   "fin": 49,
+   "destacada": false
+  },
+  {
+   "texto": "promesas",
+   "inicio": 49,
+   "fin": 49.58,
+   "destacada": false
+  },
+  {
+   "texto": "había",
+   "inicio": 49.58,
+   "fin": 49.8,
+   "destacada": false
+  },
+  {
+   "texto": "una",
+   "inicio": 49.8,
+   "fin": 50.2,
+   "destacada": false
+  },
+  {
+   "texto": "pregunta",
+   "inicio": 50.2,
+   "fin": 50.48,
+   "destacada": false
+  },
+  {
+   "texto": "que",
+   "inicio": 50.48,
+   "fin": 50.76,
+   "destacada": false
+  },
+  {
+   "texto": "sigue",
+   "inicio": 50.76,
+   "fin": 51,
+   "destacada": false
+  },
+  {
+   "texto": "vigente.",
+   "inicio": 51,
+   "fin": 51.556,
+   "destacada": false
+  },
+  {
+   "texto": "¿Qué",
+   "inicio": 52.063,
+   "fin": 52.2,
+   "destacada": false
+  },
+  {
+   "texto": "pasa",
+   "inicio": 52.2,
+   "fin": 52.5,
+   "destacada": false
+  },
+  {
+   "texto": "cuando",
+   "inicio": 52.5,
+   "fin": 52.76,
+   "destacada": false
+  },
+  {
+   "texto": "un",
+   "inicio": 52.76,
+   "fin": 53.02,
+   "destacada": false
+  },
+  {
+   "texto": "servicio",
+   "inicio": 53.02,
+   "fin": 53.36,
+   "destacada": false
+  },
+  {
+   "texto": "esencial",
+   "inicio": 53.36,
+   "fin": 53.94,
+   "destacada": false
+  },
+  {
+   "texto": "se",
+   "inicio": 53.94,
+   "fin": 54.18,
+   "destacada": false
+  },
+  {
+   "texto": "administra",
+   "inicio": 54.18,
+   "fin": 54.6,
+   "destacada": false
+  },
+  {
+   "texto": "pensando",
+   "inicio": 54.6,
+   "fin": 55.02,
+   "destacada": false
+  },
+  {
+   "texto": "primero",
+   "inicio": 55.02,
+   "fin": 55.56,
+   "destacada": false
+  },
+  {
+   "texto": "en",
+   "inicio": 55.56,
+   "fin": 55.7,
+   "destacada": false
+  },
+  {
+   "texto": "la",
+   "inicio": 55.7,
+   "fin": 55.86,
+   "destacada": false
+  },
+  {
+   "texto": "rentabilidad?",
+   "inicio": 55.86,
+   "fin": 56.5,
+   "destacada": false
+  },
+  {
+   "texto": "¿Qué",
+   "inicio": 56.96,
+   "fin": 57.1,
+   "destacada": false
+  },
+  {
+   "texto": "pasa",
+   "inicio": 57.1,
+   "fin": 57.36,
+   "destacada": false
+  },
+  {
+   "texto": "con",
+   "inicio": 57.36,
+   "fin": 57.52,
+   "destacada": false
+  },
+  {
+   "texto": "las",
+   "inicio": 57.52,
+   "fin": 57.7,
+   "destacada": false
+  },
+  {
+   "texto": "familias",
+   "inicio": 57.7,
+   "fin": 58.08,
+   "destacada": false
+  },
+  {
+   "texto": "que",
+   "inicio": 58.08,
+   "fin": 58.22,
+   "destacada": false
+  },
+  {
+   "texto": "no",
+   "inicio": 58.22,
+   "fin": 58.44,
+   "destacada": false
+  },
+  {
+   "texto": "pueden",
+   "inicio": 58.44,
+   "fin": 58.64,
+   "destacada": false
+  },
+  {
+   "texto": "pagar?",
+   "inicio": 58.64,
+   "fin": 59.05,
+   "destacada": false
+  },
+  {
+   "texto": "¿Qué",
+   "inicio": 59.488,
+   "fin": 59.64,
+   "destacada": false
+  },
+  {
+   "texto": "pasa",
+   "inicio": 59.64,
+   "fin": 59.9,
+   "destacada": false
+  },
+  {
+   "texto": "con",
+   "inicio": 59.9,
+   "fin": 60.08,
+   "destacada": false
+  },
+  {
+   "texto": "los",
+   "inicio": 60.08,
+   "fin": 60.3,
+   "destacada": false
+  },
+  {
+   "texto": "pueblos",
+   "inicio": 60.3,
+   "fin": 60.54,
+   "destacada": false
+  },
+  {
+   "texto": "donde",
+   "inicio": 60.54,
+   "fin": 60.82,
+   "destacada": false
+  },
+  {
+   "texto": "invertir",
+   "inicio": 60.82,
+   "fin": 61.32,
+   "destacada": false
+  },
+  {
+   "texto": "no",
+   "inicio": 61.32,
+   "fin": 61.66,
+   "destacada": false
+  },
+  {
+   "texto": "resulta",
+   "inicio": 61.66,
+   "fin": 62.08,
+   "destacada": false
+  },
+  {
+   "texto": "rentable?",
+   "inicio": 62.08,
+   "fin": 62.62,
+   "destacada": false
+  },
+  {
+   "texto": "¿Quién",
+   "inicio": 63.06,
+   "fin": 63.34,
+   "destacada": false
+  },
+  {
+   "texto": "garantiza",
+   "inicio": 63.34,
+   "fin": 63.94,
+   "destacada": false
+  },
+  {
+   "texto": "entonces",
+   "inicio": 63.94,
+   "fin": 64.58,
+   "destacada": false
+  },
+  {
+   "texto": "el",
+   "inicio": 64.58,
+   "fin": 64.94,
+   "destacada": false
+  },
+  {
+   "texto": "derecho",
+   "inicio": 64.94,
+   "fin": 65.24,
+   "destacada": true
+  },
+  {
+   "texto": "al",
+   "inicio": 65.24,
+   "fin": 65.52,
+   "destacada": false
+  },
+  {
+   "texto": "agua?",
+   "inicio": 65.52,
+   "fin": 65.704,
+   "destacada": true
+  },
+  {
+   "texto": "Porque",
+   "inicio": 66.275,
+   "fin": 66.54,
+   "destacada": false
+  },
+  {
+   "texto": "el",
+   "inicio": 66.54,
+   "fin": 66.8,
+   "destacada": false
+  },
+  {
+   "texto": "agua",
+   "inicio": 66.8,
+   "fin": 67.04,
+   "destacada": true
+  },
+  {
+   "texto": "no",
+   "inicio": 67.04,
+   "fin": 67.3,
+   "destacada": false
+  },
+  {
+   "texto": "es",
+   "inicio": 67.3,
+   "fin": 67.56,
+   "destacada": false
+  },
+  {
+   "texto": "un",
+   "inicio": 67.56,
+   "fin": 67.76,
+   "destacada": false
+  },
+  {
+   "texto": "lujo,",
+   "inicio": 67.76,
+   "fin": 68.045,
+   "destacada": false
+  },
+  {
+   "texto": "no",
+   "inicio": 68.4,
+   "fin": 68.54,
+   "destacada": false
+  },
+  {
+   "texto": "es",
+   "inicio": 68.54,
+   "fin": 68.82,
+   "destacada": false
+  },
+  {
+   "texto": "un",
+   "inicio": 68.82,
+   "fin": 68.96,
+   "destacada": false
+  },
+  {
+   "texto": "privilegio,",
+   "inicio": 68.96,
+   "fin": 69.503,
+   "destacada": false
+  },
+  {
+   "texto": "no",
+   "inicio": 69.82,
+   "fin": 69.98,
+   "destacada": false
+  },
+  {
+   "texto": "es",
+   "inicio": 69.98,
+   "fin": 70.18,
+   "destacada": false
+  },
+  {
+   "texto": "una",
+   "inicio": 70.18,
+   "fin": 70.32,
+   "destacada": false
+  },
+  {
+   "texto": "mercancía",
+   "inicio": 70.32,
+   "fin": 70.94,
+   "destacada": false
+  },
+  {
+   "texto": "cualquiera.",
+   "inicio": 70.94,
+   "fin": 71.455,
+   "destacada": false
+  },
+  {
+   "texto": "El",
+   "inicio": 71.92,
+   "fin": 72.16,
+   "destacada": false
+  },
+  {
+   "texto": "agua",
+   "inicio": 72.16,
+   "fin": 72.44,
+   "destacada": true
+  },
+  {
+   "texto": "es",
+   "inicio": 72.44,
+   "fin": 72.76,
+   "destacada": false
+  },
+  {
+   "texto": "salud,",
+   "inicio": 72.76,
+   "fin": 73.2,
+   "destacada": false
+  },
+  {
+   "texto": "es",
+   "inicio": 73.6,
+   "fin": 73.76,
+   "destacada": false
+  },
+  {
+   "texto": "dignidad,",
+   "inicio": 73.76,
+   "fin": 74.325,
+   "destacada": false
+  },
+  {
+   "texto": "es",
+   "inicio": 74.78,
+   "fin": 75.08,
+   "destacada": false
+  },
+  {
+   "texto": "vida.",
+   "inicio": 75.08,
+   "fin": 75.38,
+   "destacada": true
+  },
+  {
+   "texto": "Y",
+   "inicio": 76.02,
+   "fin": 76.24,
+   "destacada": false
+  },
+  {
+   "texto": "detrás",
+   "inicio": 76.24,
+   "fin": 76.46,
+   "destacada": false
+  },
+  {
+   "texto": "de",
+   "inicio": 76.46,
+   "fin": 76.72,
+   "destacada": false
+  },
+  {
+   "texto": "cada",
+   "inicio": 76.72,
+   "fin": 76.98,
+   "destacada": false
+  },
+  {
+   "texto": "gota",
+   "inicio": 76.98,
+   "fin": 77.3,
+   "destacada": false
+  },
+  {
+   "texto": "que",
+   "inicio": 77.3,
+   "fin": 77.5,
+   "destacada": false
+  },
+  {
+   "texto": "llega",
+   "inicio": 77.5,
+   "fin": 77.66,
+   "destacada": false
+  },
+  {
+   "texto": "a",
+   "inicio": 77.66,
+   "fin": 77.8,
+   "destacada": false
+  },
+  {
+   "texto": "nuestros",
+   "inicio": 77.8,
+   "fin": 78.06,
+   "destacada": false
+  },
+  {
+   "texto": "hogares",
+   "inicio": 78.06,
+   "fin": 78.54,
+   "destacada": false
+  },
+  {
+   "texto": "hay",
+   "inicio": 78.54,
+   "fin": 78.78,
+   "destacada": false
+  },
+  {
+   "texto": "una",
+   "inicio": 78.78,
+   "fin": 79.02,
+   "destacada": false
+  },
+  {
+   "texto": "historia",
+   "inicio": 79.02,
+   "fin": 79.32,
+   "destacada": false
+  },
+  {
+   "texto": "que",
+   "inicio": 79.32,
+   "fin": 79.58,
+   "destacada": false
+  },
+  {
+   "texto": "muchas",
+   "inicio": 79.58,
+   "fin": 79.9,
+   "destacada": false
+  },
+  {
+   "texto": "veces",
+   "inicio": 79.9,
+   "fin": 80.18,
+   "destacada": false
+  },
+  {
+   "texto": "no",
+   "inicio": 80.18,
+   "fin": 80.44,
+   "destacada": false
+  },
+  {
+   "texto": "vemos.",
+   "inicio": 80.44,
+   "fin": 80.76,
+   "destacada": false
+  },
+  {
+   "texto": "Hay",
+   "inicio": 81.146,
+   "fin": 81.36,
+   "destacada": false
+  },
+  {
+   "texto": "trabajadores",
+   "inicio": 81.36,
+   "fin": 81.88,
+   "destacada": true
+  },
+  {
+   "texto": "que",
+   "inicio": 81.88,
+   "fin": 82.02,
+   "destacada": false
+  },
+  {
+   "texto": "se",
+   "inicio": 82.02,
+   "fin": 82.2,
+   "destacada": false
+  },
+  {
+   "texto": "levantan",
+   "inicio": 82.2,
+   "fin": 82.54,
+   "destacada": false
+  },
+  {
+   "texto": "de",
+   "inicio": 82.54,
+   "fin": 82.7,
+   "destacada": false
+  },
+  {
+   "texto": "madrugada,",
+   "inicio": 82.7,
+   "fin": 83.219,
+   "destacada": false
+  },
+  {
+   "texto": "que",
+   "inicio": 83.54,
+   "fin": 83.8,
+   "destacada": false
+  },
+  {
+   "texto": "reparan",
+   "inicio": 83.8,
+   "fin": 84.06,
+   "destacada": false
+  },
+  {
+   "texto": "cañerías",
+   "inicio": 84.06,
+   "fin": 84.56,
+   "destacada": false
+  },
+  {
+   "texto": "bajo",
+   "inicio": 84.56,
+   "fin": 84.8,
+   "destacada": false
+  },
+  {
+   "texto": "la",
+   "inicio": 84.8,
+   "fin": 85.04,
+   "destacada": false
+  },
+  {
+   "texto": "lluvia,",
+   "inicio": 85.04,
+   "fin": 85.337,
+   "destacada": false
+  },
+  {
+   "texto": "que",
+   "inicio": 85.643,
+   "fin": 85.74,
+   "destacada": false
+  },
+  {
+   "texto": "mantienen",
+   "inicio": 85.74,
+   "fin": 86.16,
+   "destacada": false
+  },
+  {
+   "texto": "plantas",
+   "inicio": 86.16,
+   "fin": 86.58,
+   "destacada": false
+  },
+  {
+   "texto": "potabilizadoras",
+   "inicio": 86.58,
+   "fin": 87.42,
+   "destacada": false
+  },
+  {
+   "texto": "funcionando",
+   "inicio": 87.42,
+   "fin": 88.12,
+   "destacada": false
+  },
+  {
+   "texto": "día",
+   "inicio": 88.12,
+   "fin": 88.44,
+   "destacada": false
+  },
+  {
+   "texto": "y",
+   "inicio": 88.44,
+   "fin": 88.66,
+   "destacada": false
+  },
+  {
+   "texto": "noche,",
+   "inicio": 88.66,
+   "fin": 88.938,
+   "destacada": false
+  },
+  {
+   "texto": "que",
+   "inicio": 89.38,
+   "fin": 89.56,
+   "destacada": false
+  },
+  {
+   "texto": "trabajan",
+   "inicio": 89.56,
+   "fin": 89.92,
+   "destacada": false
+  },
+  {
+   "texto": "para",
+   "inicio": 89.92,
+   "fin": 90.16,
+   "destacada": false
+  },
+  {
+   "texto": "que",
+   "inicio": 90.16,
+   "fin": 90.36,
+   "destacada": false
+  },
+  {
+   "texto": "millones",
+   "inicio": 90.36,
+   "fin": 90.72,
+   "destacada": false
+  },
+  {
+   "texto": "de",
+   "inicio": 90.72,
+   "fin": 90.96,
+   "destacada": false
+  },
+  {
+   "texto": "argentinos",
+   "inicio": 90.96,
+   "fin": 91.44,
+   "destacada": false
+  },
+  {
+   "texto": "tengan",
+   "inicio": 91.44,
+   "fin": 91.74,
+   "destacada": false
+  },
+  {
+   "texto": "acceso",
+   "inicio": 91.74,
+   "fin": 92.18,
+   "destacada": false
+  },
+  {
+   "texto": "a",
+   "inicio": 92.18,
+   "fin": 92.36,
+   "destacada": false
+  },
+  {
+   "texto": "un",
+   "inicio": 92.36,
+   "fin": 92.54,
+   "destacada": false
+  },
+  {
+   "texto": "servicio",
+   "inicio": 92.54,
+   "fin": 92.88,
+   "destacada": false
+  },
+  {
+   "texto": "esencial.",
+   "inicio": 92.88,
+   "fin": 93.19,
+   "destacada": false
+  },
+  {
+   "texto": "Trabajadores",
+   "inicio": 93.96,
+   "fin": 94.5,
+   "destacada": true
+  },
+  {
+   "texto": "que",
+   "inicio": 94.5,
+   "fin": 94.7,
+   "destacada": false
+  },
+  {
+   "texto": "no",
+   "inicio": 94.7,
+   "fin": 94.88,
+   "destacada": false
+  },
+  {
+   "texto": "solamente",
+   "inicio": 94.88,
+   "fin": 95.38,
+   "destacada": false
+  },
+  {
+   "texto": "sostienen",
+   "inicio": 95.38,
+   "fin": 95.84,
+   "destacada": false
+  },
+  {
+   "texto": "un",
+   "inicio": 95.84,
+   "fin": 96.1,
+   "destacada": false
+  },
+  {
+   "texto": "servicio,",
+   "inicio": 96.1,
+   "fin": 96.532,
+   "destacada": false
+  },
+  {
+   "texto": "sostienen",
+   "inicio": 96.94,
+   "fin": 97.38,
+   "destacada": false
+  },
+  {
+   "texto": "la",
+   "inicio": 97.38,
+   "fin": 97.64,
+   "destacada": false
+  },
+  {
+   "texto": "vida",
+   "inicio": 97.64,
+   "fin": 97.88,
+   "destacada": true
+  },
+  {
+   "texto": "cotidiana",
+   "inicio": 97.88,
+   "fin": 98.5,
+   "destacada": false
+  },
+  {
+   "texto": "de",
+   "inicio": 98.5,
+   "fin": 98.78,
+   "destacada": false
+  },
+  {
+   "texto": "nuestro",
+   "inicio": 98.78,
+   "fin": 98.94,
+   "destacada": false
+  },
+  {
+   "texto": "pueblo.",
+   "inicio": 98.94,
+   "fin": 99.355,
+   "destacada": false
+  },
+  {
+   "texto": "La",
+   "inicio": 99.94,
+   "fin": 100.12,
+   "destacada": false
+  },
+  {
+   "texto": "Argentina",
+   "inicio": 100.12,
+   "fin": 100.46,
+   "destacada": false
+  },
+  {
+   "texto": "tiene",
+   "inicio": 100.46,
+   "fin": 100.74,
+   "destacada": false
+  },
+  {
+   "texto": "una",
+   "inicio": 100.74,
+   "fin": 100.94,
+   "destacada": false
+  },
+  {
+   "texto": "historia",
+   "inicio": 100.94,
+   "fin": 101.26,
+   "destacada": false
+  },
+  {
+   "texto": "de",
+   "inicio": 101.26,
+   "fin": 101.54,
+   "destacada": false
+  },
+  {
+   "texto": "lucha",
+   "inicio": 101.54,
+   "fin": 101.78,
+   "destacada": false
+  },
+  {
+   "texto": "por",
+   "inicio": 101.78,
+   "fin": 101.98,
+   "destacada": false
+  },
+  {
+   "texto": "sus",
+   "inicio": 101.98,
+   "fin": 102.16,
+   "destacada": false
+  },
+  {
+   "texto": "recursos,",
+   "inicio": 102.16,
+   "fin": 102.7,
+   "destacada": false
+  },
+  {
+   "texto": "sus",
+   "inicio": 103.02,
+   "fin": 103.2,
+   "destacada": false
+  },
+  {
+   "texto": "empresas",
+   "inicio": 103.2,
+   "fin": 103.66,
+   "destacada": false
+  },
+  {
+   "texto": "y",
+   "inicio": 103.66,
+   "fin": 103.94,
+   "destacada": false
+  },
+  {
+   "texto": "sus",
+   "inicio": 103.94,
+   "fin": 104.08,
+   "destacada": false
+  },
+  {
+   "texto": "servicios",
+   "inicio": 104.08,
+   "fin": 104.5,
+   "destacada": false
+  },
+  {
+   "texto": "públicos.",
+   "inicio": 104.5,
+   "fin": 105.099,
+   "destacada": false
+  },
+  {
+   "texto": "Una",
+   "inicio": 105.42,
+   "fin": 105.64,
+   "destacada": false
+  },
+  {
+   "texto": "historia",
+   "inicio": 105.64,
+   "fin": 105.9,
+   "destacada": false
+  },
+  {
+   "texto": "de",
+   "inicio": 105.9,
+   "fin": 106.14,
+   "destacada": false
+  },
+  {
+   "texto": "conquistas,",
+   "inicio": 106.14,
+   "fin": 106.78,
+   "destacada": false
+  },
+  {
+   "texto": "de",
+   "inicio": 107.1,
+   "fin": 107.3,
+   "destacada": false
+  },
+  {
+   "texto": "retrocesos",
+   "inicio": 107.3,
+   "fin": 107.872,
+   "destacada": false
+  },
+  {
+   "texto": "y",
+   "inicio": 108.072,
+   "fin": 108.22,
+   "destacada": false
+  },
+  {
+   "texto": "de",
+   "inicio": 108.22,
+   "fin": 108.42,
+   "destacada": false
+  },
+  {
+   "texto": "trabajadores",
+   "inicio": 108.42,
+   "fin": 108.88,
+   "destacada": true
+  },
+  {
+   "texto": "que",
+   "inicio": 108.88,
+   "fin": 109.2,
+   "destacada": false
+  },
+  {
+   "texto": "nunca",
+   "inicio": 109.2,
+   "fin": 109.54,
+   "destacada": false
+  },
+  {
+   "texto": "dejaron",
+   "inicio": 109.54,
+   "fin": 109.94,
+   "destacada": false
+  },
+  {
+   "texto": "de",
+   "inicio": 109.94,
+   "fin": 110.18,
+   "destacada": false
+  },
+  {
+   "texto": "defender",
+   "inicio": 110.18,
+   "fin": 110.5,
+   "destacada": false
+  },
+  {
+   "texto": "lo",
+   "inicio": 110.5,
+   "fin": 110.7,
+   "destacada": false
+  },
+  {
+   "texto": "que",
+   "inicio": 110.7,
+   "fin": 110.98,
+   "destacada": false
+  },
+  {
+   "texto": "consideran",
+   "inicio": 110.98,
+   "fin": 111.34,
+   "destacada": false
+  },
+  {
+   "texto": "de",
+   "inicio": 111.34,
+   "fin": 111.64,
+   "destacada": false
+  },
+  {
+   "texto": "todos.",
+   "inicio": 111.64,
+   "fin": 111.902,
+   "destacada": false
+  },
+  {
+   "texto": "Porque",
+   "inicio": 112.256,
+   "fin": 112.48,
+   "destacada": false
+  },
+  {
+   "texto": "cuando",
+   "inicio": 112.48,
+   "fin": 112.84,
+   "destacada": false
+  },
+  {
+   "texto": "hablamos",
+   "inicio": 112.84,
+   "fin": 113.22,
+   "destacada": false
+  },
+  {
+   "texto": "de",
+   "inicio": 113.22,
+   "fin": 113.48,
+   "destacada": false
+  },
+  {
+   "texto": "agua,",
+   "inicio": 113.48,
+   "fin": 113.74,
+   "destacada": true
+  },
+  {
+   "texto": "no",
+   "inicio": 114.2,
+   "fin": 114.28,
+   "destacada": false
+  },
+  {
+   "texto": "hablamos",
+   "inicio": 114.28,
+   "fin": 114.68,
+   "destacada": false
+  },
+  {
+   "texto": "solamente",
+   "inicio": 114.68,
+   "fin": 115.14,
+   "destacada": false
+  },
+  {
+   "texto": "de",
+   "inicio": 115.14,
+   "fin": 115.38,
+   "destacada": false
+  },
+  {
+   "texto": "cañerías,",
+   "inicio": 115.38,
+   "fin": 115.977,
+   "destacada": false
+  },
+  {
+   "texto": "no",
+   "inicio": 116.32,
+   "fin": 116.46,
+   "destacada": false
+  },
+  {
+   "texto": "hablamos",
+   "inicio": 116.46,
+   "fin": 116.84,
+   "destacada": false
+  },
+  {
+   "texto": "solamente",
+   "inicio": 116.84,
+   "fin": 117.38,
+   "destacada": false
+  },
+  {
+   "texto": "de",
+   "inicio": 117.38,
+   "fin": 117.64,
+   "destacada": false
+  },
+  {
+   "texto": "tarifas.",
+   "inicio": 117.64,
+   "fin": 118.148,
+   "destacada": false
+  },
+  {
+   "texto": "Hablamos",
+   "inicio": 118.68,
+   "fin": 118.98,
+   "destacada": false
+  },
+  {
+   "texto": "de",
+   "inicio": 118.98,
+   "fin": 119.14,
+   "destacada": false
+  },
+  {
+   "texto": "nuestros",
+   "inicio": 119.14,
+   "fin": 119.46,
+   "destacada": false
+  },
+  {
+   "texto": "hijos,",
+   "inicio": 119.46,
+   "fin": 119.92,
+   "destacada": false
+  },
+  {
+   "texto": "de",
+   "inicio": 120.34,
+   "fin": 120.52,
+   "destacada": false
+  },
+  {
+   "texto": "nuestros",
+   "inicio": 120.52,
+   "fin": 120.74,
+   "destacada": false
+  },
+  {
+   "texto": "barrios,",
+   "inicio": 120.74,
+   "fin": 121.254,
+   "destacada": false
+  },
+  {
+   "texto": "de",
+   "inicio": 121.66,
+   "fin": 121.86,
+   "destacada": false
+  },
+  {
+   "texto": "nuestros",
+   "inicio": 121.86,
+   "fin": 122.1,
+   "destacada": false
+  },
+  {
+   "texto": "pueblos,",
+   "inicio": 122.1,
+   "fin": 122.673,
+   "destacada": false
+  },
+  {
+   "texto": "de",
+   "inicio": 123.1,
+   "fin": 123.36,
+   "destacada": false
+  },
+  {
+   "texto": "nuestro",
+   "inicio": 123.36,
+   "fin": 123.54,
+   "destacada": false
+  },
+  {
+   "texto": "futuro.",
+   "inicio": 123.54,
+   "fin": 124.085,
+   "destacada": false
+  },
+  {
+   "texto": "Hablamos",
+   "inicio": 124.48,
+   "fin": 124.9,
+   "destacada": false
+  },
+  {
+   "texto": "de",
+   "inicio": 124.9,
+   "fin": 125.16,
+   "destacada": false
+  },
+  {
+   "texto": "soberanía.",
+   "inicio": 125.16,
+   "fin": 125.48,
+   "destacada": true
+  },
+  {
+   "texto": "Y",
+   "inicio": 126.62,
+   "fin": 126.72,
+   "destacada": false
+  },
+  {
+   "texto": "hay",
+   "inicio": 126.72,
+   "fin": 126.86,
+   "destacada": false
+  },
+  {
+   "texto": "algo",
+   "inicio": 126.86,
+   "fin": 127.06,
+   "destacada": false
+  },
+  {
+   "texto": "que",
+   "inicio": 127.06,
+   "fin": 127.24,
+   "destacada": false
+  },
+  {
+   "texto": "tenemos",
+   "inicio": 127.24,
+   "fin": 127.54,
+   "destacada": false
+  },
+  {
+   "texto": "que",
+   "inicio": 127.54,
+   "fin": 127.78,
+   "destacada": false
+  },
+  {
+   "texto": "entender",
+   "inicio": 127.78,
+   "fin": 128.18,
+   "destacada": false
+  },
+  {
+   "texto": "de",
+   "inicio": 128.18,
+   "fin": 128.5,
+   "destacada": false
+  },
+  {
+   "texto": "una",
+   "inicio": 128.5,
+   "fin": 128.72,
+   "destacada": false
+  },
+  {
+   "texto": "vez",
+   "inicio": 128.72,
+   "fin": 129.06,
+   "destacada": false
+  },
+  {
+   "texto": "y",
+   "inicio": 129.06,
+   "fin": 129.34,
+   "destacada": false
+  },
+  {
+   "texto": "para",
+   "inicio": 129.34,
+   "fin": 129.58,
+   "destacada": false
+  },
+  {
+   "texto": "siempre.",
+   "inicio": 129.58,
+   "fin": 130.016,
+   "destacada": false
+  },
+  {
+   "texto": "El",
+   "inicio": 130.72,
+   "fin": 130.98,
+   "destacada": false
+  },
+  {
+   "texto": "agua",
+   "inicio": 130.98,
+   "fin": 131.26,
+   "destacada": true
+  },
+  {
+   "texto": "es",
+   "inicio": 131.26,
+   "fin": 131.58,
+   "destacada": false
+  },
+  {
+   "texto": "un",
+   "inicio": 131.58,
+   "fin": 131.76,
+   "destacada": false
+  },
+  {
+   "texto": "derecho",
+   "inicio": 131.76,
+   "fin": 132.06,
+   "destacada": true
+  },
+  {
+   "texto": "esencial",
+   "inicio": 132.06,
+   "fin": 132.78,
+   "destacada": false
+  },
+  {
+   "texto": "para",
+   "inicio": 132.78,
+   "fin": 133.08,
+   "destacada": false
+  },
+  {
+   "texto": "la",
+   "inicio": 133.08,
+   "fin": 133.26,
+   "destacada": false
+  },
+  {
+   "texto": "vida",
+   "inicio": 133.26,
+   "fin": 133.497,
+   "destacada": true
+  },
+  {
+   "texto": "y",
+   "inicio": 133.948,
+   "fin": 134.06,
+   "destacada": false
+  },
+  {
+   "texto": "su",
+   "inicio": 134.06,
+   "fin": 134.22,
+   "destacada": false
+  },
+  {
+   "texto": "acceso",
+   "inicio": 134.22,
+   "fin": 134.62,
+   "destacada": false
+  },
+  {
+   "texto": "debe",
+   "inicio": 134.62,
+   "fin": 134.86,
+   "destacada": false
+  },
+  {
+   "texto": "estar",
+   "inicio": 134.86,
+   "fin": 135.12,
+   "destacada": false
+  },
+  {
+   "texto": "garantizado",
+   "inicio": 135.12,
+   "fin": 135.84,
+   "destacada": false
+  },
+  {
+   "texto": "para",
+   "inicio": 135.84,
+   "fin": 136.28,
+   "destacada": false
+  },
+  {
+   "texto": "todos.",
+   "inicio": 136.28,
+   "fin": 136.733,
+   "destacada": false
+  },
+  {
+   "texto": "Porque",
+   "inicio": 137.875,
+   "fin": 138.22,
+   "destacada": false
+  },
+  {
+   "texto": "el",
+   "inicio": 138.22,
+   "fin": 138.58,
+   "destacada": false
+  },
+  {
+   "texto": "agua",
+   "inicio": 138.58,
+   "fin": 138.84,
+   "destacada": true
+  },
+  {
+   "texto": "es",
+   "inicio": 138.84,
+   "fin": 139.26,
+   "destacada": false
+  },
+  {
+   "texto": "vida.",
+   "inicio": 139.26,
+   "fin": 139.6,
+   "destacada": true
+  },
+  {
+   "texto": "El",
+   "inicio": 140.16,
+   "fin": 140.4,
+   "destacada": false
+  },
+  {
+   "texto": "agua",
+   "inicio": 140.4,
+   "fin": 140.8,
+   "destacada": true
+  },
+  {
+   "texto": "es",
+   "inicio": 140.8,
+   "fin": 141.2,
+   "destacada": false
+  },
+  {
+   "texto": "soberanía",
+   "inicio": 141.2,
+   "fin": 141.93,
+   "destacada": true
+  },
+  {
+   "texto": "y",
+   "inicio": 142.49,
+   "fin": 142.66,
+   "destacada": false
+  },
+  {
+   "texto": "la",
+   "inicio": 142.66,
+   "fin": 142.8,
+   "destacada": false
+  },
+  {
+   "texto": "vida",
+   "inicio": 142.8,
+   "fin": 143.02,
+   "destacada": true
+  },
+  {
+   "texto": "de",
+   "inicio": 143.02,
+   "fin": 143.24,
+   "destacada": false
+  },
+  {
+   "texto": "un",
+   "inicio": 143.24,
+   "fin": 143.44,
+   "destacada": false
+  },
+  {
+   "texto": "pueblo",
+   "inicio": 143.44,
+   "fin": 143.811,
+   "destacada": false
+  },
+  {
+   "texto": "no",
+   "inicio": 144.35,
+   "fin": 144.76,
+   "destacada": false
+  },
+  {
+   "texto": "está",
+   "inicio": 144.76,
+   "fin": 145.04,
+   "destacada": false
+  },
+  {
+   "texto": "en",
+   "inicio": 145.04,
+   "fin": 145.24,
+   "destacada": false
+  },
+  {
+   "texto": "venta.",
+   "inicio": 145.24,
+   "fin": 145.569,
+   "destacada": false
+  },
+  {
+   "texto": "El",
+   "inicio": 146.34,
+   "fin": 146.52,
+   "destacada": false
+  },
+  {
+   "texto": "agua",
+   "inicio": 146.52,
+   "fin": 146.94,
+   "destacada": true
+  },
+  {
+   "texto": "no",
+   "inicio": 146.94,
+   "fin": 147.36,
+   "destacada": false
+  },
+  {
+   "texto": "se",
+   "inicio": 147.36,
+   "fin": 147.56,
+   "destacada": false
+  },
+  {
+   "texto": "vende.",
+   "inicio": 147.56,
+   "fin": 147.88,
+   "destacada": false
+  }
+ ],
+ "bloques": [
+  {
+   "palabras": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "inicio": 0.95,
+   "fin": 3.294,
+   "salida": 3.644
+  },
+  {
+   "palabras": [
+    5,
+    6,
+    7,
+    8
+   ],
+   "inicio": 4.09,
+   "fin": 5.266,
+   "salida": 5.616
+  },
+  {
+   "palabras": [
+    9,
+    10,
+    11
+   ],
+   "inicio": 6.07,
+   "fin": 6.955,
+   "salida": 7.305
+  },
+  {
+   "palabras": [
+    12,
+    13,
+    14,
+    15,
+    16
+   ],
+   "inicio": 7.905,
+   "fin": 9.66,
+   "salida": 9.6
+  },
+  {
+   "palabras": [
+    17,
+    18,
+    19
+   ],
+   "inicio": 9.61,
+   "fin": 10.485,
+   "salida": 10.835
+  },
+  {
+   "palabras": [
+    20,
+    21,
+    22,
+    23,
+    24
+   ],
+   "inicio": 11.499,
+   "fin": 13.5,
+   "salida": 13.44
+  },
+  {
+   "palabras": [
+    25,
+    26,
+    27
+   ],
+   "inicio": 13.45,
+   "fin": 14.438,
+   "salida": 14.788
+  },
+  {
+   "palabras": [
+    28,
+    29,
+    30,
+    31,
+    32
+   ],
+   "inicio": 15.33,
+   "fin": 16.28,
+   "salida": 16.22
+  },
+  {
+   "palabras": [
+    33,
+    34,
+    35,
+    36,
+    37,
+    38
+   ],
+   "inicio": 16.23,
+   "fin": 18.719,
+   "salida": 19.069
+  },
+  {
+   "palabras": [
+    39,
+    40,
+    41,
+    42,
+    43
+   ],
+   "inicio": 19.384,
+   "fin": 20.9,
+   "salida": 20.84
+  },
+  {
+   "palabras": [
+    44,
+    45
+   ],
+   "inicio": 20.85,
+   "fin": 21.554,
+   "salida": 21.904
+  },
+  {
+   "palabras": [
+    46,
+    47,
+    48,
+    49,
+    50
+   ],
+   "inicio": 22.186,
+   "fin": 23.642,
+   "salida": 23.992
+  },
+  {
+   "palabras": [
+    51,
+    52,
+    53,
+    54
+   ],
+   "inicio": 24.49,
+   "fin": 25.78,
+   "salida": 25.98
+  },
+  {
+   "palabras": [
+    55,
+    56,
+    57,
+    58
+   ],
+   "inicio": 25.99,
+   "fin": 27.18,
+   "salida": 27.12
+  },
+  {
+   "palabras": [
+    59,
+    60
+   ],
+   "inicio": 27.13,
+   "fin": 28.471,
+   "salida": 28.821
+  },
+  {
+   "palabras": [
+    61,
+    62,
+    63,
+    64,
+    65
+   ],
+   "inicio": 28.866,
+   "fin": 30.7,
+   "salida": 31.05
+  },
+  {
+   "palabras": [
+    66,
+    67,
+    68
+   ],
+   "inicio": 31.07,
+   "fin": 32.221,
+   "salida": 32.571
+  },
+  {
+   "palabras": [
+    69,
+    70,
+    71,
+    72
+   ],
+   "inicio": 32.71,
+   "fin": 34.14,
+   "salida": 34.08
+  },
+  {
+   "palabras": [
+    73,
+    74,
+    75
+   ],
+   "inicio": 34.09,
+   "fin": 35.28,
+   "salida": 35.63
+  },
+  {
+   "palabras": [
+    76,
+    77,
+    78,
+    79,
+    80
+   ],
+   "inicio": 36.23,
+   "fin": 38.06,
+   "salida": 38
+  },
+  {
+   "palabras": [
+    81,
+    82,
+    83,
+    84,
+    85
+   ],
+   "inicio": 38.01,
+   "fin": 39.78,
+   "salida": 39.72
+  },
+  {
+   "palabras": [
+    86,
+    87,
+    88,
+    89
+   ],
+   "inicio": 39.73,
+   "fin": 41.095,
+   "salida": 41.445
+  },
+  {
+   "palabras": [
+    90,
+    91,
+    92
+   ],
+   "inicio": 41.63,
+   "fin": 42.98,
+   "salida": 43.28
+  },
+  {
+   "palabras": [
+    93,
+    94,
+    95,
+    96,
+    97
+   ],
+   "inicio": 43.29,
+   "fin": 44.757,
+   "salida": 45.107
+  },
+  {
+   "palabras": [
+    98,
+    99,
+    100,
+    101,
+    102
+   ],
+   "inicio": 45.15,
+   "fin": 47.341,
+   "salida": 47.691
+  },
+  {
+   "palabras": [
+    103,
+    104,
+    105,
+    106
+   ],
+   "inicio": 47.87,
+   "fin": 49,
+   "salida": 48.94
+  },
+  {
+   "palabras": [
+    107,
+    108,
+    109,
+    110
+   ],
+   "inicio": 48.95,
+   "fin": 50.48,
+   "salida": 50.42
+  },
+  {
+   "palabras": [
+    111,
+    112,
+    113
+   ],
+   "inicio": 50.43,
+   "fin": 51.556,
+   "salida": 51.906
+  },
+  {
+   "palabras": [
+    114,
+    115,
+    116,
+    117,
+    118
+   ],
+   "inicio": 52.013,
+   "fin": 53.36,
+   "salida": 53.3
+  },
+  {
+   "palabras": [
+    119,
+    120,
+    121
+   ],
+   "inicio": 53.31,
+   "fin": 54.6,
+   "salida": 54.54
+  },
+  {
+   "palabras": [
+    122,
+    123,
+    124,
+    125,
+    126
+   ],
+   "inicio": 54.55,
+   "fin": 56.5,
+   "salida": 56.85
+  },
+  {
+   "palabras": [
+    127,
+    128,
+    129,
+    130,
+    131
+   ],
+   "inicio": 56.91,
+   "fin": 58.08,
+   "salida": 58.02
+  },
+  {
+   "palabras": [
+    132,
+    133,
+    134,
+    135
+   ],
+   "inicio": 58.03,
+   "fin": 59.05,
+   "salida": 59.4
+  },
+  {
+   "palabras": [
+    136,
+    137,
+    138,
+    139,
+    140
+   ],
+   "inicio": 59.438,
+   "fin": 60.54,
+   "salida": 60.48
+  },
+  {
+   "palabras": [
+    141,
+    142,
+    143,
+    144,
+    145
+   ],
+   "inicio": 60.49,
+   "fin": 62.62,
+   "salida": 62.97
+  },
+  {
+   "palabras": [
+    146,
+    147,
+    148,
+    149
+   ],
+   "inicio": 63.01,
+   "fin": 64.94,
+   "salida": 64.88
+  },
+  {
+   "palabras": [
+    150,
+    151,
+    152
+   ],
+   "inicio": 64.89,
+   "fin": 65.704,
+   "salida": 66.054
+  },
+  {
+   "palabras": [
+    153,
+    154,
+    155,
+    156,
+    157
+   ],
+   "inicio": 66.225,
+   "fin": 67.56,
+   "salida": 67.5
+  },
+  {
+   "palabras": [
+    158,
+    159
+   ],
+   "inicio": 67.51,
+   "fin": 68.045,
+   "salida": 68.34
+  },
+  {
+   "palabras": [
+    160,
+    161,
+    162,
+    163
+   ],
+   "inicio": 68.35,
+   "fin": 69.503,
+   "salida": 69.76
+  },
+  {
+   "palabras": [
+    164,
+    165,
+    166,
+    167,
+    168
+   ],
+   "inicio": 69.77,
+   "fin": 71.455,
+   "salida": 71.805
+  },
+  {
+   "palabras": [
+    169,
+    170,
+    171,
+    172
+   ],
+   "inicio": 71.87,
+   "fin": 73.2,
+   "salida": 73.54
+  },
+  {
+   "palabras": [
+    173,
+    174
+   ],
+   "inicio": 73.55,
+   "fin": 74.325,
+   "salida": 74.675
+  },
+  {
+   "palabras": [
+    175,
+    176
+   ],
+   "inicio": 74.73,
+   "fin": 75.38,
+   "salida": 75.73
+  },
+  {
+   "palabras": [
+    177,
+    178,
+    179,
+    180,
+    181
+   ],
+   "inicio": 75.97,
+   "fin": 77.3,
+   "salida": 77.24
+  },
+  {
+   "palabras": [
+    182,
+    183,
+    184,
+    185,
+    186
+   ],
+   "inicio": 77.25,
+   "fin": 78.54,
+   "salida": 78.48
+  },
+  {
+   "palabras": [
+    187,
+    188,
+    189,
+    190,
+    191
+   ],
+   "inicio": 78.49,
+   "fin": 79.9,
+   "salida": 79.84
+  },
+  {
+   "palabras": [
+    192,
+    193,
+    194
+   ],
+   "inicio": 79.85,
+   "fin": 80.76,
+   "salida": 81.086
+  },
+  {
+   "palabras": [
+    195,
+    196,
+    197,
+    198
+   ],
+   "inicio": 81.096,
+   "fin": 82.2,
+   "salida": 82.14
+  },
+  {
+   "palabras": [
+    199,
+    200,
+    201
+   ],
+   "inicio": 82.15,
+   "fin": 83.219,
+   "salida": 83.48
+  },
+  {
+   "palabras": [
+    202,
+    203,
+    204,
+    205,
+    206,
+    207
+   ],
+   "inicio": 83.49,
+   "fin": 85.337,
+   "salida": 85.583
+  },
+  {
+   "palabras": [
+    208,
+    209,
+    210
+   ],
+   "inicio": 85.593,
+   "fin": 86.58,
+   "salida": 86.52
+  },
+  {
+   "palabras": [
+    211,
+    212
+   ],
+   "inicio": 86.53,
+   "fin": 88.12,
+   "salida": 88.06
+  },
+  {
+   "palabras": [
+    213,
+    214,
+    215
+   ],
+   "inicio": 88.07,
+   "fin": 88.938,
+   "salida": 89.288
+  },
+  {
+   "palabras": [
+    216,
+    217,
+    218,
+    219,
+    220
+   ],
+   "inicio": 89.33,
+   "fin": 90.72,
+   "salida": 90.66
+  },
+  {
+   "palabras": [
+    221,
+    222,
+    223,
+    224,
+    225
+   ],
+   "inicio": 90.67,
+   "fin": 92.36,
+   "salida": 92.3
+  },
+  {
+   "palabras": [
+    226,
+    227,
+    228
+   ],
+   "inicio": 92.31,
+   "fin": 93.19,
+   "salida": 93.54
+  },
+  {
+   "palabras": [
+    229,
+    230,
+    231,
+    232
+   ],
+   "inicio": 93.91,
+   "fin": 95.38,
+   "salida": 95.32
+  },
+  {
+   "palabras": [
+    233,
+    234,
+    235
+   ],
+   "inicio": 95.33,
+   "fin": 96.532,
+   "salida": 96.88
+  },
+  {
+   "palabras": [
+    236,
+    237,
+    238,
+    239,
+    240
+   ],
+   "inicio": 96.89,
+   "fin": 98.78,
+   "salida": 98.72
+  },
+  {
+   "palabras": [
+    241,
+    242
+   ],
+   "inicio": 98.73,
+   "fin": 99.355,
+   "salida": 99.705
+  },
+  {
+   "palabras": [
+    243,
+    244,
+    245,
+    246
+   ],
+   "inicio": 99.89,
+   "fin": 100.94,
+   "salida": 100.88
+  },
+  {
+   "palabras": [
+    247,
+    248,
+    249,
+    250,
+    251,
+    252
+   ],
+   "inicio": 100.89,
+   "fin": 102.7,
+   "salida": 102.96
+  },
+  {
+   "palabras": [
+    253,
+    254,
+    255,
+    256,
+    257
+   ],
+   "inicio": 102.97,
+   "fin": 104.5,
+   "salida": 104.44
+  },
+  {
+   "palabras": [
+    258
+   ],
+   "inicio": 104.45,
+   "fin": 105.099,
+   "salida": 105.36
+  },
+  {
+   "palabras": [
+    259,
+    260,
+    261,
+    262
+   ],
+   "inicio": 105.37,
+   "fin": 106.78,
+   "salida": 107.04
+  },
+  {
+   "palabras": [
+    263,
+    264,
+    265,
+    266
+   ],
+   "inicio": 107.05,
+   "fin": 108.42,
+   "salida": 108.36
+  },
+  {
+   "palabras": [
+    267,
+    268,
+    269,
+    270
+   ],
+   "inicio": 108.37,
+   "fin": 109.94,
+   "salida": 109.88
+  },
+  {
+   "palabras": [
+    271,
+    272,
+    273,
+    274,
+    275
+   ],
+   "inicio": 109.89,
+   "fin": 111.34,
+   "salida": 111.28
+  },
+  {
+   "palabras": [
+    276,
+    277
+   ],
+   "inicio": 111.29,
+   "fin": 111.902,
+   "salida": 112.196
+  },
+  {
+   "palabras": [
+    278,
+    279,
+    280,
+    281,
+    282
+   ],
+   "inicio": 112.206,
+   "fin": 113.74,
+   "salida": 114.09
+  },
+  {
+   "palabras": [
+    283,
+    284,
+    285,
+    286,
+    287
+   ],
+   "inicio": 114.15,
+   "fin": 115.977,
+   "salida": 116.26
+  },
+  {
+   "palabras": [
+    288,
+    289,
+    290,
+    291,
+    292
+   ],
+   "inicio": 116.27,
+   "fin": 118.148,
+   "salida": 118.498
+  },
+  {
+   "palabras": [
+    293,
+    294,
+    295,
+    296
+   ],
+   "inicio": 118.63,
+   "fin": 119.92,
+   "salida": 120.27
+  },
+  {
+   "palabras": [
+    297,
+    298,
+    299
+   ],
+   "inicio": 120.29,
+   "fin": 121.254,
+   "salida": 121.6
+  },
+  {
+   "palabras": [
+    300,
+    301,
+    302
+   ],
+   "inicio": 121.61,
+   "fin": 122.673,
+   "salida": 123.023
+  },
+  {
+   "palabras": [
+    303,
+    304,
+    305
+   ],
+   "inicio": 123.05,
+   "fin": 124.085,
+   "salida": 124.42
+  },
+  {
+   "palabras": [
+    306,
+    307,
+    308
+   ],
+   "inicio": 124.43,
+   "fin": 125.48,
+   "salida": 125.83
+  },
+  {
+   "palabras": [
+    309,
+    310,
+    311,
+    312,
+    313
+   ],
+   "inicio": 126.57,
+   "fin": 127.54,
+   "salida": 127.48
+  },
+  {
+   "palabras": [
+    314,
+    315,
+    316,
+    317,
+    318
+   ],
+   "inicio": 127.49,
+   "fin": 129.06,
+   "salida": 129
+  },
+  {
+   "palabras": [
+    319,
+    320,
+    321
+   ],
+   "inicio": 129.01,
+   "fin": 130.016,
+   "salida": 130.366
+  },
+  {
+   "palabras": [
+    322,
+    323,
+    324,
+    325,
+    326
+   ],
+   "inicio": 130.67,
+   "fin": 132.06,
+   "salida": 132
+  },
+  {
+   "palabras": [
+    327,
+    328,
+    329,
+    330
+   ],
+   "inicio": 132.01,
+   "fin": 133.497,
+   "salida": 133.847
+  },
+  {
+   "palabras": [
+    331,
+    332,
+    333,
+    334,
+    335
+   ],
+   "inicio": 133.898,
+   "fin": 135.12,
+   "salida": 135.06
+  },
+  {
+   "palabras": [
+    336,
+    337,
+    338
+   ],
+   "inicio": 135.07,
+   "fin": 136.733,
+   "salida": 137.083
+  },
+  {
+   "palabras": [
+    339,
+    340,
+    341,
+    342,
+    343
+   ],
+   "inicio": 137.825,
+   "fin": 139.6,
+   "salida": 139.95
+  },
+  {
+   "palabras": [
+    344,
+    345,
+    346,
+    347
+   ],
+   "inicio": 140.11,
+   "fin": 141.93,
+   "salida": 142.28
+  },
+  {
+   "palabras": [
+    348,
+    349,
+    350,
+    351,
+    352,
+    353
+   ],
+   "inicio": 142.44,
+   "fin": 143.811,
+   "salida": 144.161
+  },
+  {
+   "palabras": [
+    354,
+    355,
+    356,
+    357
+   ],
+   "inicio": 144.3,
+   "fin": 145.569,
+   "salida": 145.919
+  }
+ ],
+ "cierre": {
+  "palabras": [
+   {
+    "texto": "El",
+    "inicio": 146.34,
+    "fin": 146.52
+   },
+   {
+    "texto": "agua",
+    "inicio": 146.52,
+    "fin": 146.94
+   },
+   {
+    "texto": "no",
+    "inicio": 146.94,
+    "fin": 147.36
+   },
+   {
+    "texto": "se",
+    "inicio": 147.36,
+    "fin": 147.56
+   },
+   {
+    "texto": "vende.",
+    "inicio": 147.56,
+    "fin": 147.88
+   }
+  ],
+  "defiende": 148.2,
+  "texto": "EL AGUA NO SE VENDE.\nSE DEFIENDE."
+ },
+ "estimado": false
+}

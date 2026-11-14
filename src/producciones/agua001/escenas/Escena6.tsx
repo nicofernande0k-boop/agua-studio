@@ -49,7 +49,15 @@ function perfilGota() {
   return new THREE.LatheGeometry(pts, 64);
 }
 
-function LucesYGota({ frame }: { frame: number }) {
+export interface TiemposGota {
+  arcos: number;
+  particulas: number;
+  ventana: number;
+  gota: readonly [number, number];
+}
+const TIEMPOS_GOTA_E6: TiemposGota = { arcos: s(2.0), particulas: s(6.4), ventana: s(4.0), gota: [s(7.2), s(10.2)] };
+
+export function LucesYGota({ frame, tiempos = TIEMPOS_GOTA_E6 }: { frame: number; tiempos?: TiemposGota }) {
   const r = useMemo(() => {
     const azar = crearAzar(404);
     const casa: Vec3 = [0, 6, 0];
@@ -91,16 +99,16 @@ function LucesYGota({ frame }: { frame: number }) {
 
   // Líneas de luz que crecen entre edificios.
   r.arcos.forEach((g, i) => {
-    const p = progreso(frame, s(2.0) + i * 2.2, s(3.4) + i * 2.2, easeInOutCubic);
+    const p = progreso(frame, tiempos.arcos + i * 2.2, tiempos.arcos + s(1.4) + i * 2.2, easeInOutCubic);
     const total = g.index ? g.index.count : 0;
     const paso = 6 * 6;
     g.setDrawRange(0, Math.floor((total * p) / paso) * paso);
   });
 
-  const forma = easeOutBack(progreso(frame, s(7.2), s(10.2)));
+  const forma = easeOutBack(progreso(frame, tiempos.gota[0], tiempos.gota[1]));
   const pulso = 1 + Math.sin(frame * 0.12) * 0.02;
-  const t0 = s(6.4);
-  const ventana = s(4.0);
+  const t0 = tiempos.particulas;
+  const ventana = tiempos.ventana;
 
   return (
     <group>

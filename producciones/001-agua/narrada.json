@@ -1,0 +1,68 @@
+{
+  "id": "001-agua-narrada",
+  "titulo": "El agua no se vende",
+  "fps": 30,
+  "voz": "voz/narracion.mp3",
+  "transcripcion": "voz/transcripcion-whisper.json",
+  "desfase": 1.0,
+  "duracion": 151.5,
+  "correcciones": {
+    "5": "caminás",
+    "21": "imaginá"
+  },
+  "destacadas": [
+    "agua",
+    "derecho",
+    "privatizados",
+    "trabajadores",
+    "soberanía",
+    "vida"
+  ],
+  "cierre": {
+    "desdePalabra": "El agua no se vende.",
+    "defiende": 148.2,
+    "texto": "EL AGUA NO SE VENDE.\nSE DEFIENDE."
+  },
+  "actos": [
+    {
+      "id": "a1",
+      "titulo": "¿Y SI MAÑANA NO TENÉS AGUA?",
+      "hasta": 11.6
+    },
+    {
+      "id": "a2",
+      "titulo": "¿UN DERECHO O UN NEGOCIO?",
+      "hasta": 24.5
+    },
+    {
+      "id": "a3",
+      "titulo": "ARGENTINA, AÑOS 90",
+      "hasta": 52.0
+    },
+    {
+      "id": "a4",
+      "titulo": "LAS PREGUNTAS",
+      "hasta": 66.2
+    },
+    {
+      "id": "a5",
+      "titulo": "SALUD, DIGNIDAD, VIDA",
+      "hasta": 76.0
+    },
+    {
+      "id": "a6",
+      "titulo": "LOS QUE HACEN POSIBLE EL AGUA",
+      "hasta": 99.9
+    },
+    {
+      "id": "a7",
+      "titulo": "SOBERANÍA",
+      "hasta": 126.6
+    },
+    {
+      "id": "a8",
+      "titulo": "EL AGUA NO SE VENDE",
+      "hasta": 151.5
+    }
+  ]
+}
