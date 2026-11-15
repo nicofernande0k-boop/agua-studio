@@ -10,35 +10,35 @@
    "frases": [
     {
      "texto": "Nos dijeron que teníamos que salvarnos solos.",
-     "pausa": 0.7
+     "pausa": 0.95
     },
     {
      "texto": "Que el problema del otro no era nuestro problema.",
-     "pausa": 0.6
+     "pausa": 0.85
     },
     {
      "texto": "Que si alguien se quedaba atrás, era porque no se había esforzado lo suficiente.",
-     "pausa": 1.6
+     "pausa": 2.25
     },
     {
      "texto": "Nos enseñaron a competir.",
-     "pausa": 0.55
-    },
-    {
-     "texto": "A desconfiar.",
-     "pausa": 0.55
-    },
-    {
-     "texto": "A mirar al de al lado como un rival.",
      "pausa": 0.8
     },
     {
+     "texto": "A desconfiar.",
+     "pausa": 0.8
+    },
+    {
+     "texto": "A mirar al de al lado como un rival.",
+     "pausa": 1.05
+    },
+    {
      "texto": "Y casi sin darnos cuenta, empezamos a olvidarnos de algo.",
-     "pausa": 1.5
+     "pausa": 2.15
     },
     {
      "texto": "De nosotros.",
-     "pausa": 2.2
+     "pausa": 2.85
     }
    ]
   },
@@ -48,35 +48,35 @@
    "frases": [
     {
      "texto": "Nos acostumbramos a escuchar que cada uno tiene lo que merece.",
-     "pausa": 0.6
+     "pausa": 0.85
     },
     {
      "texto": "Que ayudar al otro es perder el tiempo.",
-     "pausa": 0.6
+     "pausa": 0.85
     },
     {
      "texto": "Que la solidaridad es una debilidad.",
-     "pausa": 0.9
+     "pausa": 1.15
     },
     {
      "texto": "Pero mientras nos repetían que debíamos pensar solamente en nosotros mismos, empezamos a perder aquello que nos hacía fuertes.",
-     "pausa": 0.8
+     "pausa": 1.05
     },
     {
      "texto": "La capacidad de encontrarnos.",
-     "pausa": 0.5
+     "pausa": 0.75
     },
     {
      "texto": "De organizarnos.",
-     "pausa": 0.5
+     "pausa": 0.75
     },
     {
      "texto": "De tender una mano sin preguntar qué vamos a recibir a cambio.",
-     "pausa": 1.5
+     "pausa": 2.15
     },
     {
      "texto": "Porque ninguna sociedad se construyó solamente con personas intentando llegar primero.",
-     "pausa": 2.0
+     "pausa": 2.65
     }
    ]
   },
@@ -86,39 +86,39 @@
    "frases": [
     {
      "texto": "Sin embargo, hay algo que todavía permanece.",
-     "pausa": 0.8
+     "pausa": 1.05
     },
     {
      "texto": "Está en el vecino que ayuda cuando una familia lo pierde todo.",
-     "pausa": 0.6
+     "pausa": 0.85
     },
     {
      "texto": "En quienes se organizan para levantar un comedor.",
-     "pausa": 0.6
+     "pausa": 0.85
     },
     {
      "texto": "En los trabajadores que acompañan a un compañero.",
-     "pausa": 0.6
+     "pausa": 0.85
     },
     {
      "texto": "En los jóvenes que deciden involucrarse para cambiar una realidad que consideran injusta.",
-     "pausa": 0.6
+     "pausa": 0.85
     },
     {
      "texto": "En cada persona que entiende que la vida del otro también importa.",
-     "pausa": 1.5
+     "pausa": 2.15
     },
     {
      "texto": "Porque la solidaridad no desapareció.",
-     "pausa": 0.6
+     "pausa": 0.85
     },
     {
      "texto": "Sigue estando ahí.",
-     "pausa": 0.6
+     "pausa": 0.85
     },
     {
      "texto": "Esperando que volvamos a encontrarnos.",
-     "pausa": 1.8
+     "pausa": 2.45
     }
    ]
   },
@@ -128,31 +128,31 @@
    "frases": [
     {
      "texto": "Tal vez nos hicieron creer que el futuro era una carrera individual.",
-     "pausa": 0.6
+     "pausa": 0.85
     },
     {
      "texto": "Que triunfar significaba llegar más lejos que los demás.",
-     "pausa": 0.8
+     "pausa": 1.05
     },
     {
      "texto": "Pero una patria no es una competencia.",
-     "pausa": 0.7
+     "pausa": 0.95
     },
     {
      "texto": "Una patria es una construcción colectiva.",
-     "pausa": 0.8
+     "pausa": 1.05
     },
     {
      "texto": "Y ningún pueblo puede construir un futuro verdaderamente compartido si aprende a mirar para otro lado cuando alguien necesita ayuda.",
-     "pausa": 2.4
+     "pausa": 3.05
     },
     {
      "texto": "Porque el destino del otro...",
-     "pausa": 0.9
+     "pausa": 1.15
     },
     {
      "texto": "También es el nuestro.",
-     "pausa": 2.0
+     "pausa": 2.65
     }
    ]
   },
@@ -162,23 +162,23 @@
    "frases": [
     {
      "texto": "Quizás la pregunta no sea cuándo dejamos de pensar en nosotros.",
-     "pausa": 0.8
+     "pausa": 1.05
     },
     {
      "texto": "Quizás la verdadera pregunta sea...",
-     "pausa": 1.5
+     "pausa": 2.15
     },
     {
      "texto": "¿Cuándo vamos a volver a hacerlo?",
-     "pausa": 1.8
+     "pausa": 2.45
     },
     {
      "texto": "Patria en disputa.",
-     "pausa": 0.9
+     "pausa": 1.15
     },
     {
      "texto": "La historia no se mira desde afuera.",
-     "pausa": 0.7
+     "pausa": 0.95
     },
     {
      "texto": "Se disputa.",

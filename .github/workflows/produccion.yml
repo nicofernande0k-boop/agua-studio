@@ -47,6 +47,10 @@ on:
         description: "Release donde publicar (vacío = produccion-<carpeta>)"
         required: false
         default: ""
+      adjuntos:
+        description: "Archivos extra para la Release, separados por espacios (rutas del repo)"
+        required: false
+        default: ""
 
 permissions:
   contents: write
@@ -64,6 +68,7 @@ env:
   SONIDO: ${{ inputs.sonido }}
   VOZ: ${{ inputs.voz }}
   ETIQUETA: ${{ inputs.etiqueta != '' && inputs.etiqueta || format('produccion-{0}', inputs.produccion) }}
+  ADJUNTOS: ${{ inputs.adjuntos }}
 
 jobs:
   preparar:
@@ -81,8 +86,10 @@ jobs:
           if [ "$TIEMPOS" = "tiempos-narrada.json" ]; then
             sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
             node scripts/alinear-voz.mjs "producciones/$PRODUCCION"
-          else
+          elif [ -f "producciones/$PRODUCCION/guion.json" ]; then
             node scripts/temporizar.mjs "producciones/$PRODUCCION"
+          else
+            echo "Tiempos tomados de la voz grabada (se generan fuera de GitHub); no se recalculan."
           fi
           if [ "$TIEMPOS" = "tiempos-narrada.json" ]; then
             git diff --quiet "producciones/$PRODUCCION" || echo "::warning::La alineación recalculada en GitHub difiere levemente; se usa la versión del repositorio."
@@ -168,7 +175,13 @@ jobs:
         run: |
           node -e '
             const t = require("./producciones/" + process.env.PRODUCCION + "/" + process.env.TIEMPOS);
-            for (const e of t.escenas) console.log(e.id, ((e.inicio + e.duracion * 0.6)).toFixed(2));
+            let es = t.escenas;
+            if (!es) {
+              const actos = {};
+              for (const f of t.frases) (actos[f.acto] ??= []).push(f);
+              es = Object.entries(actos).map(([id, fs]) => ({ id, inicio: fs[0].inicio, duracion: fs.at(-1).fin - fs[0].inicio }));
+            }
+            for (const e of es) console.log(e.id, ((e.inicio + e.duracion * 0.6)).toFixed(2));
           ' | while read id seg; do
             ffmpeg -v error -y -ss "$seg" -i "out/$PRODUCCION.mp4" -frames:v 1 -vf scale=360:-1 "out/hoja-$id.jpg"
           done
@@ -192,6 +205,7 @@ jobs:
           cp "producciones/$PRODUCCION/$srt" "out/$PRODUCCION-subtitulos.srt"
           extra=""
           if [ -f "producciones/$PRODUCCION/guia-locucion.md" ] && [ -z "$VOZ" ]; then cp "producciones/$PRODUCCION/guia-locucion.md" "out/$PRODUCCION-guia-locucion.md"; extra="out/$PRODUCCION-guia-locucion.md"; fi
+          for a in $ADJUNTOS; do extra="$extra $a"; done
           gh release create "$etiqueta" \
             "out/$PRODUCCION.mp4" "out/$PRODUCCION-portada.jpg" "out/$PRODUCCION-escenas.jpg" \
             "out/$PRODUCCION-subtitulos.srt" $extra \
