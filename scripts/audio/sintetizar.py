@@ -160,6 +160,22 @@ def pad(notas, dur, brillo=1800, nivel=0.12):
     return y / (len(notas) * 3) * nivel * 4
 
 
+def cuerdas(notas, dur, brillo=2200, nivel=0.12, ataque=1.6):
+    """Ensamble de cuerdas: sierras desafinadas con vibrato lento y ataque suave."""
+    n = int(dur * SR)
+    t = np.arange(n) / SR
+    y = np.zeros(n)
+    for m in notas:
+        for det, fase in ((-0.09, 0.0), (0.0, 1.3), (0.08, 2.1), (0.15, 0.7)):
+            f = hz(m + det) * (1 + 0.0035 * np.sin(2 * np.pi * (4.6 + det) * t + fase))
+            fase_inst = 2 * np.pi * np.cumsum(f) / SR
+            for k in range(1, 9):
+                y += np.sin(k * fase_inst + fase * k) / k
+    y = fft_filtrar(y, alto=brillo, bajo=70)
+    y *= env_adsr(n, min(ataque, dur * 0.4), 0.3, 0.9, min(2.0, dur * 0.4))
+    return y / (len(notas) * 4) * nivel * 3
+
+
 def pluck(m, dur=1.4, nivel=0.25, brillo=1.0):
     n = int(dur * SR)
     t = np.arange(n) / SR
@@ -299,6 +315,51 @@ def musica():
                 pegar(m, campana(79, 0.08, 4), a + final + 0.5, nv, pan=-0.4)
             for g in sec.get("golpes", []):
                 pegar(m, timbal(0.9, 2.6), g, nv)
+        elif est == "piano_min":
+            # Piano minimalista: notas sueltas, mucho aire.
+            frase = sec.get("notas", [62, 65, 69, 67, 65, 64, 62, 57])
+            paso = sec.get("paso", 1.6)
+            t = a + 0.3
+            k = 0
+            while t < b - 1.5:
+                pegar(m, piano(frase[k % len(frase)], 3.2, 0.2), t, nv, pan=0.25 * np.sin(k))
+                if k % 4 == 0:
+                    pegar(m, piano(frase[k % len(frase)] - 24, 4.0, 0.16), t, nv)
+                t += paso * (1.0 if k % 3 else 1.35)
+                k += 1
+            pegar(m, cuerdas([38, 45], d, brillo=700, nivel=0.05, ataque=3), a, nv)
+        elif est == "cuerdas":
+            prog = sec.get("acordes", [[50, 57, 62, 65], [46, 53, 58, 62], [48, 55, 60, 64], [45, 52, 57, 61]])
+            seg = d / len(prog)
+            for k, ac in enumerate(prog):
+                pegar(m, cuerdas(ac, seg + 1.2, brillo=1500 + 250 * k, nivel=0.12 + 0.015 * k), a + k * seg, nv)
+            for k in range(int(d / 2.4)):
+                pegar(m, piano(prog[(k * 2 // 4) % len(prog)][2] + 12, 2.6, 0.1), a + 0.6 + k * 2.4, nv, pan=-0.2)
+        elif est == "crece":
+            prog = sec.get("acordes", [[48, 55, 60, 64], [43, 50, 55, 59], [45, 52, 57, 60], [41, 48, 53, 57]])
+            seg = d / len(prog)
+            bpm = 84
+            corchea = 60 / bpm / 2
+            t = a
+            k = 0
+            while t < b - 0.3:
+                ac = prog[min(len(prog) - 1, int((t - a) // seg))]
+                crece = (t - a) / d
+                pegar(m, piano(ac[k % 4] + 12, 1.4, 0.07 + 0.06 * crece), t, nv, pan=0.3 * np.sin(k))
+                t += corchea
+                k += 1
+            for k, ac in enumerate(prog):
+                pegar(m, cuerdas(ac + [ac[2] + 12], seg + 1.0, brillo=1800 + 500 * k, nivel=0.1 + 0.03 * k), a + k * seg, nv)
+        elif est == "climax":
+            prog = sec.get("acordes", [[41, 48, 53, 57, 60], [43, 50, 55, 59, 62], [45, 52, 57, 60, 64], [48, 55, 60, 64, 67]])
+            final = sec.get("final", d - 3)
+            seg = final / len(prog)
+            for k, ac in enumerate(prog):
+                pegar(m, cuerdas(ac + [ac[2] + 12, ac[4] + 12], seg + 1.2, brillo=2400 + 600 * k, nivel=0.14 + 0.03 * k, ataque=1.0), a + k * seg, nv)
+                pegar(m, bajo_pulso(ac[0] - 12, 2.8, 0.3), a + k * seg, nv)
+            pegar(m, cuerdas([36, 48, 55, 60, 64, 67, 72], b - (a + final), brillo=3000, nivel=0.2, ataque=0.8), a + final, nv)
+            for g in sec.get("golpes", []):
+                pegar(m, timbal(0.8, 2.6), g, nv)
         elif est == "emotivo":
             prog = [[53, 57, 60], [48, 52, 55], [50, 53, 57], [46, 50, 53]]
             seg = d / 4
@@ -365,6 +426,33 @@ def fx(tipo, dur):
                 tt = np.arange(w) / SR
                 y[c : c + w] += np.sin(2 * np.pi * np.cumsum(260 + 300 * np.exp(-tt * 12)) / SR) * np.exp(-tt * 14) * 0.35
         return y * env_adsr(n, 0.2, 0.1, 1, dur * 0.4)
+    if tipo == "pasos":
+        y = np.zeros(n)
+        for k in range(int(dur * 9)):
+            c = rng.uniform(0, dur - 0.05)
+            w = int(0.05 * SR)
+            pegar_mono(y, fft_filtrar(ruido(w), bajo=200, alto=2500) * np.exp(-np.arange(w) / SR * 60) * 1.3, c)
+        return y * env_adsr(n, 0.4, 0.1, 1, 0.5)
+    if tipo == "tren":
+        base = filtrar_variable(ruido(n, "marron") * 2 + ruido(n) * 0.3, 300 + 2500 * np.sin(np.pi * np.linspace(0, 1, n)) ** 2)
+        clac = np.zeros(n)
+        for k in range(int(dur * 6)):
+            pegar_mono(clac, fft_filtrar(ruido(int(0.04 * SR)), bajo=400, alto=3000) * 1.5, k / 6)
+        return (base + clac) * np.sin(np.pi * np.linspace(0, 1, n)) ** 1.2
+    if tipo == "grieta":
+        y = fft_filtrar(ruido(n, "marron"), alto=200) * 3 * np.linspace(0.3, 1, n)
+        for k in range(10):
+            c = rng.uniform(0, dur * 0.8)
+            w = int(0.07 * SR)
+            pegar_mono(y, fft_filtrar(ruido(w), bajo=800, alto=6000) * np.exp(-np.arange(w) / SR * 40) * 1.2, c)
+        return y * env_adsr(n, 0.3, 0.1, 1, 0.8)
+    if tipo == "platos":
+        y = np.zeros(n)
+        for k in range(int(dur * 3)):
+            pegar_mono(y, campana(rng.integers(88, 98), 0.12, 0.3), rng.uniform(0, dur - 0.3))
+        return y + fft_filtrar(ruido(n, "rosa"), bajo=300, alto=2500) * 0.15
+    if tipo == "viento":
+        return filtrar_variable(ruido(n, "rosa"), 400 + 600 * (0.5 + 0.5 * np.sin(2 * np.pi * 0.15 * t))) * env_adsr(n, dur * 0.3, 0.1, 1, dur * 0.3)
     if tipo == "lluvia":
         base = fft_filtrar(ruido(n), bajo=500, alto=7000) * 1.4
         for k in range(int(dur * 40)):

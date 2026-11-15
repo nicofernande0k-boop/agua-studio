@@ -1,0 +1,2079 @@
+{
+ "id": "002-nosotros",
+ "titulo": "¿Cuándo dejamos de pensar en nosotros?",
+ "fps": 30,
+ "duracion": 169.5,
+ "frames": 5085,
+ "frases": [
+  {
+   "k": 1,
+   "acto": "a1",
+   "texto": "Nos dijeron que teníamos que salvarnos solos.",
+   "inicio": 2.0,
+   "fin": 4.94
+  },
+  {
+   "k": 2,
+   "acto": "a1",
+   "texto": "Que el problema del otro no era nuestro problema.",
+   "inicio": 5.64,
+   "fin": 9.42
+  },
+  {
+   "k": 3,
+   "acto": "a1",
+   "texto": "Que si alguien se quedaba atrás, era porque no se había esforzado lo suficiente.",
+   "inicio": 10.02,
+   "fin": 15.9
+  },
+  {
+   "k": 4,
+   "acto": "a1",
+   "texto": "Nos enseñaron a competir.",
+   "inicio": 17.5,
+   "fin": 19.18
+  },
+  {
+   "k": 5,
+   "acto": "a1",
+   "texto": "A desconfiar.",
+   "inicio": 19.73,
+   "fin": 20.57
+  },
+  {
+   "k": 6,
+   "acto": "a1",
+   "texto": "A mirar al de al lado como un rival.",
+   "inicio": 21.12,
+   "fin": 24.9
+  },
+  {
+   "k": 7,
+   "acto": "a1",
+   "texto": "Y casi sin darnos cuenta, empezamos a olvidarnos de algo.",
+   "inicio": 25.7,
+   "fin": 29.9
+  },
+  {
+   "k": 8,
+   "acto": "a1",
+   "texto": "De nosotros.",
+   "inicio": 31.4,
+   "fin": 32.24
+  },
+  {
+   "k": 9,
+   "acto": "a2",
+   "texto": "Nos acostumbramos a escuchar que cada uno tiene lo que merece.",
+   "inicio": 34.44,
+   "fin": 39.06
+  },
+  {
+   "k": 10,
+   "acto": "a2",
+   "texto": "Que ayudar al otro es perder el tiempo.",
+   "inicio": 39.66,
+   "fin": 43.02
+  },
+  {
+   "k": 11,
+   "acto": "a2",
+   "texto": "Que la solidaridad es una debilidad.",
+   "inicio": 43.62,
+   "fin": 46.14
+  },
+  {
+   "k": 12,
+   "acto": "a2",
+   "texto": "Pero mientras nos repetían que debíamos pensar solamente en nosotros mismos, empezamos a perder aquello que nos hacía fuertes.",
+   "inicio": 47.04,
+   "fin": 55.02
+  },
+  {
+   "k": 13,
+   "acto": "a2",
+   "texto": "La capacidad de encontrarnos.",
+   "inicio": 55.82,
+   "fin": 57.5
+  },
+  {
+   "k": 14,
+   "acto": "a2",
+   "texto": "De organizarnos.",
+   "inicio": 58.0,
+   "fin": 58.84
+  },
+  {
+   "k": 15,
+   "acto": "a2",
+   "texto": "De tender una mano sin preguntar qué vamos a recibir a cambio.",
+   "inicio": 59.34,
+   "fin": 64.38
+  },
+  {
+   "k": 16,
+   "acto": "a2",
+   "texto": "Porque ninguna sociedad se construyó solamente con personas intentando llegar primero.",
+   "inicio": 65.88,
+   "fin": 70.5
+  },
+  {
+   "k": 17,
+   "acto": "a3",
+   "texto": "Sin embargo, hay algo que todavía permanece.",
+   "inicio": 72.5,
+   "fin": 75.44
+  },
+  {
+   "k": 18,
+   "acto": "a3",
+   "texto": "Está en el vecino que ayuda cuando una familia lo pierde todo.",
+   "inicio": 76.24,
+   "fin": 81.28
+  },
+  {
+   "k": 19,
+   "acto": "a3",
+   "texto": "En quienes se organizan para levantar un comedor.",
+   "inicio": 81.88,
+   "fin": 85.24
+  },
+  {
+   "k": 20,
+   "acto": "a3",
+   "texto": "En los trabajadores que acompañan a un compañero.",
+   "inicio": 85.84,
+   "fin": 89.2
+  },
+  {
+   "k": 21,
+   "acto": "a3",
+   "texto": "En los jóvenes que deciden involucrarse para cambiar una realidad que consideran injusta.",
+   "inicio": 89.8,
+   "fin": 95.26
+  },
+  {
+   "k": 22,
+   "acto": "a3",
+   "texto": "En cada persona que entiende que la vida del otro también importa.",
+   "inicio": 95.86,
+   "fin": 100.9
+  },
+  {
+   "k": 23,
+   "acto": "a3",
+   "texto": "Porque la solidaridad no desapareció.",
+   "inicio": 102.4,
+   "fin": 104.5
+  },
+  {
+   "k": 24,
+   "acto": "a3",
+   "texto": "Sigue estando ahí.",
+   "inicio": 105.1,
+   "fin": 106.36
+  },
+  {
+   "k": 25,
+   "acto": "a3",
+   "texto": "Esperando que volvamos a encontrarnos.",
+   "inicio": 106.96,
+   "fin": 109.06
+  },
+  {
+   "k": 26,
+   "acto": "a4",
+   "texto": "Tal vez nos hicieron creer que el futuro era una carrera individual.",
+   "inicio": 110.86,
+   "fin": 115.9
+  },
+  {
+   "k": 27,
+   "acto": "a4",
+   "texto": "Que triunfar significaba llegar más lejos que los demás.",
+   "inicio": 116.5,
+   "fin": 120.28
+  },
+  {
+   "k": 28,
+   "acto": "a4",
+   "texto": "Pero una patria no es una competencia.",
+   "inicio": 121.08,
+   "fin": 124.02
+  },
+  {
+   "k": 29,
+   "acto": "a4",
+   "texto": "Una patria es una construcción colectiva.",
+   "inicio": 124.72,
+   "fin": 127.24
+  },
+  {
+   "k": 30,
+   "acto": "a4",
+   "texto": "Y ningún pueblo puede construir un futuro verdaderamente compartido si aprende a mirar para otro lado cuando alguien necesita ayuda.",
+   "inicio": 128.04,
+   "fin": 136.44
+  },
+  {
+   "k": 31,
+   "acto": "a4",
+   "texto": "Porque el destino del otro...",
+   "inicio": 138.84,
+   "fin": 140.94
+  },
+  {
+   "k": 32,
+   "acto": "a4",
+   "texto": "También es el nuestro.",
+   "inicio": 141.84,
+   "fin": 143.52
+  },
+  {
+   "k": 33,
+   "acto": "a5",
+   "texto": "Quizás la pregunta no sea cuándo dejamos de pensar en nosotros.",
+   "inicio": 145.52,
+   "fin": 150.14
+  },
+  {
+   "k": 34,
+   "acto": "a5",
+   "texto": "Quizás la verdadera pregunta sea...",
+   "inicio": 150.94,
+   "fin": 153.04
+  },
+  {
+   "k": 35,
+   "acto": "a5",
+   "texto": "¿Cuándo vamos a volver a hacerlo?",
+   "inicio": 154.54,
+   "fin": 157.06
+  },
+  {
+   "k": 36,
+   "acto": "a5",
+   "texto": "Patria en disputa.",
+   "inicio": 158.86,
+   "fin": 160.12
+  },
+  {
+   "k": 37,
+   "acto": "a5",
+   "texto": "La historia no se mira desde afuera.",
+   "inicio": 161.02,
+   "fin": 163.96
+  },
+  {
+   "k": 38,
+   "acto": "a5",
+   "texto": "Se disputa.",
+   "inicio": 164.66,
+   "fin": 165.5
+  }
+ ],
+ "palabras": [
+  {
+   "texto": "Nos",
+   "inicio": 2.0,
+   "fin": 2.38,
+   "frase": 1
+  },
+  {
+   "texto": "dijeron",
+   "inicio": 2.42,
+   "fin": 2.8,
+   "frase": 1
+  },
+  {
+   "texto": "que",
+   "inicio": 2.84,
+   "fin": 3.22,
+   "frase": 1
+  },
+  {
+   "texto": "teníamos",
+   "inicio": 3.26,
+   "fin": 3.64,
+   "frase": 1
+  },
+  {
+   "texto": "que",
+   "inicio": 3.68,
+   "fin": 4.06,
+   "frase": 1
+  },
+  {
+   "texto": "salvarnos",
+   "inicio": 4.1,
+   "fin": 4.48,
+   "frase": 1
+  },
+  {
+   "texto": "solos.",
+   "inicio": 4.52,
+   "fin": 4.9,
+   "frase": 1
+  },
+  {
+   "texto": "Que",
+   "inicio": 5.64,
+   "fin": 6.02,
+   "frase": 2
+  },
+  {
+   "texto": "el",
+   "inicio": 6.06,
+   "fin": 6.44,
+   "frase": 2
+  },
+  {
+   "texto": "problema",
+   "inicio": 6.48,
+   "fin": 6.86,
+   "frase": 2
+  },
+  {
+   "texto": "del",
+   "inicio": 6.9,
+   "fin": 7.28,
+   "frase": 2
+  },
+  {
+   "texto": "otro",
+   "inicio": 7.32,
+   "fin": 7.7,
+   "frase": 2
+  },
+  {
+   "texto": "no",
+   "inicio": 7.74,
+   "fin": 8.12,
+   "frase": 2
+  },
+  {
+   "texto": "era",
+   "inicio": 8.16,
+   "fin": 8.54,
+   "frase": 2
+  },
+  {
+   "texto": "nuestro",
+   "inicio": 8.58,
+   "fin": 8.96,
+   "frase": 2
+  },
+  {
+   "texto": "problema.",
+   "inicio": 9.0,
+   "fin": 9.38,
+   "frase": 2
+  },
+  {
+   "texto": "Que",
+   "inicio": 10.02,
+   "fin": 10.4,
+   "frase": 3
+  },
+  {
+   "texto": "si",
+   "inicio": 10.44,
+   "fin": 10.82,
+   "frase": 3
+  },
+  {
+   "texto": "alguien",
+   "inicio": 10.86,
+   "fin": 11.24,
+   "frase": 3
+  },
+  {
+   "texto": "se",
+   "inicio": 11.28,
+   "fin": 11.66,
+   "frase": 3
+  },
+  {
+   "texto": "quedaba",
+   "inicio": 11.7,
+   "fin": 12.08,
+   "frase": 3
+  },
+  {
+   "texto": "atrás,",
+   "inicio": 12.12,
+   "fin": 12.5,
+   "frase": 3
+  },
+  {
+   "texto": "era",
+   "inicio": 12.54,
+   "fin": 12.92,
+   "frase": 3
+  },
+  {
+   "texto": "porque",
+   "inicio": 12.96,
+   "fin": 13.34,
+   "frase": 3
+  },
+  {
+   "texto": "no",
+   "inicio": 13.38,
+   "fin": 13.76,
+   "frase": 3
+  },
+  {
+   "texto": "se",
+   "inicio": 13.8,
+   "fin": 14.18,
+   "frase": 3
+  },
+  {
+   "texto": "había",
+   "inicio": 14.22,
+   "fin": 14.6,
+   "frase": 3
+  },
+  {
+   "texto": "esforzado",
+   "inicio": 14.64,
+   "fin": 15.02,
+   "frase": 3
+  },
+  {
+   "texto": "lo",
+   "inicio": 15.06,
+   "fin": 15.44,
+   "frase": 3
+  },
+  {
+   "texto": "suficiente.",
+   "inicio": 15.48,
+   "fin": 15.86,
+   "frase": 3
+  },
+  {
+   "texto": "Nos",
+   "inicio": 17.5,
+   "fin": 17.88,
+   "frase": 4
+  },
+  {
+   "texto": "enseñaron",
+   "inicio": 17.92,
+   "fin": 18.3,
+   "frase": 4
+  },
+  {
+   "texto": "a",
+   "inicio": 18.34,
+   "fin": 18.72,
+   "frase": 4
+  },
+  {
+   "texto": "competir.",
+   "inicio": 18.76,
+   "fin": 19.14,
+   "frase": 4
+  },
+  {
+   "texto": "A",
+   "inicio": 19.73,
+   "fin": 20.11,
+   "frase": 5
+  },
+  {
+   "texto": "desconfiar.",
+   "inicio": 20.15,
+   "fin": 20.53,
+   "frase": 5
+  },
+  {
+   "texto": "A",
+   "inicio": 21.12,
+   "fin": 21.5,
+   "frase": 6
+  },
+  {
+   "texto": "mirar",
+   "inicio": 21.54,
+   "fin": 21.92,
+   "frase": 6
+  },
+  {
+   "texto": "al",
+   "inicio": 21.96,
+   "fin": 22.34,
+   "frase": 6
+  },
+  {
+   "texto": "de",
+   "inicio": 22.38,
+   "fin": 22.76,
+   "frase": 6
+  },
+  {
+   "texto": "al",
+   "inicio": 22.8,
+   "fin": 23.18,
+   "frase": 6
+  },
+  {
+   "texto": "lado",
+   "inicio": 23.22,
+   "fin": 23.6,
+   "frase": 6
+  },
+  {
+   "texto": "como",
+   "inicio": 23.64,
+   "fin": 24.02,
+   "frase": 6
+  },
+  {
+   "texto": "un",
+   "inicio": 24.06,
+   "fin": 24.44,
+   "frase": 6
+  },
+  {
+   "texto": "rival.",
+   "inicio": 24.48,
+   "fin": 24.86,
+   "frase": 6
+  },
+  {
+   "texto": "Y",
+   "inicio": 25.7,
+   "fin": 26.08,
+   "frase": 7
+  },
+  {
+   "texto": "casi",
+   "inicio": 26.12,
+   "fin": 26.5,
+   "frase": 7
+  },
+  {
+   "texto": "sin",
+   "inicio": 26.54,
+   "fin": 26.92,
+   "frase": 7
+  },
+  {
+   "texto": "darnos",
+   "inicio": 26.96,
+   "fin": 27.34,
+   "frase": 7
+  },
+  {
+   "texto": "cuenta,",
+   "inicio": 27.38,
+   "fin": 27.76,
+   "frase": 7
+  },
+  {
+   "texto": "empezamos",
+   "inicio": 27.8,
+   "fin": 28.18,
+   "frase": 7
+  },
+  {
+   "texto": "a",
+   "inicio": 28.22,
+   "fin": 28.6,
+   "frase": 7
+  },
+  {
+   "texto": "olvidarnos",
+   "inicio": 28.64,
+   "fin": 29.02,
+   "frase": 7
+  },
+  {
+   "texto": "de",
+   "inicio": 29.06,
+   "fin": 29.44,
+   "frase": 7
+  },
+  {
+   "texto": "algo.",
+   "inicio": 29.48,
+   "fin": 29.86,
+   "frase": 7
+  },
+  {
+   "texto": "De",
+   "inicio": 31.4,
+   "fin": 31.78,
+   "frase": 8
+  },
+  {
+   "texto": "nosotros.",
+   "inicio": 31.82,
+   "fin": 32.2,
+   "frase": 8
+  },
+  {
+   "texto": "Nos",
+   "inicio": 34.44,
+   "fin": 34.82,
+   "frase": 9
+  },
+  {
+   "texto": "acostumbramos",
+   "inicio": 34.86,
+   "fin": 35.24,
+   "frase": 9
+  },
+  {
+   "texto": "a",
+   "inicio": 35.28,
+   "fin": 35.66,
+   "frase": 9
+  },
+  {
+   "texto": "escuchar",
+   "inicio": 35.7,
+   "fin": 36.08,
+   "frase": 9
+  },
+  {
+   "texto": "que",
+   "inicio": 36.12,
+   "fin": 36.5,
+   "frase": 9
+  },
+  {
+   "texto": "cada",
+   "inicio": 36.54,
+   "fin": 36.92,
+   "frase": 9
+  },
+  {
+   "texto": "uno",
+   "inicio": 36.96,
+   "fin": 37.34,
+   "frase": 9
+  },
+  {
+   "texto": "tiene",
+   "inicio": 37.38,
+   "fin": 37.76,
+   "frase": 9
+  },
+  {
+   "texto": "lo",
+   "inicio": 37.8,
+   "fin": 38.18,
+   "frase": 9
+  },
+  {
+   "texto": "que",
+   "inicio": 38.22,
+   "fin": 38.6,
+   "frase": 9
+  },
+  {
+   "texto": "merece.",
+   "inicio": 38.64,
+   "fin": 39.02,
+   "frase": 9
+  },
+  {
+   "texto": "Que",
+   "inicio": 39.66,
+   "fin": 40.04,
+   "frase": 10
+  },
+  {
+   "texto": "ayudar",
+   "inicio": 40.08,
+   "fin": 40.46,
+   "frase": 10
+  },
+  {
+   "texto": "al",
+   "inicio": 40.5,
+   "fin": 40.88,
+   "frase": 10
+  },
+  {
+   "texto": "otro",
+   "inicio": 40.92,
+   "fin": 41.3,
+   "frase": 10
+  },
+  {
+   "texto": "es",
+   "inicio": 41.34,
+   "fin": 41.72,
+   "frase": 10
+  },
+  {
+   "texto": "perder",
+   "inicio": 41.76,
+   "fin": 42.14,
+   "frase": 10
+  },
+  {
+   "texto": "el",
+   "inicio": 42.18,
+   "fin": 42.56,
+   "frase": 10
+  },
+  {
+   "texto": "tiempo.",
+   "inicio": 42.6,
+   "fin": 42.98,
+   "frase": 10
+  },
+  {
+   "texto": "Que",
+   "inicio": 43.62,
+   "fin": 44.0,
+   "frase": 11
+  },
+  {
+   "texto": "la",
+   "inicio": 44.04,
+   "fin": 44.42,
+   "frase": 11
+  },
+  {
+   "texto": "solidaridad",
+   "inicio": 44.46,
+   "fin": 44.84,
+   "frase": 11
+  },
+  {
+   "texto": "es",
+   "inicio": 44.88,
+   "fin": 45.26,
+   "frase": 11
+  },
+  {
+   "texto": "una",
+   "inicio": 45.3,
+   "fin": 45.68,
+   "frase": 11
+  },
+  {
+   "texto": "debilidad.",
+   "inicio": 45.72,
+   "fin": 46.1,
+   "frase": 11
+  },
+  {
+   "texto": "Pero",
+   "inicio": 47.04,
+   "fin": 47.42,
+   "frase": 12
+  },
+  {
+   "texto": "mientras",
+   "inicio": 47.46,
+   "fin": 47.84,
+   "frase": 12
+  },
+  {
+   "texto": "nos",
+   "inicio": 47.88,
+   "fin": 48.26,
+   "frase": 12
+  },
+  {
+   "texto": "repetían",
+   "inicio": 48.3,
+   "fin": 48.68,
+   "frase": 12
+  },
+  {
+   "texto": "que",
+   "inicio": 48.72,
+   "fin": 49.1,
+   "frase": 12
+  },
+  {
+   "texto": "debíamos",
+   "inicio": 49.14,
+   "fin": 49.52,
+   "frase": 12
+  },
+  {
+   "texto": "pensar",
+   "inicio": 49.56,
+   "fin": 49.94,
+   "frase": 12
+  },
+  {
+   "texto": "solamente",
+   "inicio": 49.98,
+   "fin": 50.36,
+   "frase": 12
+  },
+  {
+   "texto": "en",
+   "inicio": 50.4,
+   "fin": 50.78,
+   "frase": 12
+  },
+  {
+   "texto": "nosotros",
+   "inicio": 50.82,
+   "fin": 51.2,
+   "frase": 12
+  },
+  {
+   "texto": "mismos,",
+   "inicio": 51.24,
+   "fin": 51.62,
+   "frase": 12
+  },
+  {
+   "texto": "empezamos",
+   "inicio": 51.66,
+   "fin": 52.04,
+   "frase": 12
+  },
+  {
+   "texto": "a",
+   "inicio": 52.08,
+   "fin": 52.46,
+   "frase": 12
+  },
+  {
+   "texto": "perder",
+   "inicio": 52.5,
+   "fin": 52.88,
+   "frase": 12
+  },
+  {
+   "texto": "aquello",
+   "inicio": 52.92,
+   "fin": 53.3,
+   "frase": 12
+  },
+  {
+   "texto": "que",
+   "inicio": 53.34,
+   "fin": 53.72,
+   "frase": 12
+  },
+  {
+   "texto": "nos",
+   "inicio": 53.76,
+   "fin": 54.14,
+   "frase": 12
+  },
+  {
+   "texto": "hacía",
+   "inicio": 54.18,
+   "fin": 54.56,
+   "frase": 12
+  },
+  {
+   "texto": "fuertes.",
+   "inicio": 54.6,
+   "fin": 54.98,
+   "frase": 12
+  },
+  {
+   "texto": "La",
+   "inicio": 55.82,
+   "fin": 56.2,
+   "frase": 13
+  },
+  {
+   "texto": "capacidad",
+   "inicio": 56.24,
+   "fin": 56.62,
+   "frase": 13
+  },
+  {
+   "texto": "de",
+   "inicio": 56.66,
+   "fin": 57.04,
+   "frase": 13
+  },
+  {
+   "texto": "encontrarnos.",
+   "inicio": 57.08,
+   "fin": 57.46,
+   "frase": 13
+  },
+  {
+   "texto": "De",
+   "inicio": 58.0,
+   "fin": 58.38,
+   "frase": 14
+  },
+  {
+   "texto": "organizarnos.",
+   "inicio": 58.42,
+   "fin": 58.8,
+   "frase": 14
+  },
+  {
+   "texto": "De",
+   "inicio": 59.34,
+   "fin": 59.72,
+   "frase": 15
+  },
+  {
+   "texto": "tender",
+   "inicio": 59.76,
+   "fin": 60.14,
+   "frase": 15
+  },
+  {
+   "texto": "una",
+   "inicio": 60.18,
+   "fin": 60.56,
+   "frase": 15
+  },
+  {
+   "texto": "mano",
+   "inicio": 60.6,
+   "fin": 60.98,
+   "frase": 15
+  },
+  {
+   "texto": "sin",
+   "inicio": 61.02,
+   "fin": 61.4,
+   "frase": 15
+  },
+  {
+   "texto": "preguntar",
+   "inicio": 61.44,
+   "fin": 61.82,
+   "frase": 15
+  },
+  {
+   "texto": "qué",
+   "inicio": 61.86,
+   "fin": 62.24,
+   "frase": 15
+  },
+  {
+   "texto": "vamos",
+   "inicio": 62.28,
+   "fin": 62.66,
+   "frase": 15
+  },
+  {
+   "texto": "a",
+   "inicio": 62.7,
+   "fin": 63.08,
+   "frase": 15
+  },
+  {
+   "texto": "recibir",
+   "inicio": 63.12,
+   "fin": 63.5,
+   "frase": 15
+  },
+  {
+   "texto": "a",
+   "inicio": 63.54,
+   "fin": 63.92,
+   "frase": 15
+  },
+  {
+   "texto": "cambio.",
+   "inicio": 63.96,
+   "fin": 64.34,
+   "frase": 15
+  },
+  {
+   "texto": "Porque",
+   "inicio": 65.88,
+   "fin": 66.26,
+   "frase": 16
+  },
+  {
+   "texto": "ninguna",
+   "inicio": 66.3,
+   "fin": 66.68,
+   "frase": 16
+  },
+  {
+   "texto": "sociedad",
+   "inicio": 66.72,
+   "fin": 67.1,
+   "frase": 16
+  },
+  {
+   "texto": "se",
+   "inicio": 67.14,
+   "fin": 67.52,
+   "frase": 16
+  },
+  {
+   "texto": "construyó",
+   "inicio": 67.56,
+   "fin": 67.94,
+   "frase": 16
+  },
+  {
+   "texto": "solamente",
+   "inicio": 67.98,
+   "fin": 68.36,
+   "frase": 16
+  },
+  {
+   "texto": "con",
+   "inicio": 68.4,
+   "fin": 68.78,
+   "frase": 16
+  },
+  {
+   "texto": "personas",
+   "inicio": 68.82,
+   "fin": 69.2,
+   "frase": 16
+  },
+  {
+   "texto": "intentando",
+   "inicio": 69.24,
+   "fin": 69.62,
+   "frase": 16
+  },
+  {
+   "texto": "llegar",
+   "inicio": 69.66,
+   "fin": 70.04,
+   "frase": 16
+  },
+  {
+   "texto": "primero.",
+   "inicio": 70.08,
+   "fin": 70.46,
+   "frase": 16
+  },
+  {
+   "texto": "Sin",
+   "inicio": 72.5,
+   "fin": 72.88,
+   "frase": 17
+  },
+  {
+   "texto": "embargo,",
+   "inicio": 72.92,
+   "fin": 73.3,
+   "frase": 17
+  },
+  {
+   "texto": "hay",
+   "inicio": 73.34,
+   "fin": 73.72,
+   "frase": 17
+  },
+  {
+   "texto": "algo",
+   "inicio": 73.76,
+   "fin": 74.14,
+   "frase": 17
+  },
+  {
+   "texto": "que",
+   "inicio": 74.18,
+   "fin": 74.56,
+   "frase": 17
+  },
+  {
+   "texto": "todavía",
+   "inicio": 74.6,
+   "fin": 74.98,
+   "frase": 17
+  },
+  {
+   "texto": "permanece.",
+   "inicio": 75.02,
+   "fin": 75.4,
+   "frase": 17
+  },
+  {
+   "texto": "Está",
+   "inicio": 76.24,
+   "fin": 76.62,
+   "frase": 18
+  },
+  {
+   "texto": "en",
+   "inicio": 76.66,
+   "fin": 77.04,
+   "frase": 18
+  },
+  {
+   "texto": "el",
+   "inicio": 77.08,
+   "fin": 77.46,
+   "frase": 18
+  },
+  {
+   "texto": "vecino",
+   "inicio": 77.5,
+   "fin": 77.88,
+   "frase": 18
+  },
+  {
+   "texto": "que",
+   "inicio": 77.92,
+   "fin": 78.3,
+   "frase": 18
+  },
+  {
+   "texto": "ayuda",
+   "inicio": 78.34,
+   "fin": 78.72,
+   "frase": 18
+  },
+  {
+   "texto": "cuando",
+   "inicio": 78.76,
+   "fin": 79.14,
+   "frase": 18
+  },
+  {
+   "texto": "una",
+   "inicio": 79.18,
+   "fin": 79.56,
+   "frase": 18
+  },
+  {
+   "texto": "familia",
+   "inicio": 79.6,
+   "fin": 79.98,
+   "frase": 18
+  },
+  {
+   "texto": "lo",
+   "inicio": 80.02,
+   "fin": 80.4,
+   "frase": 18
+  },
+  {
+   "texto": "pierde",
+   "inicio": 80.44,
+   "fin": 80.82,
+   "frase": 18
+  },
+  {
+   "texto": "todo.",
+   "inicio": 80.86,
+   "fin": 81.24,
+   "frase": 18
+  },
+  {
+   "texto": "En",
+   "inicio": 81.88,
+   "fin": 82.26,
+   "frase": 19
+  },
+  {
+   "texto": "quienes",
+   "inicio": 82.3,
+   "fin": 82.68,
+   "frase": 19
+  },
+  {
+   "texto": "se",
+   "inicio": 82.72,
+   "fin": 83.1,
+   "frase": 19
+  },
+  {
+   "texto": "organizan",
+   "inicio": 83.14,
+   "fin": 83.52,
+   "frase": 19
+  },
+  {
+   "texto": "para",
+   "inicio": 83.56,
+   "fin": 83.94,
+   "frase": 19
+  },
+  {
+   "texto": "levantar",
+   "inicio": 83.98,
+   "fin": 84.36,
+   "frase": 19
+  },
+  {
+   "texto": "un",
+   "inicio": 84.4,
+   "fin": 84.78,
+   "frase": 19
+  },
+  {
+   "texto": "comedor.",
+   "inicio": 84.82,
+   "fin": 85.2,
+   "frase": 19
+  },
+  {
+   "texto": "En",
+   "inicio": 85.84,
+   "fin": 86.22,
+   "frase": 20
+  },
+  {
+   "texto": "los",
+   "inicio": 86.26,
+   "fin": 86.64,
+   "frase": 20
+  },
+  {
+   "texto": "trabajadores",
+   "inicio": 86.68,
+   "fin": 87.06,
+   "frase": 20
+  },
+  {
+   "texto": "que",
+   "inicio": 87.1,
+   "fin": 87.48,
+   "frase": 20
+  },
+  {
+   "texto": "acompañan",
+   "inicio": 87.52,
+   "fin": 87.9,
+   "frase": 20
+  },
+  {
+   "texto": "a",
+   "inicio": 87.94,
+   "fin": 88.32,
+   "frase": 20
+  },
+  {
+   "texto": "un",
+   "inicio": 88.36,
+   "fin": 88.74,
+   "frase": 20
+  },
+  {
+   "texto": "compañero.",
+   "inicio": 88.78,
+   "fin": 89.16,
+   "frase": 20
+  },
+  {
+   "texto": "En",
+   "inicio": 89.8,
+   "fin": 90.18,
+   "frase": 21
+  },
+  {
+   "texto": "los",
+   "inicio": 90.22,
+   "fin": 90.6,
+   "frase": 21
+  },
+  {
+   "texto": "jóvenes",
+   "inicio": 90.64,
+   "fin": 91.02,
+   "frase": 21
+  },
+  {
+   "texto": "que",
+   "inicio": 91.06,
+   "fin": 91.44,
+   "frase": 21
+  },
+  {
+   "texto": "deciden",
+   "inicio": 91.48,
+   "fin": 91.86,
+   "frase": 21
+  },
+  {
+   "texto": "involucrarse",
+   "inicio": 91.9,
+   "fin": 92.28,
+   "frase": 21
+  },
+  {
+   "texto": "para",
+   "inicio": 92.32,
+   "fin": 92.7,
+   "frase": 21
+  },
+  {
+   "texto": "cambiar",
+   "inicio": 92.74,
+   "fin": 93.12,
+   "frase": 21
+  },
+  {
+   "texto": "una",
+   "inicio": 93.16,
+   "fin": 93.54,
+   "frase": 21
+  },
+  {
+   "texto": "realidad",
+   "inicio": 93.58,
+   "fin": 93.96,
+   "frase": 21
+  },
+  {
+   "texto": "que",
+   "inicio": 94.0,
+   "fin": 94.38,
+   "frase": 21
+  },
+  {
+   "texto": "consideran",
+   "inicio": 94.42,
+   "fin": 94.8,
+   "frase": 21
+  },
+  {
+   "texto": "injusta.",
+   "inicio": 94.84,
+   "fin": 95.22,
+   "frase": 21
+  },
+  {
+   "texto": "En",
+   "inicio": 95.86,
+   "fin": 96.24,
+   "frase": 22
+  },
+  {
+   "texto": "cada",
+   "inicio": 96.28,
+   "fin": 96.66,
+   "frase": 22
+  },
+  {
+   "texto": "persona",
+   "inicio": 96.7,
+   "fin": 97.08,
+   "frase": 22
+  },
+  {
+   "texto": "que",
+   "inicio": 97.12,
+   "fin": 97.5,
+   "frase": 22
+  },
+  {
+   "texto": "entiende",
+   "inicio": 97.54,
+   "fin": 97.92,
+   "frase": 22
+  },
+  {
+   "texto": "que",
+   "inicio": 97.96,
+   "fin": 98.34,
+   "frase": 22
+  },
+  {
+   "texto": "la",
+   "inicio": 98.38,
+   "fin": 98.76,
+   "frase": 22
+  },
+  {
+   "texto": "vida",
+   "inicio": 98.8,
+   "fin": 99.18,
+   "frase": 22
+  },
+  {
+   "texto": "del",
+   "inicio": 99.22,
+   "fin": 99.6,
+   "frase": 22
+  },
+  {
+   "texto": "otro",
+   "inicio": 99.64,
+   "fin": 100.02,
+   "frase": 22
+  },
+  {
+   "texto": "también",
+   "inicio": 100.06,
+   "fin": 100.44,
+   "frase": 22
+  },
+  {
+   "texto": "importa.",
+   "inicio": 100.48,
+   "fin": 100.86,
+   "frase": 22
+  },
+  {
+   "texto": "Porque",
+   "inicio": 102.4,
+   "fin": 102.78,
+   "frase": 23
+  },
+  {
+   "texto": "la",
+   "inicio": 102.82,
+   "fin": 103.2,
+   "frase": 23
+  },
+  {
+   "texto": "solidaridad",
+   "inicio": 103.24,
+   "fin": 103.62,
+   "frase": 23
+  },
+  {
+   "texto": "no",
+   "inicio": 103.66,
+   "fin": 104.04,
+   "frase": 23
+  },
+  {
+   "texto": "desapareció.",
+   "inicio": 104.08,
+   "fin": 104.46,
+   "frase": 23
+  },
+  {
+   "texto": "Sigue",
+   "inicio": 105.1,
+   "fin": 105.48,
+   "frase": 24
+  },
+  {
+   "texto": "estando",
+   "inicio": 105.52,
+   "fin": 105.9,
+   "frase": 24
+  },
+  {
+   "texto": "ahí.",
+   "inicio": 105.94,
+   "fin": 106.32,
+   "frase": 24
+  },
+  {
+   "texto": "Esperando",
+   "inicio": 106.96,
+   "fin": 107.34,
+   "frase": 25
+  },
+  {
+   "texto": "que",
+   "inicio": 107.38,
+   "fin": 107.76,
+   "frase": 25
+  },
+  {
+   "texto": "volvamos",
+   "inicio": 107.8,
+   "fin": 108.18,
+   "frase": 25
+  },
+  {
+   "texto": "a",
+   "inicio": 108.22,
+   "fin": 108.6,
+   "frase": 25
+  },
+  {
+   "texto": "encontrarnos.",
+   "inicio": 108.64,
+   "fin": 109.02,
+   "frase": 25
+  },
+  {
+   "texto": "Tal",
+   "inicio": 110.86,
+   "fin": 111.24,
+   "frase": 26
+  },
+  {
+   "texto": "vez",
+   "inicio": 111.28,
+   "fin": 111.66,
+   "frase": 26
+  },
+  {
+   "texto": "nos",
+   "inicio": 111.7,
+   "fin": 112.08,
+   "frase": 26
+  },
+  {
+   "texto": "hicieron",
+   "inicio": 112.12,
+   "fin": 112.5,
+   "frase": 26
+  },
+  {
+   "texto": "creer",
+   "inicio": 112.54,
+   "fin": 112.92,
+   "frase": 26
+  },
+  {
+   "texto": "que",
+   "inicio": 112.96,
+   "fin": 113.34,
+   "frase": 26
+  },
+  {
+   "texto": "el",
+   "inicio": 113.38,
+   "fin": 113.76,
+   "frase": 26
+  },
+  {
+   "texto": "futuro",
+   "inicio": 113.8,
+   "fin": 114.18,
+   "frase": 26
+  },
+  {
+   "texto": "era",
+   "inicio": 114.22,
+   "fin": 114.6,
+   "frase": 26
+  },
+  {
+   "texto": "una",
+   "inicio": 114.64,
+   "fin": 115.02,
+   "frase": 26
+  },
+  {
+   "texto": "carrera",
+   "inicio": 115.06,
+   "fin": 115.44,
+   "frase": 26
+  },
+  {
+   "texto": "individual.",
+   "inicio": 115.48,
+   "fin": 115.86,
+   "frase": 26
+  },
+  {
+   "texto": "Que",
+   "inicio": 116.5,
+   "fin": 116.88,
+   "frase": 27
+  },
+  {
+   "texto": "triunfar",
+   "inicio": 116.92,
+   "fin": 117.3,
+   "frase": 27
+  },
+  {
+   "texto": "significaba",
+   "inicio": 117.34,
+   "fin": 117.72,
+   "frase": 27
+  },
+  {
+   "texto": "llegar",
+   "inicio": 117.76,
+   "fin": 118.14,
+   "frase": 27
+  },
+  {
+   "texto": "más",
+   "inicio": 118.18,
+   "fin": 118.56,
+   "frase": 27
+  },
+  {
+   "texto": "lejos",
+   "inicio": 118.6,
+   "fin": 118.98,
+   "frase": 27
+  },
+  {
+   "texto": "que",
+   "inicio": 119.02,
+   "fin": 119.4,
+   "frase": 27
+  },
+  {
+   "texto": "los",
+   "inicio": 119.44,
+   "fin": 119.82,
+   "frase": 27
+  },
+  {
+   "texto": "demás.",
+   "inicio": 119.86,
+   "fin": 120.24,
+   "frase": 27
+  },
+  {
+   "texto": "Pero",
+   "inicio": 121.08,
+   "fin": 121.46,
+   "frase": 28
+  },
+  {
+   "texto": "una",
+   "inicio": 121.5,
+   "fin": 121.88,
+   "frase": 28
+  },
+  {
+   "texto": "patria",
+   "inicio": 121.92,
+   "fin": 122.3,
+   "frase": 28
+  },
+  {
+   "texto": "no",
+   "inicio": 122.34,
+   "fin": 122.72,
+   "frase": 28
+  },
+  {
+   "texto": "es",
+   "inicio": 122.76,
+   "fin": 123.14,
+   "frase": 28
+  },
+  {
+   "texto": "una",
+   "inicio": 123.18,
+   "fin": 123.56,
+   "frase": 28
+  },
+  {
+   "texto": "competencia.",
+   "inicio": 123.6,
+   "fin": 123.98,
+   "frase": 28
+  },
+  {
+   "texto": "Una",
+   "inicio": 124.72,
+   "fin": 125.1,
+   "frase": 29
+  },
+  {
+   "texto": "patria",
+   "inicio": 125.14,
+   "fin": 125.52,
+   "frase": 29
+  },
+  {
+   "texto": "es",
+   "inicio": 125.56,
+   "fin": 125.94,
+   "frase": 29
+  },
+  {
+   "texto": "una",
+   "inicio": 125.98,
+   "fin": 126.36,
+   "frase": 29
+  },
+  {
+   "texto": "construcción",
+   "inicio": 126.4,
+   "fin": 126.78,
+   "frase": 29
+  },
+  {
+   "texto": "colectiva.",
+   "inicio": 126.82,
+   "fin": 127.2,
+   "frase": 29
+  },
+  {
+   "texto": "Y",
+   "inicio": 128.04,
+   "fin": 128.42,
+   "frase": 30
+  },
+  {
+   "texto": "ningún",
+   "inicio": 128.46,
+   "fin": 128.84,
+   "frase": 30
+  },
+  {
+   "texto": "pueblo",
+   "inicio": 128.88,
+   "fin": 129.26,
+   "frase": 30
+  },
+  {
+   "texto": "puede",
+   "inicio": 129.3,
+   "fin": 129.68,
+   "frase": 30
+  },
+  {
+   "texto": "construir",
+   "inicio": 129.72,
+   "fin": 130.1,
+   "frase": 30
+  },
+  {
+   "texto": "un",
+   "inicio": 130.14,
+   "fin": 130.52,
+   "frase": 30
+  },
+  {
+   "texto": "futuro",
+   "inicio": 130.56,
+   "fin": 130.94,
+   "frase": 30
+  },
+  {
+   "texto": "verdaderamente",
+   "inicio": 130.98,
+   "fin": 131.36,
+   "frase": 30
+  },
+  {
+   "texto": "compartido",
+   "inicio": 131.4,
+   "fin": 131.78,
+   "frase": 30
+  },
+  {
+   "texto": "si",
+   "inicio": 131.82,
+   "fin": 132.2,
+   "frase": 30
+  },
+  {
+   "texto": "aprende",
+   "inicio": 132.24,
+   "fin": 132.62,
+   "frase": 30
+  },
+  {
+   "texto": "a",
+   "inicio": 132.66,
+   "fin": 133.04,
+   "frase": 30
+  },
+  {
+   "texto": "mirar",
+   "inicio": 133.08,
+   "fin": 133.46,
+   "frase": 30
+  },
+  {
+   "texto": "para",
+   "inicio": 133.5,
+   "fin": 133.88,
+   "frase": 30
+  },
+  {
+   "texto": "otro",
+   "inicio": 133.92,
+   "fin": 134.3,
+   "frase": 30
+  },
+  {
+   "texto": "lado",
+   "inicio": 134.34,
+   "fin": 134.72,
+   "frase": 30
+  },
+  {
+   "texto": "cuando",
+   "inicio": 134.76,
+   "fin": 135.14,
+   "frase": 30
+  },
+  {
+   "texto": "alguien",
+   "inicio": 135.18,
+   "fin": 135.56,
+   "frase": 30
+  },
+  {
+   "texto": "necesita",
+   "inicio": 135.6,
+   "fin": 135.98,
+   "frase": 30
+  },
+  {
+   "texto": "ayuda.",
+   "inicio": 136.02,
+   "fin": 136.4,
+   "frase": 30
+  },
+  {
+   "texto": "Porque",
+   "inicio": 138.84,
+   "fin": 139.22,
+   "frase": 31
+  },
+  {
+   "texto": "el",
+   "inicio": 139.26,
+   "fin": 139.64,
+   "frase": 31
+  },
+  {
+   "texto": "destino",
+   "inicio": 139.68,
+   "fin": 140.06,
+   "frase": 31
+  },
+  {
+   "texto": "del",
+   "inicio": 140.1,
+   "fin": 140.48,
+   "frase": 31
+  },
+  {
+   "texto": "otro...",
+   "inicio": 140.52,
+   "fin": 140.9,
+   "frase": 31
+  },
+  {
+   "texto": "También",
+   "inicio": 141.84,
+   "fin": 142.22,
+   "frase": 32
+  },
+  {
+   "texto": "es",
+   "inicio": 142.26,
+   "fin": 142.64,
+   "frase": 32
+  },
+  {
+   "texto": "el",
+   "inicio": 142.68,
+   "fin": 143.06,
+   "frase": 32
+  },
+  {
+   "texto": "nuestro.",
+   "inicio": 143.1,
+   "fin": 143.48,
+   "frase": 32
+  },
+  {
+   "texto": "Quizás",
+   "inicio": 145.52,
+   "fin": 145.9,
+   "frase": 33
+  },
+  {
+   "texto": "la",
+   "inicio": 145.94,
+   "fin": 146.32,
+   "frase": 33
+  },
+  {
+   "texto": "pregunta",
+   "inicio": 146.36,
+   "fin": 146.74,
+   "frase": 33
+  },
+  {
+   "texto": "no",
+   "inicio": 146.78,
+   "fin": 147.16,
+   "frase": 33
+  },
+  {
+   "texto": "sea",
+   "inicio": 147.2,
+   "fin": 147.58,
+   "frase": 33
+  },
+  {
+   "texto": "cuándo",
+   "inicio": 147.62,
+   "fin": 148.0,
+   "frase": 33
+  },
+  {
+   "texto": "dejamos",
+   "inicio": 148.04,
+   "fin": 148.42,
+   "frase": 33
+  },
+  {
+   "texto": "de",
+   "inicio": 148.46,
+   "fin": 148.84,
+   "frase": 33
+  },
+  {
+   "texto": "pensar",
+   "inicio": 148.88,
+   "fin": 149.26,
+   "frase": 33
+  },
+  {
+   "texto": "en",
+   "inicio": 149.3,
+   "fin": 149.68,
+   "frase": 33
+  },
+  {
+   "texto": "nosotros.",
+   "inicio": 149.72,
+   "fin": 150.1,
+   "frase": 33
+  },
+  {
+   "texto": "Quizás",
+   "inicio": 150.94,
+   "fin": 151.32,
+   "frase": 34
+  },
+  {
+   "texto": "la",
+   "inicio": 151.36,
+   "fin": 151.74,
+   "frase": 34
+  },
+  {
+   "texto": "verdadera",
+   "inicio": 151.78,
+   "fin": 152.16,
+   "frase": 34
+  },
+  {
+   "texto": "pregunta",
+   "inicio": 152.2,
+   "fin": 152.58,
+   "frase": 34
+  },
+  {
+   "texto": "sea...",
+   "inicio": 152.62,
+   "fin": 153.0,
+   "frase": 34
+  },
+  {
+   "texto": "¿Cuándo",
+   "inicio": 154.54,
+   "fin": 154.92,
+   "frase": 35
+  },
+  {
+   "texto": "vamos",
+   "inicio": 154.96,
+   "fin": 155.34,
+   "frase": 35
+  },
+  {
+   "texto": "a",
+   "inicio": 155.38,
+   "fin": 155.76,
+   "frase": 35
+  },
+  {
+   "texto": "volver",
+   "inicio": 155.8,
+   "fin": 156.18,
+   "frase": 35
+  },
+  {
+   "texto": "a",
+   "inicio": 156.22,
+   "fin": 156.6,
+   "frase": 35
+  },
+  {
+   "texto": "hacerlo?",
+   "inicio": 156.64,
+   "fin": 157.02,
+   "frase": 35
+  },
+  {
+   "texto": "Patria",
+   "inicio": 158.86,
+   "fin": 159.24,
+   "frase": 36
+  },
+  {
+   "texto": "en",
+   "inicio": 159.28,
+   "fin": 159.66,
+   "frase": 36
+  },
+  {
+   "texto": "disputa.",
+   "inicio": 159.7,
+   "fin": 160.08,
+   "frase": 36
+  },
+  {
+   "texto": "La",
+   "inicio": 161.02,
+   "fin": 161.4,
+   "frase": 37
+  },
+  {
+   "texto": "historia",
+   "inicio": 161.44,
+   "fin": 161.82,
+   "frase": 37
+  },
+  {
+   "texto": "no",
+   "inicio": 161.86,
+   "fin": 162.24,
+   "frase": 37
+  },
+  {
+   "texto": "se",
+   "inicio": 162.28,
+   "fin": 162.66,
+   "frase": 37
+  },
+  {
+   "texto": "mira",
+   "inicio": 162.7,
+   "fin": 163.08,
+   "frase": 37
+  },
+  {
+   "texto": "desde",
+   "inicio": 163.12,
+   "fin": 163.5,
+   "frase": 37
+  },
+  {
+   "texto": "afuera.",
+   "inicio": 163.54,
+   "fin": 163.92,
+   "frase": 37
+  },
+  {
+   "texto": "Se",
+   "inicio": 164.66,
+   "fin": 165.04,
+   "frase": 38
+  },
+  {
+   "texto": "disputa.",
+   "inicio": 165.08,
+   "fin": 165.46,
+   "frase": 38
+  }
+ ],
+ "bloques": [],
+ "provisorio": true
+}
