@@ -616,7 +616,7 @@ def main():
     def rms(x):
         return np.sqrt(np.mean(x**2)) + 1e-9
 
-    m = m * (0.045 / rms(m))
+    m = m * (float(sonido.get("rms_musica", 0.045)) / rms(m))
     e = e * (0.02 / rms(e))
     mezcla = m * ducking + e * ducking_fx + voz
     escribir_wav(salida / "musica.wav", normalizar(m, 0.7))

@@ -11,6 +11,25 @@ import { CREMA, ROJO } from "./Escena";
 
 const mat = (o: THREE.MeshStandardMaterialParameters) => new THREE.MeshStandardMaterial({ roughness: 0.7, ...o });
 
+/** Resplandor de la grieta: oscuro en los bordes, rojo vivo en el centro. */
+function texturaBrasa() {
+  const c = document.createElement("canvas");
+  c.width = 64;
+  c.height = 4;
+  const g = c.getContext("2d")!;
+  const r = g.createLinearGradient(0, 0, 64, 0);
+  r.addColorStop(0, "#050101");
+  r.addColorStop(0.42, "#5c0712");
+  r.addColorStop(0.5, "#ff2a3c");
+  r.addColorStop(0.58, "#5c0712");
+  r.addColorStop(1, "#050101");
+  g.fillStyle = r;
+  g.fillRect(0, 0, 64, 4);
+  const t = new THREE.CanvasTexture(c);
+  t.colorSpace = THREE.SRGBColorSpace;
+  return t;
+}
+
 /** Mancha suave para el vapor. */
 function texturaHumo() {
   const c = document.createElement("canvas");
@@ -126,8 +145,8 @@ export function Grieta({ apertura }: { apertura: number }) {
     return {
       izq: forma(-1),
       der: forma(1),
-      losa: mat({ color: "#18181a", roughness: 0.45, metalness: 0.15 }),
-      brasa: new THREE.MeshBasicMaterial({ color: ROJO, toneMapped: false }),
+      losa: mat({ color: "#18181a", roughness: 0.45, metalness: 0.15, side: THREE.DoubleSide }),
+      brasa: new THREE.MeshBasicMaterial({ map: texturaBrasa(), toneMapped: false }),
     };
   }, []);
   return (
@@ -136,7 +155,7 @@ export function Grieta({ apertura }: { apertura: number }) {
       <mesh geometry={r.der} material={r.losa} position={[apertura / 2, 0, 0]} receiveShadow />
       {apertura > 0.01 ? (
         <>
-          <mesh position={[0, -1.6, 0]} rotation={[-Math.PI / 2, 0, 0]} material={r.brasa}>
+          <mesh position={[0, -3.2, 0]} rotation={[-Math.PI / 2, 0, 0]} material={r.brasa}>
             <planeGeometry args={[Math.max(0.05, apertura + 0.6), 30]} />
           </mesh>
           <pointLight position={[0, -0.6, 0]} color={ROJO} intensity={18 * clamp01(apertura)} distance={8} />

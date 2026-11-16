@@ -146,7 +146,7 @@ export function Multitud({
       new THREE.MeshStandardMaterial({ color: "#ffffff", roughness: 0.55, metalness: 0.0 });
     const mallas = {} as Record<Parte, THREE.InstancedMesh>;
     for (const p of PARTES) {
-      const im = new THREE.InstancedMesh(g[p], mat, 600);
+      const im = new THREE.InstancedMesh(g[p], mat, 900);
       im.castShadow = sombras;
       im.receiveShadow = true;
       im.frustumCulled = false;

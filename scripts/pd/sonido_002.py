@@ -18,16 +18,16 @@ D = t["duracion"]
 
 musica = [
     {"desde": 0.4, "hasta": corte(9) - 0.1, "estilo": "piano_min", "nivel": 0.55, "notas": [62, 65, 69, 67, 65, 64, 62, 57], "paso": 1.7},
-    {"desde": corte(9) + 0.1, "hasta": corte(17) - 0.1, "estilo": "cuerdas", "nivel": 0.6,
+    {"desde": corte(9) + 0.1, "hasta": corte(17) - 0.1, "estilo": "cuerdas", "nivel": 0.38,
      "acordes": [[50, 57, 62, 65], [46, 53, 58, 62], [43, 50, 55, 58], [45, 52, 57, 61]]},
-    {"desde": corte(17) + 0.1, "hasta": corte(26) - 0.1, "estilo": "crece", "nivel": 0.6,
+    {"desde": corte(17) + 0.1, "hasta": corte(26) - 0.1, "estilo": "crece", "nivel": 0.5,
      "acordes": [[48, 55, 60, 64], [43, 50, 55, 59], [45, 52, 57, 60], [41, 48, 53, 57]]},
-    {"desde": corte(26) + 0.1, "hasta": corte(33) - 0.2, "estilo": "climax", "nivel": 0.66,
-     "final": ini(31) - (corte(26) + 0.1), "golpes": [ini(31), ini(32)]},
+    {"desde": corte(26) + 0.1, "hasta": corte(33) - 0.2, "estilo": "climax", "nivel": 0.4,
+     "final": ini(31) - (corte(26) + 0.1), "golpes": [fin(31) + 0.1, fin(32) + 0.05]},
     # Cierre: casi silencio, después la firma.
     {"desde": corte(33) + 0.2, "hasta": ini(35) - 0.1, "estilo": "piano_min", "nivel": 0.4, "notas": [57, 60, 64, 62], "paso": 2.2},
-    {"desde": ini(35) - 0.2, "hasta": D, "estilo": "climax", "nivel": 0.62,
-     "acordes": [[45, 52, 57, 60, 64], [41, 48, 53, 57, 60]], "final": ini(36) - (ini(35) - 0.2), "golpes": [ini(36), ini(38)]},
+    {"desde": ini(35) - 0.2, "hasta": D, "estilo": "climax", "nivel": 0.34,
+     "acordes": [[45, 52, 57, 60, 64], [41, 48, 53, 57, 60]], "final": ini(36) - (ini(35) - 0.2), "golpes": [fin(36) + 0.05, fin(38) + 0.05]},
 ]
 
 efectos = []
@@ -40,7 +40,7 @@ e(corte(2), corte(4) - corte(2), "ambiente_ciudad", 0.25)
 dur_subte = corte(7) - corte(4)
 e(corte(4) + dur_subte * 0.12, dur_subte * 0.5, "tren", 0.55)
 e(corte(7), corte(8) - corte(7), "pasos", 0.35)
-e(corte(9), corte(12) - corte(9), "lluvia", 0.5)
+e(corte(9), corte(12) - corte(9), "lluvia", 0.28)
 e(corte(9), corte(12) - corte(9), "pasos", 0.2)
 e(corte(12) + 0.3, corte(13) - corte(12), "grieta", 0.5)
 e(corte(13), corte(16) - corte(13), "viento", 0.2)
@@ -54,9 +54,9 @@ e(corte(26), corte(28) - corte(26), "pasos", 0.45)
 e(corte(28), corte(30) - corte(28), "rumor_grave", 0.35)
 e(corte(30), corte(31) - corte(30), "pasos", 0.3)
 e(ini(31) + 1.0, 3.5, "convergen", 0.4)
-e(ini(36) - 0.6, 0.6, "reverso", 0.4)
-e(ini(36), 3.0, "impacto", 0.45)
-e(ini(38), D - ini(38), "impacto_final", 0.6)
+e(fin(36) - 0.5, 0.55, "reverso", 0.35)
+e(fin(36) + 0.05, 3.0, "impacto", 0.45)
+e(fin(38) + 0.05, D - fin(38) - 0.05, "impacto_final", 0.6)
 
-(prod / "sonido.json").write_text(json.dumps({"descripcion": "Episodio 002: música y efectos sintetizados por código, en segundos del video.", "musica": musica, "efectos": efectos}, ensure_ascii=False, indent=1) + "\n")
+(prod / "sonido.json").write_text(json.dumps({"descripcion": "Episodio 002: música y efectos sintetizados por código, en segundos del video.", "rms_musica": 0.034, "musica": musica, "efectos": efectos}, ensure_ascii=False, indent=1) + "\n")
 print(f"{len(musica)} secciones de música · {len(efectos)} efectos · {D:.1f} s")

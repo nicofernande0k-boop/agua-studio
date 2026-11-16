@@ -95,7 +95,9 @@ export const Ciudad: React.FC = () => {
     >
       {(f) => {
         const t = f / 30;
-        const gente = caminantes(5, 46, [-5, 5, -30, 10], t);
+        // Nadie pasa pegado a la cámara (taparía el cuadro).
+        const cz = lerp(12, 1.2, f / Math.max(1, n - 1));
+        const gente = caminantes(5, 46, [-5, 5, -30, 10], t).filter((p) => Math.hypot(p.p[0] - 0.5, p.p[2] - cz) > 1.8);
         const aparece = progreso(f, n * 0.45, n * 0.55);
         return (
           <>

@@ -1,0 +1,272 @@
+{
+ "descripcion": "Episodio 002: música y efectos sintetizados por código, en segundos del video.",
+ "rms_musica": 0.034,
+ "musica": [
+  {
+   "desde": 0.4,
+   "hasta": 29.850999999999996,
+   "estilo": "piano_min",
+   "nivel": 0.55,
+   "notas": [
+    62,
+    65,
+    69,
+    67,
+    65,
+    64,
+    62,
+    57
+   ],
+   "paso": 1.7
+  },
+  {
+   "desde": 30.051,
+   "hasta": 64.41100000000002,
+   "estilo": "cuerdas",
+   "nivel": 0.38,
+   "acordes": [
+    [
+     50,
+     57,
+     62,
+     65
+    ],
+    [
+     46,
+     53,
+     58,
+     62
+    ],
+    [
+     43,
+     50,
+     55,
+     58
+    ],
+    [
+     45,
+     52,
+     57,
+     61
+    ]
+   ]
+  },
+  {
+   "desde": 64.611,
+   "hasta": 98.68200000000002,
+   "estilo": "crece",
+   "nivel": 0.5,
+   "acordes": [
+    [
+     48,
+     55,
+     60,
+     64
+    ],
+    [
+     43,
+     50,
+     55,
+     59
+    ],
+    [
+     45,
+     52,
+     57,
+     60
+    ],
+    [
+     41,
+     48,
+     53,
+     57
+    ]
+   ]
+  },
+  {
+   "desde": 98.882,
+   "hasta": 129.776,
+   "estilo": "climax",
+   "nivel": 0.4,
+   "final": 25.078999999999994,
+   "golpes": [
+    125.499,
+    127.726
+   ]
+  },
+  {
+   "desde": 130.176,
+   "hasta": 138.734,
+   "estilo": "piano_min",
+   "nivel": 0.4,
+   "notas": [
+    57,
+    60,
+    64,
+    62
+   ],
+   "paso": 2.2
+  },
+  {
+   "desde": 138.63400000000001,
+   "hasta": 152.555,
+   "estilo": "climax",
+   "nivel": 0.34,
+   "acordes": [
+    [
+     45,
+     52,
+     57,
+     60,
+     64
+    ],
+    [
+     41,
+     48,
+     53,
+     57,
+     60
+    ]
+   ],
+   "final": 4.367999999999995,
+   "golpes": [
+    144.01700000000002,
+    148.60500000000002
+   ]
+  }
+ ],
+ "efectos": [
+  {
+   "t": 0.2,
+   "dur": 5.271,
+   "tipo": "viento",
+   "nivel": 0.25
+  },
+  {
+   "t": 4.771,
+   "dur": 9.597,
+   "tipo": "pasos",
+   "nivel": 0.4
+  },
+  {
+   "t": 4.771,
+   "dur": 9.597,
+   "tipo": "ambiente_ciudad",
+   "nivel": 0.25
+  },
+  {
+   "t": 15.17,
+   "dur": 3.342,
+   "tipo": "tren",
+   "nivel": 0.55
+  },
+  {
+   "t": 21.052,
+   "dur": 5.348,
+   "tipo": "pasos",
+   "nivel": 0.35
+  },
+  {
+   "t": 29.951,
+   "dur": 9.729,
+   "tipo": "lluvia",
+   "nivel": 0.28
+  },
+  {
+   "t": 29.951,
+   "dur": 9.729,
+   "tipo": "pasos",
+   "nivel": 0.2
+  },
+  {
+   "t": 39.98,
+   "dur": 8.36,
+   "tipo": "grieta",
+   "nivel": 0.5
+  },
+  {
+   "t": 48.04,
+   "dur": 9.209,
+   "tipo": "viento",
+   "nivel": 0.2
+  },
+  {
+   "t": 57.249,
+   "dur": 7.262,
+   "tipo": "pasos",
+   "nivel": 0.35
+  },
+  {
+   "t": 64.511,
+   "dur": 3.42,
+   "tipo": "tono_sala",
+   "nivel": 0.5
+  },
+  {
+   "t": 67.931,
+   "dur": 4.18,
+   "tipo": "pasos",
+   "nivel": 0.25
+  },
+  {
+   "t": 72.111,
+   "dur": 3.332,
+   "tipo": "platos",
+   "nivel": 0.35
+  },
+  {
+   "t": 84.433,
+   "dur": 5.368,
+   "tipo": "brillo",
+   "nivel": 0.35
+  },
+  {
+   "t": 89.801,
+   "dur": 8.981,
+   "tipo": "pasos",
+   "nivel": 0.25
+  },
+  {
+   "t": 98.782,
+   "dur": 8.523,
+   "tipo": "pasos",
+   "nivel": 0.45
+  },
+  {
+   "t": 107.305,
+   "dur": 5.97,
+   "tipo": "rumor_grave",
+   "nivel": 0.35
+  },
+  {
+   "t": 113.275,
+   "dur": 10.336,
+   "tipo": "pasos",
+   "nivel": 0.3
+  },
+  {
+   "t": 124.961,
+   "dur": 3.5,
+   "tipo": "convergen",
+   "nivel": 0.4
+  },
+  {
+   "t": 143.467,
+   "dur": 0.55,
+   "tipo": "reverso",
+   "nivel": 0.35
+  },
+  {
+   "t": 144.017,
+   "dur": 3.0,
+   "tipo": "impacto",
+   "nivel": 0.45
+  },
+  {
+   "t": 148.605,
+   "dur": 3.95,
+   "tipo": "impacto_final",
+   "nivel": 0.6
+  }
+ ]
+}

@@ -14,8 +14,8 @@ const DORADA = "#ffe3b0";
 /** «Tal vez nos hicieron creer que el futuro era una carrera individual…» */
 export const Carrera: React.FC = () => {
   const n = useDuracion();
-  const camara = useCamara([U(0, [6, 1.3, 2], [-2, 1.1, -10], 34), U(1, [5, 2.2, -10], [-1, 0.8, -16], 34)]);
-  const corredores = useMemo(() => Array.from({ length: 7 }, (_, i) => ({ x: (i - 3) * 1.4, v: 6 + (i % 3) * 0.6, tono: (i * 0.31) % 1 })), []);
+  const camara = useCamara([U(0, [2.5, 2.0, 10], [0, 1.1, -2], 36), U(0.5, [2.2, 2.2, 3], [0, 1.0, -10], 36), U(1, [2.0, 2.8, -5], [0.5, 0.6, -16], 36)]);
+  const corredores = useMemo(() => Array.from({ length: 7 }, (_, i) => ({ x: (i - 3) * 1.4, v: 3.4 + (i % 3) * 0.35, tono: (i * 0.31) % 1 })), []);
   return (
     <Toma3D
       camara={camara}
@@ -29,7 +29,7 @@ export const Carrera: React.FC = () => {
         const lista = corredores.map((c, i): Persona => {
           if (i === 4) return { p: [c.x, 0, caidoZ], rumbo: Math.PI, sentado: 1, cabeza: 0.5, manoI: 0.4, codo: 0.4, tono: c.tono };
           const avance = c.v * Math.min(t, n / 30 * 0.5) + c.v * (1 - frenan) * Math.max(0, t - (n / 30) * 0.5) * 0.6;
-          const z = 6 - avance;
+          const z = 3 - avance;
           const vuelve = i === 3 ? progreso(f, n * 0.55, n * 0.8, easeInOutCubic) : 0;
           return { p: [lerp(c.x, -0.4 + corredores[4].x, vuelve), 0, z], rumbo: Math.PI + vuelve * Math.PI * 0.75, paso: 1 - frenan * 0.85, fase: t * 9, inclinar: 0.18 * (1 - frenan), manoD: vuelve * 0.6, tono: c.tono };
         });
@@ -98,7 +98,7 @@ export const Mirar: React.FC = () => {
         const vienen = progreso(f, n * 0.55, n, easeInOutCubic);
         const multitud = gente.map((g): Persona => {
           const k = gira(g.d);
-          const z = lerp(g.z, g.z * 0.55 + 1.5, vienen);
+          const z = lerp(g.z, g.z * 0.6 + 3.2, vienen);
           return { p: [lerp(g.x, g.x * 0.6, vienen), 0, z], rumbo: lerp(0, Math.PI, k), paso: vienen > 0.02 && vienen < 0.98 ? 1 : 0, fase: t * 5 + g.tono * 6, tono: g.tono };
         });
         return <Multitud personas={[arrodillado, ...multitud]} />;
@@ -109,7 +109,7 @@ export const Mirar: React.FC = () => {
 
 /** Posiciones que dibujan la palabra NOSOTROS (muestreo de la tipografía en un lienzo). */
 function puntosPalabra(lineas: string[], paso = 10, escala = 0.05): Vec3[] {
-  const W = 700;
+  const W = 1000;
   const H = 520;
   const c = document.createElement("canvas");
   c.width = W;
@@ -118,7 +118,7 @@ function puntosPalabra(lineas: string[], paso = 10, escala = 0.05): Vec3[] {
   g.fillStyle = "#000";
   g.fillRect(0, 0, W, H);
   g.fillStyle = "#fff";
-  g.font = "400 220px Anton, Impact, sans-serif";
+  g.font = "400 210px Anton, Impact, sans-serif";
   g.textAlign = "center";
   g.textBaseline = "middle";
   lineas.forEach((l, i) => g.fillText(l, W / 2, H / 2 + (i - (lineas.length - 1) / 2) * 235));
@@ -138,11 +138,11 @@ export const Nosotros: React.FC = () => {
   const camara = useCamara([
     U(0, [1.6, 1.0, 3.2], [0, 1.0, 0], 32),
     U(0.35, [1.8, 2.4, 5], [0, 1.1, 0], 34),
-    U(0.7, [0.2, 34, 14], [0, 0, 0], 40),
-    U(1, [0.05, 62, 4], [0, 0, 0], 40),
+    U(0.7, [0.2, 40, 16], [0, 0, 0], 42),
+    U(1, [0.05, 70, 4], [0, 0, 0], 42),
   ]);
   const r = useMemo(() => {
-    const pts = puntosPalabra(["NOS", "OTROS"]);
+    const pts = puntosPalabra(["NOS", "OTROS"], 10, 0.031);
     const az = crearAzar(88);
     const gente = pts.map((p) => ({ p, rumbo: az.entre(-0.3, 0.3), tono: az.n(), aparece: az.entre(0.3, 0.6) }));
     // Hilos que unen vecinos cercanos.
@@ -160,10 +160,10 @@ export const Nosotros: React.FC = () => {
     <Toma3D
       camara={camara}
       temblor={0.6}
-      ambiente={(f) => ({ niebla: [20, 90], relleno: lerp(0.1, 0.35, progreso(f, n * 0.3, n)), colorRelleno: "#d9b98a" })}
+      ambiente={(f) => ({ niebla: [60, 160], relleno: lerp(0.1, 0.35, progreso(f, n * 0.3, n)), colorRelleno: "#d9b98a", entorno: 0.04 })}
       luces={(f): Luz[] => [
         { pos: [0.5, 8, 2], apunta: [0, 0, 0], intensidad: 150 * (1 - progreso(f, n * 0.45, n * 0.7)), angulo: 0.3, penumbra: 0.6, color: DORADA, cono: 0.07 },
-        { pos: [0, 70, 12], apunta: [0, 0, 0], intensidad: 2600 * progreso(f, n * 0.35, n * 0.7), angulo: 0.32, penumbra: 0.9, color: DORADA, sombra: true },
+        { pos: [0, 70, 12], apunta: [0, 0, 0], intensidad: 1700 * progreso(f, n * 0.35, n * 0.7), angulo: 0.3, penumbra: 0.95, color: DORADA, sombra: true },
       ]}
     >
       {(f) => {
