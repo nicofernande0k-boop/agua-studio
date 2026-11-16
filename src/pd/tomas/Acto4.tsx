@@ -1,4 +1,5 @@
-import { useMemo } from "react";
+import { useEffect, useMemo, useState } from "react";
+import { continueRender, delayRender } from "remotion";
 import { crearAzar, easeInOutCubic, easeOutCubic, lerp, progreso, type Vec3 } from "../../lib/anim";
 import { HiloRojo, Toma3D, type Luz } from "../Escena";
 import { Multitud, manoDerecha, type Persona } from "../Multitud";
@@ -132,17 +133,78 @@ function puntosPalabra(lineas: string[], paso = 10, escala = 0.05): Vec3[] {
   return pts;
 }
 
+/**
+ * Una sola palabra en una sola línea: se mide la tipografía y se escala para
+ * que ocupe `ancho` metros, con personas cada `separacion` metros.
+ */
+function puntosPalabraUnica(palabra: string, ancho: number, separacion: number): Vec3[] {
+  const fuente = "400 240px Anton, Impact, sans-serif";
+  const m = document.createElement("canvas").getContext("2d")!;
+  m.font = fuente;
+  const medida = m.measureText(palabra);
+  const W = Math.ceil(medida.width) + 60;
+  const H = 360;
+  const c = document.createElement("canvas");
+  c.width = W;
+  c.height = H;
+  const g = c.getContext("2d")!;
+  g.fillStyle = "#000";
+  g.fillRect(0, 0, W, H);
+  g.fillStyle = "#fff";
+  g.font = fuente;
+  g.textAlign = "center";
+  g.textBaseline = "middle";
+  g.fillText(palabra, W / 2, H / 2);
+  const d = g.getImageData(0, 0, W, H).data;
+  const escala = ancho / medida.width;
+  const paso = Math.max(4, Math.round(separacion / escala));
+  const crudos: [number, number][] = [];
+  for (let y = 0; y < H; y += paso) {
+    for (let x = 0; x < W; x += paso) {
+      if (d[(y * W + x) * 4] > 128) crudos.push([x, y]);
+    }
+  }
+  // Centrado exacto (horizontal y vertical) sobre la caja real de la palabra.
+  const xs = crudos.map((p) => p[0]);
+  const ys = crudos.map((p) => p[1]);
+  const cx = (Math.min(...xs) + Math.max(...xs)) / 2;
+  const cy = (Math.min(...ys) + Math.max(...ys)) / 2;
+  return crudos.map(([x, y]) => [(x - cx) * escala, 0, (y - cy) * escala]);
+}
+
 /** «Porque el destino del otro… También es el nuestro.» — se levantan juntos; desde arriba, NOSOTROS. */
-export const Nosotros: React.FC = () => {
+export const Nosotros: React.FC<{ unaLinea?: boolean }> = ({ unaLinea = false }) => {
   const n = useDuracion();
+  // Versión definitiva (narración más rápida): toda la coreografía se comprime al
+  // 68 % de la toma para que NOSOTROS quede completo y quieto el resto del plano.
+  const k = unaLinea ? 0.68 : 1;
+  const nn = n * k;
   const camara = useCamara([
     U(0, [1.6, 1.0, 3.2], [0, 1.0, 0], 32),
-    U(0.35, [1.8, 2.4, 5], [0, 1.1, 0], 34),
-    U(0.7, [0.2, 40, 16], [0, 0, 0], 42),
-    U(1, [0.05, 70, 4], [0, 0, 0], 42),
+    U(0.35 * k, [1.8, 2.4, 5], [0, 1.1, 0], 34),
+    U(0.7 * k, [0.2, 40, 16], [0, 0, 0], 42),
+    U(k, [0.05, 70, 4], [0, 0, 0], 42),
+    ...(unaLinea ? [U(1, [0.05, 74, 4.2], [0, 0, 0], 42)] : []),
   ]);
+  // La palabra se muestrea de la tipografía: hay que esperar a que Anton esté cargada de verdad.
+  const FUENTE = "400 240px Anton";
+  const [fuente, setFuente] = useState(() => document.fonts.check(FUENTE, "NOSOTROS"));
+  const [espera] = useState(() => (fuente ? null : delayRender("Anton para NOSOTROS")));
+  useEffect(() => {
+    if (espera === null) return;
+    document.fonts
+      .load(FUENTE, "NOSOTROS")
+      .then(() => document.fonts.ready)
+      .catch(() => undefined)
+      .then(() => {
+        setFuente(true);
+        continueRender(espera);
+      });
+  }, [espera]);
   const r = useMemo(() => {
-    const pts = puntosPalabra(["NOS", "OTROS"], 10, 0.031);
+    // Versión definitiva: NOSOTROS en una sola línea, centrada y completa en 9:16.
+    const pts = unaLinea ? puntosPalabraUnica("NOSOTROS", 23, 0.27) : puntosPalabra(["NOS", "OTROS"], 10, 0.031);
+    const sep = unaLinea ? 0.27 : 0.31;
     const az = crearAzar(88);
     const gente = pts.map((p) => ({ p, rumbo: az.entre(-0.3, 0.3), tono: az.n(), aparece: az.entre(0.3, 0.6) }));
     // Hilos que unen vecinos cercanos.
@@ -151,33 +213,33 @@ export const Nosotros: React.FC = () => {
       for (let j = i + 1; j < pts.length; j++) {
         const dx = pts[i][0] - pts[j][0];
         const dz = pts[i][2] - pts[j][2];
-        if (dx * dx + dz * dz < 0.3 && az.n() < 0.35) hilos.push([pts[i], pts[j]]);
+        if (dx * dx + dz * dz < (1.77 * sep) ** 2 && az.n() < (unaLinea ? 0.2 : 0.35)) hilos.push([pts[i], pts[j]]);
       }
     }
     return { gente, hilos };
-  }, []);
+  }, [unaLinea, fuente]);
   return (
     <Toma3D
       camara={camara}
       temblor={0.6}
-      ambiente={(f) => ({ niebla: [60, 160], relleno: lerp(0.1, 0.35, progreso(f, n * 0.3, n)), colorRelleno: "#d9b98a", entorno: 0.04 })}
+      ambiente={(f) => ({ niebla: [60, 160], relleno: lerp(0.1, 0.35, progreso(f, nn * 0.3, nn)), colorRelleno: "#d9b98a", entorno: 0.04 })}
       luces={(f): Luz[] => [
-        { pos: [0.5, 8, 2], apunta: [0, 0, 0], intensidad: 150 * (1 - progreso(f, n * 0.45, n * 0.7)), angulo: 0.3, penumbra: 0.6, color: DORADA, cono: 0.07 },
-        { pos: [0, 70, 12], apunta: [0, 0, 0], intensidad: 1700 * progreso(f, n * 0.35, n * 0.7), angulo: 0.3, penumbra: 0.95, color: DORADA, sombra: true },
+        { pos: [0.5, 8, 2], apunta: [0, 0, 0], intensidad: 150 * (1 - progreso(f, nn * 0.45, nn * 0.7)), angulo: 0.3, penumbra: 0.6, color: DORADA, cono: 0.07 },
+        { pos: [0, 70, 12], apunta: [0, 0, 0], intensidad: 1700 * progreso(f, nn * 0.35, nn * 0.7), angulo: 0.3, penumbra: 0.95, color: DORADA, sombra: true },
       ]}
     >
       {(f) => {
-        const sube = progreso(f, n * 0.08, n * 0.38, easeInOutCubic);
+        const sube = progreso(f, nn * 0.08, nn * 0.38, easeInOutCubic);
         const ayudado: Persona = { p: [0.45, 0, 0], rumbo: -Math.PI / 2, sentado: 1 - sube, cabeza: lerp(0.5, 0, sube), manoD: lerp(0.8, 0.3, sube), codo: 0.1, tono: 0.3 };
         const ayuda: Persona = { p: [-0.45, 0, 0], rumbo: Math.PI / 2, manoD: lerp(0.75, 0.35, sube), codo: 0.05, inclinar: lerp(0.45, 0.05, sube), tono: 0.7 };
         const multitud = r.gente
-          .filter((g) => progreso(f, n * g.aparece, n * (g.aparece + 0.1)) > 0)
-          .map((g): Persona => ({ p: g.p, rumbo: g.rumbo, tono: g.tono, escala: 0.95 }));
-        const hilos = progreso(f, n * 0.62, n * 0.92);
+          .filter((g) => progreso(f, nn * g.aparece, nn * (g.aparece + 0.1)) > 0)
+          .map((g): Persona => ({ p: g.p, rumbo: g.rumbo, tono: g.tono, escala: unaLinea ? 0.85 : 0.95 }));
+        const hilos = progreso(f, nn * 0.62, nn * 0.92);
         return (
           <>
-            <Multitud personas={[ayudado, ayuda, ...multitud]} />
-            <HiloRojo puntos={[manoDerecha(ayuda), [0, 1.0, 0.05], manoDerecha(ayudado)]} crece={progreso(f, n * 0.05, n * 0.15)} />
+            <Multitud personas={[ayudado, ayuda, ...multitud]} capacidad={unaLinea ? 1300 : 900} />
+            <HiloRojo puntos={[manoDerecha(ayuda), [0, 1.0, 0.05], manoDerecha(ayudado)]} crece={progreso(f, nn * 0.05, nn * 0.15)} />
             {hilos > 0
               ? r.hilos.map(([a, b], i) => (
                   <HiloRojo key={i} puntos={[[a[0], 1.1, a[2]], [(a[0] + b[0]) / 2, 1.05, (a[2] + b[2]) / 2], [b[0], 1.1, b[2]]]} crece={progreso(hilos, (i / r.hilos.length) * 0.6, (i / r.hilos.length) * 0.6 + 0.4)} grosor={0.03} />

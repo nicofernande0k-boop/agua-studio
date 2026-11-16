@@ -5,6 +5,7 @@ import "@fontsource/fraunces/400-italic.css";
 import { useEffect, useState } from "react";
 import { AbsoluteFill, Audio, Sequence, continueRender, delayRender, interpolate, spring, staticFile, useCurrentFrame } from "remotion";
 import tiempos from "../../producciones/002-nosotros/tiempos.json";
+import tiemposDefinitiva from "../../producciones/002-definitiva/tiempos.json";
 import { clamp01 } from "../lib/anim";
 import { CREMA, ROJO } from "./Escena";
 import { Ciudad, Olvidar, Solos, Subte } from "./tomas/Acto1";
@@ -25,7 +26,24 @@ interface TiemposPD {
   palabras: { texto: string; inicio: number; fin: number; frase: number }[];
   bloques: { palabras: number[]; inicio: number; fin: number; salida: number; lineas: string[] }[];
 }
-const T = tiempos as unknown as TiemposPD;
+function useFuentes() {
+  const [listo, setListo] = useState(false);
+  const [h] = useState(() => delayRender("Fuentes PD"));
+  useEffect(() => {
+    Promise.all(["400 64px Anton", "600 64px Inter", "italic 400 64px Fraunces"].map((x) => document.fonts.load(x)))
+      .catch(() => undefined)
+      .then(() => {
+        setListo(true);
+        continueRender(h);
+      });
+  }, [h]);
+  return listo;
+}
+
+/** Arma el episodio a partir de unos tiempos (la voz manda el montaje). */
+function crearEpisodio(datos: unknown, op: { audio: string; nosotrosUnaLinea: boolean; subtituloPx: number }) {
+const T = datos as unknown as TiemposPD;
+const SUB_PX = op.subtituloPx;
 const FPS = T.fps;
 const f = (s: number) => Math.round(s * FPS);
 const frase = (k: number) => T.frases[k - 1];
@@ -127,11 +145,12 @@ const Cierre: React.FC = () => {
 const COMPONENTES: Record<string, React.FC> = {
   Solos, Ciudad, Subte, Olvidar, TipoNosotros, Lluvioso, Grietas, Recuerdo, Cima,
   Ventana, Vecinos, ComedorT, Companeros, Jovenes, Ronda, Encuentro,
-  Carrera, Construir, Mirar, Nosotros, Cierre,
+  Carrera, Construir, Mirar, Cierre,
+  Nosotros: () => <Nosotros unaLinea={op.nosotrosUnaLinea} />,
 };
 
 /** Cortes del montaje (en fotogramas). */
-export function cortes() {
+function cortes() {
   const ini = PLAN.map((p, i) => (i === 0 ? 0 : f(frase(p.desde).inicio - 0.35)));
   return PLAN.map((p, i) => ({ ...p, desde: ini[i], hasta: i + 1 < PLAN.length ? ini[i + 1] : T.frames }));
 }
@@ -176,7 +195,7 @@ const Subtitulos: React.FC<{ frame: number }> = ({ frame }) => {
   return (
     <AbsoluteFill style={{ pointerEvents: "none" }}>
       <div style={{ position: "absolute", top: 1210, left: 0, right: 0, display: "flex", justifyContent: "center", opacity: op }}>
-        <div style={{ maxWidth: 900, padding: "16px 30px 20px", backgroundColor: "rgba(5,5,5,0.62)", borderLeft: `6px solid ${ROJO}`, fontFamily: "Inter, sans-serif", fontWeight: 600, fontSize: 52, lineHeight: 1.22, color: CREMA, textAlign: "center", letterSpacing: -0.3 }}>
+        <div style={{ maxWidth: 990, whiteSpace: "nowrap", padding: "16px 30px 20px", backgroundColor: "rgba(5,5,5,0.62)", borderLeft: `6px solid ${ROJO}`, fontFamily: "Inter, sans-serif", fontWeight: 600, fontSize: SUB_PX, lineHeight: 1.22, color: CREMA, textAlign: "center", letterSpacing: -0.3 }}>
           {b.lineas.map((l, i) => (
             <div key={i}>{l}</div>
           ))}
@@ -194,21 +213,7 @@ function negro(frame: number) {
   return Math.max(inicio, ...cambios);
 }
 
-function useFuentes() {
-  const [listo, setListo] = useState(false);
-  const [h] = useState(() => delayRender("Fuentes PD"));
-  useEffect(() => {
-    Promise.all(["400 64px Anton", "600 64px Inter", "italic 400 64px Fraunces"].map((x) => document.fonts.load(x)))
-      .catch(() => undefined)
-      .then(() => {
-        setListo(true);
-        continueRender(h);
-      });
-  }, [h]);
-  return listo;
-}
-
-export const Episodio002: React.FC<{ conAudio?: boolean }> = ({ conAudio = false }) => {
+const Episodio: React.FC<{ conAudio?: boolean }> = ({ conAudio = false }) => {
   const frame = useCurrentFrame();
   const listo = useFuentes();
   return (
@@ -228,9 +233,21 @@ export const Episodio002: React.FC<{ conAudio?: boolean }> = ({ conAudio = false
       <Grano frame={frame} />
       <Rotulo frame={frame} />
       <Subtitulos frame={frame} />
-      {conAudio ? <Audio src={staticFile("audio/002-nosotros.wav")} /> : null}
+      {conAudio ? <Audio src={staticFile(op.audio)} /> : null}
     </AbsoluteFill>
   );
 };
 
-export const DURACION_002 = T.frames;
+return { Episodio, frames: T.frames, cortes };
+}
+
+/** Primera versión (voz F5 experimental). Se conserva tal cual. */
+const v1 = crearEpisodio(tiempos, { audio: "audio/002-nosotros.wav", nosotrosUnaLinea: false, subtituloPx: 52 });
+export const Episodio002 = v1.Episodio;
+export const DURACION_002 = v1.frames;
+export const cortes = v1.cortes;
+
+/** Versión definitiva: narración de ElevenLabs y NOSOTROS en una sola línea. */
+const v2 = crearEpisodio(tiemposDefinitiva, { audio: "audio/002-definitiva.wav", nosotrosUnaLinea: true, subtituloPx: 48 });
+export const Episodio002Definitiva = v2.Episodio;
+export const DURACION_002_DEFINITIVA = v2.frames;

@@ -15,12 +15,17 @@ ini = lambda k: F[k]["inicio"]
 fin = lambda k: F[k]["fin"]
 corte = lambda k: ini(k) - 0.35
 D = t["duracion"]
+# Ajustes por versión (la definitiva usa la narración de ElevenLabs, más rápida y con otro nivel).
+DEF = prod.name == "002-definitiva"
+N_CRECE = 0.4 if DEF else 0.5
+N_TREN = 0.42 if DEF else 0.55
+N_LLUVIA = 0.2 if DEF else 0.28
 
 musica = [
     {"desde": 0.4, "hasta": corte(9) - 0.1, "estilo": "piano_min", "nivel": 0.55, "notas": [62, 65, 69, 67, 65, 64, 62, 57], "paso": 1.7},
     {"desde": corte(9) + 0.1, "hasta": corte(17) - 0.1, "estilo": "cuerdas", "nivel": 0.38,
      "acordes": [[50, 57, 62, 65], [46, 53, 58, 62], [43, 50, 55, 58], [45, 52, 57, 61]]},
-    {"desde": corte(17) + 0.1, "hasta": corte(26) - 0.1, "estilo": "crece", "nivel": 0.5,
+    {"desde": corte(17) + 0.1, "hasta": corte(26) - 0.1, "estilo": "crece", "nivel": N_CRECE,
      "acordes": [[48, 55, 60, 64], [43, 50, 55, 59], [45, 52, 57, 60], [41, 48, 53, 57]]},
     {"desde": corte(26) + 0.1, "hasta": corte(33) - 0.2, "estilo": "climax", "nivel": 0.4,
      "final": ini(31) - (corte(26) + 0.1), "golpes": [fin(31) + 0.1, fin(32) + 0.05]},
@@ -38,9 +43,9 @@ e(0.2, corte(2) + 0.5, "viento", 0.25)
 e(corte(2), corte(4) - corte(2), "pasos", 0.4)
 e(corte(2), corte(4) - corte(2), "ambiente_ciudad", 0.25)
 dur_subte = corte(7) - corte(4)
-e(corte(4) + dur_subte * 0.12, dur_subte * 0.5, "tren", 0.55)
+e(corte(4) + dur_subte * 0.12, dur_subte * 0.5, "tren", N_TREN)
 e(corte(7), corte(8) - corte(7), "pasos", 0.35)
-e(corte(9), corte(12) - corte(9), "lluvia", 0.28)
+e(corte(9), corte(12) - corte(9), "lluvia", N_LLUVIA)
 e(corte(9), corte(12) - corte(9), "pasos", 0.2)
 e(corte(12) + 0.3, corte(13) - corte(12), "grieta", 0.5)
 e(corte(13), corte(16) - corte(13), "viento", 0.2)

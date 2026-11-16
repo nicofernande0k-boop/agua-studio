@@ -134,10 +134,13 @@ export function Multitud({
   personas,
   material,
   sombras = true,
+  capacidad = 900,
 }: {
   personas: Persona[];
   material?: THREE.Material;
   sombras?: boolean;
+  /** Máximo de personas (tamaño de las mallas instanciadas). */
+  capacidad?: number;
 }) {
   const r = useMemo(() => {
     const g = geometrias();
@@ -146,16 +149,17 @@ export function Multitud({
       new THREE.MeshStandardMaterial({ color: "#ffffff", roughness: 0.55, metalness: 0.0 });
     const mallas = {} as Record<Parte, THREE.InstancedMesh>;
     for (const p of PARTES) {
-      const im = new THREE.InstancedMesh(g[p], mat, 900);
+      const im = new THREE.InstancedMesh(g[p], mat, capacidad);
       im.castShadow = sombras;
       im.receiveShadow = true;
       im.frustumCulled = false;
       mallas[p] = im;
     }
     return { mallas };
-  }, [material, sombras]);
+  }, [material, sombras, capacidad]);
 
   const color = new THREE.Color();
+  if (personas.length > capacidad) throw new Error(`Multitud: ${personas.length} personas superan la capacidad ${capacidad}`);
   personas.forEach((pr, i) => {
     const mats = matricesPersona(pr);
     const tono = pr.tono ?? 0.5;

@@ -6,7 +6,7 @@ import tiempos001 from "../producciones/001-agua/tiempos.json";
 import tiempos001n from "../producciones/001-agua/tiempos-narrada.json";
 import { Produccion001Narrada } from "./producciones/agua001n/Produccion";
 import { PruebaPD } from "./pd/Prueba";
-import { DURACION_002, Episodio002 } from "./pd/Episodio002";
+import { DURACION_002, DURACION_002_DEFINITIVA, Episodio002, Episodio002Definitiva } from "./pd/Episodio002";
 import { Portada002 } from "./pd/Portada002";
 
 export const RemotionRoot: React.FC = () => (
@@ -32,6 +32,7 @@ export const RemotionRoot: React.FC = () => (
     />
     <Composition id="PD002Prueba" component={PruebaPD} durationInFrames={180} fps={30} width={ANCHO} height={ALTO} defaultProps={{ toma: "Solos" }} />
     <Composition id="PD002" component={Episodio002} durationInFrames={DURACION_002} fps={30} width={ANCHO} height={ALTO} defaultProps={{ conAudio: false }} />
+    <Composition id="PD002Definitiva" component={Episodio002Definitiva} durationInFrames={DURACION_002_DEFINITIVA} fps={30} width={ANCHO} height={ALTO} defaultProps={{ conAudio: false }} />
     <Composition id="PD002Portada" component={Portada002} durationInFrames={1} fps={30} width={ANCHO} height={ALTO} />
   </>
 );

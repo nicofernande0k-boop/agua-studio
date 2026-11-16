@@ -9,6 +9,7 @@ export const TOMAS: Record<string, React.FC> = {
   Solos, Ciudad, Subte, Olvidar, Lluvioso, Grietas, Recuerdo, Cima,
   Ventana, Vecinos, ComedorT, Companeros, Jovenes, Ronda, Encuentro,
   Carrera, Construir, Mirar, Nosotros,
+  NosotrosUnaLinea: () => <Nosotros unaLinea />,
 };
 
 /** Previsualización de una toma suelta (solo para desarrollo). */
