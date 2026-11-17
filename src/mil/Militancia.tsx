@@ -25,7 +25,9 @@ interface Toma {
   id: string;
   desde: number;
   hasta: number;
-  tipo: "foto" | "rapido" | "placa" | "vacio";
+  tipo: "foto" | "doc" | "rapido" | "placa" | "vacio";
+  ancho?: number;
+  alto?: number;
   clip?: string;
   sub?: Sub[];
   despues?: { clip: string; desde: number };
@@ -49,6 +51,23 @@ export const DURACION_MILITANCIA = M.frames;
 const Fundido: React.FC<{ frames: number; children: React.ReactNode }> = ({ frames, children }) => {
   const f = useCurrentFrame();
   return <AbsoluteFill style={{ opacity: frames > 0 ? c01(f / frames) : 1 }}>{children}</AbsoluteFill>;
+};
+
+/** Documento: la foto entera (viva), enmarcada, sobre su propia imagen desenfocada. */
+const Documento: React.FC<{ src: string; ancho: number; alto: number }> = ({ src, ancho, alto }) => {
+  const w = 972;
+  const h = Math.round((w * alto) / ancho);
+  const top = Math.max(150, Math.round((1920 - h) / 2) - 90);
+  return (
+    <AbsoluteFill style={{ backgroundColor: "#050505" }}>
+      <AbsoluteFill style={{ filter: "blur(34px) brightness(0.42) saturate(0.6)", transform: "scale(1.25)" }}>
+        <OffthreadVideo src={staticFile(src)} muted style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+      </AbsoluteFill>
+      <div style={{ position: "absolute", left: (1080 - w) / 2, top, width: w, height: h, boxShadow: "0 40px 120px rgba(0,0,0,0.85)", outline: "1px solid rgba(239,230,212,0.35)" }}>
+        <OffthreadVideo src={staticFile(src)} muted style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+      </div>
+    </AbsoluteFill>
+  );
 };
 
 const Video: React.FC<{ src: string }> = ({ src }) => (
@@ -158,6 +177,7 @@ export const Militancia: React.FC<{ audio?: string }> = ({ audio = "" }) => {
           <Sequence key={t.id} from={desde} durationInFrames={hasta - desde} name={t.id}>
             <Fundido frames={fd}>
               {t.tipo === "foto" && t.clip ? <Video src={t.clip} /> : null}
+              {t.tipo === "doc" && t.clip ? <Documento src={t.clip} ancho={t.ancho ?? 16} alto={t.alto ?? 9} /> : null}
               {t.tipo === "rapido" && t.sub
                 ? t.sub.map((s, j) => (
                     <Sequence key={j} from={s.desde - desde} durationInFrames={Math.max(1, s.hasta - s.desde)}>

@@ -52,16 +52,26 @@ for j, t in enumerate(tomas):
 
 salida = []
 trabajos = []
-rapidas = [n for n in ["Perón_exiliado.jpg", "Cordobazo.jpg", "Madres_de_Plaza_de_Mayo_(1).jpg", "Huelga_Ferroviaria_1961.jpg", "Bicentenario_-_Obelisco.jpg",
-                       "17deoctubre-enlafuente.jpg", "Marcha_24_de_marzo_2019.jpg", "Rosariazo_1.jpg", "Ni_Una_Menos_-_Buenos_Aires_-_3JUN2017.jpg",
-                       "Perón_y_Rucci_en_Ezeiza_II.jpg", "2da_Marcha_Federal_Universitaria_Córdoba_2024_13.jpg", "Cordobazo-Mujeres.jpg"] if clave(n) in disp]
+# Montaje rápido: generaciones alternadas (solo imágenes con resolución suficiente)
+rapidas = [n for n in ["ferroviarios_1961.jpg", "universidad_2024.jpg", "cordobazo_humo.jpg", "jovenes_bombo.jpg", "rucci_lluvia.jpg", "niunamenos_noche.jpg",
+                       "carpa_blanca_1997.jpg", "universidad_2024.jpg", "ferroviarios_1961.jpg", "jovenes_bombo.jpg"] if clave(n) in disp]
 
 
-def clip(nombre, dur, recorte, mov, cid):
+from PIL import Image
+
+
+def clip(nombre, dur, recorte, mov, cid, doc=False):
     base = os.path.splitext(nombre)[0]
     dep = os.path.join(DEP, "depth", base + ".png")
     out = os.path.join(clips, f"{cid}.mp4")
-    trabajos.append((nombre, dep, out, dur, recorte, mov))
+    if doc:
+        # Documento: la foto entera, en su proporción, viva por profundidad.
+        w, h = Image.open(os.path.join(fotos, nombre)).size
+        cw = int(W * 0.9) // 2 * 2
+        ch = int(cw * h / w) // 2 * 2
+        trabajos.append((nombre, dep, out, dur, [0.5, 0.5, 1.0], mov, cw, ch))
+        return f"mil/clips/{cid}.mp4", cw, ch
+    trabajos.append((nombre, dep, out, dur, recorte, mov, W, H))
     return f"mil/clips/{cid}.mp4"
 
 
@@ -87,7 +97,11 @@ for j, t in enumerate(tomas):
             reg["tipo"] = "vacio"
         else:
             usadas.add(n)
-            reg.update(tipo="foto", img=n, clip=clip(n, d + 0.7, t["recorte"], t["mov"], reg["id"]))
+            if t.get("doc"):
+                c, cw, ch = clip(n, d + 0.7, None, t["mov"], reg["id"], doc=True)
+                reg.update(tipo="doc", img=n, clip=c, ancho=cw, alto=ch)
+            else:
+                reg.update(tipo="foto", img=n, clip=clip(n, d + 0.7, t["recorte"], t["mov"], reg["id"]))
             if t.get("despues") and clave(t["despues"]) in disp:
                 n2 = disp[clave(t["despues"])]
                 reg["despues"] = {"clip": clip(n2, d * 0.6 + 0.7, [0.5, 0.5, 1.0], [1.02, 1.12, 0.0, 0.2, 0.06], reg["id"] + "b"), "desde": round((t["t0"] + d * 0.45) * FPS)}
@@ -106,8 +120,8 @@ if faltan:
 
 
 def hacer(x):
-    nombre, dep, out, dur, (cx, cy, hr), (z0, z1, dx, dy, fz) = x
-    r = subprocess.run([PY, os.path.join(DEP, "paralaje.py"), os.path.join(fotos, nombre), dep, out, f"{dur:.2f}", str(W), str(H), str(cx), str(cy), str(hr), str(z0), str(z1), str(dx), str(dy), str(fz)], capture_output=True, text=True)
+    nombre, dep, out, dur, (cx, cy, hr), (z0, z1, dx, dy, fz), w, h = x
+    r = subprocess.run([PY, os.path.join(DEP, "paralaje.py"), os.path.join(fotos, nombre), dep, out, f"{dur:.2f}", str(w), str(h), str(cx), str(cy), str(hr), str(z0), str(z1), str(dx), str(dy), str(fz)], capture_output=True, text=True)
     return r.stdout.strip() or r.stderr[-200:]
 
 

@@ -7,9 +7,12 @@
    "desde": 0,
    "hasta": 188,
    "k": 1,
-   "tipo": "foto",
-   "img": "Perón_y_Rucci_en_Ezeiza_II.jpg",
-   "clip": "mil/clips/t00.mp4"
+   "tipo": "doc",
+   "img": "plaza_1945.jpg",
+   "clip": "mil/clips/t00.mp4",
+   "ancho": 486,
+   "alto": 338,
+   "epigrafe": "PLAZA DE MAYO · 17 DE OCTUBRE DE 1945"
   },
   {
    "id": "t01",
@@ -17,7 +20,7 @@
    "hasta": 248,
    "k": 2,
    "tipo": "foto",
-   "img": "Perón_y_Rucci_en_Ezeiza_II.jpg",
+   "img": "rucci_lluvia.jpg",
    "clip": "mil/clips/t01.mp4",
    "lluvia": true
   },
@@ -26,273 +29,338 @@
    "desde": 248,
    "hasta": 284,
    "k": 3,
-   "tipo": "foto",
-   "img": "Cordobazo.jpg",
-   "clip": "mil/clips/t02.mp4"
+   "tipo": "doc",
+   "img": "represion.jpg",
+   "clip": "mil/clips/t02.mp4",
+   "ancho": 486,
+   "alto": 324
   },
   {
    "id": "t03",
    "desde": 284,
    "hasta": 339,
    "k": 4,
-   "tipo": "foto",
-   "img": "Cordobazo.jpg",
-   "clip": "mil/clips/t03.mp4"
+   "tipo": "doc",
+   "img": "cordobazo_luzyfuerza.jpg",
+   "clip": "mil/clips/t03.mp4",
+   "ancho": 486,
+   "alto": 270,
+   "epigrafe": "CÓRDOBA · 1969"
   },
   {
    "id": "t04",
    "desde": 339,
    "hasta": 459,
    "k": 5,
-   "tipo": "vacio",
-   "fundido": 14
+   "tipo": "doc",
+   "img": "marcha_obrera_2005.jpg",
+   "clip": "mil/clips/t04.mp4",
+   "ancho": 486,
+   "alto": 364,
+   "fundido": 12
   },
   {
    "id": "t05",
    "desde": 459,
-   "hasta": 543,
+   "hasta": 597,
    "k": 6,
-   "tipo": "vacio"
+   "tipo": "foto",
+   "img": "jovenes_bombo.jpg",
+   "clip": "mil/clips/t05.mp4",
+   "grande": "MILITANTES",
+   "oscuro": 0.3,
+   "grande_desde": 552
   },
   {
    "id": "t06",
-   "desde": 543,
-   "hasta": 597,
-   "k": 7,
-   "tipo": "vacio",
-   "grande": "MILITANTES",
-   "oscuro": 0.45
-  },
-  {
-   "id": "t07",
    "desde": 597,
    "hasta": 735,
    "k": 8,
-   "tipo": "vacio",
+   "tipo": "doc",
+   "img": "peron_exilio.jpg",
+   "clip": "mil/clips/t06.mp4",
+   "ancho": 486,
+   "alto": 358,
    "fundido": 10,
-   "epigrafe": "PERÓN EN EL EXILIO"
+   "epigrafe": "PERÓN PARTE AL EXILIO · 1955"
   },
   {
-   "id": "t08",
+   "id": "t07",
    "desde": 735,
    "hasta": 790,
    "k": 9,
-   "tipo": "vacio",
-   "epigrafe": "DECRETO 4161 · 1956"
+   "tipo": "doc",
+   "img": "peron_exilio.jpg",
+   "clip": "mil/clips/t07.mp4",
+   "ancho": 486,
+   "alto": 358,
+   "fundido": 0,
+   "epigrafe": "DECRETO 4161 · 1956 · PROHIBIDO NOMBRARLO"
   },
   {
-   "id": "t09",
+   "id": "t08",
    "desde": 790,
    "hasta": 852,
    "k": 10,
-   "tipo": "vacio",
+   "tipo": "doc",
+   "img": "vallese.jpg",
+   "clip": "mil/clips/t08.mp4",
+   "ancho": 486,
+   "alto": 346,
    "epigrafe": "FELIPE VALLESE · DESAPARECIDO EN 1962"
   },
   {
-   "id": "t10",
+   "id": "t09",
    "desde": 852,
    "hasta": 927,
    "k": 11,
-   "tipo": "vacio"
+   "tipo": "doc",
+   "img": "cgt_martires_1965.jpg",
+   "clip": "mil/clips/t09.mp4",
+   "ancho": 486,
+   "alto": 330,
+   "epigrafe": "CGT · 1965"
   },
   {
-   "id": "t11",
+   "id": "t10",
    "desde": 927,
    "hasta": 1093,
    "k": 12,
-   "tipo": "vacio"
+   "tipo": "foto",
+   "img": "ferroviarios_1961.jpg",
+   "clip": "mil/clips/t10.mp4",
+   "epigrafe": "HUELGA FERROVIARIA · 1961"
   },
   {
-   "id": "t12",
+   "id": "t11",
    "desde": 1093,
    "hasta": 1246,
    "k": 14,
    "tipo": "foto",
-   "img": "Cordobazo.jpg",
-   "clip": "mil/clips/t12.mp4",
+   "img": "cordobazo_humo.jpg",
+   "clip": "mil/clips/t11.mp4",
    "grande": "LUCHE Y VUELVE",
    "oscuro": 0.4,
    "grande_desde": 1193
   },
   {
-   "id": "t13",
+   "id": "t12",
    "desde": 1246,
    "hasta": 1445,
    "k": 16,
    "tipo": "foto",
-   "img": "Perón_y_Rucci_en_Ezeiza_II.jpg",
-   "clip": "mil/clips/t13.mp4",
+   "img": "rucci_lluvia.jpg",
+   "clip": "mil/clips/t12.mp4",
    "lluvia": true,
    "fundido": 16,
    "epigrafe": "EZEIZA · 17 DE NOVIEMBRE DE 1972"
   },
   {
-   "id": "t14",
+   "id": "t13",
    "desde": 1445,
    "hasta": 1535,
    "k": 17,
-   "tipo": "foto",
-   "img": "Perón_y_Rucci_en_Ezeiza.jpg",
-   "clip": "mil/clips/t14.mp4",
+   "tipo": "doc",
+   "img": "rucci_paraguas.jpg",
+   "clip": "mil/clips/t13.mp4",
+   "ancho": 486,
+   "alto": 292,
    "lluvia": true,
    "fundido": 8,
    "epigrafe": "PERÓN Y RUCCI · EZEIZA, 1972"
   },
   {
-   "id": "t15",
+   "id": "t14",
    "desde": 1535,
    "hasta": 1700,
    "k": 18,
-   "tipo": "foto",
-   "img": "Cordobazo.jpg",
-   "clip": "mil/clips/t15.mp4",
+   "tipo": "doc",
+   "img": "cordobazo_calle.jpg",
+   "clip": "mil/clips/t14.mp4",
+   "ancho": 486,
+   "alto": 668,
    "fundido": 10
   },
   {
-   "id": "t16",
+   "id": "t15",
    "desde": 1700,
    "hasta": 1739,
    "k": 19,
-   "tipo": "vacio",
-   "fundido": 4
+   "tipo": "foto",
+   "img": "ferroviarios_1961.jpg",
+   "clip": "mil/clips/t15.mp4",
+   "fundido": 3
   },
   {
-   "id": "t17",
+   "id": "t16",
    "desde": 1739,
    "hasta": 1776,
    "k": 20,
-   "tipo": "vacio",
-   "fundido": 4
+   "tipo": "foto",
+   "img": "niunamenos_noche.jpg",
+   "clip": "mil/clips/t16.mp4",
+   "fundido": 3
   },
   {
-   "id": "t18",
+   "id": "t17",
    "desde": 1776,
    "hasta": 1819,
    "k": 21,
-   "tipo": "vacio",
-   "fundido": 4
+   "tipo": "foto",
+   "img": "marcha_obrera_2005.jpg",
+   "clip": "mil/clips/t17.mp4",
+   "fundido": 3
   },
   {
-   "id": "t19",
+   "id": "t18",
    "desde": 1819,
    "hasta": 1884,
    "k": 22,
-   "tipo": "vacio",
-   "fundido": 4
+   "tipo": "foto",
+   "img": "universidad_2024.jpg",
+   "clip": "mil/clips/t18.mp4",
+   "fundido": 3
   },
   {
-   "id": "t20",
+   "id": "t19",
    "desde": 1884,
    "hasta": 1997,
    "k": 23,
-   "tipo": "vacio",
+   "tipo": "foto",
+   "img": "cordobazo_luzyfuerza.jpg",
+   "clip": "mil/clips/t19.mp4",
    "fundido": 8
   },
   {
-   "id": "t21",
+   "id": "t20",
    "desde": 1997,
    "hasta": 2078,
    "k": 24,
    "tipo": "foto",
-   "img": "Cordobazo.jpg",
-   "clip": "mil/clips/t21.mp4"
+   "img": "cordobazo_humo.jpg",
+   "clip": "mil/clips/t20.mp4"
   },
   {
-   "id": "t22",
+   "id": "t21",
    "desde": 2078,
    "hasta": 2181,
    "k": 25,
-   "tipo": "vacio",
+   "tipo": "foto",
+   "img": "carpa_blanca_1997.jpg",
+   "clip": "mil/clips/t21.mp4",
    "epigrafe": "CARPA BLANCA DOCENTE · 1997"
   },
   {
-   "id": "t23",
+   "id": "t22",
    "desde": 2181,
    "hasta": 2290,
    "k": 26,
-   "tipo": "vacio",
-   "epigrafe": "MADRES DE PLAZA DE MAYO"
+   "tipo": "foto",
+   "img": "plaza_1945.jpg",
+   "clip": "mil/clips/t22.mp4"
   },
   {
-   "id": "t24",
+   "id": "t23",
    "desde": 2290,
    "hasta": 2420,
    "k": 27,
-   "tipo": "vacio"
+   "tipo": "foto",
+   "img": "ferroviarios_1961.jpg",
+   "clip": "mil/clips/t23.mp4"
   },
   {
-   "id": "t25",
+   "id": "t24",
    "desde": 2420,
    "hasta": 2643,
    "k": 28,
-   "tipo": "vacio",
+   "tipo": "foto",
+   "img": "universidad_2024.jpg",
+   "clip": "mil/clips/t24.mp4",
    "fundido": 10
   },
   {
-   "id": "t26",
+   "id": "t25",
    "desde": 2643,
    "hasta": 2732,
    "k": 30,
-   "tipo": "vacio",
+   "tipo": "foto",
+   "img": "jovenes_bombo.jpg",
+   "clip": "mil/clips/t25.mp4",
    "grande": "COMUNIDAD",
    "oscuro": 0.35,
    "grande_desde": 2709
   },
   {
-   "id": "t27",
+   "id": "t26",
    "desde": 2732,
    "hasta": 2822,
    "k": 32,
-   "tipo": "vacio",
+   "tipo": "foto",
+   "img": "marcha_obrera_2005.jpg",
+   "clip": "mil/clips/t26.mp4",
    "grande": "COMPROMISO",
    "oscuro": 0.35,
    "grande_desde": 2798
   },
   {
-   "id": "t28",
+   "id": "t27",
    "desde": 2822,
    "hasta": 2925,
    "k": 34,
-   "tipo": "vacio",
+   "tipo": "foto",
+   "img": "niunamenos_noche.jpg",
+   "clip": "mil/clips/t27.mp4",
    "grande": "ESPERANZA",
    "oscuro": 0.35,
    "rojo": true,
    "grande_desde": 2886
   },
   {
-   "id": "t29",
+   "id": "t28",
    "desde": 2925,
    "hasta": 2975,
    "k": 36,
-   "tipo": "vacio",
+   "tipo": "doc",
+   "img": "plaza_1945.jpg",
+   "clip": "mil/clips/t28.mp4",
+   "ancho": 486,
+   "alto": 338,
+   "fundido": 6
+  },
+  {
+   "id": "t29",
+   "desde": 2975,
+   "hasta": 3017,
+   "k": 37,
+   "tipo": "foto",
+   "img": "universidad_2024.jpg",
+   "clip": "mil/clips/t29.mp4",
    "fundido": 6
   },
   {
    "id": "t30",
-   "desde": 2975,
-   "hasta": 3017,
-   "k": 37,
-   "tipo": "vacio",
-   "fundido": 6
-  },
-  {
-   "id": "t31",
    "desde": 3017,
    "hasta": 3137,
    "k": 38,
-   "tipo": "vacio",
+   "tipo": "doc",
+   "img": "vallese.jpg",
+   "clip": "mil/clips/t30.mp4",
+   "ancho": 486,
+   "alto": 346,
    "fundido": 12
   },
   {
-   "id": "t32",
+   "id": "t31",
    "desde": 3137,
    "hasta": 3301,
    "k": 39,
-   "tipo": "vacio",
+   "tipo": "foto",
+   "img": "jovenes_bombo.jpg",
+   "clip": "mil/clips/t31.mp4",
    "fundido": 10
   },
   {
-   "id": "t33",
+   "id": "t32",
    "desde": 3301,
    "hasta": 3413,
    "k": 40,
@@ -302,52 +370,58 @@
      "desde": 3301,
      "hasta": 3328,
      "clip": "mil/clips/r00.mp4",
-     "img": "Cordobazo.jpg"
+     "img": "ferroviarios_1961.jpg"
     },
     {
      "desde": 3328,
      "hasta": 3351,
      "clip": "mil/clips/r01.mp4",
-     "img": "Perón_y_Rucci_en_Ezeiza_II.jpg"
+     "img": "universidad_2024.jpg"
     },
     {
      "desde": 3351,
      "hasta": 3371,
      "clip": "mil/clips/r02.mp4",
-     "img": "Cordobazo.jpg"
+     "img": "cordobazo_humo.jpg"
     },
     {
      "desde": 3371,
      "hasta": 3388,
      "clip": "mil/clips/r03.mp4",
-     "img": "Perón_y_Rucci_en_Ezeiza_II.jpg"
+     "img": "jovenes_bombo.jpg"
     },
     {
      "desde": 3388,
      "hasta": 3403,
      "clip": "mil/clips/r04.mp4",
-     "img": "Cordobazo.jpg"
+     "img": "rucci_lluvia.jpg"
     },
     {
      "desde": 3403,
      "hasta": 3413,
      "clip": "mil/clips/r05.mp4",
-     "img": "Perón_y_Rucci_en_Ezeiza_II.jpg"
+     "img": "niunamenos_noche.jpg"
     }
    ]
   },
   {
-   "id": "t34",
+   "id": "t33",
    "desde": 3413,
    "hasta": 3533,
    "k": 41,
-   "tipo": "foto",
-   "img": "Perón_y_Rucci_en_Ezeiza.jpg",
-   "clip": "mil/clips/t34.mp4",
+   "tipo": "doc",
+   "img": "rucci_paraguas.jpg",
+   "clip": "mil/clips/t33.mp4",
+   "ancho": 486,
+   "alto": 292,
+   "despues": {
+    "clip": "mil/clips/t33b.mp4",
+    "desde": 3467
+   },
    "fundido": 4
   },
   {
-   "id": "t35",
+   "id": "t34",
    "desde": 3533,
    "hasta": 3712,
    "k": 42,
