@@ -1,0 +1,216 @@
+{
+ "id": "militancia-2026",
+ "titulo": "Los que nunca bajaron los brazos",
+ "inicio": 1.2,
+ "final": 4.0,
+ "actos": [
+  {
+   "id": "apertura",
+   "frases": [
+    {
+     "texto": "Hay quienes dedican su vida a construir un futuro que quizás nunca lleguen a ver.",
+     "pausa": 0.6
+    },
+    {
+     "texto": "Que caminan bajo la lluvia.",
+     "pausa": 0.3
+    },
+    {
+     "texto": "Que pierden.",
+     "pausa": 0.3
+    },
+    {
+     "texto": "Que vuelven a empezar.",
+     "pausa": 0.4
+    },
+    {
+     "texto": "Que, aun cuando todo parece perdido, siguen creyendo.",
+     "pausa": 0.7
+    },
+    {
+     "texto": "La historia los conoce con un nombre:",
+     "pausa": 0.5
+    },
+    {
+     "texto": "militantes.",
+     "pausa": 1.0
+    }
+   ]
+  },
+  {
+   "id": "proscripcion",
+   "frases": [
+    {
+     "texto": "Durante diecisiete años intentaron borrar al peronismo de la Argentina.",
+     "pausa": 0.4
+    },
+    {
+     "texto": "Prohibieron sus símbolos.",
+     "pausa": 0.2
+    },
+    {
+     "texto": "Persiguieron a sus dirigentes.",
+     "pausa": 0.2
+    },
+    {
+     "texto": "Encarcelaron a sus compañeros.",
+     "pausa": 0.6
+    },
+    {
+     "texto": "Pero hubo algo que no pudieron destruir:",
+     "pausa": 0.4
+    },
+    {
+     "texto": "la memoria de un pueblo organizado.",
+     "pausa": 0.5
+    },
+    {
+     "texto": "Lo escribieron en las paredes, año tras año:",
+     "pausa": 0.3
+    },
+    {
+     "texto": "Luche y vuelve.",
+     "pausa": 1.0
+    }
+   ]
+  },
+  {
+   "id": "regreso",
+   "frases": [
+    {
+     "texto": "El diecisiete de noviembre de mil novecientos setenta y dos, bajo una lluvia que quedó grabada en la historia,",
+     "pausa": 0.3
+    },
+    {
+     "texto": "Perón volvió a pisar suelo argentino.",
+     "pausa": 0.7
+    },
+    {
+     "texto": "Y detrás de ese regreso estaban miles de hombres y mujeres que nunca dejaron de luchar.",
+     "pausa": 0.4
+    },
+    {
+     "texto": "En las fábricas.",
+     "pausa": 0.2
+    },
+    {
+     "texto": "En los barrios.",
+     "pausa": 0.2
+    },
+    {
+     "texto": "En los sindicatos.",
+     "pausa": 0.2
+    },
+    {
+     "texto": "En las universidades.",
+     "pausa": 0.8
+    }
+   ]
+  },
+  {
+   "id": "militar",
+   "frases": [
+    {
+     "texto": "Porque militar nunca fue solamente levantar una bandera.",
+     "pausa": 0.4
+    },
+    {
+     "texto": "Es levantarse cuando otros se resignan.",
+     "pausa": 0.3
+    },
+    {
+     "texto": "Es organizarse cuando todo invita al individualismo.",
+     "pausa": 0.3
+    },
+    {
+     "texto": "Es entender que el dolor del otro también nos pertenece.",
+     "pausa": 0.3
+    },
+    {
+     "texto": "Y muchas veces, hacerlo sin que nadie conozca tu nombre.",
+     "pausa": 0.9
+    }
+   ]
+  },
+  {
+   "id": "hoy",
+   "frases": [
+    {
+     "texto": "Hoy, cuando nos quieren convencer de que cada uno debe salvarse solo,",
+     "pausa": 0.3
+    },
+    {
+     "texto": "militar sigue siendo un acto de rebeldía.",
+     "pausa": 0.6
+    },
+    {
+     "texto": "Frente al individualismo,",
+     "pausa": 0.2
+    },
+    {
+     "texto": "la comunidad.",
+     "pausa": 0.3
+    },
+    {
+     "texto": "Frente a la indiferencia,",
+     "pausa": 0.2
+    },
+    {
+     "texto": "el compromiso.",
+     "pausa": 0.3
+    },
+    {
+     "texto": "Frente a la resignación,",
+     "pausa": 0.2
+    },
+    {
+     "texto": "la esperanza.",
+     "pausa": 0.8
+    }
+   ]
+  },
+  {
+   "id": "homenaje",
+   "frases": [
+    {
+     "texto": "A los que estuvieron.",
+     "pausa": 0.3
+    },
+    {
+     "texto": "A los que están.",
+     "pausa": 0.3
+    },
+    {
+     "texto": "A los que ya no están, pero siguen presentes en cada lucha.",
+     "pausa": 0.4
+    },
+    {
+     "texto": "Y a los que todavía no saben que algún día van a levantar nuestras banderas.",
+     "pausa": 1.0
+    }
+   ]
+  },
+  {
+   "id": "cierre",
+   "frases": [
+    {
+     "texto": "La historia no la escriben quienes miran desde afuera.",
+     "pausa": 0.5
+    },
+    {
+     "texto": "La escriben quienes se animan a transformarla.",
+     "pausa": 1.2
+    }
+   ]
+  },
+  {
+   "id": "saludo",
+   "frases": [
+    {
+     "texto": "Feliz Día de la Militancia.",
+     "pausa": 0.3
+    }
+   ]
+  }
+ ]
+}

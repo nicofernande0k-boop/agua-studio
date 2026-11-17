@@ -1,0 +1,3089 @@
+{
+ "fps": 30,
+ "frames": 3712,
+ "tomas": [
+  {
+   "id": "t00",
+   "desde": 0,
+   "hasta": 188,
+   "k": 1,
+   "tipo": "foto",
+   "img": "Perón_y_Rucci_en_Ezeiza_II.jpg",
+   "clip": "mil/clips/t00.mp4"
+  },
+  {
+   "id": "t01",
+   "desde": 188,
+   "hasta": 248,
+   "k": 2,
+   "tipo": "foto",
+   "img": "Perón_y_Rucci_en_Ezeiza_II.jpg",
+   "clip": "mil/clips/t01.mp4",
+   "lluvia": true
+  },
+  {
+   "id": "t02",
+   "desde": 248,
+   "hasta": 284,
+   "k": 3,
+   "tipo": "foto",
+   "img": "Cordobazo.jpg",
+   "clip": "mil/clips/t02.mp4"
+  },
+  {
+   "id": "t03",
+   "desde": 284,
+   "hasta": 339,
+   "k": 4,
+   "tipo": "foto",
+   "img": "Cordobazo.jpg",
+   "clip": "mil/clips/t03.mp4"
+  },
+  {
+   "id": "t04",
+   "desde": 339,
+   "hasta": 459,
+   "k": 5,
+   "tipo": "vacio",
+   "fundido": 14
+  },
+  {
+   "id": "t05",
+   "desde": 459,
+   "hasta": 543,
+   "k": 6,
+   "tipo": "vacio"
+  },
+  {
+   "id": "t06",
+   "desde": 543,
+   "hasta": 597,
+   "k": 7,
+   "tipo": "vacio",
+   "grande": "MILITANTES",
+   "oscuro": 0.45
+  },
+  {
+   "id": "t07",
+   "desde": 597,
+   "hasta": 735,
+   "k": 8,
+   "tipo": "vacio",
+   "fundido": 10,
+   "epigrafe": "PERÓN EN EL EXILIO"
+  },
+  {
+   "id": "t08",
+   "desde": 735,
+   "hasta": 790,
+   "k": 9,
+   "tipo": "vacio",
+   "epigrafe": "DECRETO 4161 · 1956"
+  },
+  {
+   "id": "t09",
+   "desde": 790,
+   "hasta": 852,
+   "k": 10,
+   "tipo": "vacio",
+   "epigrafe": "FELIPE VALLESE · DESAPARECIDO EN 1962"
+  },
+  {
+   "id": "t10",
+   "desde": 852,
+   "hasta": 927,
+   "k": 11,
+   "tipo": "vacio"
+  },
+  {
+   "id": "t11",
+   "desde": 927,
+   "hasta": 1093,
+   "k": 12,
+   "tipo": "vacio"
+  },
+  {
+   "id": "t12",
+   "desde": 1093,
+   "hasta": 1246,
+   "k": 14,
+   "tipo": "foto",
+   "img": "Cordobazo.jpg",
+   "clip": "mil/clips/t12.mp4",
+   "grande": "LUCHE Y VUELVE",
+   "oscuro": 0.4,
+   "grande_desde": 1193
+  },
+  {
+   "id": "t13",
+   "desde": 1246,
+   "hasta": 1445,
+   "k": 16,
+   "tipo": "foto",
+   "img": "Perón_y_Rucci_en_Ezeiza_II.jpg",
+   "clip": "mil/clips/t13.mp4",
+   "lluvia": true,
+   "fundido": 16,
+   "epigrafe": "EZEIZA · 17 DE NOVIEMBRE DE 1972"
+  },
+  {
+   "id": "t14",
+   "desde": 1445,
+   "hasta": 1535,
+   "k": 17,
+   "tipo": "foto",
+   "img": "Perón_y_Rucci_en_Ezeiza.jpg",
+   "clip": "mil/clips/t14.mp4",
+   "lluvia": true,
+   "fundido": 8,
+   "epigrafe": "PERÓN Y RUCCI · EZEIZA, 1972"
+  },
+  {
+   "id": "t15",
+   "desde": 1535,
+   "hasta": 1700,
+   "k": 18,
+   "tipo": "foto",
+   "img": "Cordobazo.jpg",
+   "clip": "mil/clips/t15.mp4",
+   "fundido": 10
+  },
+  {
+   "id": "t16",
+   "desde": 1700,
+   "hasta": 1739,
+   "k": 19,
+   "tipo": "vacio",
+   "fundido": 4
+  },
+  {
+   "id": "t17",
+   "desde": 1739,
+   "hasta": 1776,
+   "k": 20,
+   "tipo": "vacio",
+   "fundido": 4
+  },
+  {
+   "id": "t18",
+   "desde": 1776,
+   "hasta": 1819,
+   "k": 21,
+   "tipo": "vacio",
+   "fundido": 4
+  },
+  {
+   "id": "t19",
+   "desde": 1819,
+   "hasta": 1884,
+   "k": 22,
+   "tipo": "vacio",
+   "fundido": 4
+  },
+  {
+   "id": "t20",
+   "desde": 1884,
+   "hasta": 1997,
+   "k": 23,
+   "tipo": "vacio",
+   "fundido": 8
+  },
+  {
+   "id": "t21",
+   "desde": 1997,
+   "hasta": 2078,
+   "k": 24,
+   "tipo": "foto",
+   "img": "Cordobazo.jpg",
+   "clip": "mil/clips/t21.mp4"
+  },
+  {
+   "id": "t22",
+   "desde": 2078,
+   "hasta": 2181,
+   "k": 25,
+   "tipo": "vacio",
+   "epigrafe": "CARPA BLANCA DOCENTE · 1997"
+  },
+  {
+   "id": "t23",
+   "desde": 2181,
+   "hasta": 2290,
+   "k": 26,
+   "tipo": "vacio",
+   "epigrafe": "MADRES DE PLAZA DE MAYO"
+  },
+  {
+   "id": "t24",
+   "desde": 2290,
+   "hasta": 2420,
+   "k": 27,
+   "tipo": "vacio"
+  },
+  {
+   "id": "t25",
+   "desde": 2420,
+   "hasta": 2643,
+   "k": 28,
+   "tipo": "vacio",
+   "fundido": 10
+  },
+  {
+   "id": "t26",
+   "desde": 2643,
+   "hasta": 2732,
+   "k": 30,
+   "tipo": "vacio",
+   "grande": "COMUNIDAD",
+   "oscuro": 0.35,
+   "grande_desde": 2709
+  },
+  {
+   "id": "t27",
+   "desde": 2732,
+   "hasta": 2822,
+   "k": 32,
+   "tipo": "vacio",
+   "grande": "COMPROMISO",
+   "oscuro": 0.35,
+   "grande_desde": 2798
+  },
+  {
+   "id": "t28",
+   "desde": 2822,
+   "hasta": 2925,
+   "k": 34,
+   "tipo": "vacio",
+   "grande": "ESPERANZA",
+   "oscuro": 0.35,
+   "rojo": true,
+   "grande_desde": 2886
+  },
+  {
+   "id": "t29",
+   "desde": 2925,
+   "hasta": 2975,
+   "k": 36,
+   "tipo": "vacio",
+   "fundido": 6
+  },
+  {
+   "id": "t30",
+   "desde": 2975,
+   "hasta": 3017,
+   "k": 37,
+   "tipo": "vacio",
+   "fundido": 6
+  },
+  {
+   "id": "t31",
+   "desde": 3017,
+   "hasta": 3137,
+   "k": 38,
+   "tipo": "vacio",
+   "fundido": 12
+  },
+  {
+   "id": "t32",
+   "desde": 3137,
+   "hasta": 3301,
+   "k": 39,
+   "tipo": "vacio",
+   "fundido": 10
+  },
+  {
+   "id": "t33",
+   "desde": 3301,
+   "hasta": 3413,
+   "k": 40,
+   "tipo": "rapido",
+   "sub": [
+    {
+     "desde": 3301,
+     "hasta": 3328,
+     "clip": "mil/clips/r00.mp4",
+     "img": "Cordobazo.jpg"
+    },
+    {
+     "desde": 3328,
+     "hasta": 3351,
+     "clip": "mil/clips/r01.mp4",
+     "img": "Perón_y_Rucci_en_Ezeiza_II.jpg"
+    },
+    {
+     "desde": 3351,
+     "hasta": 3371,
+     "clip": "mil/clips/r02.mp4",
+     "img": "Cordobazo.jpg"
+    },
+    {
+     "desde": 3371,
+     "hasta": 3388,
+     "clip": "mil/clips/r03.mp4",
+     "img": "Perón_y_Rucci_en_Ezeiza_II.jpg"
+    },
+    {
+     "desde": 3388,
+     "hasta": 3403,
+     "clip": "mil/clips/r04.mp4",
+     "img": "Cordobazo.jpg"
+    },
+    {
+     "desde": 3403,
+     "hasta": 3413,
+     "clip": "mil/clips/r05.mp4",
+     "img": "Perón_y_Rucci_en_Ezeiza_II.jpg"
+    }
+   ]
+  },
+  {
+   "id": "t34",
+   "desde": 3413,
+   "hasta": 3533,
+   "k": 41,
+   "tipo": "foto",
+   "img": "Perón_y_Rucci_en_Ezeiza.jpg",
+   "clip": "mil/clips/t34.mp4",
+   "fundido": 4
+  },
+  {
+   "id": "t35",
+   "desde": 3533,
+   "hasta": 3712,
+   "k": 42,
+   "tipo": "placa"
+  }
+ ],
+ "bloques": [
+  {
+   "palabras": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "inicio": 1.15,
+   "fin": 4.587,
+   "salida": 4.547,
+   "lineas": [
+    "Hay quienes dedican su vida a",
+    "construir un futuro que quizás"
+   ]
+  },
+  {
+   "palabras": [
+    11,
+    12,
+    13,
+    14
+   ],
+   "inicio": 4.577,
+   "fin": 5.917,
+   "salida": 6.367,
+   "lineas": [
+    "nunca lleguen a ver."
+   ]
+  },
+  {
+   "palabras": [
+    15,
+    16,
+    17,
+    18,
+    19
+   ],
+   "inicio": 6.507,
+   "fin": 8.24,
+   "salida": 8.5,
+   "lineas": [
+    "Que caminan bajo la lluvia."
+   ]
+  },
+  {
+   "palabras": [
+    20,
+    21
+   ],
+   "inicio": 8.53,
+   "fin": 9.42,
+   "salida": 9.68,
+   "lineas": [
+    "Que pierden."
+   ]
+  },
+  {
+   "palabras": [
+    22,
+    23,
+    24,
+    25
+   ],
+   "inicio": 9.71,
+   "fin": 11.162,
+   "salida": 11.522,
+   "lineas": [
+    "Que vuelven a empezar."
+   ]
+  },
+  {
+   "palabras": [
+    26,
+    27,
+    28,
+    29,
+    30,
+    31
+   ],
+   "inicio": 11.552,
+   "fin": 13.761,
+   "salida": 13.721,
+   "lineas": [
+    "Que, aun cuando",
+    "todo parece perdido,"
+   ]
+  },
+  {
+   "palabras": [
+    32,
+    33
+   ],
+   "inicio": 13.751,
+   "fin": 14.866,
+   "salida": 15.316,
+   "lineas": [
+    "siguen creyendo."
+   ]
+  },
+  {
+   "palabras": [
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40
+   ],
+   "inicio": 15.556,
+   "fin": 17.851,
+   "salida": 18.301,
+   "lineas": [
+    "La historia los",
+    "conoce con un nombre:"
+   ]
+  },
+  {
+   "palabras": [
+    41
+   ],
+   "inicio": 18.341,
+   "fin": 19.175,
+   "salida": 19.625,
+   "lineas": [
+    "militantes."
+   ]
+  },
+  {
+   "palabras": [
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50
+   ],
+   "inicio": 20.165,
+   "fin": 23.602,
+   "salida": 23.562,
+   "lineas": [
+    "Durante diecisiete años intentaron",
+    "borrar al peronismo de la"
+   ]
+  },
+  {
+   "palabras": [
+    51
+   ],
+   "inicio": 23.592,
+   "fin": 24.37,
+   "salida": 24.73,
+   "lineas": [
+    "Argentina."
+   ]
+  },
+  {
+   "palabras": [
+    52,
+    53,
+    54
+   ],
+   "inicio": 24.76,
+   "fin": 26.381,
+   "salida": 26.541,
+   "lineas": [
+    "Prohibieron sus símbolos."
+   ]
+  },
+  {
+   "palabras": [
+    55,
+    56,
+    57,
+    58
+   ],
+   "inicio": 26.571,
+   "fin": 28.472,
+   "salida": 28.632,
+   "lineas": [
+    "Persiguieron a sus dirigentes."
+   ]
+  },
+  {
+   "palabras": [
+    59,
+    60,
+    61,
+    62
+   ],
+   "inicio": 28.662,
+   "fin": 30.564,
+   "salida": 31.014,
+   "lineas": [
+    "Encarcelaron a sus compañeros."
+   ]
+  },
+  {
+   "palabras": [
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69
+   ],
+   "inicio": 31.154,
+   "fin": 33.617,
+   "salida": 33.977,
+   "lineas": [
+    "Pero hubo algo que",
+    "no pudieron destruir:"
+   ]
+  },
+  {
+   "palabras": [
+    70,
+    71,
+    72,
+    73,
+    74,
+    75
+   ],
+   "inicio": 34.007,
+   "fin": 36.19,
+   "salida": 36.64,
+   "lineas": [
+    "la memoria de un",
+    "pueblo organizado."
+   ]
+  },
+  {
+   "palabras": [
+    76,
+    77,
+    78,
+    79,
+    80
+   ],
+   "inicio": 36.68,
+   "fin": 38.491,
+   "salida": 38.451,
+   "lineas": [
+    "Lo escribieron en las paredes,"
+   ]
+  },
+  {
+   "palabras": [
+    81,
+    82,
+    83
+   ],
+   "inicio": 38.481,
+   "fin": 39.428,
+   "salida": 39.688,
+   "lineas": [
+    "año tras año:"
+   ]
+  },
+  {
+   "palabras": [
+    84,
+    85,
+    86
+   ],
+   "inicio": 39.718,
+   "fin": 40.777,
+   "salida": 41.227,
+   "lineas": [
+    "Luche y vuelve."
+   ]
+  },
+  {
+   "palabras": [
+    87,
+    88,
+    89,
+    90,
+    91,
+    92,
+    93,
+    94,
+    95,
+    96
+   ],
+   "inicio": 41.767,
+   "fin": 45.263,
+   "salida": 45.223,
+   "lineas": [
+    "El diecisiete de noviembre de",
+    "mil novecientos setenta y dos,"
+   ]
+  },
+  {
+   "palabras": [
+    97,
+    98,
+    99,
+    100,
+    101,
+    102,
+    103,
+    104,
+    105
+   ],
+   "inicio": 45.253,
+   "fin": 48.132,
+   "salida": 48.392,
+   "lineas": [
+    "bajo una lluvia que quedó",
+    "grabada en la historia,"
+   ]
+  },
+  {
+   "palabras": [
+    106,
+    107,
+    108,
+    109,
+    110,
+    111
+   ],
+   "inicio": 48.422,
+   "fin": 50.717,
+   "salida": 51.167,
+   "lineas": [
+    "Perón volvió a pisar",
+    "suelo argentino."
+   ]
+  },
+  {
+   "palabras": [
+    112,
+    113,
+    114,
+    115,
+    116,
+    117,
+    118,
+    119,
+    120,
+    121,
+    122,
+    123
+   ],
+   "inicio": 51.407,
+   "fin": 54.957,
+   "salida": 54.917,
+   "lineas": [
+    "Y detrás de ese regreso estaban",
+    "miles de hombres y mujeres que"
+   ]
+  },
+  {
+   "palabras": [
+    124,
+    125,
+    126,
+    127
+   ],
+   "inicio": 54.947,
+   "fin": 56.511,
+   "salida": 56.871,
+   "lineas": [
+    "nunca dejaron de luchar."
+   ]
+  },
+  {
+   "palabras": [
+    128,
+    129,
+    130
+   ],
+   "inicio": 56.901,
+   "fin": 58.016,
+   "salida": 58.176,
+   "lineas": [
+    "En las fábricas."
+   ]
+  },
+  {
+   "palabras": [
+    131,
+    132,
+    133
+   ],
+   "inicio": 58.206,
+   "fin": 59.265,
+   "salida": 59.425,
+   "lineas": [
+    "En los barrios."
+   ]
+  },
+  {
+   "palabras": [
+    134,
+    135,
+    136
+   ],
+   "inicio": 59.455,
+   "fin": 60.682,
+   "salida": 60.842,
+   "lineas": [
+    "En los sindicatos."
+   ]
+  },
+  {
+   "palabras": [
+    137,
+    138,
+    139
+   ],
+   "inicio": 60.872,
+   "fin": 62.268,
+   "salida": 62.718,
+   "lineas": [
+    "En las universidades."
+   ]
+  },
+  {
+   "palabras": [
+    140,
+    141,
+    142,
+    143,
+    144,
+    145,
+    146,
+    147
+   ],
+   "inicio": 63.058,
+   "fin": 66.421,
+   "salida": 66.781,
+   "lineas": [
+    "Porque militar nunca fue",
+    "solamente levantar una bandera."
+   ]
+  },
+  {
+   "palabras": [
+    148,
+    149,
+    150,
+    151,
+    152,
+    153
+   ],
+   "inicio": 66.811,
+   "fin": 69.218,
+   "salida": 69.478,
+   "lineas": [
+    "Es levantarse cuando",
+    "otros se resignan."
+   ]
+  },
+  {
+   "palabras": [
+    154,
+    155,
+    156,
+    157,
+    158,
+    159,
+    160
+   ],
+   "inicio": 69.508,
+   "fin": 72.645,
+   "salida": 72.905,
+   "lineas": [
+    "Es organizarse cuando todo",
+    "invita al individualismo."
+   ]
+  },
+  {
+   "palabras": [
+    161,
+    162,
+    163,
+    164,
+    165,
+    166,
+    167,
+    168,
+    169,
+    170
+   ],
+   "inicio": 72.935,
+   "fin": 76.298,
+   "salida": 76.558,
+   "lineas": [
+    "Es entender que el dolor del",
+    "otro también nos pertenece."
+   ]
+  },
+  {
+   "palabras": [
+    171,
+    172,
+    173,
+    174,
+    175,
+    176,
+    177,
+    178,
+    179,
+    180
+   ],
+   "inicio": 76.588,
+   "fin": 80.01,
+   "salida": 80.46,
+   "lineas": [
+    "Y muchas veces, hacerlo sin",
+    "que nadie conozca tu nombre."
+   ]
+  },
+  {
+   "palabras": [
+    181,
+    182,
+    183,
+    184,
+    185,
+    186,
+    187,
+    188,
+    189,
+    190,
+    191
+   ],
+   "inicio": 80.9,
+   "fin": 84.565,
+   "salida": 84.525,
+   "lineas": [
+    "Hoy, cuando nos quieren convencer",
+    "de que cada uno debe salvarse"
+   ]
+  },
+  {
+   "palabras": [
+    192
+   ],
+   "inicio": 84.555,
+   "fin": 84.962,
+   "salida": 85.222,
+   "lineas": [
+    "solo,"
+   ]
+  },
+  {
+   "palabras": [
+    193,
+    194,
+    195,
+    196,
+    197,
+    198,
+    199
+   ],
+   "inicio": 85.252,
+   "fin": 87.772,
+   "salida": 88.222,
+   "lineas": [
+    "militar sigue siendo",
+    "un acto de rebeldía."
+   ]
+  },
+  {
+   "palabras": [
+    200,
+    201,
+    202
+   ],
+   "inicio": 88.362,
+   "fin": 89.893,
+   "salida": 90.053,
+   "lineas": [
+    "Frente al individualismo,"
+   ]
+  },
+  {
+   "palabras": [
+    203,
+    204
+   ],
+   "inicio": 90.083,
+   "fin": 91.029,
+   "salida": 91.289,
+   "lineas": [
+    "la comunidad."
+   ]
+  },
+  {
+   "palabras": [
+    205,
+    206,
+    207,
+    208
+   ],
+   "inicio": 91.319,
+   "fin": 92.85,
+   "salida": 93.01,
+   "lineas": [
+    "Frente a la indiferencia,"
+   ]
+  },
+  {
+   "palabras": [
+    209,
+    210
+   ],
+   "inicio": 93.04,
+   "fin": 94.043,
+   "salida": 94.303,
+   "lineas": [
+    "el compromiso."
+   ]
+  },
+  {
+   "palabras": [
+    211,
+    212,
+    213,
+    214
+   ],
+   "inicio": 94.333,
+   "fin": 95.807,
+   "salida": 95.967,
+   "lineas": [
+    "Frente a la resignación,"
+   ]
+  },
+  {
+   "palabras": [
+    215,
+    216
+   ],
+   "inicio": 95.997,
+   "fin": 96.944,
+   "salida": 97.394,
+   "lineas": [
+    "la esperanza."
+   ]
+  },
+  {
+   "palabras": [
+    217,
+    218,
+    219,
+    220
+   ],
+   "inicio": 97.734,
+   "fin": 99.13,
+   "salida": 99.39,
+   "lineas": [
+    "A los que estuvieron."
+   ]
+  },
+  {
+   "palabras": [
+    221,
+    222,
+    223,
+    224
+   ],
+   "inicio": 99.42,
+   "fin": 100.535,
+   "salida": 100.795,
+   "lineas": [
+    "A los que están."
+   ]
+  },
+  {
+   "palabras": [
+    225,
+    226,
+    227,
+    228,
+    229,
+    230,
+    231,
+    232,
+    233,
+    234,
+    235,
+    236
+   ],
+   "inicio": 100.825,
+   "fin": 104.415,
+   "salida": 104.775,
+   "lineas": [
+    "A los que ya no están, pero",
+    "siguen presentes en cada lucha."
+   ]
+  },
+  {
+   "palabras": [
+    237,
+    238,
+    239,
+    240,
+    241,
+    242,
+    243,
+    244,
+    245,
+    246,
+    247,
+    248,
+    249
+   ],
+   "inicio": 104.805,
+   "fin": 108.074,
+   "salida": 108.034,
+   "lineas": [
+    "Y a los que todavía no saben",
+    "que algún día van a levantar"
+   ]
+  },
+  {
+   "palabras": [
+    250,
+    251
+   ],
+   "inicio": 108.064,
+   "fin": 109.291,
+   "salida": 109.741,
+   "lineas": [
+    "nuestras banderas."
+   ]
+  },
+  {
+   "palabras": [
+    252,
+    253,
+    254,
+    255,
+    256,
+    257,
+    258,
+    259,
+    260
+   ],
+   "inicio": 110.281,
+   "fin": 113.531,
+   "salida": 113.981,
+   "lineas": [
+    "La historia no la escriben",
+    "quienes miran desde afuera."
+   ]
+  },
+  {
+   "palabras": [
+    261,
+    262,
+    263,
+    264,
+    265,
+    266,
+    267
+   ],
+   "inicio": 114.021,
+   "fin": 116.822,
+   "salida": 117.272,
+   "lineas": [
+    "La escriben quienes se",
+    "animan a transformarla."
+   ]
+  },
+  {
+   "palabras": [
+    268,
+    269,
+    270,
+    271,
+    272
+   ],
+   "inicio": 118.012,
+   "fin": 119.745,
+   "salida": 120.195,
+   "lineas": [
+    "Feliz Día de la Militancia."
+   ]
+  }
+ ],
+ "palabras": [
+  {
+   "texto": "Hay",
+   "inicio": 1.2,
+   "fin": 1.385,
+   "frase": 1
+  },
+  {
+   "texto": "quienes",
+   "inicio": 1.425,
+   "fin": 1.834,
+   "frase": 1
+  },
+  {
+   "texto": "dedican",
+   "inicio": 1.874,
+   "fin": 2.284,
+   "frase": 1
+  },
+  {
+   "texto": "su",
+   "inicio": 2.324,
+   "fin": 2.452,
+   "frase": 1
+  },
+  {
+   "texto": "vida",
+   "inicio": 2.492,
+   "fin": 2.733,
+   "frase": 1
+  },
+  {
+   "texto": "a",
+   "inicio": 2.773,
+   "fin": 2.853,
+   "frase": 1
+  },
+  {
+   "texto": "construir",
+   "inicio": 2.885,
+   "fin": 3.407,
+   "frase": 1
+  },
+  {
+   "texto": "un",
+   "inicio": 3.447,
+   "fin": 3.576,
+   "frase": 1
+  },
+  {
+   "texto": "futuro",
+   "inicio": 3.616,
+   "fin": 3.969,
+   "frase": 1
+  },
+  {
+   "texto": "que",
+   "inicio": 4.009,
+   "fin": 4.194,
+   "frase": 1
+  },
+  {
+   "texto": "quizás",
+   "inicio": 4.234,
+   "fin": 4.587,
+   "frase": 1
+  },
+  {
+   "texto": "nunca",
+   "inicio": 4.627,
+   "fin": 4.924,
+   "frase": 1
+  },
+  {
+   "texto": "lleguen",
+   "inicio": 4.964,
+   "fin": 5.373,
+   "frase": 1
+  },
+  {
+   "texto": "a",
+   "inicio": 5.413,
+   "fin": 5.493,
+   "frase": 1
+  },
+  {
+   "texto": "ver.",
+   "inicio": 5.526,
+   "fin": 5.917,
+   "frase": 1
+  },
+  {
+   "texto": "Que",
+   "inicio": 6.557,
+   "fin": 6.741,
+   "frase": 2
+  },
+  {
+   "texto": "caminan",
+   "inicio": 6.781,
+   "fin": 7.191,
+   "frase": 2
+  },
+  {
+   "texto": "bajo",
+   "inicio": 7.231,
+   "fin": 7.472,
+   "frase": 2
+  },
+  {
+   "texto": "la",
+   "inicio": 7.512,
+   "fin": 7.64,
+   "frase": 2
+  },
+  {
+   "texto": "lluvia.",
+   "inicio": 7.68,
+   "fin": 8.24,
+   "frase": 2
+  },
+  {
+   "texto": "Que",
+   "inicio": 8.58,
+   "fin": 8.764,
+   "frase": 3
+  },
+  {
+   "texto": "pierden.",
+   "inicio": 8.804,
+   "fin": 9.42,
+   "frase": 3
+  },
+  {
+   "texto": "Que",
+   "inicio": 9.76,
+   "fin": 9.945,
+   "frase": 4
+  },
+  {
+   "texto": "vuelven",
+   "inicio": 9.985,
+   "fin": 10.394,
+   "frase": 4
+  },
+  {
+   "texto": "a",
+   "inicio": 10.434,
+   "fin": 10.514,
+   "frase": 4
+  },
+  {
+   "texto": "empezar.",
+   "inicio": 10.547,
+   "fin": 11.162,
+   "frase": 4
+  },
+  {
+   "texto": "Que,",
+   "inicio": 11.602,
+   "fin": 11.903,
+   "frase": 5
+  },
+  {
+   "texto": "aun",
+   "inicio": 11.943,
+   "fin": 12.128,
+   "frase": 5
+  },
+  {
+   "texto": "cuando",
+   "inicio": 12.168,
+   "fin": 12.521,
+   "frase": 5
+  },
+  {
+   "texto": "todo",
+   "inicio": 12.561,
+   "fin": 12.802,
+   "frase": 5
+  },
+  {
+   "texto": "parece",
+   "inicio": 12.842,
+   "fin": 13.195,
+   "frase": 5
+  },
+  {
+   "texto": "perdido,",
+   "inicio": 13.235,
+   "fin": 13.761,
+   "frase": 5
+  },
+  {
+   "texto": "siguen",
+   "inicio": 13.801,
+   "fin": 14.154,
+   "frase": 5
+  },
+  {
+   "texto": "creyendo.",
+   "inicio": 14.194,
+   "fin": 14.866,
+   "frase": 5
+  },
+  {
+   "texto": "La",
+   "inicio": 15.606,
+   "fin": 15.734,
+   "frase": 6
+  },
+  {
+   "texto": "historia",
+   "inicio": 15.774,
+   "fin": 16.24,
+   "frase": 6
+  },
+  {
+   "texto": "los",
+   "inicio": 16.28,
+   "fin": 16.465,
+   "frase": 6
+  },
+  {
+   "texto": "conoce",
+   "inicio": 16.505,
+   "fin": 16.858,
+   "frase": 6
+  },
+  {
+   "texto": "con",
+   "inicio": 16.898,
+   "fin": 17.083,
+   "frase": 6
+  },
+  {
+   "texto": "un",
+   "inicio": 17.123,
+   "fin": 17.251,
+   "frase": 6
+  },
+  {
+   "texto": "nombre:",
+   "inicio": 17.291,
+   "fin": 17.851,
+   "frase": 6
+  },
+  {
+   "texto": "militantes.",
+   "inicio": 18.391,
+   "fin": 19.175,
+   "frase": 7
+  },
+  {
+   "texto": "Durante",
+   "inicio": 20.215,
+   "fin": 20.624,
+   "frase": 8
+  },
+  {
+   "texto": "diecisiete",
+   "inicio": 20.664,
+   "fin": 21.242,
+   "frase": 8
+  },
+  {
+   "texto": "años",
+   "inicio": 21.282,
+   "fin": 21.523,
+   "frase": 8
+  },
+  {
+   "texto": "intentaron",
+   "inicio": 21.563,
+   "fin": 22.141,
+   "frase": 8
+  },
+  {
+   "texto": "borrar",
+   "inicio": 22.181,
+   "fin": 22.534,
+   "frase": 8
+  },
+  {
+   "texto": "al",
+   "inicio": 22.574,
+   "fin": 22.703,
+   "frase": 8
+  },
+  {
+   "texto": "peronismo",
+   "inicio": 22.743,
+   "fin": 23.265,
+   "frase": 8
+  },
+  {
+   "texto": "de",
+   "inicio": 23.305,
+   "fin": 23.433,
+   "frase": 8
+  },
+  {
+   "texto": "la",
+   "inicio": 23.473,
+   "fin": 23.602,
+   "frase": 8
+  },
+  {
+   "texto": "Argentina.",
+   "inicio": 23.642,
+   "fin": 24.37,
+   "frase": 8
+  },
+  {
+   "texto": "Prohibieron",
+   "inicio": 24.81,
+   "fin": 25.444,
+   "frase": 9
+  },
+  {
+   "texto": "sus",
+   "inicio": 25.484,
+   "fin": 25.669,
+   "frase": 9
+  },
+  {
+   "texto": "símbolos.",
+   "inicio": 25.709,
+   "fin": 26.381,
+   "frase": 9
+  },
+  {
+   "texto": "Persiguieron",
+   "inicio": 26.621,
+   "fin": 27.311,
+   "frase": 10
+  },
+  {
+   "texto": "a",
+   "inicio": 27.351,
+   "fin": 27.431,
+   "frase": 10
+  },
+  {
+   "texto": "sus",
+   "inicio": 27.463,
+   "fin": 27.648,
+   "frase": 10
+  },
+  {
+   "texto": "dirigentes.",
+   "inicio": 27.688,
+   "fin": 28.472,
+   "frase": 10
+  },
+  {
+   "texto": "Encarcelaron",
+   "inicio": 28.712,
+   "fin": 29.402,
+   "frase": 11
+  },
+  {
+   "texto": "a",
+   "inicio": 29.442,
+   "fin": 29.522,
+   "frase": 11
+  },
+  {
+   "texto": "sus",
+   "inicio": 29.555,
+   "fin": 29.74,
+   "frase": 11
+  },
+  {
+   "texto": "compañeros.",
+   "inicio": 29.78,
+   "fin": 30.564,
+   "frase": 11
+  },
+  {
+   "texto": "Pero",
+   "inicio": 31.204,
+   "fin": 31.445,
+   "frase": 12
+  },
+  {
+   "texto": "hubo",
+   "inicio": 31.485,
+   "fin": 31.726,
+   "frase": 12
+  },
+  {
+   "texto": "algo",
+   "inicio": 31.766,
+   "fin": 32.006,
+   "frase": 12
+  },
+  {
+   "texto": "que",
+   "inicio": 32.046,
+   "fin": 32.231,
+   "frase": 12
+  },
+  {
+   "texto": "no",
+   "inicio": 32.271,
+   "fin": 32.4,
+   "frase": 12
+  },
+  {
+   "texto": "pudieron",
+   "inicio": 32.44,
+   "fin": 32.905,
+   "frase": 12
+  },
+  {
+   "texto": "destruir:",
+   "inicio": 32.945,
+   "fin": 33.617,
+   "frase": 12
+  },
+  {
+   "texto": "la",
+   "inicio": 34.057,
+   "fin": 34.186,
+   "frase": 13
+  },
+  {
+   "texto": "memoria",
+   "inicio": 34.226,
+   "fin": 34.635,
+   "frase": 13
+  },
+  {
+   "texto": "de",
+   "inicio": 34.675,
+   "fin": 34.804,
+   "frase": 13
+  },
+  {
+   "texto": "un",
+   "inicio": 34.844,
+   "fin": 34.972,
+   "frase": 13
+  },
+  {
+   "texto": "pueblo",
+   "inicio": 35.012,
+   "fin": 35.365,
+   "frase": 13
+  },
+  {
+   "texto": "organizado.",
+   "inicio": 35.405,
+   "fin": 36.19,
+   "frase": 13
+  },
+  {
+   "texto": "Lo",
+   "inicio": 36.73,
+   "fin": 36.858,
+   "frase": 14
+  },
+  {
+   "texto": "escribieron",
+   "inicio": 36.898,
+   "fin": 37.532,
+   "frase": 14
+  },
+  {
+   "texto": "en",
+   "inicio": 37.572,
+   "fin": 37.701,
+   "frase": 14
+  },
+  {
+   "texto": "las",
+   "inicio": 37.741,
+   "fin": 37.926,
+   "frase": 14
+  },
+  {
+   "texto": "paredes,",
+   "inicio": 37.966,
+   "fin": 38.491,
+   "frase": 14
+  },
+  {
+   "texto": "año",
+   "inicio": 38.531,
+   "fin": 38.716,
+   "frase": 14
+  },
+  {
+   "texto": "tras",
+   "inicio": 38.756,
+   "fin": 38.997,
+   "frase": 14
+  },
+  {
+   "texto": "año:",
+   "inicio": 39.037,
+   "fin": 39.428,
+   "frase": 14
+  },
+  {
+   "texto": "Luche",
+   "inicio": 39.768,
+   "fin": 40.065,
+   "frase": 15
+  },
+  {
+   "texto": "y",
+   "inicio": 40.105,
+   "fin": 40.185,
+   "frase": 15
+  },
+  {
+   "texto": "vuelve.",
+   "inicio": 40.217,
+   "fin": 40.777,
+   "frase": 15
+  },
+  {
+   "texto": "El",
+   "inicio": 41.817,
+   "fin": 41.945,
+   "frase": 16
+  },
+  {
+   "texto": "diecisiete",
+   "inicio": 41.985,
+   "fin": 42.563,
+   "frase": 16
+  },
+  {
+   "texto": "de",
+   "inicio": 42.603,
+   "fin": 42.732,
+   "frase": 16
+  },
+  {
+   "texto": "noviembre",
+   "inicio": 42.772,
+   "fin": 43.293,
+   "frase": 16
+  },
+  {
+   "texto": "de",
+   "inicio": 43.333,
+   "fin": 43.462,
+   "frase": 16
+  },
+  {
+   "texto": "mil",
+   "inicio": 43.502,
+   "fin": 43.687,
+   "frase": 16
+  },
+  {
+   "texto": "novecientos",
+   "inicio": 43.727,
+   "fin": 44.361,
+   "frase": 16
+  },
+  {
+   "texto": "setenta",
+   "inicio": 44.401,
+   "fin": 44.81,
+   "frase": 16
+  },
+  {
+   "texto": "y",
+   "inicio": 44.85,
+   "fin": 44.93,
+   "frase": 16
+  },
+  {
+   "texto": "dos,",
+   "inicio": 44.963,
+   "fin": 45.263,
+   "frase": 16
+  },
+  {
+   "texto": "bajo",
+   "inicio": 45.303,
+   "fin": 45.544,
+   "frase": 16
+  },
+  {
+   "texto": "una",
+   "inicio": 45.584,
+   "fin": 45.769,
+   "frase": 16
+  },
+  {
+   "texto": "lluvia",
+   "inicio": 45.809,
+   "fin": 46.162,
+   "frase": 16
+  },
+  {
+   "texto": "que",
+   "inicio": 46.202,
+   "fin": 46.387,
+   "frase": 16
+  },
+  {
+   "texto": "quedó",
+   "inicio": 46.427,
+   "fin": 46.724,
+   "frase": 16
+  },
+  {
+   "texto": "grabada",
+   "inicio": 46.764,
+   "fin": 47.174,
+   "frase": 16
+  },
+  {
+   "texto": "en",
+   "inicio": 47.214,
+   "fin": 47.342,
+   "frase": 16
+  },
+  {
+   "texto": "la",
+   "inicio": 47.382,
+   "fin": 47.511,
+   "frase": 16
+  },
+  {
+   "texto": "historia,",
+   "inicio": 47.551,
+   "fin": 48.132,
+   "frase": 16
+  },
+  {
+   "texto": "Perón",
+   "inicio": 48.472,
+   "fin": 48.77,
+   "frase": 17
+  },
+  {
+   "texto": "volvió",
+   "inicio": 48.81,
+   "fin": 49.163,
+   "frase": 17
+  },
+  {
+   "texto": "a",
+   "inicio": 49.203,
+   "fin": 49.283,
+   "frase": 17
+  },
+  {
+   "texto": "pisar",
+   "inicio": 49.315,
+   "fin": 49.612,
+   "frase": 17
+  },
+  {
+   "texto": "suelo",
+   "inicio": 49.652,
+   "fin": 49.949,
+   "frase": 17
+  },
+  {
+   "texto": "argentino.",
+   "inicio": 49.989,
+   "fin": 50.717,
+   "frase": 17
+  },
+  {
+   "texto": "Y",
+   "inicio": 51.457,
+   "fin": 51.537,
+   "frase": 18
+  },
+  {
+   "texto": "detrás",
+   "inicio": 51.57,
+   "fin": 51.923,
+   "frase": 18
+  },
+  {
+   "texto": "de",
+   "inicio": 51.963,
+   "fin": 52.091,
+   "frase": 18
+  },
+  {
+   "texto": "ese",
+   "inicio": 52.131,
+   "fin": 52.316,
+   "frase": 18
+  },
+  {
+   "texto": "regreso",
+   "inicio": 52.356,
+   "fin": 52.766,
+   "frase": 18
+  },
+  {
+   "texto": "estaban",
+   "inicio": 52.806,
+   "fin": 53.215,
+   "frase": 18
+  },
+  {
+   "texto": "miles",
+   "inicio": 53.255,
+   "fin": 53.552,
+   "frase": 18
+  },
+  {
+   "texto": "de",
+   "inicio": 53.592,
+   "fin": 53.721,
+   "frase": 18
+  },
+  {
+   "texto": "hombres",
+   "inicio": 53.761,
+   "fin": 54.17,
+   "frase": 18
+  },
+  {
+   "texto": "y",
+   "inicio": 54.21,
+   "fin": 54.29,
+   "frase": 18
+  },
+  {
+   "texto": "mujeres",
+   "inicio": 54.322,
+   "fin": 54.732,
+   "frase": 18
+  },
+  {
+   "texto": "que",
+   "inicio": 54.772,
+   "fin": 54.957,
+   "frase": 18
+  },
+  {
+   "texto": "nunca",
+   "inicio": 54.997,
+   "fin": 55.294,
+   "frase": 18
+  },
+  {
+   "texto": "dejaron",
+   "inicio": 55.334,
+   "fin": 55.743,
+   "frase": 18
+  },
+  {
+   "texto": "de",
+   "inicio": 55.783,
+   "fin": 55.912,
+   "frase": 18
+  },
+  {
+   "texto": "luchar.",
+   "inicio": 55.952,
+   "fin": 56.511,
+   "frase": 18
+  },
+  {
+   "texto": "En",
+   "inicio": 56.951,
+   "fin": 57.08,
+   "frase": 19
+  },
+  {
+   "texto": "las",
+   "inicio": 57.12,
+   "fin": 57.304,
+   "frase": 19
+  },
+  {
+   "texto": "fábricas.",
+   "inicio": 57.344,
+   "fin": 58.016,
+   "frase": 19
+  },
+  {
+   "texto": "En",
+   "inicio": 58.256,
+   "fin": 58.385,
+   "frase": 20
+  },
+  {
+   "texto": "los",
+   "inicio": 58.425,
+   "fin": 58.609,
+   "frase": 20
+  },
+  {
+   "texto": "barrios.",
+   "inicio": 58.649,
+   "fin": 59.265,
+   "frase": 20
+  },
+  {
+   "texto": "En",
+   "inicio": 59.505,
+   "fin": 59.634,
+   "frase": 21
+  },
+  {
+   "texto": "los",
+   "inicio": 59.674,
+   "fin": 59.858,
+   "frase": 21
+  },
+  {
+   "texto": "sindicatos.",
+   "inicio": 59.898,
+   "fin": 60.682,
+   "frase": 21
+  },
+  {
+   "texto": "En",
+   "inicio": 60.922,
+   "fin": 61.051,
+   "frase": 22
+  },
+  {
+   "texto": "las",
+   "inicio": 61.091,
+   "fin": 61.276,
+   "frase": 22
+  },
+  {
+   "texto": "universidades.",
+   "inicio": 61.316,
+   "fin": 62.268,
+   "frase": 22
+  },
+  {
+   "texto": "Porque",
+   "inicio": 63.108,
+   "fin": 63.462,
+   "frase": 23
+  },
+  {
+   "texto": "militar",
+   "inicio": 63.502,
+   "fin": 63.911,
+   "frase": 23
+  },
+  {
+   "texto": "nunca",
+   "inicio": 63.951,
+   "fin": 64.248,
+   "frase": 23
+  },
+  {
+   "texto": "fue",
+   "inicio": 64.288,
+   "fin": 64.473,
+   "frase": 23
+  },
+  {
+   "texto": "solamente",
+   "inicio": 64.513,
+   "fin": 65.035,
+   "frase": 23
+  },
+  {
+   "texto": "levantar",
+   "inicio": 65.075,
+   "fin": 65.54,
+   "frase": 23
+  },
+  {
+   "texto": "una",
+   "inicio": 65.58,
+   "fin": 65.765,
+   "frase": 23
+  },
+  {
+   "texto": "bandera.",
+   "inicio": 65.805,
+   "fin": 66.421,
+   "frase": 23
+  },
+  {
+   "texto": "Es",
+   "inicio": 66.861,
+   "fin": 66.989,
+   "frase": 24
+  },
+  {
+   "texto": "levantarse",
+   "inicio": 67.029,
+   "fin": 67.607,
+   "frase": 24
+  },
+  {
+   "texto": "cuando",
+   "inicio": 67.647,
+   "fin": 68.0,
+   "frase": 24
+  },
+  {
+   "texto": "otros",
+   "inicio": 68.04,
+   "fin": 68.338,
+   "frase": 24
+  },
+  {
+   "texto": "se",
+   "inicio": 68.378,
+   "fin": 68.506,
+   "frase": 24
+  },
+  {
+   "texto": "resignan.",
+   "inicio": 68.546,
+   "fin": 69.218,
+   "frase": 24
+  },
+  {
+   "texto": "Es",
+   "inicio": 69.558,
+   "fin": 69.686,
+   "frase": 25
+  },
+  {
+   "texto": "organizarse",
+   "inicio": 69.726,
+   "fin": 70.361,
+   "frase": 25
+  },
+  {
+   "texto": "cuando",
+   "inicio": 70.401,
+   "fin": 70.754,
+   "frase": 25
+  },
+  {
+   "texto": "todo",
+   "inicio": 70.794,
+   "fin": 71.035,
+   "frase": 25
+  },
+  {
+   "texto": "invita",
+   "inicio": 71.075,
+   "fin": 71.428,
+   "frase": 25
+  },
+  {
+   "texto": "al",
+   "inicio": 71.468,
+   "fin": 71.597,
+   "frase": 25
+  },
+  {
+   "texto": "individualismo.",
+   "inicio": 71.637,
+   "fin": 72.645,
+   "frase": 25
+  },
+  {
+   "texto": "Es",
+   "inicio": 72.985,
+   "fin": 73.114,
+   "frase": 26
+  },
+  {
+   "texto": "entender",
+   "inicio": 73.154,
+   "fin": 73.62,
+   "frase": 26
+  },
+  {
+   "texto": "que",
+   "inicio": 73.66,
+   "fin": 73.844,
+   "frase": 26
+  },
+  {
+   "texto": "el",
+   "inicio": 73.884,
+   "fin": 74.013,
+   "frase": 26
+  },
+  {
+   "texto": "dolor",
+   "inicio": 74.053,
+   "fin": 74.35,
+   "frase": 26
+  },
+  {
+   "texto": "del",
+   "inicio": 74.39,
+   "fin": 74.575,
+   "frase": 26
+  },
+  {
+   "texto": "otro",
+   "inicio": 74.615,
+   "fin": 74.856,
+   "frase": 26
+  },
+  {
+   "texto": "también",
+   "inicio": 74.896,
+   "fin": 75.305,
+   "frase": 26
+  },
+  {
+   "texto": "nos",
+   "inicio": 75.345,
+   "fin": 75.53,
+   "frase": 26
+  },
+  {
+   "texto": "pertenece.",
+   "inicio": 75.57,
+   "fin": 76.298,
+   "frase": 26
+  },
+  {
+   "texto": "Y",
+   "inicio": 76.638,
+   "fin": 76.718,
+   "frase": 27
+  },
+  {
+   "texto": "muchas",
+   "inicio": 76.75,
+   "fin": 77.103,
+   "frase": 27
+  },
+  {
+   "texto": "veces,",
+   "inicio": 77.143,
+   "fin": 77.557,
+   "frase": 27
+  },
+  {
+   "texto": "hacerlo",
+   "inicio": 77.597,
+   "fin": 78.006,
+   "frase": 27
+  },
+  {
+   "texto": "sin",
+   "inicio": 78.046,
+   "fin": 78.231,
+   "frase": 27
+  },
+  {
+   "texto": "que",
+   "inicio": 78.271,
+   "fin": 78.455,
+   "frase": 27
+  },
+  {
+   "texto": "nadie",
+   "inicio": 78.495,
+   "fin": 78.792,
+   "frase": 27
+  },
+  {
+   "texto": "conozca",
+   "inicio": 78.832,
+   "fin": 79.242,
+   "frase": 27
+  },
+  {
+   "texto": "tu",
+   "inicio": 79.282,
+   "fin": 79.41,
+   "frase": 27
+  },
+  {
+   "texto": "nombre.",
+   "inicio": 79.45,
+   "fin": 80.01,
+   "frase": 27
+  },
+  {
+   "texto": "Hoy,",
+   "inicio": 80.95,
+   "fin": 81.251,
+   "frase": 28
+  },
+  {
+   "texto": "cuando",
+   "inicio": 81.291,
+   "fin": 81.644,
+   "frase": 28
+  },
+  {
+   "texto": "nos",
+   "inicio": 81.684,
+   "fin": 81.869,
+   "frase": 28
+  },
+  {
+   "texto": "quieren",
+   "inicio": 81.909,
+   "fin": 82.318,
+   "frase": 28
+  },
+  {
+   "texto": "convencer",
+   "inicio": 82.358,
+   "fin": 82.88,
+   "frase": 28
+  },
+  {
+   "texto": "de",
+   "inicio": 82.92,
+   "fin": 83.049,
+   "frase": 28
+  },
+  {
+   "texto": "que",
+   "inicio": 83.089,
+   "fin": 83.273,
+   "frase": 28
+  },
+  {
+   "texto": "cada",
+   "inicio": 83.313,
+   "fin": 83.554,
+   "frase": 28
+  },
+  {
+   "texto": "uno",
+   "inicio": 83.594,
+   "fin": 83.779,
+   "frase": 28
+  },
+  {
+   "texto": "debe",
+   "inicio": 83.819,
+   "fin": 84.06,
+   "frase": 28
+  },
+  {
+   "texto": "salvarse",
+   "inicio": 84.1,
+   "fin": 84.565,
+   "frase": 28
+  },
+  {
+   "texto": "solo,",
+   "inicio": 84.605,
+   "fin": 84.962,
+   "frase": 28
+  },
+  {
+   "texto": "militar",
+   "inicio": 85.302,
+   "fin": 85.712,
+   "frase": 29
+  },
+  {
+   "texto": "sigue",
+   "inicio": 85.752,
+   "fin": 86.049,
+   "frase": 29
+  },
+  {
+   "texto": "siendo",
+   "inicio": 86.089,
+   "fin": 86.442,
+   "frase": 29
+  },
+  {
+   "texto": "un",
+   "inicio": 86.482,
+   "fin": 86.611,
+   "frase": 29
+  },
+  {
+   "texto": "acto",
+   "inicio": 86.651,
+   "fin": 86.892,
+   "frase": 29
+  },
+  {
+   "texto": "de",
+   "inicio": 86.932,
+   "fin": 87.06,
+   "frase": 29
+  },
+  {
+   "texto": "rebeldía.",
+   "inicio": 87.1,
+   "fin": 87.772,
+   "frase": 29
+  },
+  {
+   "texto": "Frente",
+   "inicio": 88.412,
+   "fin": 88.765,
+   "frase": 30
+  },
+  {
+   "texto": "al",
+   "inicio": 88.805,
+   "fin": 88.934,
+   "frase": 30
+  },
+  {
+   "texto": "individualismo,",
+   "inicio": 88.974,
+   "fin": 89.893,
+   "frase": 30
+  },
+  {
+   "texto": "la",
+   "inicio": 90.133,
+   "fin": 90.261,
+   "frase": 31
+  },
+  {
+   "texto": "comunidad.",
+   "inicio": 90.301,
+   "fin": 91.029,
+   "frase": 31
+  },
+  {
+   "texto": "Frente",
+   "inicio": 91.369,
+   "fin": 91.722,
+   "frase": 32
+  },
+  {
+   "texto": "a",
+   "inicio": 91.762,
+   "fin": 91.842,
+   "frase": 32
+  },
+  {
+   "texto": "la",
+   "inicio": 91.875,
+   "fin": 92.003,
+   "frase": 32
+  },
+  {
+   "texto": "indiferencia,",
+   "inicio": 92.043,
+   "fin": 92.85,
+   "frase": 32
+  },
+  {
+   "texto": "el",
+   "inicio": 93.09,
+   "fin": 93.218,
+   "frase": 33
+  },
+  {
+   "texto": "compromiso.",
+   "inicio": 93.258,
+   "fin": 94.043,
+   "frase": 33
+  },
+  {
+   "texto": "Frente",
+   "inicio": 94.383,
+   "fin": 94.736,
+   "frase": 34
+  },
+  {
+   "texto": "a",
+   "inicio": 94.776,
+   "fin": 94.856,
+   "frase": 34
+  },
+  {
+   "texto": "la",
+   "inicio": 94.888,
+   "fin": 95.017,
+   "frase": 34
+  },
+  {
+   "texto": "resignación,",
+   "inicio": 95.057,
+   "fin": 95.807,
+   "frase": 34
+  },
+  {
+   "texto": "la",
+   "inicio": 96.047,
+   "fin": 96.176,
+   "frase": 35
+  },
+  {
+   "texto": "esperanza.",
+   "inicio": 96.216,
+   "fin": 96.944,
+   "frase": 35
+  },
+  {
+   "texto": "A",
+   "inicio": 97.784,
+   "fin": 97.864,
+   "frase": 36
+  },
+  {
+   "texto": "los",
+   "inicio": 97.896,
+   "fin": 98.081,
+   "frase": 36
+  },
+  {
+   "texto": "que",
+   "inicio": 98.121,
+   "fin": 98.305,
+   "frase": 36
+  },
+  {
+   "texto": "estuvieron.",
+   "inicio": 98.345,
+   "fin": 99.13,
+   "frase": 36
+  },
+  {
+   "texto": "A",
+   "inicio": 99.47,
+   "fin": 99.55,
+   "frase": 37
+  },
+  {
+   "texto": "los",
+   "inicio": 99.582,
+   "fin": 99.767,
+   "frase": 37
+  },
+  {
+   "texto": "que",
+   "inicio": 99.807,
+   "fin": 99.991,
+   "frase": 37
+  },
+  {
+   "texto": "están.",
+   "inicio": 100.031,
+   "fin": 100.535,
+   "frase": 37
+  },
+  {
+   "texto": "A",
+   "inicio": 100.875,
+   "fin": 100.955,
+   "frase": 38
+  },
+  {
+   "texto": "los",
+   "inicio": 100.987,
+   "fin": 101.172,
+   "frase": 38
+  },
+  {
+   "texto": "que",
+   "inicio": 101.212,
+   "fin": 101.396,
+   "frase": 38
+  },
+  {
+   "texto": "ya",
+   "inicio": 101.436,
+   "fin": 101.565,
+   "frase": 38
+  },
+  {
+   "texto": "no",
+   "inicio": 101.605,
+   "fin": 101.733,
+   "frase": 38
+  },
+  {
+   "texto": "están,",
+   "inicio": 101.773,
+   "fin": 102.187,
+   "frase": 38
+  },
+  {
+   "texto": "pero",
+   "inicio": 102.227,
+   "fin": 102.468,
+   "frase": 38
+  },
+  {
+   "texto": "siguen",
+   "inicio": 102.508,
+   "fin": 102.861,
+   "frase": 38
+  },
+  {
+   "texto": "presentes",
+   "inicio": 102.901,
+   "fin": 103.423,
+   "frase": 38
+  },
+  {
+   "texto": "en",
+   "inicio": 103.463,
+   "fin": 103.591,
+   "frase": 38
+  },
+  {
+   "texto": "cada",
+   "inicio": 103.631,
+   "fin": 103.872,
+   "frase": 38
+  },
+  {
+   "texto": "lucha.",
+   "inicio": 103.912,
+   "fin": 104.415,
+   "frase": 38
+  },
+  {
+   "texto": "Y",
+   "inicio": 104.855,
+   "fin": 104.935,
+   "frase": 39
+  },
+  {
+   "texto": "a",
+   "inicio": 104.968,
+   "fin": 105.048,
+   "frase": 39
+  },
+  {
+   "texto": "los",
+   "inicio": 105.08,
+   "fin": 105.265,
+   "frase": 39
+  },
+  {
+   "texto": "que",
+   "inicio": 105.305,
+   "fin": 105.49,
+   "frase": 39
+  },
+  {
+   "texto": "todavía",
+   "inicio": 105.53,
+   "fin": 105.939,
+   "frase": 39
+  },
+  {
+   "texto": "no",
+   "inicio": 105.979,
+   "fin": 106.108,
+   "frase": 39
+  },
+  {
+   "texto": "saben",
+   "inicio": 106.148,
+   "fin": 106.445,
+   "frase": 39
+  },
+  {
+   "texto": "que",
+   "inicio": 106.485,
+   "fin": 106.669,
+   "frase": 39
+  },
+  {
+   "texto": "algún",
+   "inicio": 106.709,
+   "fin": 107.006,
+   "frase": 39
+  },
+  {
+   "texto": "día",
+   "inicio": 107.046,
+   "fin": 107.231,
+   "frase": 39
+  },
+  {
+   "texto": "van",
+   "inicio": 107.271,
+   "fin": 107.456,
+   "frase": 39
+  },
+  {
+   "texto": "a",
+   "inicio": 107.496,
+   "fin": 107.576,
+   "frase": 39
+  },
+  {
+   "texto": "levantar",
+   "inicio": 107.608,
+   "fin": 108.074,
+   "frase": 39
+  },
+  {
+   "texto": "nuestras",
+   "inicio": 108.114,
+   "fin": 108.579,
+   "frase": 39
+  },
+  {
+   "texto": "banderas.",
+   "inicio": 108.619,
+   "fin": 109.291,
+   "frase": 39
+  },
+  {
+   "texto": "La",
+   "inicio": 110.331,
+   "fin": 110.46,
+   "frase": 40
+  },
+  {
+   "texto": "historia",
+   "inicio": 110.5,
+   "fin": 110.965,
+   "frase": 40
+  },
+  {
+   "texto": "no",
+   "inicio": 111.005,
+   "fin": 111.134,
+   "frase": 40
+  },
+  {
+   "texto": "la",
+   "inicio": 111.174,
+   "fin": 111.302,
+   "frase": 40
+  },
+  {
+   "texto": "escriben",
+   "inicio": 111.342,
+   "fin": 111.808,
+   "frase": 40
+  },
+  {
+   "texto": "quienes",
+   "inicio": 111.848,
+   "fin": 112.258,
+   "frase": 40
+  },
+  {
+   "texto": "miran",
+   "inicio": 112.298,
+   "fin": 112.595,
+   "frase": 40
+  },
+  {
+   "texto": "desde",
+   "inicio": 112.635,
+   "fin": 112.932,
+   "frase": 40
+  },
+  {
+   "texto": "afuera.",
+   "inicio": 112.972,
+   "fin": 113.531,
+   "frase": 40
+  },
+  {
+   "texto": "La",
+   "inicio": 114.071,
+   "fin": 114.2,
+   "frase": 41
+  },
+  {
+   "texto": "escriben",
+   "inicio": 114.24,
+   "fin": 114.705,
+   "frase": 41
+  },
+  {
+   "texto": "quienes",
+   "inicio": 114.745,
+   "fin": 115.155,
+   "frase": 41
+  },
+  {
+   "texto": "se",
+   "inicio": 115.195,
+   "fin": 115.323,
+   "frase": 41
+  },
+  {
+   "texto": "animan",
+   "inicio": 115.363,
+   "fin": 115.717,
+   "frase": 41
+  },
+  {
+   "texto": "a",
+   "inicio": 115.757,
+   "fin": 115.837,
+   "frase": 41
+  },
+  {
+   "texto": "transformarla.",
+   "inicio": 115.869,
+   "fin": 116.822,
+   "frase": 41
+  },
+  {
+   "texto": "Feliz",
+   "inicio": 118.062,
+   "fin": 118.359,
+   "frase": 42
+  },
+  {
+   "texto": "Día",
+   "inicio": 118.399,
+   "fin": 118.583,
+   "frase": 42
+  },
+  {
+   "texto": "de",
+   "inicio": 118.623,
+   "fin": 118.752,
+   "frase": 42
+  },
+  {
+   "texto": "la",
+   "inicio": 118.792,
+   "fin": 118.92,
+   "frase": 42
+  },
+  {
+   "texto": "Militancia.",
+   "inicio": 118.96,
+   "fin": 119.745,
+   "frase": 42
+  }
+ ],
+ "frases": [
+  {
+   "k": 1,
+   "acto": "apertura",
+   "texto": "Hay quienes dedican su vida a construir un futuro que quizás nunca lleguen a ver.",
+   "inicio": 1.2,
+   "fin": 5.917
+  },
+  {
+   "k": 2,
+   "acto": "apertura",
+   "texto": "Que caminan bajo la lluvia.",
+   "inicio": 6.557,
+   "fin": 8.24
+  },
+  {
+   "k": 3,
+   "acto": "apertura",
+   "texto": "Que pierden.",
+   "inicio": 8.58,
+   "fin": 9.42
+  },
+  {
+   "k": 4,
+   "acto": "apertura",
+   "texto": "Que vuelven a empezar.",
+   "inicio": 9.76,
+   "fin": 11.162
+  },
+  {
+   "k": 5,
+   "acto": "apertura",
+   "texto": "Que, aun cuando todo parece perdido, siguen creyendo.",
+   "inicio": 11.602,
+   "fin": 14.866
+  },
+  {
+   "k": 6,
+   "acto": "apertura",
+   "texto": "La historia los conoce con un nombre:",
+   "inicio": 15.606,
+   "fin": 17.851
+  },
+  {
+   "k": 7,
+   "acto": "apertura",
+   "texto": "militantes.",
+   "inicio": 18.391,
+   "fin": 19.175
+  },
+  {
+   "k": 8,
+   "acto": "proscripcion",
+   "texto": "Durante diecisiete años intentaron borrar al peronismo de la Argentina.",
+   "inicio": 20.215,
+   "fin": 24.37
+  },
+  {
+   "k": 9,
+   "acto": "proscripcion",
+   "texto": "Prohibieron sus símbolos.",
+   "inicio": 24.81,
+   "fin": 26.381
+  },
+  {
+   "k": 10,
+   "acto": "proscripcion",
+   "texto": "Persiguieron a sus dirigentes.",
+   "inicio": 26.621,
+   "fin": 28.472
+  },
+  {
+   "k": 11,
+   "acto": "proscripcion",
+   "texto": "Encarcelaron a sus compañeros.",
+   "inicio": 28.712,
+   "fin": 30.564
+  },
+  {
+   "k": 12,
+   "acto": "proscripcion",
+   "texto": "Pero hubo algo que no pudieron destruir:",
+   "inicio": 31.204,
+   "fin": 33.617
+  },
+  {
+   "k": 13,
+   "acto": "proscripcion",
+   "texto": "la memoria de un pueblo organizado.",
+   "inicio": 34.057,
+   "fin": 36.19
+  },
+  {
+   "k": 14,
+   "acto": "proscripcion",
+   "texto": "Lo escribieron en las paredes, año tras año:",
+   "inicio": 36.73,
+   "fin": 39.428
+  },
+  {
+   "k": 15,
+   "acto": "proscripcion",
+   "texto": "Luche y vuelve.",
+   "inicio": 39.768,
+   "fin": 40.777
+  },
+  {
+   "k": 16,
+   "acto": "regreso",
+   "texto": "El diecisiete de noviembre de mil novecientos setenta y dos, bajo una lluvia que quedó grabada en la historia,",
+   "inicio": 41.817,
+   "fin": 48.132
+  },
+  {
+   "k": 17,
+   "acto": "regreso",
+   "texto": "Perón volvió a pisar suelo argentino.",
+   "inicio": 48.472,
+   "fin": 50.717
+  },
+  {
+   "k": 18,
+   "acto": "regreso",
+   "texto": "Y detrás de ese regreso estaban miles de hombres y mujeres que nunca dejaron de luchar.",
+   "inicio": 51.457,
+   "fin": 56.511
+  },
+  {
+   "k": 19,
+   "acto": "regreso",
+   "texto": "En las fábricas.",
+   "inicio": 56.951,
+   "fin": 58.016
+  },
+  {
+   "k": 20,
+   "acto": "regreso",
+   "texto": "En los barrios.",
+   "inicio": 58.256,
+   "fin": 59.265
+  },
+  {
+   "k": 21,
+   "acto": "regreso",
+   "texto": "En los sindicatos.",
+   "inicio": 59.505,
+   "fin": 60.682
+  },
+  {
+   "k": 22,
+   "acto": "regreso",
+   "texto": "En las universidades.",
+   "inicio": 60.922,
+   "fin": 62.268
+  },
+  {
+   "k": 23,
+   "acto": "militar",
+   "texto": "Porque militar nunca fue solamente levantar una bandera.",
+   "inicio": 63.108,
+   "fin": 66.421
+  },
+  {
+   "k": 24,
+   "acto": "militar",
+   "texto": "Es levantarse cuando otros se resignan.",
+   "inicio": 66.861,
+   "fin": 69.218
+  },
+  {
+   "k": 25,
+   "acto": "militar",
+   "texto": "Es organizarse cuando todo invita al individualismo.",
+   "inicio": 69.558,
+   "fin": 72.645
+  },
+  {
+   "k": 26,
+   "acto": "militar",
+   "texto": "Es entender que el dolor del otro también nos pertenece.",
+   "inicio": 72.985,
+   "fin": 76.298
+  },
+  {
+   "k": 27,
+   "acto": "militar",
+   "texto": "Y muchas veces, hacerlo sin que nadie conozca tu nombre.",
+   "inicio": 76.638,
+   "fin": 80.01
+  },
+  {
+   "k": 28,
+   "acto": "hoy",
+   "texto": "Hoy, cuando nos quieren convencer de que cada uno debe salvarse solo,",
+   "inicio": 80.95,
+   "fin": 84.962
+  },
+  {
+   "k": 29,
+   "acto": "hoy",
+   "texto": "militar sigue siendo un acto de rebeldía.",
+   "inicio": 85.302,
+   "fin": 87.772
+  },
+  {
+   "k": 30,
+   "acto": "hoy",
+   "texto": "Frente al individualismo,",
+   "inicio": 88.412,
+   "fin": 89.893
+  },
+  {
+   "k": 31,
+   "acto": "hoy",
+   "texto": "la comunidad.",
+   "inicio": 90.133,
+   "fin": 91.029
+  },
+  {
+   "k": 32,
+   "acto": "hoy",
+   "texto": "Frente a la indiferencia,",
+   "inicio": 91.369,
+   "fin": 92.85
+  },
+  {
+   "k": 33,
+   "acto": "hoy",
+   "texto": "el compromiso.",
+   "inicio": 93.09,
+   "fin": 94.043
+  },
+  {
+   "k": 34,
+   "acto": "hoy",
+   "texto": "Frente a la resignación,",
+   "inicio": 94.383,
+   "fin": 95.807
+  },
+  {
+   "k": 35,
+   "acto": "hoy",
+   "texto": "la esperanza.",
+   "inicio": 96.047,
+   "fin": 96.944
+  },
+  {
+   "k": 36,
+   "acto": "homenaje",
+   "texto": "A los que estuvieron.",
+   "inicio": 97.784,
+   "fin": 99.13
+  },
+  {
+   "k": 37,
+   "acto": "homenaje",
+   "texto": "A los que están.",
+   "inicio": 99.47,
+   "fin": 100.535
+  },
+  {
+   "k": 38,
+   "acto": "homenaje",
+   "texto": "A los que ya no están, pero siguen presentes en cada lucha.",
+   "inicio": 100.875,
+   "fin": 104.415
+  },
+  {
+   "k": 39,
+   "acto": "homenaje",
+   "texto": "Y a los que todavía no saben que algún día van a levantar nuestras banderas.",
+   "inicio": 104.855,
+   "fin": 109.291
+  },
+  {
+   "k": 40,
+   "acto": "cierre",
+   "texto": "La historia no la escriben quienes miran desde afuera.",
+   "inicio": 110.331,
+   "fin": 113.531
+  },
+  {
+   "k": 41,
+   "acto": "cierre",
+   "texto": "La escriben quienes se animan a transformarla.",
+   "inicio": 114.071,
+   "fin": 116.822
+  },
+  {
+   "k": 42,
+   "acto": "saludo",
+   "texto": "Feliz Día de la Militancia.",
+   "inicio": 118.062,
+   "fin": 119.745
+  }
+ ]
+}
