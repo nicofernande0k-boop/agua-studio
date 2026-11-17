@@ -263,12 +263,12 @@ for k in range(int(d2 / 0.5)):
 pegar(golpes, latido(0.55), ini(2) + 0.1)
 pegar(golpes, latido(0.55), ini(2) + 1.3)
 # Golpe de título justo al terminar la pregunta, precedido por un riser corto.
-t_titulo = fin(2) + 0.22
+t_titulo = fin(2) - 0.02
 pegar(golpes, riser(1.0, 0.28), t_titulo - 1.0)
 pegar(golpes, golpe(1.0, grande=True), t_titulo)
 
 # 2 · RIQUEZA — ostinato que crece.
-r0, r1 = ini(3) - 0.25, ini(8) - 0.3
+r0, r1 = max(ini(3) - 0.25, t_titulo + 0.5), ini(8) - 0.3
 ostinato(musica, r0, r1, 100, [RE, SIB, FA, DO], lambda t: 0.45 + 0.45 * (t - r0) / (r1 - r0))
 pegar(musica, colchon([RE - 12, RE - 5], r1 - r0, 0.08, 700, 1.0), r0)
 for k in (4, 5, 6, 7):
@@ -342,7 +342,7 @@ if A.voz:
     energia = np.convolve(np.abs(voz[0]), np.ones(int(0.04 * SR)) / int(0.04 * SR), mode="same")
     energia = np.clip(energia / (np.percentile(energia[energia > 1e-4], 90) + 1e-9), 0, 1)
     energia = np.clip(np.convolve(energia, np.ones(int(0.3 * SR)) / int(0.3 * SR), mode="same") * 1.7, 0, 1)
-    duck_m, duck_g = 1 - 0.8 * energia, 1 - 0.45 * energia
+    duck_m, duck_g = 1 - 0.88 * energia, 1 - 0.62 * energia
 else:
     # Sin voz: atenuación según los tiempos de las palabras (para previsualizar).
     e = np.zeros(N)
@@ -351,8 +351,8 @@ else:
     e = np.clip(np.convolve(e, np.ones(int(0.3 * SR)) / int(0.3 * SR), mode="same") * 1.5, 0, 1)
     duck_m, duck_g = 1 - 0.8 * e, 1 - 0.45 * e
 
-musica *= 0.05 / rms(musica)
-golpes *= 0.06 / rms(golpes)
+musica *= 0.034 / rms(musica)
+golpes *= 0.045 / rms(golpes)
 fondo = musica * duck_m + golpes * duck_g
 mezcla = np.tanh((fondo + voz) * 1.05) / 1.05
 salida = carpeta / "audio"

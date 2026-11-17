@@ -1,1143 +1,1167 @@
 {
- "estimado": true,
+ "estimado": false,
  "id": "003-de-quien-es",
  "titulo": "¿De quién es la Argentina?",
  "fps": 30,
- "duracion": 80.945,
- "frames": 2428,
- "desfaseVoz": 0.15,
+ "duracion": 70.94,
+ "frames": 2128,
+ "desfaseVoz": 0.12,
  "frases": [
   {
    "k": 1,
    "acto": "gancho",
    "texto": "Tenemos petróleo. Gas. Litio. Agua. Tierra.",
-   "inicio": 0.15,
-   "fin": 3.645
+   "inicio": 0.12,
+   "fin": 5.49
   },
   {
    "k": 2,
    "acto": "gancho",
-   "texto": "¿Por qué uno de cada tres argentinos es pobre?",
-   "inicio": 3.985,
-   "fin": 7.069
+   "texto": "¿Entonces por qué uno de cada tres argentinos es pobre?",
+   "inicio": 6.12,
+   "fin": 9.1
   },
   {
    "k": 3,
    "acto": "riqueza",
    "texto": "Vaca Muerta bate récords.",
-   "inicio": 7.809,
-   "fin": 9.565
+   "inicio": 9.56,
+   "fin": 11.16
   },
   {
    "k": 4,
    "acto": "riqueza",
    "texto": "El segundo potencial de gas no convencional del mundo.",
-   "inicio": 9.905,
-   "fin": 13.496
+   "inicio": 11.56,
+   "fin": 14.42
   },
   {
    "k": 5,
    "acto": "riqueza",
    "texto": "Uno de los mayores recursos de litio del planeta.",
-   "inicio": 13.836,
-   "fin": 17.111
+   "inicio": 14.7,
+   "fin": 17.22
   },
   {
    "k": 6,
    "acto": "riqueza",
    "texto": "Casi diecisiete mil glaciares.",
-   "inicio": 17.451,
-   "fin": 19.523
+   "inicio": 17.52,
+   "fin": 19.52
   },
   {
    "k": 7,
    "acto": "riqueza",
    "texto": "El octavo país más extenso de la Tierra.",
-   "inicio": 19.863,
-   "fin": 22.568
+   "inicio": 19.74,
+   "fin": 22.08
   },
   {
    "k": 8,
    "acto": "paradoja",
    "texto": "Y aun así, casi la mitad de nuestros chicos es pobre.",
-   "inicio": 23.208,
-   "fin": 26.795
+   "inicio": 22.4,
+   "fin": 25.7
   },
   {
    "k": 9,
    "acto": "paradoja",
    "texto": "La pregunta no es qué tenemos.",
-   "inicio": 27.535,
-   "fin": 29.607
+   "inicio": 26.16,
+   "fin": 27.96
   },
   {
    "k": 10,
    "acto": "paradoja",
    "texto": "Es de quién es.",
-   "inicio": 30.047,
-   "fin": 31.17
+   "inicio": 28.28,
+   "fin": 29.47
   },
   {
    "k": 11,
    "acto": "disputa",
    "texto": "¿De quién son? La Constitución dice: de las provincias.",
-   "inicio": 32.01,
-   "fin": 35.964
+   "inicio": 29.7,
+   "fin": 33.12
   },
   {
    "k": 12,
    "acto": "disputa",
    "texto": "¿Quién los extrae? Grandes empresas. Muchas, extranjeras.",
-   "inicio": 36.404,
-   "fin": 40.545
+   "inicio": 33.34,
+   "fin": 37.2
   },
   {
    "k": 13,
    "acto": "disputa",
-   "texto": "¿Cuánto queda? Por el litio, regalías de entre el tres y el cinco por ciento.",
-   "inicio": 40.985,
-   "fin": 46.242
+   "texto": "¿Cuánto queda? Por el litio, las provincias cobran regalías de entre el tres y el cinco por ciento.",
+   "inicio": 37.44,
+   "fin": 42.47
   },
   {
    "k": 14,
    "acto": "disputa",
    "texto": "¿Quién cuida el agua? Desde 2026, cada provincia elige qué glaciares proteger.",
-   "inicio": 46.682,
-   "fin": 52.002
+   "inicio": 42.64,
+   "fin": 47.63
   },
   {
    "k": 15,
    "acto": "disputa",
    "texto": "¿Y las reglas? Treinta años garantizadas para los grandes inversores.",
-   "inicio": 52.442,
-   "fin": 57.132
+   "inicio": 47.84,
+   "fin": 51.62
   },
   {
    "k": 16,
    "acto": "disputa",
    "texto": "Empresas. Nación. Provincias. Comunidades.",
-   "inicio": 57.772,
-   "fin": 61.054
+   "inicio": 52.16,
+   "fin": 55.42
   },
   {
    "k": 17,
    "acto": "disputa",
    "texto": "Todos disputan lo mismo: quién decide, y quién se beneficia.",
-   "inicio": 61.394,
-   "fin": 65.575
+   "inicio": 55.62,
+   "fin": 59.45
   },
   {
    "k": 18,
    "acto": "cierre",
    "texto": "Porque la riqueza no está bajo el suelo.",
-   "inicio": 66.515,
-   "fin": 69.219
+   "inicio": 59.74,
+   "fin": 61.73
   },
   {
    "k": 19,
    "acto": "cierre",
    "texto": "Está en las decisiones.",
-   "inicio": 69.659,
-   "fin": 71.288
+   "inicio": 62.24,
+   "fin": 63.31
   },
   {
    "k": 20,
    "acto": "cierre",
    "texto": "Un país no es soberano por lo que tiene.",
-   "inicio": 72.228,
-   "fin": 74.933
+   "inicio": 63.56,
+   "fin": 65.54
   },
   {
    "k": 21,
    "acto": "cierre",
    "texto": "Es soberano por lo que decide.",
-   "inicio": 75.473,
-   "fin": 77.545
+   "inicio": 65.88,
+   "fin": 67.54
   }
  ],
  "palabras": [
   {
    "texto": "Tenemos",
-   "inicio": 0.15,
-   "fin": 0.616,
+   "inicio": 0.12,
+   "fin": 0.64,
    "frase": 1
   },
   {
    "texto": "petróleo.",
-   "inicio": 0.656,
-   "fin": 1.399,
+   "inicio": 0.64,
+   "fin": 1.82,
    "frase": 1
   },
   {
    "texto": "Gas.",
-   "inicio": 1.439,
-   "fin": 1.866,
+   "inicio": 1.96,
+   "fin": 2.48,
    "frase": 1
   },
   {
    "texto": "Litio.",
-   "inicio": 1.906,
-   "fin": 2.459,
+   "inicio": 3.06,
+   "fin": 3.9,
    "frase": 1
   },
   {
    "texto": "Agua.",
-   "inicio": 2.499,
-   "fin": 2.988,
+   "inicio": 4.2,
+   "fin": 4.62,
    "frase": 1
   },
   {
    "texto": "Tierra.",
-   "inicio": 3.028,
-   "fin": 3.645,
+   "inicio": 5.06,
+   "fin": 5.49,
    "frase": 1
   },
   {
-   "texto": "¿Por",
-   "inicio": 3.985,
-   "fin": 4.261,
+   "texto": "¿Entonces",
+   "inicio": 6.12,
+   "fin": 6.46,
+   "frase": 2
+  },
+  {
+   "texto": "por",
+   "inicio": 6.66,
+   "fin": 6.88,
    "frase": 2
   },
   {
    "texto": "qué",
-   "inicio": 4.301,
-   "fin": 4.514,
+   "inicio": 6.88,
+   "fin": 7.06,
    "frase": 2
   },
   {
    "texto": "uno",
-   "inicio": 4.554,
-   "fin": 4.768,
+   "inicio": 7.06,
+   "fin": 7.34,
    "frase": 2
   },
   {
    "texto": "de",
-   "inicio": 4.808,
-   "fin": 4.957,
+   "inicio": 7.34,
+   "fin": 7.48,
    "frase": 2
   },
   {
    "texto": "cada",
-   "inicio": 4.997,
-   "fin": 5.274,
+   "inicio": 7.48,
+   "fin": 7.7,
    "frase": 2
   },
   {
    "texto": "tres",
-   "inicio": 5.314,
-   "fin": 5.59,
+   "inicio": 7.7,
+   "fin": 7.98,
    "frase": 2
   },
   {
    "texto": "argentinos",
-   "inicio": 5.63,
-   "fin": 6.287,
+   "inicio": 7.98,
+   "fin": 8.54,
    "frase": 2
   },
   {
    "texto": "es",
-   "inicio": 6.327,
-   "fin": 6.476,
+   "inicio": 8.54,
+   "fin": 8.8,
    "frase": 2
   },
   {
    "texto": "pobre?",
-   "inicio": 6.516,
-   "fin": 7.069,
+   "inicio": 8.8,
+   "fin": 9.1,
    "frase": 2
   },
   {
    "texto": "Vaca",
-   "inicio": 7.809,
-   "fin": 8.086,
+   "inicio": 9.56,
+   "fin": 9.88,
    "frase": 3
   },
   {
    "texto": "Muerta",
-   "inicio": 8.126,
-   "fin": 8.529,
+   "inicio": 9.88,
+   "fin": 10.32,
    "frase": 3
   },
   {
    "texto": "bate",
-   "inicio": 8.569,
-   "fin": 8.845,
+   "inicio": 10.48,
+   "fin": 10.68,
    "frase": 3
   },
   {
    "texto": "récords.",
-   "inicio": 8.885,
-   "fin": 9.565,
+   "inicio": 10.68,
+   "fin": 11.16,
    "frase": 3
   },
   {
    "texto": "El",
-   "inicio": 9.905,
-   "fin": 10.055,
+   "inicio": 11.56,
+   "fin": 11.6,
    "frase": 4
   },
   {
    "texto": "segundo",
-   "inicio": 10.095,
-   "fin": 10.561,
+   "inicio": 11.6,
+   "fin": 11.98,
    "frase": 4
   },
   {
    "texto": "potencial",
-   "inicio": 10.601,
-   "fin": 11.194,
+   "inicio": 11.98,
+   "fin": 12.48,
    "frase": 4
   },
   {
    "texto": "de",
-   "inicio": 11.234,
-   "fin": 11.384,
+   "inicio": 12.48,
+   "fin": 12.68,
    "frase": 4
   },
   {
    "texto": "gas",
-   "inicio": 11.424,
-   "fin": 11.637,
+   "inicio": 12.68,
+   "fin": 12.9,
    "frase": 4
   },
   {
    "texto": "no",
-   "inicio": 11.677,
-   "fin": 11.827,
+   "inicio": 12.9,
+   "fin": 13.2,
    "frase": 4
   },
   {
    "texto": "convencional",
-   "inicio": 11.867,
-   "fin": 12.65,
+   "inicio": 13.2,
+   "fin": 13.76,
    "frase": 4
   },
   {
    "texto": "del",
-   "inicio": 12.69,
-   "fin": 12.903,
+   "inicio": 13.76,
+   "fin": 14.08,
    "frase": 4
   },
   {
    "texto": "mundo.",
-   "inicio": 12.943,
-   "fin": 13.496,
+   "inicio": 14.08,
+   "fin": 14.42,
    "frase": 4
   },
   {
    "texto": "Uno",
-   "inicio": 13.836,
-   "fin": 14.049,
+   "inicio": 14.7,
+   "fin": 14.92,
    "frase": 5
   },
   {
    "texto": "de",
-   "inicio": 14.089,
-   "fin": 14.239,
+   "inicio": 14.92,
+   "fin": 15.02,
    "frase": 5
   },
   {
    "texto": "los",
-   "inicio": 14.279,
-   "fin": 14.492,
+   "inicio": 15.02,
+   "fin": 15.2,
    "frase": 5
   },
   {
    "texto": "mayores",
-   "inicio": 14.532,
-   "fin": 14.999,
+   "inicio": 15.2,
+   "fin": 15.72,
    "frase": 5
   },
   {
    "texto": "recursos",
-   "inicio": 15.039,
-   "fin": 15.568,
+   "inicio": 15.72,
+   "fin": 16.14,
    "frase": 5
   },
   {
    "texto": "de",
-   "inicio": 15.608,
-   "fin": 15.758,
+   "inicio": 16.14,
+   "fin": 16.36,
    "frase": 5
   },
   {
    "texto": "litio",
-   "inicio": 15.798,
-   "fin": 16.138,
+   "inicio": 16.36,
+   "fin": 16.62,
    "frase": 5
   },
   {
    "texto": "del",
-   "inicio": 16.178,
-   "fin": 16.391,
+   "inicio": 16.62,
+   "fin": 16.82,
    "frase": 5
   },
   {
    "texto": "planeta.",
-   "inicio": 16.431,
-   "fin": 17.111,
+   "inicio": 16.82,
+   "fin": 17.22,
    "frase": 5
   },
   {
    "texto": "Casi",
-   "inicio": 17.451,
-   "fin": 17.727,
+   "inicio": 17.52,
+   "fin": 17.84,
    "frase": 6
   },
   {
    "texto": "diecisiete",
-   "inicio": 17.767,
-   "fin": 18.423,
+   "inicio": 17.85,
+   "fin": 18.536,
    "frase": 6
   },
   {
    "texto": "mil",
-   "inicio": 18.463,
-   "fin": 18.676,
+   "inicio": 18.556,
+   "fin": 18.83,
    "frase": 6
   },
   {
    "texto": "glaciares.",
-   "inicio": 18.716,
-   "fin": 19.523,
+   "inicio": 18.84,
+   "fin": 19.52,
    "frase": 6
   },
   {
    "texto": "El",
-   "inicio": 19.863,
-   "fin": 20.013,
+   "inicio": 19.74,
+   "fin": 19.88,
    "frase": 7
   },
   {
    "texto": "octavo",
-   "inicio": 20.053,
-   "fin": 20.456,
+   "inicio": 19.88,
+   "fin": 20.26,
    "frase": 7
   },
   {
    "texto": "país",
-   "inicio": 20.496,
-   "fin": 20.772,
+   "inicio": 20.26,
+   "fin": 20.6,
    "frase": 7
   },
   {
    "texto": "más",
-   "inicio": 20.812,
-   "fin": 21.025,
+   "inicio": 20.6,
+   "fin": 21.0,
    "frase": 7
   },
   {
    "texto": "extenso",
-   "inicio": 21.065,
-   "fin": 21.532,
+   "inicio": 21.0,
+   "fin": 21.5,
    "frase": 7
   },
   {
    "texto": "de",
-   "inicio": 21.572,
-   "fin": 21.721,
+   "inicio": 21.5,
+   "fin": 21.66,
    "frase": 7
   },
   {
    "texto": "la",
-   "inicio": 21.761,
-   "fin": 21.911,
+   "inicio": 21.66,
+   "fin": 21.8,
    "frase": 7
   },
   {
    "texto": "Tierra.",
-   "inicio": 21.951,
-   "fin": 22.568,
+   "inicio": 21.8,
+   "fin": 22.08,
    "frase": 7
   },
   {
    "texto": "Y",
-   "inicio": 23.208,
-   "fin": 23.294,
+   "inicio": 22.4,
+   "fin": 22.6,
    "frase": 8
   },
   {
    "texto": "aun",
-   "inicio": 23.334,
-   "fin": 23.547,
+   "inicio": 22.6,
+   "fin": 22.8,
    "frase": 8
   },
   {
    "texto": "así,",
-   "inicio": 23.587,
-   "fin": 23.924,
+   "inicio": 22.8,
+   "fin": 23.42,
    "frase": 8
   },
   {
    "texto": "casi",
-   "inicio": 23.964,
-   "fin": 24.24,
+   "inicio": 23.62,
+   "fin": 23.86,
    "frase": 8
   },
   {
    "texto": "la",
-   "inicio": 24.28,
-   "fin": 24.43,
+   "inicio": 23.86,
+   "fin": 24.02,
    "frase": 8
   },
   {
    "texto": "mitad",
-   "inicio": 24.47,
-   "fin": 24.81,
+   "inicio": 24.02,
+   "fin": 24.3,
    "frase": 8
   },
   {
    "texto": "de",
-   "inicio": 24.85,
-   "fin": 25.0,
+   "inicio": 24.3,
+   "fin": 24.6,
    "frase": 8
   },
   {
    "texto": "nuestros",
-   "inicio": 25.04,
-   "fin": 25.569,
+   "inicio": 24.6,
+   "fin": 24.8,
    "frase": 8
   },
   {
    "texto": "chicos",
-   "inicio": 25.609,
-   "fin": 26.012,
+   "inicio": 24.8,
+   "fin": 25.14,
    "frase": 8
   },
   {
    "texto": "es",
-   "inicio": 26.052,
-   "fin": 26.202,
+   "inicio": 25.14,
+   "fin": 25.42,
    "frase": 8
   },
   {
    "texto": "pobre.",
-   "inicio": 26.242,
-   "fin": 26.795,
+   "inicio": 25.42,
+   "fin": 25.7,
    "frase": 8
   },
   {
    "texto": "La",
-   "inicio": 27.535,
-   "fin": 27.685,
+   "inicio": 26.16,
+   "fin": 26.36,
    "frase": 9
   },
   {
    "texto": "pregunta",
-   "inicio": 27.725,
-   "fin": 28.255,
+   "inicio": 26.36,
+   "fin": 26.76,
    "frase": 9
   },
   {
    "texto": "no",
-   "inicio": 28.295,
-   "fin": 28.445,
+   "inicio": 26.76,
+   "fin": 27.02,
    "frase": 9
   },
   {
    "texto": "es",
-   "inicio": 28.485,
-   "fin": 28.635,
+   "inicio": 27.02,
+   "fin": 27.24,
    "frase": 9
   },
   {
    "texto": "qué",
-   "inicio": 28.675,
-   "fin": 28.888,
+   "inicio": 27.24,
+   "fin": 27.44,
    "frase": 9
   },
   {
    "texto": "tenemos.",
-   "inicio": 28.928,
-   "fin": 29.607,
+   "inicio": 27.44,
+   "fin": 27.96,
    "frase": 9
   },
   {
    "texto": "Es",
-   "inicio": 30.047,
-   "fin": 30.197,
+   "inicio": 28.28,
+   "fin": 28.56,
    "frase": 10
   },
   {
    "texto": "de",
-   "inicio": 30.237,
-   "fin": 30.387,
+   "inicio": 28.56,
+   "fin": 28.92,
    "frase": 10
   },
   {
    "texto": "quién",
-   "inicio": 30.427,
-   "fin": 30.767,
+   "inicio": 28.93,
+   "fin": 29.26,
    "frase": 10
   },
   {
    "texto": "es.",
-   "inicio": 30.807,
-   "fin": 31.17,
+   "inicio": 29.28,
+   "fin": 29.47,
    "frase": 10
   },
   {
    "texto": "¿De",
-   "inicio": 32.01,
-   "fin": 32.223,
+   "inicio": 29.7,
+   "fin": 29.94,
    "frase": 11
   },
   {
    "texto": "quién",
-   "inicio": 32.263,
-   "fin": 32.603,
+   "inicio": 29.94,
+   "fin": 30.16,
    "frase": 11
   },
   {
    "texto": "son?",
-   "inicio": 32.643,
-   "fin": 33.069,
+   "inicio": 30.16,
+   "fin": 30.46,
    "frase": 11
   },
   {
    "texto": "La",
-   "inicio": 33.109,
-   "fin": 33.259,
+   "inicio": 30.7,
+   "fin": 30.98,
    "frase": 11
   },
   {
    "texto": "Constitución",
-   "inicio": 33.299,
-   "fin": 34.082,
+   "inicio": 30.98,
+   "fin": 31.52,
    "frase": 11
   },
   {
    "texto": "dice:",
-   "inicio": 34.122,
-   "fin": 34.612,
+   "inicio": 31.52,
+   "fin": 31.9,
    "frase": 11
   },
   {
    "texto": "de",
-   "inicio": 34.652,
-   "fin": 34.802,
+   "inicio": 31.9,
+   "fin": 32.26,
    "frase": 11
   },
   {
    "texto": "las",
-   "inicio": 34.842,
-   "fin": 35.055,
+   "inicio": 32.26,
+   "fin": 32.54,
    "frase": 11
   },
   {
    "texto": "provincias.",
-   "inicio": 35.095,
-   "fin": 35.964,
+   "inicio": 32.54,
+   "fin": 33.12,
    "frase": 11
   },
   {
    "texto": "¿Quién",
-   "inicio": 36.404,
-   "fin": 36.807,
+   "inicio": 33.34,
+   "fin": 33.5,
    "frase": 12
   },
   {
    "texto": "los",
-   "inicio": 36.847,
-   "fin": 37.061,
+   "inicio": 33.5,
+   "fin": 33.76,
    "frase": 12
   },
   {
    "texto": "extrae?",
-   "inicio": 37.101,
-   "fin": 37.717,
+   "inicio": 33.76,
+   "fin": 34.16,
    "frase": 12
   },
   {
    "texto": "Grandes",
-   "inicio": 37.757,
-   "fin": 38.223,
+   "inicio": 34.4,
+   "fin": 34.96,
    "frase": 12
   },
   {
    "texto": "empresas.",
-   "inicio": 38.263,
-   "fin": 39.006,
+   "inicio": 34.96,
+   "fin": 35.44,
    "frase": 12
   },
   {
    "texto": "Muchas,",
-   "inicio": 39.046,
-   "fin": 39.572,
+   "inicio": 35.88,
+   "fin": 36.3,
    "frase": 12
   },
   {
    "texto": "extranjeras.",
-   "inicio": 39.612,
-   "fin": 40.545,
+   "inicio": 36.3,
+   "fin": 37.2,
    "frase": 12
   },
   {
    "texto": "¿Cuánto",
-   "inicio": 40.985,
-   "fin": 41.452,
+   "inicio": 37.44,
+   "fin": 37.84,
    "frase": 13
   },
   {
    "texto": "queda?",
-   "inicio": 41.492,
-   "fin": 42.045,
+   "inicio": 37.84,
+   "fin": 38.04,
    "frase": 13
   },
   {
    "texto": "Por",
-   "inicio": 42.085,
-   "fin": 42.298,
+   "inicio": 38.3,
+   "fin": 38.52,
    "frase": 13
   },
   {
    "texto": "el",
-   "inicio": 42.338,
-   "fin": 42.488,
+   "inicio": 38.52,
+   "fin": 38.68,
    "frase": 13
   },
   {
    "texto": "litio,",
-   "inicio": 42.528,
-   "fin": 42.991,
+   "inicio": 38.68,
+   "fin": 39.02,
+   "frase": 13
+  },
+  {
+   "texto": "las",
+   "inicio": 39.22,
+   "fin": 39.38,
+   "frase": 13
+  },
+  {
+   "texto": "provincias",
+   "inicio": 39.38,
+   "fin": 39.74,
+   "frase": 13
+  },
+  {
+   "texto": "cobran",
+   "inicio": 39.74,
+   "fin": 40.12,
    "frase": 13
   },
   {
    "texto": "regalías",
-   "inicio": 43.031,
-   "fin": 43.56,
+   "inicio": 40.12,
+   "fin": 40.56,
    "frase": 13
   },
   {
    "texto": "de",
-   "inicio": 43.6,
-   "fin": 43.75,
+   "inicio": 40.56,
+   "fin": 40.8,
    "frase": 13
   },
   {
    "texto": "entre",
-   "inicio": 43.79,
-   "fin": 44.13,
+   "inicio": 40.8,
+   "fin": 40.94,
    "frase": 13
   },
   {
    "texto": "el",
-   "inicio": 44.17,
-   "fin": 44.32,
+   "inicio": 40.94,
+   "fin": 41.18,
    "frase": 13
   },
   {
    "texto": "tres",
-   "inicio": 44.36,
-   "fin": 44.636,
+   "inicio": 41.19,
+   "fin": 41.33,
    "frase": 13
   },
   {
    "texto": "y",
-   "inicio": 44.676,
-   "fin": 44.763,
+   "inicio": 41.34,
+   "fin": 41.44,
    "frase": 13
   },
   {
    "texto": "el",
-   "inicio": 44.803,
-   "fin": 44.953,
+   "inicio": 41.44,
+   "fin": 41.7,
    "frase": 13
   },
   {
    "texto": "cinco",
-   "inicio": 44.993,
-   "fin": 45.332,
+   "inicio": 41.71,
+   "fin": 41.97,
    "frase": 13
   },
   {
    "texto": "por",
-   "inicio": 45.372,
-   "fin": 45.586,
+   "inicio": 41.99,
+   "fin": 42.17,
    "frase": 13
   },
   {
    "texto": "ciento.",
-   "inicio": 45.626,
-   "fin": 46.242,
+   "inicio": 42.19,
+   "fin": 42.47,
    "frase": 13
   },
   {
    "texto": "¿Quién",
-   "inicio": 46.682,
-   "fin": 47.085,
+   "inicio": 42.64,
+   "fin": 43.0,
    "frase": 14
   },
   {
    "texto": "cuida",
-   "inicio": 47.125,
-   "fin": 47.465,
+   "inicio": 43.0,
+   "fin": 43.22,
    "frase": 14
   },
   {
    "texto": "el",
-   "inicio": 47.505,
-   "fin": 47.655,
+   "inicio": 43.22,
+   "fin": 43.44,
    "frase": 14
   },
   {
    "texto": "agua?",
-   "inicio": 47.695,
-   "fin": 48.184,
+   "inicio": 43.44,
+   "fin": 43.64,
    "frase": 14
   },
   {
    "texto": "Desde",
-   "inicio": 48.224,
-   "fin": 48.564,
+   "inicio": 43.88,
+   "fin": 44.16,
    "frase": 14
   },
   {
    "texto": "2026,",
-   "inicio": 48.604,
-   "fin": 49.004,
+   "inicio": 44.16,
+   "fin": 45.06,
    "frase": 14
   },
   {
    "texto": "cada",
-   "inicio": 49.044,
-   "fin": 49.32,
+   "inicio": 45.4,
+   "fin": 45.54,
    "frase": 14
   },
   {
    "texto": "provincia",
-   "inicio": 49.36,
-   "fin": 49.953,
+   "inicio": 45.54,
+   "fin": 46.0,
    "frase": 14
   },
   {
    "texto": "elige",
-   "inicio": 49.993,
-   "fin": 50.333,
+   "inicio": 46.0,
+   "fin": 46.38,
    "frase": 14
   },
   {
    "texto": "qué",
-   "inicio": 50.373,
-   "fin": 50.586,
+   "inicio": 46.38,
+   "fin": 46.68,
    "frase": 14
   },
   {
    "texto": "glaciares",
-   "inicio": 50.626,
-   "fin": 51.219,
+   "inicio": 46.68,
+   "fin": 47.18,
    "frase": 14
   },
   {
    "texto": "proteger.",
-   "inicio": 51.259,
-   "fin": 52.002,
+   "inicio": 47.18,
+   "fin": 47.63,
    "frase": 14
   },
   {
    "texto": "¿Y",
-   "inicio": 52.442,
-   "fin": 52.592,
+   "inicio": 47.84,
+   "fin": 47.98,
    "frase": 15
   },
   {
    "texto": "las",
-   "inicio": 52.632,
-   "fin": 52.845,
+   "inicio": 47.98,
+   "fin": 48.22,
    "frase": 15
   },
   {
    "texto": "reglas?",
-   "inicio": 52.885,
-   "fin": 53.501,
+   "inicio": 48.22,
+   "fin": 48.54,
    "frase": 15
   },
   {
    "texto": "Treinta",
-   "inicio": 53.541,
-   "fin": 54.008,
+   "inicio": 48.55,
+   "fin": 49.13,
    "frase": 15
   },
   {
    "texto": "años",
-   "inicio": 54.048,
-   "fin": 54.324,
+   "inicio": 49.14,
+   "fin": 49.48,
    "frase": 15
   },
   {
    "texto": "garantizadas",
-   "inicio": 54.364,
-   "fin": 55.147,
+   "inicio": 49.48,
+   "fin": 50.18,
    "frase": 15
   },
   {
    "texto": "para",
-   "inicio": 55.187,
-   "fin": 55.463,
+   "inicio": 50.18,
+   "fin": 50.42,
    "frase": 15
   },
   {
    "texto": "los",
-   "inicio": 55.503,
-   "fin": 55.716,
+   "inicio": 50.42,
+   "fin": 50.64,
    "frase": 15
   },
   {
    "texto": "grandes",
-   "inicio": 55.756,
-   "fin": 56.223,
+   "inicio": 50.64,
+   "fin": 50.98,
    "frase": 15
   },
   {
    "texto": "inversores.",
-   "inicio": 56.263,
-   "fin": 57.132,
+   "inicio": 50.98,
+   "fin": 51.62,
    "frase": 15
   },
   {
    "texto": "Empresas.",
-   "inicio": 57.772,
-   "fin": 58.515,
+   "inicio": 52.16,
+   "fin": 52.76,
    "frase": 16
   },
   {
    "texto": "Nación.",
-   "inicio": 58.555,
-   "fin": 59.172,
+   "inicio": 53.06,
+   "fin": 53.52,
    "frase": 16
   },
   {
    "texto": "Provincias.",
-   "inicio": 59.212,
-   "fin": 60.081,
+   "inicio": 53.84,
+   "fin": 54.48,
    "frase": 16
   },
   {
    "texto": "Comunidades.",
-   "inicio": 60.121,
-   "fin": 61.054,
+   "inicio": 54.8,
+   "fin": 55.42,
    "frase": 16
   },
   {
    "texto": "Todos",
-   "inicio": 61.394,
-   "fin": 61.734,
+   "inicio": 55.62,
+   "fin": 55.96,
    "frase": 17
   },
   {
    "texto": "disputan",
-   "inicio": 61.774,
-   "fin": 62.303,
+   "inicio": 55.96,
+   "fin": 56.5,
    "frase": 17
   },
   {
    "texto": "lo",
-   "inicio": 62.343,
-   "fin": 62.493,
+   "inicio": 56.5,
+   "fin": 56.68,
    "frase": 17
   },
   {
    "texto": "mismo:",
-   "inicio": 62.533,
-   "fin": 63.086,
+   "inicio": 56.68,
+   "fin": 57.0,
    "frase": 17
   },
   {
    "texto": "quién",
-   "inicio": 63.126,
-   "fin": 63.466,
+   "inicio": 57.0,
+   "fin": 57.6,
    "frase": 17
   },
   {
    "texto": "decide,",
-   "inicio": 63.506,
-   "fin": 64.032,
+   "inicio": 57.6,
+   "fin": 57.96,
    "frase": 17
   },
   {
    "texto": "y",
-   "inicio": 64.072,
-   "fin": 64.159,
+   "inicio": 57.96,
+   "fin": 58.5,
    "frase": 17
   },
   {
    "texto": "quién",
-   "inicio": 64.199,
-   "fin": 64.538,
+   "inicio": 58.5,
+   "fin": 58.72,
    "frase": 17
   },
   {
    "texto": "se",
-   "inicio": 64.578,
-   "fin": 64.728,
+   "inicio": 58.72,
+   "fin": 58.98,
    "frase": 17
   },
   {
    "texto": "beneficia.",
-   "inicio": 64.768,
-   "fin": 65.575,
+   "inicio": 58.98,
+   "fin": 59.45,
    "frase": 17
   },
   {
    "texto": "Porque",
-   "inicio": 66.515,
-   "fin": 66.918,
+   "inicio": 59.74,
+   "fin": 59.96,
    "frase": 18
   },
   {
    "texto": "la",
-   "inicio": 66.958,
-   "fin": 67.107,
+   "inicio": 59.96,
+   "fin": 60.16,
    "frase": 18
   },
   {
    "texto": "riqueza",
-   "inicio": 67.147,
-   "fin": 67.614,
+   "inicio": 60.16,
+   "fin": 60.64,
    "frase": 18
   },
   {
    "texto": "no",
-   "inicio": 67.654,
-   "fin": 67.804,
+   "inicio": 60.64,
+   "fin": 60.88,
    "frase": 18
   },
   {
    "texto": "está",
-   "inicio": 67.844,
-   "fin": 68.12,
+   "inicio": 60.88,
+   "fin": 61.06,
    "frase": 18
   },
   {
    "texto": "bajo",
-   "inicio": 68.16,
-   "fin": 68.437,
+   "inicio": 61.06,
+   "fin": 61.3,
    "frase": 18
   },
   {
    "texto": "el",
-   "inicio": 68.477,
-   "fin": 68.626,
+   "inicio": 61.3,
+   "fin": 61.52,
    "frase": 18
   },
   {
    "texto": "suelo.",
-   "inicio": 68.666,
-   "fin": 69.219,
+   "inicio": 61.52,
+   "fin": 61.73,
    "frase": 18
   },
   {
    "texto": "Está",
-   "inicio": 69.659,
-   "fin": 69.936,
+   "inicio": 62.24,
+   "fin": 62.32,
    "frase": 19
   },
   {
    "texto": "en",
-   "inicio": 69.976,
-   "fin": 70.126,
+   "inicio": 62.32,
+   "fin": 62.48,
    "frase": 19
   },
   {
    "texto": "las",
-   "inicio": 70.166,
-   "fin": 70.379,
+   "inicio": 62.48,
+   "fin": 62.74,
    "frase": 19
   },
   {
    "texto": "decisiones.",
-   "inicio": 70.419,
-   "fin": 71.288,
+   "inicio": 62.74,
+   "fin": 63.31,
    "frase": 19
   },
   {
    "texto": "Un",
-   "inicio": 72.228,
-   "fin": 72.378,
+   "inicio": 63.56,
+   "fin": 63.68,
    "frase": 20
   },
   {
    "texto": "país",
-   "inicio": 72.418,
-   "fin": 72.695,
+   "inicio": 63.68,
+   "fin": 64.02,
    "frase": 20
   },
   {
    "texto": "no",
-   "inicio": 72.735,
-   "fin": 72.885,
+   "inicio": 64.02,
+   "fin": 64.24,
    "frase": 20
   },
   {
    "texto": "es",
-   "inicio": 72.925,
-   "fin": 73.075,
+   "inicio": 64.24,
+   "fin": 64.46,
    "frase": 20
   },
   {
    "texto": "soberano",
-   "inicio": 73.115,
-   "fin": 73.644,
+   "inicio": 64.46,
+   "fin": 64.84,
    "frase": 20
   },
   {
    "texto": "por",
-   "inicio": 73.684,
-   "fin": 73.897,
+   "inicio": 64.84,
+   "fin": 65.04,
    "frase": 20
   },
   {
    "texto": "lo",
-   "inicio": 73.937,
-   "fin": 74.087,
+   "inicio": 65.04,
+   "fin": 65.16,
    "frase": 20
   },
   {
    "texto": "que",
-   "inicio": 74.127,
-   "fin": 74.34,
+   "inicio": 65.16,
+   "fin": 65.32,
    "frase": 20
   },
   {
    "texto": "tiene.",
-   "inicio": 74.38,
-   "fin": 74.933,
+   "inicio": 65.32,
+   "fin": 65.54,
    "frase": 20
   },
   {
    "texto": "Es",
-   "inicio": 75.473,
-   "fin": 75.623,
+   "inicio": 65.88,
+   "fin": 66.12,
    "frase": 21
   },
   {
    "texto": "soberano",
-   "inicio": 75.663,
-   "fin": 76.193,
+   "inicio": 66.12,
+   "fin": 66.66,
    "frase": 21
   },
   {
    "texto": "por",
-   "inicio": 76.233,
-   "fin": 76.446,
+   "inicio": 66.66,
+   "fin": 66.9,
    "frase": 21
   },
   {
    "texto": "lo",
-   "inicio": 76.486,
-   "fin": 76.636,
+   "inicio": 66.9,
+   "fin": 67.08,
    "frase": 21
   },
   {
    "texto": "que",
-   "inicio": 76.676,
-   "fin": 76.889,
+   "inicio": 67.08,
+   "fin": 67.32,
    "frase": 21
   },
   {
    "texto": "decide.",
-   "inicio": 76.929,
-   "fin": 77.545,
+   "inicio": 67.32,
+   "fin": 67.54,
    "frase": 21
   }
  ],
@@ -1147,9 +1171,9 @@
     0,
     1
    ],
-   "inicio": 0.1,
-   "fin": 1.399,
-   "salida": 1.359,
+   "inicio": 0.07,
+   "fin": 1.82,
+   "salida": 1.88,
    "lineas": [
     "Tenemos petróleo."
    ]
@@ -1158,9 +1182,9 @@
    "palabras": [
     2
    ],
-   "inicio": 1.389,
-   "fin": 1.866,
-   "salida": 1.826,
+   "inicio": 1.91,
+   "fin": 2.48,
+   "salida": 2.93,
    "lineas": [
     "Gas."
    ]
@@ -1169,9 +1193,9 @@
    "palabras": [
     3
    ],
-   "inicio": 1.856,
-   "fin": 2.459,
-   "salida": 2.419,
+   "inicio": 3.01,
+   "fin": 3.9,
+   "salida": 4.12,
    "lineas": [
     "Litio."
    ]
@@ -1180,9 +1204,9 @@
    "palabras": [
     4
    ],
-   "inicio": 2.449,
-   "fin": 2.988,
-   "salida": 2.948,
+   "inicio": 4.15,
+   "fin": 4.62,
+   "salida": 4.98,
    "lineas": [
     "Agua."
    ]
@@ -1191,9 +1215,9 @@
    "palabras": [
     5
    ],
-   "inicio": 2.978,
-   "fin": 3.645,
-   "salida": 3.905,
+   "inicio": 5.01,
+   "fin": 5.49,
+   "salida": 5.94,
    "lineas": [
     "Tierra."
    ]
@@ -1208,33 +1232,33 @@
     11,
     12,
     13,
-    14
+    14,
+    15
    ],
-   "inicio": 3.935,
-   "fin": 7.069,
-   "salida": 7.519,
+   "inicio": 6.07,
+   "fin": 9.1,
+   "salida": 9.48,
    "lineas": [
-    "¿Por qué uno de cada",
+    "¿Entonces por qué uno de cada",
     "tres argentinos es pobre?"
    ]
   },
   {
    "palabras": [
-    15,
     16,
     17,
-    18
+    18,
+    19
    ],
-   "inicio": 7.759,
-   "fin": 9.565,
-   "salida": 9.825,
+   "inicio": 9.51,
+   "fin": 11.16,
+   "salida": 11.48,
    "lineas": [
     "Vaca Muerta bate récords."
    ]
   },
   {
    "palabras": [
-    19,
     20,
     21,
     22,
@@ -1242,11 +1266,12 @@
     24,
     25,
     26,
-    27
+    27,
+    28
    ],
-   "inicio": 9.855,
-   "fin": 13.496,
-   "salida": 13.756,
+   "inicio": 11.51,
+   "fin": 14.42,
+   "salida": 14.62,
    "lineas": [
     "El segundo potencial de gas",
     "no convencional del mundo."
@@ -1254,7 +1279,6 @@
   },
   {
    "palabras": [
-    28,
     29,
     30,
     31,
@@ -1262,11 +1286,12 @@
     33,
     34,
     35,
-    36
+    36,
+    37
    ],
-   "inicio": 13.786,
-   "fin": 17.111,
-   "salida": 17.371,
+   "inicio": 14.65,
+   "fin": 17.22,
+   "salida": 17.44,
    "lineas": [
     "Uno de los mayores recursos",
     "de litio del planeta."
@@ -1274,32 +1299,32 @@
   },
   {
    "palabras": [
-    37,
     38,
     39,
-    40
+    40,
+    41
    ],
-   "inicio": 17.401,
-   "fin": 19.523,
-   "salida": 19.783,
+   "inicio": 17.47,
+   "fin": 19.52,
+   "salida": 19.66,
    "lineas": [
     "Casi diecisiete mil glaciares."
    ]
   },
   {
    "palabras": [
-    41,
     42,
     43,
     44,
     45,
     46,
     47,
-    48
+    48,
+    49
    ],
-   "inicio": 19.813,
-   "fin": 22.568,
-   "salida": 23.018,
+   "inicio": 19.69,
+   "fin": 22.08,
+   "salida": 22.32,
    "lineas": [
     "El octavo país más",
     "extenso de la Tierra."
@@ -1307,7 +1332,6 @@
   },
   {
    "palabras": [
-    49,
     50,
     51,
     52,
@@ -1317,11 +1341,12 @@
     56,
     57,
     58,
-    59
+    59,
+    60
    ],
-   "inicio": 23.158,
-   "fin": 26.795,
-   "salida": 27.245,
+   "inicio": 22.35,
+   "fin": 25.7,
+   "salida": 26.08,
    "lineas": [
     "Y aun así, casi la mitad de",
     "nuestros chicos es pobre."
@@ -1329,59 +1354,59 @@
   },
   {
    "palabras": [
-    60,
     61,
     62,
     63,
     64,
-    65
+    65,
+    66
    ],
-   "inicio": 27.485,
-   "fin": 29.607,
-   "salida": 29.967,
+   "inicio": 26.11,
+   "fin": 27.96,
+   "salida": 28.2,
    "lineas": [
     "La pregunta no es qué tenemos."
    ]
   },
   {
    "palabras": [
-    66,
     67,
     68,
-    69
+    69,
+    70
    ],
-   "inicio": 29.997,
-   "fin": 31.17,
-   "salida": 31.62,
+   "inicio": 28.23,
+   "fin": 29.47,
+   "salida": 29.62,
    "lineas": [
     "Es de quién es."
    ]
   },
   {
    "palabras": [
-    70,
     71,
-    72
+    72,
+    73
    ],
-   "inicio": 31.96,
-   "fin": 33.069,
-   "salida": 33.029,
+   "inicio": 29.65,
+   "fin": 30.46,
+   "salida": 30.62,
    "lineas": [
     "¿De quién son?"
    ]
   },
   {
    "palabras": [
-    73,
     74,
     75,
     76,
     77,
-    78
+    78,
+    79
    ],
-   "inicio": 33.059,
-   "fin": 35.964,
-   "salida": 36.324,
+   "inicio": 30.65,
+   "fin": 33.12,
+   "salida": 33.26,
    "lineas": [
     "La Constitución dice:",
     "de las provincias."
@@ -1389,56 +1414,55 @@
   },
   {
    "palabras": [
-    79,
     80,
-    81
+    81,
+    82
    ],
-   "inicio": 36.354,
-   "fin": 37.717,
-   "salida": 37.677,
+   "inicio": 33.29,
+   "fin": 34.16,
+   "salida": 34.32,
    "lineas": [
     "¿Quién los extrae?"
    ]
   },
   {
    "palabras": [
-    82,
-    83
+    83,
+    84
    ],
-   "inicio": 37.707,
-   "fin": 39.006,
-   "salida": 38.966,
+   "inicio": 34.35,
+   "fin": 35.44,
+   "salida": 35.8,
    "lineas": [
     "Grandes empresas."
    ]
   },
   {
    "palabras": [
-    84,
-    85
+    85,
+    86
    ],
-   "inicio": 38.996,
-   "fin": 40.545,
-   "salida": 40.905,
+   "inicio": 35.83,
+   "fin": 37.2,
+   "salida": 37.36,
    "lineas": [
     "Muchas, extranjeras."
    ]
   },
   {
    "palabras": [
-    86,
-    87
+    87,
+    88
    ],
-   "inicio": 40.935,
-   "fin": 42.045,
-   "salida": 42.005,
+   "inicio": 37.39,
+   "fin": 38.04,
+   "salida": 38.22,
    "lineas": [
     "¿Cuánto queda?"
    ]
   },
   {
    "palabras": [
-    88,
     89,
     90,
     91,
@@ -1452,12 +1476,12 @@
     99,
     100
    ],
-   "inicio": 42.035,
-   "fin": 46.242,
-   "salida": 46.602,
+   "inicio": 38.25,
+   "fin": 41.44,
+   "salida": 41.36,
    "lineas": [
-    "Por el litio, regalías de entre",
-    "el tres y el cinco por ciento."
+    "Por el litio, las provincias",
+    "cobran regalías de entre el tres y"
    ]
   },
   {
@@ -1467,11 +1491,11 @@
     103,
     104
    ],
-   "inicio": 46.632,
-   "fin": 48.184,
-   "salida": 48.144,
+   "inicio": 41.39,
+   "fin": 42.47,
+   "salida": 42.56,
    "lineas": [
-    "¿Quién cuida el agua?"
+    "el cinco por ciento."
    ]
   },
   {
@@ -1479,15 +1503,29 @@
     105,
     106,
     107,
-    108,
+    108
+   ],
+   "inicio": 42.59,
+   "fin": 43.64,
+   "salida": 43.8,
+   "lineas": [
+    "¿Quién cuida el agua?"
+   ]
+  },
+  {
+   "palabras": [
     109,
     110,
     111,
-    112
+    112,
+    113,
+    114,
+    115,
+    116
    ],
-   "inicio": 48.174,
-   "fin": 52.002,
-   "salida": 52.362,
+   "inicio": 43.83,
+   "fin": 47.63,
+   "salida": 47.76,
    "lineas": [
     "Desde 2026, cada provincia",
     "elige qué glaciares proteger."
@@ -1495,30 +1533,30 @@
   },
   {
    "palabras": [
-    113,
-    114,
-    115
+    117,
+    118,
+    119
    ],
-   "inicio": 52.392,
-   "fin": 53.501,
-   "salida": 53.461,
+   "inicio": 47.79,
+   "fin": 48.54,
+   "salida": 48.47,
    "lineas": [
     "¿Y las reglas?"
    ]
   },
   {
    "palabras": [
-    116,
-    117,
-    118,
-    119,
     120,
     121,
-    122
+    122,
+    123,
+    124,
+    125,
+    126
    ],
-   "inicio": 53.491,
-   "fin": 57.132,
-   "salida": 57.582,
+   "inicio": 48.5,
+   "fin": 51.62,
+   "salida": 52.07,
    "lineas": [
     "Treinta años garantizadas",
     "para los grandes inversores."
@@ -1526,60 +1564,46 @@
   },
   {
    "palabras": [
-    123
+    127
    ],
-   "inicio": 57.722,
-   "fin": 58.515,
-   "salida": 58.475,
+   "inicio": 52.11,
+   "fin": 52.76,
+   "salida": 52.98,
    "lineas": [
     "Empresas."
    ]
   },
   {
    "palabras": [
-    124
+    128
    ],
-   "inicio": 58.505,
-   "fin": 59.172,
-   "salida": 59.132,
+   "inicio": 53.01,
+   "fin": 53.52,
+   "salida": 53.76,
    "lineas": [
     "Nación."
    ]
   },
   {
    "palabras": [
-    125
+    129
    ],
-   "inicio": 59.162,
-   "fin": 60.081,
-   "salida": 60.041,
+   "inicio": 53.79,
+   "fin": 54.48,
+   "salida": 54.72,
    "lineas": [
     "Provincias."
    ]
   },
   {
    "palabras": [
-    126
-   ],
-   "inicio": 60.071,
-   "fin": 61.054,
-   "salida": 61.314,
-   "lineas": [
-    "Comunidades."
-   ]
-  },
-  {
-   "palabras": [
-    127,
-    128,
-    129,
     130
    ],
-   "inicio": 61.344,
-   "fin": 63.086,
-   "salida": 63.046,
+   "inicio": 54.75,
+   "fin": 55.42,
+   "salida": 55.54,
    "lineas": [
-    "Todos disputan lo mismo:"
+    "Comunidades."
    ]
   },
   {
@@ -1587,13 +1611,27 @@
     131,
     132,
     133,
-    134,
-    135,
-    136
+    134
    ],
-   "inicio": 63.076,
-   "fin": 65.575,
-   "salida": 66.025,
+   "inicio": 55.57,
+   "fin": 57.0,
+   "salida": 56.92,
+   "lineas": [
+    "Todos disputan lo mismo:"
+   ]
+  },
+  {
+   "palabras": [
+    135,
+    136,
+    137,
+    138,
+    139,
+    140
+   ],
+   "inicio": 56.95,
+   "fin": 59.45,
+   "salida": 59.66,
    "lineas": [
     "quién decide,",
     "y quién se beneficia."
@@ -1601,18 +1639,18 @@
   },
   {
    "palabras": [
-    137,
-    138,
-    139,
-    140,
     141,
     142,
     143,
-    144
+    144,
+    145,
+    146,
+    147,
+    148
    ],
-   "inicio": 66.465,
-   "fin": 69.219,
-   "salida": 69.579,
+   "inicio": 59.69,
+   "fin": 61.73,
+   "salida": 62.16,
    "lineas": [
     "Porque la riqueza no",
     "está bajo el suelo."
@@ -1620,33 +1658,33 @@
   },
   {
    "palabras": [
-    145,
-    146,
-    147,
-    148
+    149,
+    150,
+    151,
+    152
    ],
-   "inicio": 69.609,
-   "fin": 71.288,
-   "salida": 71.738,
+   "inicio": 62.19,
+   "fin": 63.31,
+   "salida": 63.48,
    "lineas": [
     "Está en las decisiones."
    ]
   },
   {
    "palabras": [
-    149,
-    150,
-    151,
-    152,
     153,
     154,
     155,
     156,
-    157
+    157,
+    158,
+    159,
+    160,
+    161
    ],
-   "inicio": 72.178,
-   "fin": 74.933,
-   "salida": 75.383,
+   "inicio": 63.51,
+   "fin": 65.54,
+   "salida": 65.8,
    "lineas": [
     "Un país no es soberano",
     "por lo que tiene."
@@ -1654,16 +1692,16 @@
   },
   {
    "palabras": [
-    158,
-    159,
-    160,
-    161,
     162,
-    163
+    163,
+    164,
+    165,
+    166,
+    167
    ],
-   "inicio": 75.423,
-   "fin": 77.545,
-   "salida": 77.995,
+   "inicio": 65.83,
+   "fin": 67.54,
+   "salida": 67.99,
    "lineas": [
     "Es soberano por lo que decide."
    ]

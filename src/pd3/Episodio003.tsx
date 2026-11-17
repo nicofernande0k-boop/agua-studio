@@ -89,7 +89,7 @@ function armarTomas(): Toma[] {
       </>
     );
   }, 0.3);
-  add("titulo", F(2).fin + 0.2, ({ dur }) => {
+  add("titulo", F(2).fin - 0.02, ({ dur }) => {
     const f = useCurrentFrame();
     return (
       <AbsoluteFill style={{ backgroundColor: NEGRO }}>
@@ -104,7 +104,7 @@ function armarTomas(): Toma[] {
   }, 0.7);
 
   // ── RIQUEZA ────────────────────────────────────────────
-  add("vaca-muerta", F(3).inicio - 0.3, ({ dur }) => (
+  add("vaca-muerta", Math.max(F(3).inicio - 0.3, F(2).fin + 0.85), ({ dur }) => (
     <>
       <Foto src={IMG.petroleo} dur={dur} mov={{ zoom: [1.2, 1.45], foco: [[0.55, 0.5], [0.65, 0.45]] }} oscuro={0.6} />
       <Rotulo texto="VACA MUERTA · NEUQUÉN" top={300} tam={32} color={ROJO} />
@@ -116,7 +116,7 @@ function armarTomas(): Toma[] {
     return (
       <AbsoluteFill style={{ backgroundColor: NEGRO }}>
         <Mapa alto={1500} top={210} resaltar={["Neuquén"]} enciende={salida(f / 10)} relleno={0.06} zoom={1 + 0.9 * salida(f / dur)} foco={[0.35, 0.47]} opacidad={0.55} />
-        <Dato valor={2} formato={ordinal} etiqueta="POTENCIAL MUNDIAL DE GAS NO CONVENCIONAL" fuente="EIA (EE. UU.) · RECURSOS TÉCNICAMENTE RECUPERABLES" top={430} desde={3} dur={8} />
+        <Dato valor={2} formato={ordinal} etiqueta="POTENCIAL MUNDIAL DE GAS NO CONVENCIONAL" fuente="EIA (EE. UU.) · EVALUACIÓN MUNDIAL 2013–2015" top={430} desde={3} dur={8} />
       </AbsoluteFill>
     );
   }, 0.3);
@@ -126,13 +126,13 @@ function armarTomas(): Toma[] {
       <Rotulo texto="PILETAS DE LITIO · PUNA ARGENTINA, VISTAS DESDE LA ESTACIÓN ESPACIAL" top={300} tam={24} opacidad={0.8} />
       <Golpe texto="TRIÁNGULO DEL LITIO" top={640} tam={128} desde={3} />
       <Rotulo texto="ARGENTINA · BOLIVIA · CHILE" top={900} tam={36} desde={10} />
-      <Rotulo texto="USGS · MINERAL COMMODITY SUMMARIES" top={970} tam={24} desde={14} opacidad={0.7} />
+      <Rotulo texto="USGS · MINERAL COMMODITY SUMMARIES 2026" top={970} tam={24} desde={14} opacidad={0.7} />
     </>
   ), 0.3);
   add("glaciares", F(6).inicio - 0.25, ({ dur }) => (
     <>
       <Foto src={IMG.agua} dur={dur} mov={{ zoom: [1.35, 1.6], foco: [[0.45, 0.5], [0.5, 0.42]] }} oscuro={0.45} />
-      <Dato valor={16968} formato={(n) => Math.round(n).toLocaleString("es-AR")} etiqueta="GLACIARES" fuente="INVENTARIO NACIONAL DE GLACIARES · IANIGLA" top={600} desde={2} dur={26} tam={250} />
+      <Dato valor={16968} formato={(n) => Math.round(n).toLocaleString("es-AR")} etiqueta="GLACIARES" fuente="INVENTARIO NACIONAL DE GLACIARES · IANIGLA (2018)" top={600} desde={2} dur={26} tam={250} />
     </>
   ), 0.3);
   add("territorio", F(7).inicio - 0.25, ({ dur }) => {
@@ -219,13 +219,14 @@ function armarTomas(): Toma[] {
         <Pregunta texto="¿QUIÉN CUIDA EL AGUA?" />
         {useCurrentFrame() >= tl ? (
           <div style={{ position: "absolute", top: 730, left: 0, right: 0, textAlign: "center" }}>
-            <span style={{ display: "inline-block", backgroundColor: ROJO, color: CREMA, fontFamily: "Inter, sans-serif", fontWeight: 800, fontSize: 30, letterSpacing: 5, padding: "10px 22px", whiteSpace: "nowrap" }}>
-              LEY DE GLACIARES 26.639 · REFORMA 2026
+            <span style={{ display: "inline-block", backgroundColor: ROJO, color: CREMA, fontFamily: "Inter, sans-serif", fontWeight: 800, fontSize: 25, letterSpacing: 3, padding: "10px 20px", whiteSpace: "nowrap" }}>
+              LEY 27.804 · REFORMA DE LA LEY DE GLACIARES (2026)
             </span>
           </div>
         ) : null}
         <Golpe texto="CADA PROVINCIA ELIGE" top={830} tam={104} desde={tl + 6} linea={false} />
         <Golpe texto="QUÉ GLACIARES PROTEGER" top={950} tam={92} desde={tl + 14} />
+        <Rotulo texto="LA REFORMA ESTÁ CUESTIONADA EN LA JUSTICIA · AMPARO EN TRÁMITE" top={1130} tam={22} desde={tl + 22} opacidad={0.75} />
       </>
     );
   }, 0.35);

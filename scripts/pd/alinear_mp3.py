@@ -75,13 +75,31 @@ for blk in difflib.SequenceMatcher(None, A, B, autojunk=False).get_matching_bloc
         tiempos[blk.a + j] = (detect[blk.b + j]["s"], detect[blk.b + j]["e"])
 faltan = [guion[i][0] for i, t in enumerate(tiempos) if t is None]
 print(f"Palabras del guion: {len(guion)} · detectadas: {len(B)} · sin coincidencia: {len(faltan)} {faltan}")
-assert len(faltan) <= 6, "La narración no coincide con el guion"
-# Interpolación para las que no coincidieron.
-for i, t in enumerate(tiempos):
-    if t is None:
-        a = next((tiempos[j][1] for j in range(i - 1, -1, -1) if tiempos[j]), 0.0)
-        b = next((tiempos[j][0] for j in range(i + 1, len(tiempos)) if tiempos[j]), dur_voz)
-        tiempos[i] = (a + 0.02, max(a + 0.1, b - 0.02))
+assert len(faltan) <= 14, "La narración no coincide con el guion"  # números escritos en cifras, etc.
+# Interpolación para las que no coincidieron (p. ej. «cinco por ciento» leído como «5%»):
+# cada tramo sin coincidencia reparte el hueco real entre sus anclas, según el largo de cada palabra.
+i = 0
+while i < len(tiempos):
+    if tiempos[i] is not None:
+        i += 1
+        continue
+    j = i
+    while j < len(tiempos) and tiempos[j] is None:
+        j += 1
+    a = tiempos[i - 1][1] if i > 0 else 0.0
+    b = tiempos[j][0] if j < len(tiempos) else dur_voz
+    if b - a < 0.12 * (j - i):  # el ancla anterior se «comió» el tramo: se comparte con ella
+        a = max(tiempos[i - 1][0] + 0.12, b - 0.3 * (j - i)) if i > 0 else a
+        if i > 0:
+            tiempos[i - 1] = (tiempos[i - 1][0], a)
+    pesos = [len(guion[k][0]) + 2 for k in range(i, j)]
+    total = sum(pesos)
+    t = a
+    for k, w in zip(range(i, j), pesos):
+        d = (b - a) * w / total
+        tiempos[k] = (t + 0.01, t + d - 0.01)
+        t += d
+    i = j
 
 # Bordes de frase: Whisper a veces pega el inicio de una frase al final de la
 # anterior. Se corrigen con la energía real del audio (el silencio entre ambas).
@@ -96,7 +114,9 @@ for i in range(1, len(guion)):
     if ESTIMADO or guion[i][1] == guion[i - 1][1]:
         continue
     (s0, e0), (s1, e1) = tiempos[i - 1], tiempos[i]
-    a, b = int(max(s0 + 0.1, e0 - 0.6) * 100), int(min(e1 - 0.05, s1 + 0.6) * 100)
+    # Si la palabra anterior quedó comprimida (interpolada), se busca también antes de ella.
+    a0 = max(s0 + 0.1, e0 - 0.6) if e0 - s0 > 0.3 else e0 - 0.6
+    a, b = int(a0 * 100), int(min(e1 - 0.05, s1 + 0.6) * 100)
     mejor, ini = (0, 0, 0), None
     for j in range(a, b + 1):
         bajo = j < len(_rms) and _rms[j] < _umbral
@@ -107,7 +127,8 @@ for i in range(1, len(guion)):
                 mejor = (j - ini, ini, j)
             ini = None
     if mejor[0] >= 12:  # silencio de al menos 120 ms
-        tiempos[i - 1] = (s0, min(e0, mejor[1] / 100 + 0.04) if e0 > mejor[1] / 100 else e0)
+        fin0 = min(e0, mejor[1] / 100 + 0.04) if e0 > mejor[1] / 100 else e0
+        tiempos[i - 1] = (min(s0, fin0 - 0.15), fin0)
         tiempos[i] = (max(s1, mejor[2] / 100 - 0.03), e1)
 
 palabras = [{"texto": w, "inicio": round(DESFASE + s, 3), "fin": round(DESFASE + max(e, s + 0.08), 3), "frase": fk} for (w, fk), (s, e) in zip(guion, tiempos)]

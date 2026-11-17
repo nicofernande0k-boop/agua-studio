@@ -378,7 +378,7 @@ export const UnoDeTres: React.FC<{ desde?: number; top?: number }> = ({ desde = 
       <div style={{ marginTop: 18, fontFamily: "Inter, sans-serif", fontWeight: 800, fontSize: 38, letterSpacing: 6, color: CREMA, opacity: clamp01((f - 8) / 6) }}>
         ARGENTINOS ES POBRE
       </div>
-      <div style={{ marginTop: 14, fontFamily: "Inter, sans-serif", fontWeight: 600, fontSize: 25, letterSpacing: 3, color: CREMA, opacity: 0.7 * clamp01((f - 12) / 6) }}>
+      <div style={{ marginTop: 14, padding: "0 110px", fontFamily: "Inter, sans-serif", fontWeight: 600, fontSize: 24, letterSpacing: 2, lineHeight: 1.4, color: CREMA, opacity: 0.7 * clamp01((f - 12) / 6) }}>
         POBREZA: 32,3 % DE LAS PERSONAS · INDEC, 1.er SEMESTRE 2026
       </div>
     </div>
@@ -404,10 +404,10 @@ export const Regalias: React.FC<{ desde?: number; top?: number }> = ({ desde = 0
         3–5 %
       </div>
       <div style={{ textAlign: "center", fontFamily: "Inter, sans-serif", fontWeight: 800, fontSize: 38, letterSpacing: 5, color: CREMA, marginTop: 16, opacity: clamp01((f - 24) / 6) }}>
-        REGALÍAS PARA LA PROVINCIA
+        TOPE DE REGALÍAS PARA LA PROVINCIA
       </div>
       <div style={{ textAlign: "center", fontFamily: "Inter, sans-serif", fontWeight: 600, fontSize: 25, letterSpacing: 3, color: CREMA, marginTop: 18, opacity: 0.72 * clamp01((f - 30) / 6) }}>
-        LEY 24.196, ART. 22 · 5 % SOLO EN PROYECTOS NUEVOS (LEY 27.743)
+        LEY 24.196, ART. 22 · HASTA 5 % SOLO EN PROYECTOS NUEVOS (LEY 27.743)
       </div>
     </div>
   );
