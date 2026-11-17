@@ -12,3 +12,6 @@ producciones/004-guamini/propuesta-v2/*.jpg
 producciones/004-guamini/actuales/web/
 producciones/004-guamini/actuales/*.jpg
 public/pd4/C*.jpg
+# Episodio 004: clips de previsualización y audio de referencia (canción comercial: no se publica)
+public/pd4/vivo/
+producciones/004-guamini/propuesta-v3/*.mp4
