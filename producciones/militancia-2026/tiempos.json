@@ -1,1944 +1,1944 @@
 {
- "estimado": true,
+ "estimado": false,
  "id": "militancia-2026",
  "titulo": "Los que nunca bajaron los brazos",
  "fps": 30,
- "duracion": 123.745,
- "frames": 3712,
- "desfaseVoz": 1.2,
+ "duracion": 105.94,
+ "frames": 3178,
+ "desfaseVoz": 1.0,
  "frases": [
   {
    "k": 1,
    "acto": "apertura",
    "texto": "Hay quienes dedican su vida a construir un futuro que quizás nunca lleguen a ver.",
-   "inicio": 1.2,
-   "fin": 5.917
+   "inicio": 1.01,
+   "fin": 5.92
   },
   {
    "k": 2,
    "acto": "apertura",
    "texto": "Que caminan bajo la lluvia.",
-   "inicio": 6.557,
-   "fin": 8.24
+   "inicio": 6.6,
+   "fin": 7.84
   },
   {
    "k": 3,
    "acto": "apertura",
    "texto": "Que pierden.",
-   "inicio": 8.58,
-   "fin": 9.42
+   "inicio": 8.44,
+   "fin": 9.02
   },
   {
    "k": 4,
    "acto": "apertura",
    "texto": "Que vuelven a empezar.",
-   "inicio": 9.76,
-   "fin": 11.162
+   "inicio": 9.6,
+   "fin": 10.63
   },
   {
    "k": 5,
    "acto": "apertura",
    "texto": "Que, aun cuando todo parece perdido, siguen creyendo.",
-   "inicio": 11.602,
-   "fin": 14.866
+   "inicio": 11.26,
+   "fin": 14.79
   },
   {
    "k": 6,
    "acto": "apertura",
    "texto": "La historia los conoce con un nombre:",
-   "inicio": 15.606,
-   "fin": 17.851
+   "inicio": 15.38,
+   "fin": 17.04
   },
   {
    "k": 7,
    "acto": "apertura",
    "texto": "militantes.",
-   "inicio": 18.391,
-   "fin": 19.175
+   "inicio": 17.9,
+   "fin": 18.47
   },
   {
    "k": 8,
    "acto": "proscripcion",
    "texto": "Durante diecisiete años intentaron borrar al peronismo de la Argentina.",
-   "inicio": 20.215,
-   "fin": 24.37
+   "inicio": 18.92,
+   "fin": 22.62
   },
   {
    "k": 9,
    "acto": "proscripcion",
    "texto": "Prohibieron sus símbolos.",
-   "inicio": 24.81,
-   "fin": 26.381
+   "inicio": 23.14,
+   "fin": 24.26
   },
   {
    "k": 10,
    "acto": "proscripcion",
    "texto": "Persiguieron a sus dirigentes.",
-   "inicio": 26.621,
-   "fin": 28.472
+   "inicio": 24.68,
+   "fin": 26.11
   },
   {
    "k": 11,
    "acto": "proscripcion",
    "texto": "Encarcelaron a sus compañeros.",
-   "inicio": 28.712,
-   "fin": 30.564
+   "inicio": 26.52,
+   "fin": 28.11
   },
   {
    "k": 12,
    "acto": "proscripcion",
    "texto": "Pero hubo algo que no pudieron destruir:",
-   "inicio": 31.204,
-   "fin": 33.617
+   "inicio": 28.4,
+   "fin": 30.51
   },
   {
    "k": 13,
    "acto": "proscripcion",
    "texto": "la memoria de un pueblo organizado.",
-   "inicio": 34.057,
-   "fin": 36.19
+   "inicio": 30.81,
+   "fin": 32.69
   },
   {
    "k": 14,
    "acto": "proscripcion",
    "texto": "Lo escribieron en las paredes, año tras año:",
-   "inicio": 36.73,
-   "fin": 39.428
+   "inicio": 33.1,
+   "fin": 35.41
   },
   {
    "k": 15,
    "acto": "proscripcion",
    "texto": "Luche y vuelve.",
-   "inicio": 39.768,
-   "fin": 40.777
+   "inicio": 35.82,
+   "fin": 36.93
   },
   {
    "k": 16,
    "acto": "regreso",
    "texto": "El diecisiete de noviembre de mil novecientos setenta y dos, bajo una lluvia que quedó grabada en la historia,",
-   "inicio": 41.817,
-   "fin": 48.132
+   "inicio": 37.32,
+   "fin": 42.92
   },
   {
    "k": 17,
    "acto": "regreso",
    "texto": "Perón volvió a pisar suelo argentino.",
-   "inicio": 48.472,
-   "fin": 50.717
+   "inicio": 43.3,
+   "fin": 45.26
   },
   {
    "k": 18,
    "acto": "regreso",
    "texto": "Y detrás de ese regreso estaban miles de hombres y mujeres que nunca dejaron de luchar.",
-   "inicio": 51.457,
-   "fin": 56.511
+   "inicio": 45.58,
+   "fin": 50.24
   },
   {
    "k": 19,
    "acto": "regreso",
    "texto": "En las fábricas.",
-   "inicio": 56.951,
-   "fin": 58.016
+   "inicio": 50.58,
+   "fin": 51.45
   },
   {
    "k": 20,
    "acto": "regreso",
    "texto": "En los barrios.",
-   "inicio": 58.256,
-   "fin": 59.265
+   "inicio": 51.68,
+   "fin": 52.37
   },
   {
    "k": 21,
    "acto": "regreso",
    "texto": "En los sindicatos.",
-   "inicio": 59.505,
-   "fin": 60.682
+   "inicio": 52.58,
+   "fin": 53.46
   },
   {
    "k": 22,
    "acto": "regreso",
    "texto": "En las universidades.",
-   "inicio": 60.922,
-   "fin": 62.268
+   "inicio": 53.68,
+   "fin": 54.74
   },
   {
    "k": 23,
    "acto": "militar",
    "texto": "Porque militar nunca fue solamente levantar una bandera.",
-   "inicio": 63.108,
-   "fin": 66.421
+   "inicio": 55.1,
+   "fin": 58.11
   },
   {
    "k": 24,
    "acto": "militar",
    "texto": "Es levantarse cuando otros se resignan.",
-   "inicio": 66.861,
-   "fin": 69.218
+   "inicio": 58.4,
+   "fin": 60.39
   },
   {
    "k": 25,
    "acto": "militar",
    "texto": "Es organizarse cuando todo invita al individualismo.",
-   "inicio": 69.558,
-   "fin": 72.645
+   "inicio": 60.66,
+   "fin": 63.55
   },
   {
    "k": 26,
    "acto": "militar",
    "texto": "Es entender que el dolor del otro también nos pertenece.",
-   "inicio": 72.985,
-   "fin": 76.298
+   "inicio": 63.9,
+   "fin": 66.83
   },
   {
    "k": 27,
    "acto": "militar",
    "texto": "Y muchas veces, hacerlo sin que nadie conozca tu nombre.",
-   "inicio": 76.638,
-   "fin": 80.01
+   "inicio": 67.18,
+   "fin": 70.4
   },
   {
    "k": 28,
    "acto": "hoy",
    "texto": "Hoy, cuando nos quieren convencer de que cada uno debe salvarse solo,",
-   "inicio": 80.95,
-   "fin": 84.962
+   "inicio": 70.92,
+   "fin": 74.5
   },
   {
    "k": 29,
    "acto": "hoy",
    "texto": "militar sigue siendo un acto de rebeldía.",
-   "inicio": 85.302,
-   "fin": 87.772
+   "inicio": 75.02,
+   "fin": 76.98
   },
   {
    "k": 30,
    "acto": "hoy",
    "texto": "Frente al individualismo,",
-   "inicio": 88.412,
-   "fin": 89.893
+   "inicio": 77.36,
+   "fin": 78.49
   },
   {
    "k": 31,
    "acto": "hoy",
    "texto": "la comunidad.",
-   "inicio": 90.133,
-   "fin": 91.029
+   "inicio": 78.62,
+   "fin": 79.37
   },
   {
    "k": 32,
    "acto": "hoy",
    "texto": "Frente a la indiferencia,",
-   "inicio": 91.369,
-   "fin": 92.85
+   "inicio": 79.74,
+   "fin": 80.84
   },
   {
    "k": 33,
    "acto": "hoy",
    "texto": "el compromiso.",
-   "inicio": 93.09,
-   "fin": 94.043
+   "inicio": 81.08,
+   "fin": 81.85
   },
   {
    "k": 34,
    "acto": "hoy",
    "texto": "Frente a la resignación,",
-   "inicio": 94.383,
-   "fin": 95.807
+   "inicio": 82.16,
+   "fin": 83.42
   },
   {
    "k": 35,
    "acto": "hoy",
    "texto": "la esperanza.",
-   "inicio": 96.047,
-   "fin": 96.944
+   "inicio": 83.66,
+   "fin": 84.38
   },
   {
    "k": 36,
    "acto": "homenaje",
    "texto": "A los que estuvieron.",
-   "inicio": 97.784,
-   "fin": 99.13
+   "inicio": 84.8,
+   "fin": 85.68
   },
   {
    "k": 37,
    "acto": "homenaje",
    "texto": "A los que están.",
-   "inicio": 99.47,
-   "fin": 100.535
+   "inicio": 86.0,
+   "fin": 86.74
   },
   {
    "k": 38,
    "acto": "homenaje",
    "texto": "A los que ya no están, pero siguen presentes en cada lucha.",
-   "inicio": 100.875,
-   "fin": 104.415
+   "inicio": 86.98,
+   "fin": 90.25
   },
   {
    "k": 39,
    "acto": "homenaje",
    "texto": "Y a los que todavía no saben que algún día van a levantar nuestras banderas.",
-   "inicio": 104.855,
-   "fin": 109.291
+   "inicio": 90.58,
+   "fin": 94.3
   },
   {
    "k": 40,
    "acto": "cierre",
    "texto": "La historia no la escriben quienes miran desde afuera.",
-   "inicio": 110.331,
-   "fin": 113.531
+   "inicio": 94.58,
+   "fin": 97.06
   },
   {
    "k": 41,
    "acto": "cierre",
    "texto": "La escriben quienes se animan a transformarla.",
-   "inicio": 114.071,
-   "fin": 116.822
+   "inicio": 97.34,
+   "fin": 99.61
   },
   {
    "k": 42,
    "acto": "saludo",
    "texto": "Feliz Día de la Militancia.",
-   "inicio": 118.062,
-   "fin": 119.745
+   "inicio": 100.1,
+   "fin": 101.44
   }
  ],
  "palabras": [
   {
    "texto": "Hay",
-   "inicio": 1.2,
-   "fin": 1.385,
+   "inicio": 1.01,
+   "fin": 1.33,
    "frase": 1
   },
   {
    "texto": "quienes",
-   "inicio": 1.425,
-   "fin": 1.834,
+   "inicio": 1.34,
+   "fin": 1.54,
    "frase": 1
   },
   {
    "texto": "dedican",
-   "inicio": 1.874,
-   "fin": 2.284,
+   "inicio": 1.54,
+   "fin": 2.0,
    "frase": 1
   },
   {
    "texto": "su",
-   "inicio": 2.324,
-   "fin": 2.452,
+   "inicio": 2.0,
+   "fin": 2.26,
    "frase": 1
   },
   {
    "texto": "vida",
-   "inicio": 2.492,
-   "fin": 2.733,
+   "inicio": 2.26,
+   "fin": 2.46,
    "frase": 1
   },
   {
    "texto": "a",
-   "inicio": 2.773,
-   "fin": 2.853,
+   "inicio": 2.46,
+   "fin": 2.76,
    "frase": 1
   },
   {
    "texto": "construir",
-   "inicio": 2.885,
-   "fin": 3.407,
+   "inicio": 2.76,
+   "fin": 2.96,
    "frase": 1
   },
   {
    "texto": "un",
-   "inicio": 3.447,
-   "fin": 3.576,
+   "inicio": 2.96,
+   "fin": 3.22,
    "frase": 1
   },
   {
    "texto": "futuro",
-   "inicio": 3.616,
-   "fin": 3.969,
+   "inicio": 3.22,
+   "fin": 3.62,
    "frase": 1
   },
   {
    "texto": "que",
-   "inicio": 4.009,
-   "fin": 4.194,
+   "inicio": 3.62,
+   "fin": 4.3,
    "frase": 1
   },
   {
    "texto": "quizás",
-   "inicio": 4.234,
-   "fin": 4.587,
+   "inicio": 4.3,
+   "fin": 5.04,
    "frase": 1
   },
   {
    "texto": "nunca",
-   "inicio": 4.627,
-   "fin": 4.924,
+   "inicio": 5.04,
+   "fin": 5.32,
    "frase": 1
   },
   {
    "texto": "lleguen",
-   "inicio": 4.964,
-   "fin": 5.373,
+   "inicio": 5.32,
+   "fin": 5.64,
    "frase": 1
   },
   {
    "texto": "a",
-   "inicio": 5.413,
-   "fin": 5.493,
+   "inicio": 5.64,
+   "fin": 5.77,
    "frase": 1
   },
   {
    "texto": "ver.",
-   "inicio": 5.526,
-   "fin": 5.917,
+   "inicio": 5.77,
+   "fin": 5.92,
    "frase": 1
   },
   {
    "texto": "Que",
-   "inicio": 6.557,
-   "fin": 6.741,
+   "inicio": 6.6,
+   "fin": 6.64,
    "frase": 2
   },
   {
    "texto": "caminan",
-   "inicio": 6.781,
-   "fin": 7.191,
+   "inicio": 6.64,
+   "fin": 7.08,
    "frase": 2
   },
   {
    "texto": "bajo",
-   "inicio": 7.231,
-   "fin": 7.472,
+   "inicio": 7.08,
+   "fin": 7.32,
    "frase": 2
   },
   {
    "texto": "la",
-   "inicio": 7.512,
-   "fin": 7.64,
+   "inicio": 7.32,
+   "fin": 7.54,
    "frase": 2
   },
   {
    "texto": "lluvia.",
-   "inicio": 7.68,
-   "fin": 8.24,
+   "inicio": 7.54,
+   "fin": 7.84,
    "frase": 2
   },
   {
    "texto": "Que",
-   "inicio": 8.58,
-   "fin": 8.764,
+   "inicio": 8.44,
+   "fin": 8.66,
    "frase": 3
   },
   {
    "texto": "pierden.",
-   "inicio": 8.804,
-   "fin": 9.42,
+   "inicio": 8.66,
+   "fin": 9.02,
    "frase": 3
   },
   {
    "texto": "Que",
-   "inicio": 9.76,
-   "fin": 9.945,
+   "inicio": 9.6,
+   "fin": 9.78,
    "frase": 4
   },
   {
    "texto": "vuelven",
-   "inicio": 9.985,
-   "fin": 10.394,
+   "inicio": 9.78,
+   "fin": 10.22,
    "frase": 4
   },
   {
    "texto": "a",
-   "inicio": 10.434,
-   "fin": 10.514,
+   "inicio": 10.22,
+   "fin": 10.26,
    "frase": 4
   },
   {
    "texto": "empezar.",
-   "inicio": 10.547,
-   "fin": 11.162,
+   "inicio": 10.26,
+   "fin": 10.63,
    "frase": 4
   },
   {
    "texto": "Que,",
-   "inicio": 11.602,
-   "fin": 11.903,
+   "inicio": 11.26,
+   "fin": 11.64,
    "frase": 5
   },
   {
    "texto": "aun",
-   "inicio": 11.943,
-   "fin": 12.128,
+   "inicio": 11.76,
+   "fin": 11.88,
    "frase": 5
   },
   {
    "texto": "cuando",
-   "inicio": 12.168,
-   "fin": 12.521,
+   "inicio": 11.88,
+   "fin": 12.24,
    "frase": 5
   },
   {
    "texto": "todo",
-   "inicio": 12.561,
-   "fin": 12.802,
+   "inicio": 12.24,
+   "fin": 12.56,
    "frase": 5
   },
   {
    "texto": "parece",
-   "inicio": 12.842,
-   "fin": 13.195,
+   "inicio": 12.56,
+   "fin": 12.92,
    "frase": 5
   },
   {
    "texto": "perdido,",
-   "inicio": 13.235,
-   "fin": 13.761,
+   "inicio": 12.92,
+   "fin": 13.78,
    "frase": 5
   },
   {
    "texto": "siguen",
-   "inicio": 13.801,
-   "fin": 14.154,
+   "inicio": 14.14,
+   "fin": 14.36,
    "frase": 5
   },
   {
    "texto": "creyendo.",
-   "inicio": 14.194,
-   "fin": 14.866,
+   "inicio": 14.36,
+   "fin": 14.79,
    "frase": 5
   },
   {
    "texto": "La",
-   "inicio": 15.606,
-   "fin": 15.734,
+   "inicio": 15.38,
+   "fin": 15.52,
    "frase": 6
   },
   {
    "texto": "historia",
-   "inicio": 15.774,
-   "fin": 16.24,
+   "inicio": 15.52,
+   "fin": 15.82,
    "frase": 6
   },
   {
    "texto": "los",
-   "inicio": 16.28,
-   "fin": 16.465,
+   "inicio": 15.82,
+   "fin": 16.1,
    "frase": 6
   },
   {
    "texto": "conoce",
-   "inicio": 16.505,
-   "fin": 16.858,
+   "inicio": 16.1,
+   "fin": 16.42,
    "frase": 6
   },
   {
    "texto": "con",
-   "inicio": 16.898,
-   "fin": 17.083,
+   "inicio": 16.42,
+   "fin": 16.62,
    "frase": 6
   },
   {
    "texto": "un",
-   "inicio": 17.123,
-   "fin": 17.251,
+   "inicio": 16.62,
+   "fin": 16.82,
    "frase": 6
   },
   {
    "texto": "nombre:",
-   "inicio": 17.291,
-   "fin": 17.851,
+   "inicio": 16.82,
+   "fin": 17.04,
    "frase": 6
   },
   {
    "texto": "militantes.",
-   "inicio": 18.391,
-   "fin": 19.175,
+   "inicio": 17.9,
+   "fin": 18.47,
    "frase": 7
   },
   {
    "texto": "Durante",
-   "inicio": 20.215,
-   "fin": 20.624,
+   "inicio": 18.92,
+   "fin": 19.26,
    "frase": 8
   },
   {
    "texto": "diecisiete",
-   "inicio": 20.664,
-   "fin": 21.242,
+   "inicio": 19.27,
+   "fin": 19.87,
    "frase": 8
   },
   {
    "texto": "años",
-   "inicio": 21.282,
-   "fin": 21.523,
+   "inicio": 19.88,
+   "fin": 20.28,
    "frase": 8
   },
   {
    "texto": "intentaron",
-   "inicio": 21.563,
-   "fin": 22.141,
+   "inicio": 20.28,
+   "fin": 20.84,
    "frase": 8
   },
   {
    "texto": "borrar",
-   "inicio": 22.181,
-   "fin": 22.534,
+   "inicio": 20.84,
+   "fin": 21.22,
    "frase": 8
   },
   {
    "texto": "al",
-   "inicio": 22.574,
-   "fin": 22.703,
+   "inicio": 21.22,
+   "fin": 21.4,
    "frase": 8
   },
   {
    "texto": "peronismo",
-   "inicio": 22.743,
-   "fin": 23.265,
+   "inicio": 21.4,
+   "fin": 21.88,
    "frase": 8
   },
   {
    "texto": "de",
-   "inicio": 23.305,
-   "fin": 23.433,
+   "inicio": 21.88,
+   "fin": 22.02,
    "frase": 8
   },
   {
    "texto": "la",
-   "inicio": 23.473,
-   "fin": 23.602,
+   "inicio": 22.02,
+   "fin": 22.22,
    "frase": 8
   },
   {
    "texto": "Argentina.",
-   "inicio": 23.642,
-   "fin": 24.37,
+   "inicio": 22.22,
+   "fin": 22.62,
    "frase": 8
   },
   {
    "texto": "Prohibieron",
-   "inicio": 24.81,
-   "fin": 25.444,
+   "inicio": 23.14,
+   "fin": 23.54,
    "frase": 9
   },
   {
    "texto": "sus",
-   "inicio": 25.484,
-   "fin": 25.669,
+   "inicio": 23.54,
+   "fin": 23.76,
    "frase": 9
   },
   {
    "texto": "símbolos.",
-   "inicio": 25.709,
-   "fin": 26.381,
+   "inicio": 23.76,
+   "fin": 24.26,
    "frase": 9
   },
   {
    "texto": "Persiguieron",
-   "inicio": 26.621,
-   "fin": 27.311,
+   "inicio": 24.68,
+   "fin": 25.18,
    "frase": 10
   },
   {
    "texto": "a",
-   "inicio": 27.351,
-   "fin": 27.431,
+   "inicio": 25.18,
+   "fin": 25.36,
    "frase": 10
   },
   {
    "texto": "sus",
-   "inicio": 27.463,
-   "fin": 27.648,
+   "inicio": 25.36,
+   "fin": 25.52,
    "frase": 10
   },
   {
    "texto": "dirigentes.",
-   "inicio": 27.688,
-   "fin": 28.472,
+   "inicio": 25.52,
+   "fin": 26.11,
    "frase": 10
   },
   {
    "texto": "Encarcelaron",
-   "inicio": 28.712,
-   "fin": 29.402,
+   "inicio": 26.52,
+   "fin": 27.18,
    "frase": 11
   },
   {
    "texto": "a",
-   "inicio": 29.442,
-   "fin": 29.522,
+   "inicio": 27.18,
+   "fin": 27.32,
    "frase": 11
   },
   {
    "texto": "sus",
-   "inicio": 29.555,
-   "fin": 29.74,
+   "inicio": 27.32,
+   "fin": 27.48,
    "frase": 11
   },
   {
    "texto": "compañeros.",
-   "inicio": 29.78,
-   "fin": 30.564,
+   "inicio": 27.48,
+   "fin": 28.11,
    "frase": 11
   },
   {
    "texto": "Pero",
-   "inicio": 31.204,
-   "fin": 31.445,
+   "inicio": 28.4,
+   "fin": 28.58,
    "frase": 12
   },
   {
    "texto": "hubo",
-   "inicio": 31.485,
-   "fin": 31.726,
+   "inicio": 28.58,
+   "fin": 28.86,
    "frase": 12
   },
   {
    "texto": "algo",
-   "inicio": 31.766,
-   "fin": 32.006,
+   "inicio": 28.86,
+   "fin": 29.14,
    "frase": 12
   },
   {
    "texto": "que",
-   "inicio": 32.046,
-   "fin": 32.231,
+   "inicio": 29.14,
+   "fin": 29.4,
    "frase": 12
   },
   {
    "texto": "no",
-   "inicio": 32.271,
-   "fin": 32.4,
+   "inicio": 29.4,
+   "fin": 29.64,
    "frase": 12
   },
   {
    "texto": "pudieron",
-   "inicio": 32.44,
-   "fin": 32.905,
+   "inicio": 29.64,
+   "fin": 30.06,
    "frase": 12
   },
   {
    "texto": "destruir:",
-   "inicio": 32.945,
-   "fin": 33.617,
+   "inicio": 30.06,
+   "fin": 30.51,
    "frase": 12
   },
   {
    "texto": "la",
-   "inicio": 34.057,
-   "fin": 34.186,
+   "inicio": 30.81,
+   "fin": 31.04,
    "frase": 13
   },
   {
    "texto": "memoria",
-   "inicio": 34.226,
-   "fin": 34.635,
+   "inicio": 31.04,
+   "fin": 31.5,
    "frase": 13
   },
   {
    "texto": "de",
-   "inicio": 34.675,
-   "fin": 34.804,
+   "inicio": 31.5,
+   "fin": 31.66,
    "frase": 13
   },
   {
    "texto": "un",
-   "inicio": 34.844,
-   "fin": 34.972,
+   "inicio": 31.66,
+   "fin": 31.84,
    "frase": 13
   },
   {
    "texto": "pueblo",
-   "inicio": 35.012,
-   "fin": 35.365,
+   "inicio": 31.84,
+   "fin": 32.06,
    "frase": 13
   },
   {
    "texto": "organizado.",
-   "inicio": 35.405,
-   "fin": 36.19,
+   "inicio": 32.06,
+   "fin": 32.69,
    "frase": 13
   },
   {
    "texto": "Lo",
-   "inicio": 36.73,
-   "fin": 36.858,
+   "inicio": 33.1,
+   "fin": 33.26,
    "frase": 14
   },
   {
    "texto": "escribieron",
-   "inicio": 36.898,
-   "fin": 37.532,
+   "inicio": 33.26,
+   "fin": 33.6,
    "frase": 14
   },
   {
    "texto": "en",
-   "inicio": 37.572,
-   "fin": 37.701,
+   "inicio": 33.6,
+   "fin": 33.76,
    "frase": 14
   },
   {
    "texto": "las",
-   "inicio": 37.741,
-   "fin": 37.926,
+   "inicio": 33.76,
+   "fin": 34.02,
    "frase": 14
   },
   {
    "texto": "paredes,",
-   "inicio": 37.966,
-   "fin": 38.491,
+   "inicio": 34.02,
+   "fin": 34.54,
    "frase": 14
   },
   {
    "texto": "año",
-   "inicio": 38.531,
-   "fin": 38.716,
+   "inicio": 34.58,
+   "fin": 34.84,
    "frase": 14
   },
   {
    "texto": "tras",
-   "inicio": 38.756,
-   "fin": 38.997,
+   "inicio": 34.84,
+   "fin": 35.18,
    "frase": 14
   },
   {
    "texto": "año:",
-   "inicio": 39.037,
-   "fin": 39.428,
+   "inicio": 35.18,
+   "fin": 35.41,
    "frase": 14
   },
   {
    "texto": "Luche",
-   "inicio": 39.768,
-   "fin": 40.065,
+   "inicio": 35.82,
+   "fin": 36.2,
    "frase": 15
   },
   {
    "texto": "y",
-   "inicio": 40.105,
-   "fin": 40.185,
+   "inicio": 36.2,
+   "fin": 36.62,
    "frase": 15
   },
   {
    "texto": "vuelve.",
-   "inicio": 40.217,
-   "fin": 40.777,
+   "inicio": 36.62,
+   "fin": 36.93,
    "frase": 15
   },
   {
    "texto": "El",
-   "inicio": 41.817,
-   "fin": 41.945,
+   "inicio": 37.32,
+   "fin": 37.48,
    "frase": 16
   },
   {
    "texto": "diecisiete",
-   "inicio": 41.985,
-   "fin": 42.563,
+   "inicio": 37.49,
+   "fin": 38.03,
    "frase": 16
   },
   {
    "texto": "de",
-   "inicio": 42.603,
-   "fin": 42.732,
+   "inicio": 38.04,
+   "fin": 38.3,
    "frase": 16
   },
   {
    "texto": "noviembre",
-   "inicio": 42.772,
-   "fin": 43.293,
+   "inicio": 38.3,
+   "fin": 38.66,
    "frase": 16
   },
   {
    "texto": "de",
-   "inicio": 43.333,
-   "fin": 43.462,
+   "inicio": 38.66,
+   "fin": 38.94,
    "frase": 16
   },
   {
    "texto": "mil",
-   "inicio": 43.502,
-   "fin": 43.687,
+   "inicio": 38.95,
+   "fin": 39.147,
    "frase": 16
   },
   {
    "texto": "novecientos",
-   "inicio": 43.727,
-   "fin": 44.361,
+   "inicio": 39.167,
+   "fin": 39.71,
    "frase": 16
   },
   {
    "texto": "setenta",
-   "inicio": 44.401,
-   "fin": 44.81,
+   "inicio": 39.73,
+   "fin": 40.1,
    "frase": 16
   },
   {
    "texto": "y",
-   "inicio": 44.85,
-   "fin": 44.93,
+   "inicio": 40.12,
+   "fin": 40.23,
    "frase": 16
   },
   {
    "texto": "dos,",
-   "inicio": 44.963,
-   "fin": 45.263,
+   "inicio": 40.25,
+   "fin": 40.49,
    "frase": 16
   },
   {
    "texto": "bajo",
-   "inicio": 45.303,
-   "fin": 45.544,
+   "inicio": 40.5,
+   "fin": 40.76,
    "frase": 16
   },
   {
    "texto": "una",
-   "inicio": 45.584,
-   "fin": 45.769,
+   "inicio": 40.76,
+   "fin": 41.0,
    "frase": 16
   },
   {
    "texto": "lluvia",
-   "inicio": 45.809,
-   "fin": 46.162,
+   "inicio": 41.0,
+   "fin": 41.34,
    "frase": 16
   },
   {
    "texto": "que",
-   "inicio": 46.202,
-   "fin": 46.387,
+   "inicio": 41.34,
+   "fin": 41.5,
    "frase": 16
   },
   {
    "texto": "quedó",
-   "inicio": 46.427,
-   "fin": 46.724,
+   "inicio": 41.5,
+   "fin": 41.88,
    "frase": 16
   },
   {
    "texto": "grabada",
-   "inicio": 46.764,
-   "fin": 47.174,
+   "inicio": 41.88,
+   "fin": 42.28,
    "frase": 16
   },
   {
    "texto": "en",
-   "inicio": 47.214,
-   "fin": 47.342,
+   "inicio": 42.28,
+   "fin": 42.38,
    "frase": 16
   },
   {
    "texto": "la",
-   "inicio": 47.382,
-   "fin": 47.511,
+   "inicio": 42.38,
+   "fin": 42.62,
    "frase": 16
   },
   {
    "texto": "historia,",
-   "inicio": 47.551,
-   "fin": 48.132,
+   "inicio": 42.62,
+   "fin": 42.92,
    "frase": 16
   },
   {
    "texto": "Perón",
-   "inicio": 48.472,
-   "fin": 48.77,
+   "inicio": 43.3,
+   "fin": 43.44,
    "frase": 17
   },
   {
    "texto": "volvió",
-   "inicio": 48.81,
-   "fin": 49.163,
+   "inicio": 43.44,
+   "fin": 43.96,
    "frase": 17
   },
   {
    "texto": "a",
-   "inicio": 49.203,
-   "fin": 49.283,
+   "inicio": 43.96,
+   "fin": 44.06,
    "frase": 17
   },
   {
    "texto": "pisar",
-   "inicio": 49.315,
-   "fin": 49.612,
+   "inicio": 44.06,
+   "fin": 44.48,
    "frase": 17
   },
   {
    "texto": "suelo",
-   "inicio": 49.652,
-   "fin": 49.949,
+   "inicio": 44.48,
+   "fin": 44.72,
    "frase": 17
   },
   {
    "texto": "argentino.",
-   "inicio": 49.989,
-   "fin": 50.717,
+   "inicio": 44.72,
+   "fin": 45.26,
    "frase": 17
   },
   {
    "texto": "Y",
-   "inicio": 51.457,
-   "fin": 51.537,
+   "inicio": 45.58,
+   "fin": 45.78,
    "frase": 18
   },
   {
    "texto": "detrás",
-   "inicio": 51.57,
-   "fin": 51.923,
+   "inicio": 45.78,
+   "fin": 46.04,
    "frase": 18
   },
   {
    "texto": "de",
-   "inicio": 51.963,
-   "fin": 52.091,
+   "inicio": 46.04,
+   "fin": 46.22,
    "frase": 18
   },
   {
    "texto": "ese",
-   "inicio": 52.131,
-   "fin": 52.316,
+   "inicio": 46.22,
+   "fin": 46.36,
    "frase": 18
   },
   {
    "texto": "regreso",
-   "inicio": 52.356,
-   "fin": 52.766,
+   "inicio": 46.36,
+   "fin": 46.92,
    "frase": 18
   },
   {
    "texto": "estaban",
-   "inicio": 52.806,
-   "fin": 53.215,
+   "inicio": 46.92,
+   "fin": 47.32,
    "frase": 18
   },
   {
    "texto": "miles",
-   "inicio": 53.255,
-   "fin": 53.552,
+   "inicio": 47.32,
+   "fin": 47.74,
    "frase": 18
   },
   {
    "texto": "de",
-   "inicio": 53.592,
-   "fin": 53.721,
+   "inicio": 47.74,
+   "fin": 48.02,
    "frase": 18
   },
   {
    "texto": "hombres",
-   "inicio": 53.761,
-   "fin": 54.17,
+   "inicio": 48.02,
+   "fin": 48.2,
    "frase": 18
   },
   {
    "texto": "y",
-   "inicio": 54.21,
-   "fin": 54.29,
+   "inicio": 48.2,
+   "fin": 48.4,
    "frase": 18
   },
   {
    "texto": "mujeres",
-   "inicio": 54.322,
-   "fin": 54.732,
+   "inicio": 48.4,
+   "fin": 48.68,
    "frase": 18
   },
   {
    "texto": "que",
-   "inicio": 54.772,
-   "fin": 54.957,
+   "inicio": 48.68,
+   "fin": 49.06,
    "frase": 18
   },
   {
    "texto": "nunca",
-   "inicio": 54.997,
-   "fin": 55.294,
+   "inicio": 49.06,
+   "fin": 49.4,
    "frase": 18
   },
   {
    "texto": "dejaron",
-   "inicio": 55.334,
-   "fin": 55.743,
+   "inicio": 49.4,
+   "fin": 49.8,
    "frase": 18
   },
   {
    "texto": "de",
-   "inicio": 55.783,
-   "fin": 55.912,
+   "inicio": 49.8,
+   "fin": 49.96,
    "frase": 18
   },
   {
    "texto": "luchar.",
-   "inicio": 55.952,
-   "fin": 56.511,
+   "inicio": 49.96,
+   "fin": 50.24,
    "frase": 18
   },
   {
    "texto": "En",
-   "inicio": 56.951,
-   "fin": 57.08,
+   "inicio": 50.58,
+   "fin": 50.7,
    "frase": 19
   },
   {
    "texto": "las",
-   "inicio": 57.12,
-   "fin": 57.304,
+   "inicio": 50.7,
+   "fin": 50.96,
    "frase": 19
   },
   {
    "texto": "fábricas.",
-   "inicio": 57.344,
-   "fin": 58.016,
+   "inicio": 50.96,
+   "fin": 51.45,
    "frase": 19
   },
   {
    "texto": "En",
-   "inicio": 58.256,
-   "fin": 58.385,
+   "inicio": 51.68,
+   "fin": 51.74,
    "frase": 20
   },
   {
    "texto": "los",
-   "inicio": 58.425,
-   "fin": 58.609,
+   "inicio": 51.74,
+   "fin": 52.0,
    "frase": 20
   },
   {
    "texto": "barrios.",
-   "inicio": 58.649,
-   "fin": 59.265,
+   "inicio": 52.0,
+   "fin": 52.37,
    "frase": 20
   },
   {
    "texto": "En",
-   "inicio": 59.505,
-   "fin": 59.634,
+   "inicio": 52.58,
+   "fin": 52.68,
    "frase": 21
   },
   {
    "texto": "los",
-   "inicio": 59.674,
-   "fin": 59.858,
+   "inicio": 52.68,
+   "fin": 52.88,
    "frase": 21
   },
   {
    "texto": "sindicatos.",
-   "inicio": 59.898,
-   "fin": 60.682,
+   "inicio": 52.88,
+   "fin": 53.46,
    "frase": 21
   },
   {
    "texto": "En",
-   "inicio": 60.922,
-   "fin": 61.051,
+   "inicio": 53.68,
+   "fin": 53.78,
    "frase": 22
   },
   {
    "texto": "las",
-   "inicio": 61.091,
-   "fin": 61.276,
+   "inicio": 53.78,
+   "fin": 53.98,
    "frase": 22
   },
   {
    "texto": "universidades.",
-   "inicio": 61.316,
-   "fin": 62.268,
+   "inicio": 53.98,
+   "fin": 54.74,
    "frase": 22
   },
   {
    "texto": "Porque",
-   "inicio": 63.108,
-   "fin": 63.462,
+   "inicio": 55.1,
+   "fin": 55.4,
    "frase": 23
   },
   {
    "texto": "militar",
-   "inicio": 63.502,
-   "fin": 63.911,
+   "inicio": 55.4,
+   "fin": 55.78,
    "frase": 23
   },
   {
    "texto": "nunca",
-   "inicio": 63.951,
-   "fin": 64.248,
+   "inicio": 55.78,
+   "fin": 56.24,
    "frase": 23
   },
   {
    "texto": "fue",
-   "inicio": 64.288,
-   "fin": 64.473,
+   "inicio": 56.24,
+   "fin": 56.48,
    "frase": 23
   },
   {
    "texto": "solamente",
-   "inicio": 64.513,
-   "fin": 65.035,
+   "inicio": 56.48,
+   "fin": 57.08,
    "frase": 23
   },
   {
    "texto": "levantar",
-   "inicio": 65.075,
-   "fin": 65.54,
+   "inicio": 57.08,
+   "fin": 57.56,
    "frase": 23
   },
   {
    "texto": "una",
-   "inicio": 65.58,
-   "fin": 65.765,
+   "inicio": 57.56,
+   "fin": 57.74,
    "frase": 23
   },
   {
    "texto": "bandera.",
-   "inicio": 65.805,
-   "fin": 66.421,
+   "inicio": 57.74,
+   "fin": 58.11,
    "frase": 23
   },
   {
    "texto": "Es",
-   "inicio": 66.861,
-   "fin": 66.989,
+   "inicio": 58.4,
+   "fin": 58.58,
    "frase": 24
   },
   {
    "texto": "levantarse",
-   "inicio": 67.029,
-   "fin": 67.607,
+   "inicio": 58.58,
+   "fin": 59.16,
    "frase": 24
   },
   {
    "texto": "cuando",
-   "inicio": 67.647,
-   "fin": 68.0,
+   "inicio": 59.16,
+   "fin": 59.42,
    "frase": 24
   },
   {
    "texto": "otros",
-   "inicio": 68.04,
-   "fin": 68.338,
+   "inicio": 59.42,
+   "fin": 59.76,
    "frase": 24
   },
   {
    "texto": "se",
-   "inicio": 68.378,
-   "fin": 68.506,
+   "inicio": 59.76,
+   "fin": 60.04,
    "frase": 24
   },
   {
    "texto": "resignan.",
-   "inicio": 68.546,
-   "fin": 69.218,
+   "inicio": 60.04,
+   "fin": 60.39,
    "frase": 24
   },
   {
    "texto": "Es",
-   "inicio": 69.558,
-   "fin": 69.686,
+   "inicio": 60.66,
+   "fin": 60.9,
    "frase": 25
   },
   {
    "texto": "organizarse",
-   "inicio": 69.726,
-   "fin": 70.361,
+   "inicio": 60.9,
+   "fin": 61.56,
    "frase": 25
   },
   {
    "texto": "cuando",
-   "inicio": 70.401,
-   "fin": 70.754,
+   "inicio": 61.56,
+   "fin": 61.84,
    "frase": 25
   },
   {
    "texto": "todo",
-   "inicio": 70.794,
-   "fin": 71.035,
+   "inicio": 61.84,
+   "fin": 62.24,
    "frase": 25
   },
   {
    "texto": "invita",
-   "inicio": 71.075,
-   "fin": 71.428,
+   "inicio": 62.24,
+   "fin": 62.66,
    "frase": 25
   },
   {
    "texto": "al",
-   "inicio": 71.468,
-   "fin": 71.597,
+   "inicio": 62.66,
+   "fin": 62.86,
    "frase": 25
   },
   {
    "texto": "individualismo.",
-   "inicio": 71.637,
-   "fin": 72.645,
+   "inicio": 62.86,
+   "fin": 63.55,
    "frase": 25
   },
   {
    "texto": "Es",
-   "inicio": 72.985,
-   "fin": 73.114,
+   "inicio": 63.9,
+   "fin": 64.04,
    "frase": 26
   },
   {
    "texto": "entender",
-   "inicio": 73.154,
-   "fin": 73.62,
+   "inicio": 64.04,
+   "fin": 64.44,
    "frase": 26
   },
   {
    "texto": "que",
-   "inicio": 73.66,
-   "fin": 73.844,
+   "inicio": 64.44,
+   "fin": 64.64,
    "frase": 26
   },
   {
    "texto": "el",
-   "inicio": 73.884,
-   "fin": 74.013,
+   "inicio": 64.64,
+   "fin": 64.76,
    "frase": 26
   },
   {
    "texto": "dolor",
-   "inicio": 74.053,
-   "fin": 74.35,
+   "inicio": 64.76,
+   "fin": 65.02,
    "frase": 26
   },
   {
    "texto": "del",
-   "inicio": 74.39,
-   "fin": 74.575,
+   "inicio": 65.02,
+   "fin": 65.3,
    "frase": 26
   },
   {
    "texto": "otro",
-   "inicio": 74.615,
-   "fin": 74.856,
+   "inicio": 65.3,
+   "fin": 65.54,
    "frase": 26
   },
   {
    "texto": "también",
-   "inicio": 74.896,
-   "fin": 75.305,
+   "inicio": 65.54,
+   "fin": 66.04,
    "frase": 26
   },
   {
    "texto": "nos",
-   "inicio": 75.345,
-   "fin": 75.53,
+   "inicio": 66.04,
+   "fin": 66.34,
    "frase": 26
   },
   {
    "texto": "pertenece.",
-   "inicio": 75.57,
-   "fin": 76.298,
+   "inicio": 66.34,
+   "fin": 66.83,
    "frase": 26
   },
   {
    "texto": "Y",
-   "inicio": 76.638,
-   "fin": 76.718,
+   "inicio": 67.18,
+   "fin": 67.44,
    "frase": 27
   },
   {
    "texto": "muchas",
-   "inicio": 76.75,
-   "fin": 77.103,
+   "inicio": 67.44,
+   "fin": 67.66,
    "frase": 27
   },
   {
    "texto": "veces,",
-   "inicio": 77.143,
-   "fin": 77.557,
+   "inicio": 67.66,
+   "fin": 68.4,
    "frase": 27
   },
   {
    "texto": "hacerlo",
-   "inicio": 77.597,
-   "fin": 78.006,
+   "inicio": 68.4,
+   "fin": 68.82,
    "frase": 27
   },
   {
    "texto": "sin",
-   "inicio": 78.046,
-   "fin": 78.231,
+   "inicio": 68.82,
+   "fin": 69.12,
    "frase": 27
   },
   {
    "texto": "que",
-   "inicio": 78.271,
-   "fin": 78.455,
+   "inicio": 69.12,
+   "fin": 69.38,
    "frase": 27
   },
   {
    "texto": "nadie",
-   "inicio": 78.495,
-   "fin": 78.792,
+   "inicio": 69.38,
+   "fin": 69.62,
    "frase": 27
   },
   {
    "texto": "conozca",
-   "inicio": 78.832,
-   "fin": 79.242,
+   "inicio": 69.62,
+   "fin": 70.06,
    "frase": 27
   },
   {
    "texto": "tu",
-   "inicio": 79.282,
-   "fin": 79.41,
+   "inicio": 70.06,
+   "fin": 70.25,
    "frase": 27
   },
   {
    "texto": "nombre.",
-   "inicio": 79.45,
-   "fin": 80.01,
+   "inicio": 70.25,
+   "fin": 70.4,
    "frase": 27
   },
   {
    "texto": "Hoy,",
-   "inicio": 80.95,
-   "fin": 81.251,
+   "inicio": 70.92,
+   "fin": 71.18,
    "frase": 28
   },
   {
    "texto": "cuando",
-   "inicio": 81.291,
-   "fin": 81.644,
+   "inicio": 71.34,
+   "fin": 71.56,
    "frase": 28
   },
   {
    "texto": "nos",
-   "inicio": 81.684,
-   "fin": 81.869,
+   "inicio": 71.56,
+   "fin": 71.8,
    "frase": 28
   },
   {
    "texto": "quieren",
-   "inicio": 81.909,
-   "fin": 82.318,
+   "inicio": 71.8,
+   "fin": 71.98,
    "frase": 28
   },
   {
    "texto": "convencer",
-   "inicio": 82.358,
-   "fin": 82.88,
+   "inicio": 71.98,
+   "fin": 72.56,
    "frase": 28
   },
   {
    "texto": "de",
-   "inicio": 82.92,
-   "fin": 83.049,
+   "inicio": 72.56,
+   "fin": 72.74,
    "frase": 28
   },
   {
    "texto": "que",
-   "inicio": 83.089,
-   "fin": 83.273,
+   "inicio": 72.74,
+   "fin": 72.88,
    "frase": 28
   },
   {
    "texto": "cada",
-   "inicio": 83.313,
-   "fin": 83.554,
+   "inicio": 72.88,
+   "fin": 73.2,
    "frase": 28
   },
   {
    "texto": "uno",
-   "inicio": 83.594,
-   "fin": 83.779,
+   "inicio": 73.2,
+   "fin": 73.4,
    "frase": 28
   },
   {
    "texto": "debe",
-   "inicio": 83.819,
-   "fin": 84.06,
+   "inicio": 73.4,
+   "fin": 73.66,
    "frase": 28
   },
   {
    "texto": "salvarse",
-   "inicio": 84.1,
-   "fin": 84.565,
+   "inicio": 73.66,
+   "fin": 74.22,
    "frase": 28
   },
   {
    "texto": "solo,",
-   "inicio": 84.605,
-   "fin": 84.962,
+   "inicio": 74.22,
+   "fin": 74.5,
    "frase": 28
   },
   {
    "texto": "militar",
-   "inicio": 85.302,
-   "fin": 85.712,
+   "inicio": 75.02,
+   "fin": 75.16,
    "frase": 29
   },
   {
    "texto": "sigue",
-   "inicio": 85.752,
-   "fin": 86.049,
+   "inicio": 75.16,
+   "fin": 75.54,
    "frase": 29
   },
   {
    "texto": "siendo",
-   "inicio": 86.089,
-   "fin": 86.442,
+   "inicio": 75.54,
+   "fin": 75.94,
    "frase": 29
   },
   {
    "texto": "un",
-   "inicio": 86.482,
-   "fin": 86.611,
+   "inicio": 75.94,
+   "fin": 76.14,
    "frase": 29
   },
   {
    "texto": "acto",
-   "inicio": 86.651,
-   "fin": 86.892,
+   "inicio": 76.14,
+   "fin": 76.42,
    "frase": 29
   },
   {
    "texto": "de",
-   "inicio": 86.932,
-   "fin": 87.06,
+   "inicio": 76.42,
+   "fin": 76.6,
    "frase": 29
   },
   {
    "texto": "rebeldía.",
-   "inicio": 87.1,
-   "fin": 87.772,
+   "inicio": 76.6,
+   "fin": 76.98,
    "frase": 29
   },
   {
    "texto": "Frente",
-   "inicio": 88.412,
-   "fin": 88.765,
+   "inicio": 77.36,
+   "fin": 77.54,
    "frase": 30
   },
   {
    "texto": "al",
-   "inicio": 88.805,
-   "fin": 88.934,
+   "inicio": 77.54,
+   "fin": 77.72,
    "frase": 30
   },
   {
    "texto": "individualismo,",
-   "inicio": 88.974,
-   "fin": 89.893,
+   "inicio": 77.72,
+   "fin": 78.49,
    "frase": 30
   },
   {
    "texto": "la",
-   "inicio": 90.133,
-   "fin": 90.261,
+   "inicio": 78.62,
+   "fin": 78.86,
    "frase": 31
   },
   {
    "texto": "comunidad.",
-   "inicio": 90.301,
-   "fin": 91.029,
+   "inicio": 78.86,
+   "fin": 79.37,
    "frase": 31
   },
   {
    "texto": "Frente",
-   "inicio": 91.369,
-   "fin": 91.722,
+   "inicio": 79.74,
+   "fin": 79.94,
    "frase": 32
   },
   {
    "texto": "a",
-   "inicio": 91.762,
-   "fin": 91.842,
+   "inicio": 79.94,
+   "fin": 80.1,
    "frase": 32
   },
   {
    "texto": "la",
-   "inicio": 91.875,
-   "fin": 92.003,
+   "inicio": 80.1,
+   "fin": 80.2,
    "frase": 32
   },
   {
    "texto": "indiferencia,",
-   "inicio": 92.043,
-   "fin": 92.85,
+   "inicio": 80.2,
+   "fin": 80.84,
    "frase": 32
   },
   {
    "texto": "el",
-   "inicio": 93.09,
-   "fin": 93.218,
+   "inicio": 81.08,
+   "fin": 81.38,
    "frase": 33
   },
   {
    "texto": "compromiso.",
-   "inicio": 93.258,
-   "fin": 94.043,
+   "inicio": 81.38,
+   "fin": 81.85,
    "frase": 33
   },
   {
    "texto": "Frente",
-   "inicio": 94.383,
-   "fin": 94.736,
+   "inicio": 82.16,
+   "fin": 82.4,
    "frase": 34
   },
   {
    "texto": "a",
-   "inicio": 94.776,
-   "fin": 94.856,
+   "inicio": 82.4,
+   "fin": 82.54,
    "frase": 34
   },
   {
    "texto": "la",
-   "inicio": 94.888,
-   "fin": 95.017,
+   "inicio": 82.54,
+   "fin": 82.72,
    "frase": 34
   },
   {
    "texto": "resignación,",
-   "inicio": 95.057,
-   "fin": 95.807,
+   "inicio": 82.72,
+   "fin": 83.42,
    "frase": 34
   },
   {
    "texto": "la",
-   "inicio": 96.047,
-   "fin": 96.176,
+   "inicio": 83.66,
+   "fin": 83.9,
    "frase": 35
   },
   {
    "texto": "esperanza.",
-   "inicio": 96.216,
-   "fin": 96.944,
+   "inicio": 83.9,
+   "fin": 84.38,
    "frase": 35
   },
   {
    "texto": "A",
-   "inicio": 97.784,
-   "fin": 97.864,
+   "inicio": 84.8,
+   "fin": 84.92,
    "frase": 36
   },
   {
    "texto": "los",
-   "inicio": 97.896,
-   "fin": 98.081,
+   "inicio": 84.92,
+   "fin": 85.04,
    "frase": 36
   },
   {
    "texto": "que",
-   "inicio": 98.121,
-   "fin": 98.305,
+   "inicio": 85.04,
+   "fin": 85.2,
    "frase": 36
   },
   {
    "texto": "estuvieron.",
-   "inicio": 98.345,
-   "fin": 99.13,
+   "inicio": 85.2,
+   "fin": 85.68,
    "frase": 36
   },
   {
    "texto": "A",
-   "inicio": 99.47,
-   "fin": 99.55,
+   "inicio": 86.0,
+   "fin": 86.08,
    "frase": 37
   },
   {
    "texto": "los",
-   "inicio": 99.582,
-   "fin": 99.767,
+   "inicio": 86.08,
+   "fin": 86.26,
    "frase": 37
   },
   {
    "texto": "que",
-   "inicio": 99.807,
-   "fin": 99.991,
+   "inicio": 86.26,
+   "fin": 86.5,
    "frase": 37
   },
   {
    "texto": "están.",
-   "inicio": 100.031,
-   "fin": 100.535,
+   "inicio": 86.5,
+   "fin": 86.74,
    "frase": 37
   },
   {
    "texto": "A",
-   "inicio": 100.875,
-   "fin": 100.955,
+   "inicio": 86.98,
+   "fin": 87.08,
    "frase": 38
   },
   {
    "texto": "los",
-   "inicio": 100.987,
-   "fin": 101.172,
+   "inicio": 87.08,
+   "fin": 87.22,
    "frase": 38
   },
   {
    "texto": "que",
-   "inicio": 101.212,
-   "fin": 101.396,
+   "inicio": 87.22,
+   "fin": 87.44,
    "frase": 38
   },
   {
    "texto": "ya",
-   "inicio": 101.436,
-   "fin": 101.565,
+   "inicio": 87.44,
+   "fin": 87.56,
    "frase": 38
   },
   {
    "texto": "no",
-   "inicio": 101.605,
-   "fin": 101.733,
+   "inicio": 87.56,
+   "fin": 87.86,
    "frase": 38
   },
   {
    "texto": "están,",
-   "inicio": 101.773,
-   "fin": 102.187,
+   "inicio": 87.86,
+   "fin": 88.08,
    "frase": 38
   },
   {
    "texto": "pero",
-   "inicio": 102.227,
-   "fin": 102.468,
+   "inicio": 88.08,
+   "fin": 88.4,
    "frase": 38
   },
   {
    "texto": "siguen",
-   "inicio": 102.508,
-   "fin": 102.861,
+   "inicio": 88.4,
+   "fin": 88.86,
    "frase": 38
   },
   {
    "texto": "presentes",
-   "inicio": 102.901,
-   "fin": 103.423,
+   "inicio": 88.86,
+   "fin": 89.42,
    "frase": 38
   },
   {
    "texto": "en",
-   "inicio": 103.463,
-   "fin": 103.591,
+   "inicio": 89.42,
+   "fin": 89.7,
    "frase": 38
   },
   {
    "texto": "cada",
-   "inicio": 103.631,
-   "fin": 103.872,
+   "inicio": 89.7,
+   "fin": 89.88,
    "frase": 38
   },
   {
    "texto": "lucha.",
-   "inicio": 103.912,
-   "fin": 104.415,
+   "inicio": 89.88,
+   "fin": 90.25,
    "frase": 38
   },
   {
    "texto": "Y",
-   "inicio": 104.855,
-   "fin": 104.935,
+   "inicio": 90.58,
+   "fin": 90.66,
    "frase": 39
   },
   {
    "texto": "a",
-   "inicio": 104.968,
-   "fin": 105.048,
+   "inicio": 90.66,
+   "fin": 90.72,
    "frase": 39
   },
   {
    "texto": "los",
-   "inicio": 105.08,
-   "fin": 105.265,
+   "inicio": 90.72,
+   "fin": 90.8,
    "frase": 39
   },
   {
    "texto": "que",
-   "inicio": 105.305,
-   "fin": 105.49,
+   "inicio": 90.8,
+   "fin": 91.0,
    "frase": 39
   },
   {
    "texto": "todavía",
-   "inicio": 105.53,
-   "fin": 105.939,
+   "inicio": 91.0,
+   "fin": 91.34,
    "frase": 39
   },
   {
    "texto": "no",
-   "inicio": 105.979,
-   "fin": 106.108,
+   "inicio": 91.34,
+   "fin": 91.62,
    "frase": 39
   },
   {
    "texto": "saben",
-   "inicio": 106.148,
-   "fin": 106.445,
+   "inicio": 91.62,
+   "fin": 91.82,
    "frase": 39
   },
   {
    "texto": "que",
-   "inicio": 106.485,
-   "fin": 106.669,
+   "inicio": 91.82,
+   "fin": 92.12,
    "frase": 39
   },
   {
    "texto": "algún",
-   "inicio": 106.709,
-   "fin": 107.006,
+   "inicio": 92.12,
+   "fin": 92.32,
    "frase": 39
   },
   {
    "texto": "día",
-   "inicio": 107.046,
-   "fin": 107.231,
+   "inicio": 92.32,
+   "fin": 92.64,
    "frase": 39
   },
   {
    "texto": "van",
-   "inicio": 107.271,
-   "fin": 107.456,
+   "inicio": 92.64,
+   "fin": 92.82,
    "frase": 39
   },
   {
    "texto": "a",
-   "inicio": 107.496,
-   "fin": 107.576,
+   "inicio": 92.82,
+   "fin": 93.0,
    "frase": 39
   },
   {
    "texto": "levantar",
-   "inicio": 107.608,
-   "fin": 108.074,
+   "inicio": 93.0,
+   "fin": 93.46,
    "frase": 39
   },
   {
    "texto": "nuestras",
-   "inicio": 108.114,
-   "fin": 108.579,
+   "inicio": 93.46,
+   "fin": 93.72,
    "frase": 39
   },
   {
    "texto": "banderas.",
-   "inicio": 108.619,
-   "fin": 109.291,
+   "inicio": 93.72,
+   "fin": 94.3,
    "frase": 39
   },
   {
    "texto": "La",
-   "inicio": 110.331,
-   "fin": 110.46,
+   "inicio": 94.58,
+   "fin": 94.72,
    "frase": 40
   },
   {
    "texto": "historia",
-   "inicio": 110.5,
-   "fin": 110.965,
+   "inicio": 94.72,
+   "fin": 95.06,
    "frase": 40
   },
   {
    "texto": "no",
-   "inicio": 111.005,
-   "fin": 111.134,
+   "inicio": 95.06,
+   "fin": 95.32,
    "frase": 40
   },
   {
    "texto": "la",
-   "inicio": 111.174,
-   "fin": 111.302,
+   "inicio": 95.32,
+   "fin": 95.62,
    "frase": 40
   },
   {
    "texto": "escriben",
-   "inicio": 111.342,
-   "fin": 111.808,
+   "inicio": 95.62,
+   "fin": 95.9,
    "frase": 40
   },
   {
    "texto": "quienes",
-   "inicio": 111.848,
-   "fin": 112.258,
+   "inicio": 95.9,
+   "fin": 96.12,
    "frase": 40
   },
   {
    "texto": "miran",
-   "inicio": 112.298,
-   "fin": 112.595,
+   "inicio": 96.12,
+   "fin": 96.5,
    "frase": 40
   },
   {
    "texto": "desde",
-   "inicio": 112.635,
-   "fin": 112.932,
+   "inicio": 96.5,
+   "fin": 96.72,
    "frase": 40
   },
   {
    "texto": "afuera.",
-   "inicio": 112.972,
-   "fin": 113.531,
+   "inicio": 96.72,
+   "fin": 97.06,
    "frase": 40
   },
   {
    "texto": "La",
-   "inicio": 114.071,
-   "fin": 114.2,
+   "inicio": 97.34,
+   "fin": 97.58,
    "frase": 41
   },
   {
    "texto": "escriben",
-   "inicio": 114.24,
-   "fin": 114.705,
+   "inicio": 97.58,
+   "fin": 97.96,
    "frase": 41
   },
   {
    "texto": "quienes",
-   "inicio": 114.745,
-   "fin": 115.155,
+   "inicio": 97.96,
+   "fin": 98.2,
    "frase": 41
   },
   {
    "texto": "se",
-   "inicio": 115.195,
-   "fin": 115.323,
+   "inicio": 98.2,
+   "fin": 98.48,
    "frase": 41
   },
   {
    "texto": "animan",
-   "inicio": 115.363,
-   "fin": 115.717,
+   "inicio": 98.48,
+   "fin": 98.8,
    "frase": 41
   },
   {
    "texto": "a",
-   "inicio": 115.757,
-   "fin": 115.837,
+   "inicio": 98.8,
+   "fin": 99.04,
    "frase": 41
   },
   {
    "texto": "transformarla.",
-   "inicio": 115.869,
-   "fin": 116.822,
+   "inicio": 99.04,
+   "fin": 99.61,
    "frase": 41
   },
   {
    "texto": "Feliz",
-   "inicio": 118.062,
-   "fin": 118.359,
+   "inicio": 100.1,
+   "fin": 100.36,
    "frase": 42
   },
   {
    "texto": "Día",
-   "inicio": 118.399,
-   "fin": 118.583,
+   "inicio": 100.36,
+   "fin": 100.62,
    "frase": 42
   },
   {
    "texto": "de",
-   "inicio": 118.623,
-   "fin": 118.752,
+   "inicio": 100.62,
+   "fin": 100.76,
    "frase": 42
   },
   {
    "texto": "la",
-   "inicio": 118.792,
-   "fin": 118.92,
+   "inicio": 100.76,
+   "fin": 100.92,
    "frase": 42
   },
   {
    "texto": "Militancia.",
-   "inicio": 118.96,
-   "fin": 119.745,
+   "inicio": 100.92,
+   "fin": 101.44,
    "frase": 42
   }
  ],
@@ -1957,9 +1957,9 @@
     9,
     10
    ],
-   "inicio": 1.15,
-   "fin": 4.587,
-   "salida": 4.547,
+   "inicio": 0.96,
+   "fin": 5.04,
+   "salida": 4.96,
    "lineas": [
     "Hay quienes dedican su vida a",
     "construir un futuro que quizás"
@@ -1972,9 +1972,9 @@
     13,
     14
    ],
-   "inicio": 4.577,
-   "fin": 5.917,
-   "salida": 6.367,
+   "inicio": 4.99,
+   "fin": 5.92,
+   "salida": 6.37,
    "lineas": [
     "nunca lleguen a ver."
    ]
@@ -1987,9 +1987,9 @@
     18,
     19
    ],
-   "inicio": 6.507,
-   "fin": 8.24,
-   "salida": 8.5,
+   "inicio": 6.55,
+   "fin": 7.84,
+   "salida": 8.29,
    "lineas": [
     "Que caminan bajo la lluvia."
    ]
@@ -1999,9 +1999,9 @@
     20,
     21
    ],
-   "inicio": 8.53,
-   "fin": 9.42,
-   "salida": 9.68,
+   "inicio": 8.39,
+   "fin": 9.02,
+   "salida": 9.47,
    "lineas": [
     "Que pierden."
    ]
@@ -2013,9 +2013,9 @@
     24,
     25
    ],
-   "inicio": 9.71,
-   "fin": 11.162,
-   "salida": 11.522,
+   "inicio": 9.55,
+   "fin": 10.63,
+   "salida": 11.08,
    "lineas": [
     "Que vuelven a empezar."
    ]
@@ -2029,9 +2029,9 @@
     30,
     31
    ],
-   "inicio": 11.552,
-   "fin": 13.761,
-   "salida": 13.721,
+   "inicio": 11.21,
+   "fin": 13.78,
+   "salida": 14.06,
    "lineas": [
     "Que, aun cuando",
     "todo parece perdido,"
@@ -2042,9 +2042,9 @@
     32,
     33
    ],
-   "inicio": 13.751,
-   "fin": 14.866,
-   "salida": 15.316,
+   "inicio": 14.09,
+   "fin": 14.79,
+   "salida": 15.24,
    "lineas": [
     "siguen creyendo."
    ]
@@ -2059,9 +2059,9 @@
     39,
     40
    ],
-   "inicio": 15.556,
-   "fin": 17.851,
-   "salida": 18.301,
+   "inicio": 15.33,
+   "fin": 17.04,
+   "salida": 17.49,
    "lineas": [
     "La historia los",
     "conoce con un nombre:"
@@ -2071,9 +2071,9 @@
    "palabras": [
     41
    ],
-   "inicio": 18.341,
-   "fin": 19.175,
-   "salida": 19.625,
+   "inicio": 17.85,
+   "fin": 18.47,
+   "salida": 18.84,
    "lineas": [
     "militantes."
    ]
@@ -2090,9 +2090,9 @@
     49,
     50
    ],
-   "inicio": 20.165,
-   "fin": 23.602,
-   "salida": 23.562,
+   "inicio": 18.87,
+   "fin": 22.22,
+   "salida": 22.14,
    "lineas": [
     "Durante diecisiete años intentaron",
     "borrar al peronismo de la"
@@ -2102,9 +2102,9 @@
    "palabras": [
     51
    ],
-   "inicio": 23.592,
-   "fin": 24.37,
-   "salida": 24.73,
+   "inicio": 22.17,
+   "fin": 22.62,
+   "salida": 23.06,
    "lineas": [
     "Argentina."
    ]
@@ -2115,9 +2115,9 @@
     53,
     54
    ],
-   "inicio": 24.76,
-   "fin": 26.381,
-   "salida": 26.541,
+   "inicio": 23.09,
+   "fin": 24.26,
+   "salida": 24.6,
    "lineas": [
     "Prohibieron sus símbolos."
    ]
@@ -2129,9 +2129,9 @@
     57,
     58
    ],
-   "inicio": 26.571,
-   "fin": 28.472,
-   "salida": 28.632,
+   "inicio": 24.63,
+   "fin": 26.11,
+   "salida": 26.44,
    "lineas": [
     "Persiguieron a sus dirigentes."
    ]
@@ -2143,9 +2143,9 @@
     61,
     62
    ],
-   "inicio": 28.662,
-   "fin": 30.564,
-   "salida": 31.014,
+   "inicio": 26.47,
+   "fin": 28.11,
+   "salida": 28.32,
    "lineas": [
     "Encarcelaron a sus compañeros."
    ]
@@ -2160,9 +2160,9 @@
     68,
     69
    ],
-   "inicio": 31.154,
-   "fin": 33.617,
-   "salida": 33.977,
+   "inicio": 28.35,
+   "fin": 30.51,
+   "salida": 30.73,
    "lineas": [
     "Pero hubo algo que",
     "no pudieron destruir:"
@@ -2177,9 +2177,9 @@
     74,
     75
    ],
-   "inicio": 34.007,
-   "fin": 36.19,
-   "salida": 36.64,
+   "inicio": 30.76,
+   "fin": 32.69,
+   "salida": 33.02,
    "lineas": [
     "la memoria de un",
     "pueblo organizado."
@@ -2193,9 +2193,9 @@
     79,
     80
    ],
-   "inicio": 36.68,
-   "fin": 38.491,
-   "salida": 38.451,
+   "inicio": 33.05,
+   "fin": 34.54,
+   "salida": 34.5,
    "lineas": [
     "Lo escribieron en las paredes,"
    ]
@@ -2206,9 +2206,9 @@
     82,
     83
    ],
-   "inicio": 38.481,
-   "fin": 39.428,
-   "salida": 39.688,
+   "inicio": 34.53,
+   "fin": 35.41,
+   "salida": 35.74,
    "lineas": [
     "año tras año:"
    ]
@@ -2219,9 +2219,9 @@
     85,
     86
    ],
-   "inicio": 39.718,
-   "fin": 40.777,
-   "salida": 41.227,
+   "inicio": 35.77,
+   "fin": 36.93,
+   "salida": 37.24,
    "lineas": [
     "Luche y vuelve."
    ]
@@ -2239,9 +2239,9 @@
     95,
     96
    ],
-   "inicio": 41.767,
-   "fin": 45.263,
-   "salida": 45.223,
+   "inicio": 37.27,
+   "fin": 40.49,
+   "salida": 40.42,
    "lineas": [
     "El diecisiete de noviembre de",
     "mil novecientos setenta y dos,"
@@ -2259,9 +2259,9 @@
     104,
     105
    ],
-   "inicio": 45.253,
-   "fin": 48.132,
-   "salida": 48.392,
+   "inicio": 40.45,
+   "fin": 42.92,
+   "salida": 43.22,
    "lineas": [
     "bajo una lluvia que quedó",
     "grabada en la historia,"
@@ -2276,9 +2276,9 @@
     110,
     111
    ],
-   "inicio": 48.422,
-   "fin": 50.717,
-   "salida": 51.167,
+   "inicio": 43.25,
+   "fin": 45.26,
+   "salida": 45.5,
    "lineas": [
     "Perón volvió a pisar",
     "suelo argentino."
@@ -2299,9 +2299,9 @@
     122,
     123
    ],
-   "inicio": 51.407,
-   "fin": 54.957,
-   "salida": 54.917,
+   "inicio": 45.53,
+   "fin": 49.06,
+   "salida": 48.98,
    "lineas": [
     "Y detrás de ese regreso estaban",
     "miles de hombres y mujeres que"
@@ -2314,9 +2314,9 @@
     126,
     127
    ],
-   "inicio": 54.947,
-   "fin": 56.511,
-   "salida": 56.871,
+   "inicio": 49.01,
+   "fin": 50.24,
+   "salida": 50.5,
    "lineas": [
     "nunca dejaron de luchar."
    ]
@@ -2327,9 +2327,9 @@
     129,
     130
    ],
-   "inicio": 56.901,
-   "fin": 58.016,
-   "salida": 58.176,
+   "inicio": 50.53,
+   "fin": 51.45,
+   "salida": 51.6,
    "lineas": [
     "En las fábricas."
    ]
@@ -2340,9 +2340,9 @@
     132,
     133
    ],
-   "inicio": 58.206,
-   "fin": 59.265,
-   "salida": 59.425,
+   "inicio": 51.63,
+   "fin": 52.37,
+   "salida": 52.5,
    "lineas": [
     "En los barrios."
    ]
@@ -2353,9 +2353,9 @@
     135,
     136
    ],
-   "inicio": 59.455,
-   "fin": 60.682,
-   "salida": 60.842,
+   "inicio": 52.53,
+   "fin": 53.46,
+   "salida": 53.6,
    "lineas": [
     "En los sindicatos."
    ]
@@ -2366,9 +2366,9 @@
     138,
     139
    ],
-   "inicio": 60.872,
-   "fin": 62.268,
-   "salida": 62.718,
+   "inicio": 53.63,
+   "fin": 54.74,
+   "salida": 55.02,
    "lineas": [
     "En las universidades."
    ]
@@ -2384,9 +2384,9 @@
     146,
     147
    ],
-   "inicio": 63.058,
-   "fin": 66.421,
-   "salida": 66.781,
+   "inicio": 55.05,
+   "fin": 58.11,
+   "salida": 58.32,
    "lineas": [
     "Porque militar nunca fue",
     "solamente levantar una bandera."
@@ -2401,9 +2401,9 @@
     152,
     153
    ],
-   "inicio": 66.811,
-   "fin": 69.218,
-   "salida": 69.478,
+   "inicio": 58.35,
+   "fin": 60.39,
+   "salida": 60.58,
    "lineas": [
     "Es levantarse cuando",
     "otros se resignan."
@@ -2419,9 +2419,9 @@
     159,
     160
    ],
-   "inicio": 69.508,
-   "fin": 72.645,
-   "salida": 72.905,
+   "inicio": 60.61,
+   "fin": 63.55,
+   "salida": 63.82,
    "lineas": [
     "Es organizarse cuando todo",
     "invita al individualismo."
@@ -2440,9 +2440,9 @@
     169,
     170
    ],
-   "inicio": 72.935,
-   "fin": 76.298,
-   "salida": 76.558,
+   "inicio": 63.85,
+   "fin": 66.83,
+   "salida": 67.1,
    "lineas": [
     "Es entender que el dolor del",
     "otro también nos pertenece."
@@ -2461,9 +2461,9 @@
     179,
     180
    ],
-   "inicio": 76.588,
-   "fin": 80.01,
-   "salida": 80.46,
+   "inicio": 67.13,
+   "fin": 70.4,
+   "salida": 70.84,
    "lineas": [
     "Y muchas veces, hacerlo sin",
     "que nadie conozca tu nombre."
@@ -2483,9 +2483,9 @@
     190,
     191
    ],
-   "inicio": 80.9,
-   "fin": 84.565,
-   "salida": 84.525,
+   "inicio": 70.87,
+   "fin": 74.22,
+   "salida": 74.14,
    "lineas": [
     "Hoy, cuando nos quieren convencer",
     "de que cada uno debe salvarse"
@@ -2495,9 +2495,9 @@
    "palabras": [
     192
    ],
-   "inicio": 84.555,
-   "fin": 84.962,
-   "salida": 85.222,
+   "inicio": 74.17,
+   "fin": 74.5,
+   "salida": 74.94,
    "lineas": [
     "solo,"
    ]
@@ -2512,9 +2512,9 @@
     198,
     199
    ],
-   "inicio": 85.252,
-   "fin": 87.772,
-   "salida": 88.222,
+   "inicio": 74.97,
+   "fin": 76.98,
+   "salida": 77.28,
    "lineas": [
     "militar sigue siendo",
     "un acto de rebeldía."
@@ -2526,9 +2526,9 @@
     201,
     202
    ],
-   "inicio": 88.362,
-   "fin": 89.893,
-   "salida": 90.053,
+   "inicio": 77.31,
+   "fin": 78.49,
+   "salida": 78.54,
    "lineas": [
     "Frente al individualismo,"
    ]
@@ -2538,9 +2538,9 @@
     203,
     204
    ],
-   "inicio": 90.083,
-   "fin": 91.029,
-   "salida": 91.289,
+   "inicio": 78.57,
+   "fin": 79.37,
+   "salida": 79.66,
    "lineas": [
     "la comunidad."
    ]
@@ -2552,9 +2552,9 @@
     207,
     208
    ],
-   "inicio": 91.319,
-   "fin": 92.85,
-   "salida": 93.01,
+   "inicio": 79.69,
+   "fin": 80.84,
+   "salida": 81.0,
    "lineas": [
     "Frente a la indiferencia,"
    ]
@@ -2564,9 +2564,9 @@
     209,
     210
    ],
-   "inicio": 93.04,
-   "fin": 94.043,
-   "salida": 94.303,
+   "inicio": 81.03,
+   "fin": 81.85,
+   "salida": 82.08,
    "lineas": [
     "el compromiso."
    ]
@@ -2578,9 +2578,9 @@
     213,
     214
    ],
-   "inicio": 94.333,
-   "fin": 95.807,
-   "salida": 95.967,
+   "inicio": 82.11,
+   "fin": 83.42,
+   "salida": 83.58,
    "lineas": [
     "Frente a la resignación,"
    ]
@@ -2590,9 +2590,9 @@
     215,
     216
    ],
-   "inicio": 95.997,
-   "fin": 96.944,
-   "salida": 97.394,
+   "inicio": 83.61,
+   "fin": 84.38,
+   "salida": 84.72,
    "lineas": [
     "la esperanza."
    ]
@@ -2604,9 +2604,9 @@
     219,
     220
    ],
-   "inicio": 97.734,
-   "fin": 99.13,
-   "salida": 99.39,
+   "inicio": 84.75,
+   "fin": 85.68,
+   "salida": 85.92,
    "lineas": [
     "A los que estuvieron."
    ]
@@ -2618,9 +2618,9 @@
     223,
     224
    ],
-   "inicio": 99.42,
-   "fin": 100.535,
-   "salida": 100.795,
+   "inicio": 85.95,
+   "fin": 86.74,
+   "salida": 86.9,
    "lineas": [
     "A los que están."
    ]
@@ -2640,9 +2640,9 @@
     235,
     236
    ],
-   "inicio": 100.825,
-   "fin": 104.415,
-   "salida": 104.775,
+   "inicio": 86.93,
+   "fin": 90.25,
+   "salida": 90.5,
    "lineas": [
     "A los que ya no están, pero",
     "siguen presentes en cada lucha."
@@ -2664,9 +2664,9 @@
     248,
     249
    ],
-   "inicio": 104.805,
-   "fin": 108.074,
-   "salida": 108.034,
+   "inicio": 90.53,
+   "fin": 93.46,
+   "salida": 93.38,
    "lineas": [
     "Y a los que todavía no saben",
     "que algún día van a levantar"
@@ -2677,9 +2677,9 @@
     250,
     251
    ],
-   "inicio": 108.064,
-   "fin": 109.291,
-   "salida": 109.741,
+   "inicio": 93.41,
+   "fin": 94.3,
+   "salida": 94.5,
    "lineas": [
     "nuestras banderas."
    ]
@@ -2696,9 +2696,9 @@
     259,
     260
    ],
-   "inicio": 110.281,
-   "fin": 113.531,
-   "salida": 113.981,
+   "inicio": 94.53,
+   "fin": 97.06,
+   "salida": 97.26,
    "lineas": [
     "La historia no la escriben",
     "quienes miran desde afuera."
@@ -2714,9 +2714,9 @@
     266,
     267
    ],
-   "inicio": 114.021,
-   "fin": 116.822,
-   "salida": 117.272,
+   "inicio": 97.29,
+   "fin": 99.61,
+   "salida": 100.02,
    "lineas": [
     "La escriben quienes se",
     "animan a transformarla."
@@ -2730,9 +2730,9 @@
     271,
     272
    ],
-   "inicio": 118.012,
-   "fin": 119.745,
-   "salida": 120.195,
+   "inicio": 100.05,
+   "fin": 101.44,
+   "salida": 101.89,
    "lineas": [
     "Feliz Día de la Militancia."
    ]

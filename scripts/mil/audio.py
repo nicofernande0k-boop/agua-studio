@@ -83,7 +83,7 @@ def lluvia(d, g):
     for _ in range(int(d * 220)):
         i = rng.integers(0, n - 400); c = rng.integers(0, 2)
         gotas[c, i:i + 400] += rng.standard_normal(400) * np.exp(-np.arange(400) / 40) * rng.uniform(0.2, 1)
-    gotas = fil(gotas, "highpass", 1500) * 0.35
+    gotas = fil(gotas, "highpass", 1500) * 0.55
     return (base + gotas) * g
 
 
@@ -107,8 +107,8 @@ def bombo(g):
 r0 = F[16]["inicio"] - 1.0
 pegar(amb, lluvia(F[17]["fin"] - r0 + 2.5, 0.09), r0, 1, 1.0, 2.0)                   # Ezeiza bajo la lluvia
 pegar(amb, lluvia(F[2]["fin"] - F[2]["inicio"] + 2, 0.04), F[2]["inicio"] - 0.5, 1, 0.6, 1.2)  # «caminan bajo la lluvia»
-pegar(amb, multitud(F[22]["fin"] - F[19]["inicio"] + 1.5, 0.05), F[19]["inicio"] - 0.4, 1, 0.5, 1.0)
-pegar(amb, multitud(DUR - F[39]["inicio"], 0.07, True), F[39]["inicio"] - 0.5, 1, 1.5, 3.0)
+pegar(amb, multitud(F[22]["fin"] - F[19]["inicio"] + 1.5, 0.025), F[19]["inicio"] - 0.4, 1, 0.5, 1.0)
+pegar(amb, multitud(DUR - F[39]["inicio"], 0.03, True), F[39]["inicio"] - 0.5, 1, 1.5, 3.0)
 # Bombos en «Hoy… frente a…» (a tempo de la música, ~112 pulsos por minuto)
 b = 60 / 112.35
 t = F[28]["inicio"]
@@ -132,10 +132,10 @@ w = int(0.04 * SR); e = np.convolve(e, np.ones(w) / w, "same")
 e = np.clip(e / (np.percentile(e[e > 1e-4], 90) + 1e-9), 0, 1)
 e = np.clip(np.convolve(e, np.ones(int(0.3 * SR)) / int(0.3 * SR), "same") * 1.6, 0, 1)
 rms = lambda x: np.sqrt(np.mean(x ** 2)) + 1e-9
-musica *= 0.06 / rms(musica)
+musica *= 0.04 / rms(musica)
 # hueco de presencia para la voz
-musica = musica - np.vstack([fil(c, "bandpass", [1500, 4200]) for c in musica]) * 0.35
-fondo = musica * (1 - 0.6 * e) + amb * (1 - 0.4 * e)
+musica = musica - np.vstack([fil(c, "bandpass", [1500, 4200]) for c in musica]) * 0.55
+fondo = musica * (1 - 0.82 * e) + amb * (1 - 0.6 * e)
 mezcla = fondo + voz
 esc = 0.89 / (np.abs(mezcla).max() + 1e-9)
 
