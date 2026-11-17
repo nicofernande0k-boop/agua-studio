@@ -217,7 +217,13 @@ function armarTomas(): Toma[] {
       <>
         <Foto src={IMG.hielo} dur={dur} mov={{ zoom: [1.3, 1.6], foco: [[0.55, 0.5], [0.5, 0.55]] }} oscuro={0.9} bn={0.3} />
         <Pregunta texto="¿QUIÉN CUIDA EL AGUA?" />
-        <Rotulo texto="LEY DE GLACIARES 26.639 · REFORMA 2026" top={760} tam={34} color="#ff4d5e" desde={tl} />
+        {useCurrentFrame() >= tl ? (
+          <div style={{ position: "absolute", top: 730, left: 0, right: 0, textAlign: "center" }}>
+            <span style={{ display: "inline-block", backgroundColor: ROJO, color: CREMA, fontFamily: "Inter, sans-serif", fontWeight: 800, fontSize: 30, letterSpacing: 5, padding: "10px 22px", whiteSpace: "nowrap" }}>
+              LEY DE GLACIARES 26.639 · REFORMA 2026
+            </span>
+          </div>
+        ) : null}
         <Golpe texto="CADA PROVINCIA ELIGE" top={830} tam={104} desde={tl + 6} linea={false} />
         <Golpe texto="QUÉ GLACIARES PROTEGER" top={950} tam={92} desde={tl + 14} />
       </>
