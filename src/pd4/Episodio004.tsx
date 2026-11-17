@@ -113,7 +113,8 @@ const MapaGuamini: React.FC<{ dur: number; alejar?: boolean }> = ({ dur, alejar 
   const pulso = 1 + 0.25 * Math.sin(f / 6);
   return (
     <AbsoluteFill style={{ backgroundColor: NEGRO }}>
-      <Mapa alto={alto} top={top} relleno={0.08} resaltar={["Buenos Aires"]} enciende={0.25} zoom={zoom} foco={GUAMINI} opacidad={0.75} />
+      {/* El origen del zoom va en fracción del ANCHO del mapa (no del alto): así el punto queda fijo sobre su lugar real. */}
+      <Mapa alto={alto} top={top} relleno={0.08} resaltar={["Buenos Aires"]} enciende={0.25} zoom={zoom} foco={[GUAMINI[0] / 0.4717, GUAMINI[1]]} opacidad={0.75} />
       <div style={{ position: "absolute", left: px - 14, top: py - 14, width: 28, height: 28, borderRadius: 14, backgroundColor: ROJO, boxShadow: "0 0 40px rgba(212,22,44,0.9)", transform: `scale(${pulso})` }} />
       <div style={{ position: "absolute", left: px + 30, top: py - 22, fontFamily: "Anton, sans-serif", fontSize: 46, letterSpacing: 4, color: CREMA, opacity: c01(f / 12) }}>GUAMINÍ</div>
     </AbsoluteFill>
