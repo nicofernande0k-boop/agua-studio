@@ -1,0 +1,171 @@
+{
+ "litio-estanques": {
+  "fuente": "NASA",
+  "id": "iss069e086485",
+  "titulo": "iss069e086485",
+  "centro": "JSC",
+  "fecha": "2023-09-11",
+  "url": "https://images.nasa.gov/details/iss069e086485",
+  "licencia": "Dominio público (NASA)",
+  "tam": [
+   5568,
+   3712
+  ]
+ },
+ "neuquen-cuenca": {
+  "fuente": "NASA",
+  "id": "iss066e129321",
+  "titulo": "iss066e129321",
+  "centro": "JSC",
+  "fecha": "2022-01-11",
+  "url": "https://images.nasa.gov/details/iss066e129321",
+  "licencia": "Dominio público (NASA)",
+  "tam": [
+   5568,
+   3712
+  ]
+ },
+ "buenos-aires-noche": {
+  "fuente": "NASA",
+  "id": "iss072e519264",
+  "titulo": "The city lights of Buenos Aires, Argentina",
+  "centro": "JSC",
+  "fecha": "2025-01-21",
+  "url": "https://images.nasa.gov/details/iss072e519264",
+  "licencia": "Dominio público (NASA)",
+  "tam": [
+   8256,
+   5504
+  ]
+ },
+ "glaciar-viedma": {
+  "fuente": "NASA",
+  "id": "iss013e06947",
+  "titulo": "Earth Observations taken by the Expedition 13 crew",
+  "centro": "JSC",
+  "fecha": "2006-04-12",
+  "url": "https://images.nasa.gov/details/iss013e06947",
+  "licencia": "Dominio público (NASA)",
+  "tam": [
+   3000,
+   1987
+  ]
+ },
+ "lago-argentino": {
+  "fuente": "NASA",
+  "id": "iss074e0573516",
+  "titulo": "Turquoise-blue waters of Lake Argentino surrounded by the snow-capped Andes Mountains",
+  "centro": "JSC",
+  "fecha": "2026-05-06",
+  "url": "https://images.nasa.gov/details/iss074e0573516",
+  "licencia": "Dominio público (NASA)",
+  "tam": [
+   8256,
+   5504
+  ]
+ },
+ "pampa-lagunas": {
+  "fuente": "NASA",
+  "id": "iss070e025959",
+  "titulo": "iss070e025959",
+  "centro": "JSC",
+  "fecha": "2023-11-16",
+  "url": "https://images.nasa.gov/details/iss070e025959",
+  "licencia": "Dominio público (NASA)",
+  "tam": [
+   5568,
+   3712
+  ]
+ },
+ "costa-atlantica-noche": {
+  "fuente": "NASA",
+  "id": "GSFC_20171208_Archive_e001637",
+  "titulo": "City Lights of South America’s Atlantic Coast",
+  "centro": "GSFC",
+  "fecha": "2017-12-08",
+  "url": "https://images.nasa.gov/details/GSFC_20171208_Archive_e001637",
+  "licencia": "Dominio público (NASA)",
+  "tam": [
+   1920,
+   1080
+  ]
+ },
+ "andes-orbita": {
+  "fuente": "NASA",
+  "id": "iss058e006004",
+  "titulo": "Argentina, Chile and the Andes mountains",
+  "centro": "JSC",
+  "fecha": "2019-01-25",
+  "url": "https://images.nasa.gov/details/iss058e006004",
+  "licencia": "Dominio público (NASA)",
+  "tam": [
+   5568,
+   3712
+  ]
+ },
+ "buenos-aires-noche-2": {
+  "fuente": "NASA",
+  "id": "iss073e0176306",
+  "titulo": "Buenos Aires, Argentina, the South American nation's largest city",
+  "centro": "JSC",
+  "fecha": "2025-05-20",
+  "url": "https://images.nasa.gov/details/iss073e0176306",
+  "licencia": "Dominio público (NASA)",
+  "tam": [
+   8256,
+   5504
+  ]
+ },
+ "glaciar-campo-hielo": {
+  "fuente": "NASA",
+  "id": "iss015e10699",
+  "titulo": "Earth Observations taken by the Expedition 15 Crew",
+  "centro": "JSC",
+  "fecha": "2007-06-04",
+  "url": "https://images.nasa.gov/details/iss015e10699",
+  "licencia": "Dominio público (NASA)",
+  "tam": [
+   3032,
+   2008
+  ]
+ },
+ "bahia-blanca": {
+  "fuente": "NASA",
+  "id": "iss014e05615",
+  "titulo": "Earth Observation taken by the Expedition 14 crew",
+  "centro": "JSC",
+  "fecha": "2006-10-13",
+  "url": "https://images.nasa.gov/details/iss014e05615",
+  "licencia": "Dominio público (NASA)",
+  "tam": [
+   3032,
+   2064
+  ]
+ },
+ "salar-arizaro": {
+  "fuente": "NASA",
+  "id": "iss023e028353",
+  "titulo": "Earth Observations taken by the Expedition 23 Crew",
+  "centro": "JSC",
+  "fecha": "2010-04-26",
+  "url": "https://images.nasa.gov/details/iss023e028353",
+  "licencia": "Dominio público (NASA)",
+  "tam": [
+   2913,
+   4256
+  ]
+ },
+ "rio-parana": {
+  "fuente": "NASA",
+  "id": "iss067e034812",
+  "titulo": "iss067e034812",
+  "centro": "JSC",
+  "fecha": "2022-05-05",
+  "url": "https://images.nasa.gov/details/iss067e034812",
+  "licencia": "Dominio público (NASA)",
+  "tam": [
+   5568,
+   3712
+  ]
+ }
+}

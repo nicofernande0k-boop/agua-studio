@@ -149,7 +149,7 @@ jobs:
         run: |
           sudo apt-get update -qq
           sudo apt-get install -y -qq ffmpeg imagemagick
-          python3 -m pip install --quiet numpy
+          python3 -m pip install --quiet numpy scipy
       - uses: actions/download-artifact@v4
         with:
           pattern: segmento-*
@@ -159,7 +159,11 @@ jobs:
         run: |
           extra=""
           if [ -n "$VOZ" ]; then extra="--voz $VOZ"; fi
-          python3 scripts/audio/sintetizar.py "producciones/$PRODUCCION" --tiempos "$TIEMPOS" --sonido "$SONIDO" --salida mezcla-final.wav $extra
+          if grep -q '"motor": "epico"' "producciones/$PRODUCCION/$SONIDO" 2>/dev/null; then
+            python3 scripts/audio/epico.py "producciones/$PRODUCCION" --tiempos "$TIEMPOS" --salida mezcla-final.wav $extra
+          else
+            python3 scripts/audio/sintetizar.py "producciones/$PRODUCCION" --tiempos "$TIEMPOS" --sonido "$SONIDO" --salida mezcla-final.wav $extra
+          fi
       - name: Unir segmentos y agregar audio
         run: |
           echo '${{ needs.preparar.outputs.segmentos }}' | jq -r '.[] | "file segmentos/\(.id).mp4"' > out/lista.txt

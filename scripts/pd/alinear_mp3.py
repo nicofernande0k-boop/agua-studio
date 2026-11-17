@@ -19,6 +19,7 @@ import unicodedata
 from pathlib import Path
 
 prod = Path(sys.argv[1])
+ESTIMADO = sys.argv[2] == "ESTIMADO"  # tiempos provisorios (sin voz todavía), desde el ritmo medio de la locución
 voz = prod / "voz" / sys.argv[2]
 cache = Path(sys.argv[3]) if len(sys.argv) > 3 else None
 DESFASE = float(sys.argv[4]) if len(sys.argv) > 4 else 1.0
@@ -26,7 +27,18 @@ COLA = float(sys.argv[5]) if len(sys.argv) > 5 else 3.6
 FPS = 30
 loc = json.loads((prod / "locucion.json").read_text())
 
-if cache and cache.exists():
+if ESTIMADO:
+    # Ritmo medido de «Daniel» en el episodio 002: 15,8 caracteres por segundo de habla; más las pausas del texto.
+    detect, t = [], 0.0
+    for acto in loc["actos"]:
+        for fr in acto["frases"]:
+            for w in fr["texto"].split():
+                d = (len(w) + 1) / 15.8 + (0.15 if w[-1] in ".?:" else 0.06 if w[-1] == "," else 0)
+                detect.append({"w": w, "s": round(t, 3), "e": round(t + d - 0.04, 3)})
+                t += d
+            t += fr.get("pausa", 0.3)
+    dur_voz = t
+elif cache and cache.exists():
     detect = json.loads(cache.read_text())
 else:
     import numpy as np
@@ -38,7 +50,7 @@ else:
     if cache:
         cache.write_text(json.dumps(detect, ensure_ascii=False))
 
-dur_voz = float(subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", str(voz)], capture_output=True, text=True, check=True).stdout)
+dur_voz = dur_voz if ESTIMADO else float(subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", str(voz)], capture_output=True, text=True, check=True).stdout)
 
 
 def norm(w):
@@ -75,13 +87,13 @@ for i, t in enumerate(tiempos):
 # anterior. Se corrigen con la energía real del audio (el silencio entre ambas).
 import numpy as np
 
-_pcm = subprocess.run(["ffmpeg", "-v", "error", "-i", str(voz), "-ac", "1", "-ar", "16000", "-f", "f32le", "-"], capture_output=True, check=True).stdout
-_a = np.frombuffer(_pcm, np.float32)
+_pcm = b"" if ESTIMADO else subprocess.run(["ffmpeg", "-v", "error", "-i", str(voz), "-ac", "1", "-ar", "16000", "-f", "f32le", "-"], capture_output=True, check=True).stdout
+_a = np.frombuffer(_pcm, np.float32) if not ESTIMADO else np.ones(16000 * int(dur_voz + 2), np.float32)
 _v = 160  # 10 ms
 _rms = np.sqrt(np.convolve(_a ** 2, np.ones(_v) / _v, mode="same"))[::_v]
 _umbral = max(0.006, np.percentile(_rms, 20) * 2.5)
 for i in range(1, len(guion)):
-    if guion[i][1] == guion[i - 1][1]:
+    if ESTIMADO or guion[i][1] == guion[i - 1][1]:
         continue
     (s0, e0), (s1, e1) = tiempos[i - 1], tiempos[i]
     a, b = int(max(s0 + 0.1, e0 - 0.6) * 100), int(min(e1 - 0.05, s1 + 0.6) * 100)
@@ -155,7 +167,7 @@ for b in salida:
     assert len(b["lineas"]) <= 2 and all(len(l) <= MAX_LINEA + 6 for l in b["lineas"]), b["lineas"]
 
 total = max(DESFASE + dur_voz, palabras[-1]["fin"] + COLA)
-res = {"id": loc["id"], "titulo": loc["titulo"], "fps": FPS, "duracion": round(total, 3), "frames": int(round(total * FPS)), "desfaseVoz": DESFASE,
+res = {"estimado": ESTIMADO, "id": loc["id"], "titulo": loc["titulo"], "fps": FPS, "duracion": round(total, 3), "frames": int(round(total * FPS)), "desfaseVoz": DESFASE,
        "frases": frases, "palabras": palabras, "bloques": salida}
 (prod / "tiempos.json").write_text(json.dumps(res, ensure_ascii=False, indent=1) + "\n")
 

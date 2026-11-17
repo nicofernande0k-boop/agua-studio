@@ -1,0 +1,117 @@
+{
+ "id": "003-de-quien-es",
+ "titulo": "¿De quién es la Argentina?",
+ "actos": [
+  {
+   "id": "gancho",
+   "frases": [
+    {
+     "texto": "Tenemos petróleo. Gas. Litio. Agua. Tierra.",
+     "pausa": 0.3
+    },
+    {
+     "texto": "¿Por qué uno de cada tres argentinos es pobre?",
+     "pausa": 0.7
+    }
+   ]
+  },
+  {
+   "id": "riqueza",
+   "frases": [
+    {
+     "texto": "Vaca Muerta bate récords.",
+     "pausa": 0.3
+    },
+    {
+     "texto": "El segundo potencial de gas no convencional del mundo.",
+     "pausa": 0.3
+    },
+    {
+     "texto": "Uno de los mayores recursos de litio del planeta.",
+     "pausa": 0.3
+    },
+    {
+     "texto": "Casi diecisiete mil glaciares.",
+     "pausa": 0.3
+    },
+    {
+     "texto": "El octavo país más extenso de la Tierra.",
+     "pausa": 0.6
+    }
+   ]
+  },
+  {
+   "id": "paradoja",
+   "frases": [
+    {
+     "texto": "Y aun así, casi la mitad de nuestros chicos es pobre.",
+     "pausa": 0.7
+    },
+    {
+     "texto": "La pregunta no es qué tenemos.",
+     "pausa": 0.4
+    },
+    {
+     "texto": "Es de quién es.",
+     "pausa": 0.8
+    }
+   ]
+  },
+  {
+   "id": "disputa",
+   "frases": [
+    {
+     "texto": "¿De quién son? La Constitución dice: de las provincias.",
+     "pausa": 0.4
+    },
+    {
+     "texto": "¿Quién los extrae? Grandes empresas. Muchas, extranjeras.",
+     "pausa": 0.4
+    },
+    {
+     "texto": "¿Cuánto queda? Por el litio, regalías de entre el tres y el cinco por ciento.",
+     "pausa": 0.4
+    },
+    {
+     "texto": "¿Quién cuida el agua? Desde 2026, cada provincia elige qué glaciares proteger.",
+     "pausa": 0.4
+    },
+    {
+     "texto": "¿Y las reglas? Treinta años garantizadas para los grandes inversores.",
+     "pausa": 0.6
+    },
+    {
+     "texto": "Empresas. Nación. Provincias. Comunidades.",
+     "pausa": 0.3
+    },
+    {
+     "texto": "Todos disputan lo mismo: quién decide, y quién se beneficia.",
+     "pausa": 0.9
+    }
+   ]
+  },
+  {
+   "id": "cierre",
+   "frases": [
+    {
+     "texto": "Porque la riqueza no está bajo el suelo.",
+     "pausa": 0.4
+    },
+    {
+     "texto": "Está en las decisiones.",
+     "pausa": 0.9
+    },
+    {
+     "texto": "Un país no es soberano por lo que tiene.",
+     "pausa": 0.5
+    },
+    {
+     "texto": "Es soberano por lo que decide.",
+     "pausa": 0.0
+    }
+   ]
+  }
+ ],
+ "inicio": 0.15,
+ "final": 3.2
+}
