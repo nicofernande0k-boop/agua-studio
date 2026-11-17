@@ -8,6 +8,7 @@ import { Produccion001Narrada } from "./producciones/agua001n/Produccion";
 import { PruebaPD } from "./pd/Prueba";
 import { DURACION_003, Episodio003 } from "./pd3/Episodio003";
 import { Portada003 } from "./pd3/Portada003";
+import { DURACION_004, Episodio004 } from "./pd4/Episodio004";
 import { DURACION_002, DURACION_002_DEFINITIVA, Episodio002, Episodio002Definitiva } from "./pd/Episodio002";
 import { Portada002 } from "./pd/Portada002";
 
@@ -37,6 +38,7 @@ export const RemotionRoot: React.FC = () => (
     <Composition id="PD002Definitiva" component={Episodio002Definitiva} durationInFrames={DURACION_002_DEFINITIVA} fps={30} width={ANCHO} height={ALTO} defaultProps={{ conAudio: false }} />
     <Composition id="PD003" component={Episodio003} durationInFrames={DURACION_003} fps={30} width={ANCHO} height={ALTO} defaultProps={{ conAudio: false }} />
     <Composition id="PD003Portada" component={Portada003} durationInFrames={1} fps={30} width={ANCHO} height={ALTO} />
+    <Composition id="PD004" component={Episodio004} durationInFrames={DURACION_004} fps={30} width={ANCHO} height={ALTO} defaultProps={{ conAudio: false, audio: "audio/004-guamini.wav" }} />
     <Composition id="PD002Portada" component={Portada002} durationInFrames={1} fps={30} width={ANCHO} height={ALTO} />
   </>
 );

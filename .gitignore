@@ -2,3 +2,9 @@ node_modules/
 out/
 .remotion/
 producciones/*/audio/
+# Episodio 004: fotografías aportadas con permisos pendientes de confirmar.
+# El repositorio es público: no se suben hasta tener la autorización.
+producciones/004-guamini/archivo-historico/originales/
+public/pd4/IMG_*.jpg
+producciones/004-guamini/montaje/seleccion-visual.jpg
+producciones/004-guamini/montaje/previsualizacion-*.mp4

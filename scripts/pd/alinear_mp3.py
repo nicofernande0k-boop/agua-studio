@@ -33,7 +33,7 @@ if ESTIMADO:
     for acto in loc["actos"]:
         for fr in acto["frases"]:
             for w in fr["texto"].split():
-                d = (len(w) + 1) / 15.8 + (0.15 if w[-1] in ".?:" else 0.06 if w[-1] == "," else 0)
+                d = (len(w) + 1) / 17.8 + (0.15 if w[-1] in ".?:" else 0.06 if w[-1] == "," else 0)  # 17,8: calibrado con la voz real del 003
                 detect.append({"w": w, "s": round(t, 3), "e": round(t + d - 0.04, 3)})
                 t += d
             t += fr.get("pausa", 0.3)

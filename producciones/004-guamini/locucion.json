@@ -1,0 +1,147 @@
+{
+ "id": "004-guamini",
+ "titulo": "Guaminí: donde nadie es un desconocido",
+ "inicio": 0.4,
+ "final": 5.5,
+ "actos": [
+  {
+   "id": "gancho",
+   "frases": [
+    {
+     "texto": "Acá, si un día no saludás, alguien te pregunta si te pasa algo.",
+     "pausa": 0.6
+    },
+    {
+     "texto": "Esto es Guaminí.",
+     "pausa": 0.4
+    },
+    {
+     "texto": "Tres mil vecinos. Ciento cincuenta años. Y nadie es un desconocido.",
+     "pausa": 0.8
+    }
+   ]
+  },
+  {
+   "id": "pueblo",
+   "frases": [
+    {
+     "texto": "Es la vereda donde la charla no tiene apuro.",
+     "pausa": 0.3
+    },
+    {
+     "texto": "La laguna que cambia de color con cada tarde.",
+     "pausa": 0.3
+    },
+    {
+     "texto": "Y las esquinas que todavía tienen el apellido de alguien.",
+     "pausa": 0.8
+    }
+   ]
+  },
+  {
+   "id": "historia",
+   "frases": [
+    {
+     "texto": "Antes de los fortines, esta tierra ya tenía nombre: Guaminí, una palabra mapuche que habla de una isla en el agua.",
+     "pausa": 0.5
+    },
+    {
+     "texto": "En mil ochocientos setenta y seis llegó el fortín, a orillas de la Laguna del Monte.",
+     "pausa": 0.4
+    },
+    {
+     "texto": "Después vinieron los que se quedaron, y levantaron la iglesia ladrillo por ladrillo.",
+     "pausa": 0.4
+    },
+    {
+     "texto": "En mil novecientos treinta y siete, Francisco Salamone dibujó un palacio con un reloj que mira al futuro.",
+     "pausa": 0.5
+    },
+    {
+     "texto": "Y las calles de tierra se hicieron asfalto, a pala y hormigonera.",
+     "pausa": 0.4
+    },
+    {
+     "texto": "Muchos de sus nombres no están en ningún libro. Pero están en cada vereda.",
+     "pausa": 0.8
+    }
+   ]
+  },
+  {
+   "id": "solidaridad",
+   "frases": [
+    {
+     "texto": "En mil novecientos ochenta y cinco, el agua avanzó sobre el pueblo. Y el pueblo se defendió.",
+     "pausa": 0.4
+    },
+    {
+     "texto": "Ese mismo año, un grupo de vecinos fundó los Bomberos Voluntarios.",
+     "pausa": 0.4
+    },
+    {
+     "texto": "Porque acá, cuando a uno le pasa algo, nos pasa a todos.",
+     "pausa": 0.8
+    }
+   ]
+  },
+  {
+   "id": "estado",
+   "frases": [
+    {
+     "texto": "Y detrás de cada historia, algo que no sale en las fotos:",
+     "pausa": 0.3
+    },
+    {
+     "texto": "la escuela pública, el hospital, el agua que llega a cada casa, la obra que alguien decidió hacer.",
+     "pausa": 0.4
+    },
+    {
+     "texto": "Hoy, el palacio de Salamone se está restaurando.",
+     "pausa": 0.3
+    },
+    {
+     "texto": "Porque los pueblos también se sostienen con decisiones.",
+     "pausa": 0.8
+    }
+   ]
+  },
+  {
+   "id": "desafios",
+   "frases": [
+    {
+     "texto": "No es fácil. Las rutas, el trabajo, los chicos que se van a estudiar.",
+     "pausa": 0.4
+    },
+    {
+     "texto": "Pero cada mañana alguien levanta la persiana, alguien siembra, alguien enseña.",
+     "pausa": 0.3
+    },
+    {
+     "texto": "Y el pueblo sigue.",
+     "pausa": 0.8
+    }
+   ]
+  },
+  {
+   "id": "cierre",
+   "frases": [
+    {
+     "texto": "Porque un pueblo no es un punto en el mapa.",
+     "pausa": 0.5
+    },
+    {
+     "texto": "Es la memoria de los abuelos. La mano del vecino. Y los que mañana lo van a cuidar.",
+     "pausa": 0.8
+    },
+    {
+     "texto": "Ciento cincuenta años después, Guaminí sigue siendo eso:",
+     "pausa": 0.5
+    },
+    {
+     "texto": "un lugar donde nadie es un desconocido.",
+     "pausa": 0.3
+    }
+   ]
+  }
+ ]
+}

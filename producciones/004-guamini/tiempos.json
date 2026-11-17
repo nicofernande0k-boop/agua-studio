@@ -1,0 +1,2848 @@
+{
+ "estimado": true,
+ "id": "004-guamini",
+ "titulo": "Guaminí: donde nadie es un desconocido",
+ "fps": 30,
+ "duracion": 121.798,
+ "frames": 3654,
+ "desfaseVoz": 0.4,
+ "frases": [
+  {
+   "k": 1,
+   "acto": "gancho",
+   "texto": "Acá, si un día no saludás, alguien te pregunta si te pasa algo.",
+   "inicio": 0.4,
+   "fin": 4.226
+  },
+  {
+   "k": 2,
+   "acto": "gancho",
+   "texto": "Esto es Guaminí.",
+   "inicio": 4.866,
+   "fin": 5.931
+  },
+  {
+   "k": 3,
+   "acto": "gancho",
+   "texto": "Tres mil vecinos. Ciento cincuenta años. Y nadie es un desconocido.",
+   "inicio": 6.371,
+   "fin": 10.601
+  },
+  {
+   "k": 4,
+   "acto": "pueblo",
+   "texto": "Es la vereda donde la charla no tiene apuro.",
+   "inicio": 11.441,
+   "fin": 14.079
+  },
+  {
+   "k": 5,
+   "acto": "pueblo",
+   "texto": "La laguna que cambia de color con cada tarde.",
+   "inicio": 14.419,
+   "fin": 17.113
+  },
+  {
+   "k": 6,
+   "acto": "pueblo",
+   "texto": "Y las esquinas que todavía tienen el apellido de alguien.",
+   "inicio": 17.453,
+   "fin": 20.822
+  },
+  {
+   "k": 7,
+   "acto": "historia",
+   "texto": "Antes de los fortines, esta tierra ya tenía nombre: Guaminí, una palabra mapuche que habla de una isla en el agua.",
+   "inicio": 21.662,
+   "fin": 28.502
+  },
+  {
+   "k": 8,
+   "acto": "historia",
+   "texto": "En mil ochocientos setenta y seis llegó el fortín, a orillas de la Laguna del Monte.",
+   "inicio": 29.042,
+   "fin": 33.988
+  },
+  {
+   "k": 9,
+   "acto": "historia",
+   "texto": "Después vinieron los que se quedaron, y levantaron la iglesia ladrillo por ladrillo.",
+   "inicio": 34.428,
+   "fin": 39.373
+  },
+  {
+   "k": 10,
+   "acto": "historia",
+   "texto": "En mil novecientos treinta y siete, Francisco Salamone dibujó un palacio con un reloj que mira al futuro.",
+   "inicio": 39.813,
+   "fin": 45.938
+  },
+  {
+   "k": 11,
+   "acto": "historia",
+   "texto": "Y las calles de tierra se hicieron asfalto, a pala y hormigonera.",
+   "inicio": 46.478,
+   "fin": 50.356
+  },
+  {
+   "k": 12,
+   "acto": "historia",
+   "texto": "Muchos de sus nombres no están en ningún libro. Pero están en cada vereda.",
+   "inicio": 50.796,
+   "fin": 55.269
+  },
+  {
+   "k": 13,
+   "acto": "solidaridad",
+   "texto": "En mil novecientos ochenta y cinco, el agua avanzó sobre el pueblo. Y el pueblo se defendió.",
+   "inicio": 56.109,
+   "fin": 61.654
+  },
+  {
+   "k": 14,
+   "acto": "solidaridad",
+   "texto": "Ese mismo año, un grupo de vecinos fundó los Bomberos Voluntarios.",
+   "inicio": 62.094,
+   "fin": 66.028
+  },
+  {
+   "k": 15,
+   "acto": "solidaridad",
+   "texto": "Porque acá, cuando a uno le pasa algo, nos pasa a todos.",
+   "inicio": 66.468,
+   "fin": 69.9
+  },
+  {
+   "k": 16,
+   "acto": "estado",
+   "texto": "Y detrás de cada historia, algo que no sale en las fotos:",
+   "inicio": 70.74,
+   "fin": 74.169
+  },
+  {
+   "k": 17,
+   "acto": "estado",
+   "texto": "la escuela pública, el hospital, el agua que llega a cada casa, la obra que alguien decidió hacer.",
+   "inicio": 74.509,
+   "fin": 80.36
+  },
+  {
+   "k": 18,
+   "acto": "estado",
+   "texto": "Hoy, el palacio de Salamone se está restaurando.",
+   "inicio": 80.8,
+   "fin": 83.723
+  },
+  {
+   "k": 19,
+   "acto": "estado",
+   "texto": "Porque los pueblos también se sostienen con decisiones.",
+   "inicio": 84.063,
+   "fin": 87.319
+  },
+  {
+   "k": 20,
+   "acto": "desafios",
+   "texto": "No es fácil. Las rutas, el trabajo, los chicos que se van a estudiar.",
+   "inicio": 88.159,
+   "fin": 92.472
+  },
+  {
+   "k": 21,
+   "acto": "desafios",
+   "texto": "Pero cada mañana alguien levanta la persiana, alguien siembra, alguien enseña.",
+   "inicio": 92.912,
+   "fin": 97.58
+  },
+  {
+   "k": 22,
+   "acto": "desafios",
+   "texto": "Y el pueblo sigue.",
+   "inicio": 97.92,
+   "fin": 99.098
+  },
+  {
+   "k": 23,
+   "acto": "cierre",
+   "texto": "Porque un pueblo no es un punto en el mapa.",
+   "inicio": 99.938,
+   "fin": 102.519
+  },
+  {
+   "k": 24,
+   "acto": "cierre",
+   "texto": "Es la memoria de los abuelos. La mano del vecino. Y los que mañana lo van a cuidar.",
+   "inicio": 103.059,
+   "fin": 108.189
+  },
+  {
+   "k": 25,
+   "acto": "cierre",
+   "texto": "Ciento cincuenta años después, Guaminí sigue siendo eso:",
+   "inicio": 109.029,
+   "fin": 112.401
+  },
+  {
+   "k": 26,
+   "acto": "cierre",
+   "texto": "un lugar donde nadie es un desconocido.",
+   "inicio": 112.941,
+   "fin": 115.298
+  }
+ ],
+ "palabras": [
+  {
+   "texto": "Acá,",
+   "inicio": 0.4,
+   "fin": 0.701,
+   "frase": 1
+  },
+  {
+   "texto": "si",
+   "inicio": 0.741,
+   "fin": 0.869,
+   "frase": 1
+  },
+  {
+   "texto": "un",
+   "inicio": 0.909,
+   "fin": 1.038,
+   "frase": 1
+  },
+  {
+   "texto": "día",
+   "inicio": 1.078,
+   "fin": 1.263,
+   "frase": 1
+  },
+  {
+   "texto": "no",
+   "inicio": 1.303,
+   "fin": 1.431,
+   "frase": 1
+  },
+  {
+   "texto": "saludás,",
+   "inicio": 1.471,
+   "fin": 1.997,
+   "frase": 1
+  },
+  {
+   "texto": "alguien",
+   "inicio": 2.037,
+   "fin": 2.446,
+   "frase": 1
+  },
+  {
+   "texto": "te",
+   "inicio": 2.486,
+   "fin": 2.615,
+   "frase": 1
+  },
+  {
+   "texto": "pregunta",
+   "inicio": 2.655,
+   "fin": 3.12,
+   "frase": 1
+  },
+  {
+   "texto": "si",
+   "inicio": 3.16,
+   "fin": 3.289,
+   "frase": 1
+  },
+  {
+   "texto": "te",
+   "inicio": 3.329,
+   "fin": 3.458,
+   "frase": 1
+  },
+  {
+   "texto": "pasa",
+   "inicio": 3.498,
+   "fin": 3.738,
+   "frase": 1
+  },
+  {
+   "texto": "algo.",
+   "inicio": 3.778,
+   "fin": 4.226,
+   "frase": 1
+  },
+  {
+   "texto": "Esto",
+   "inicio": 4.866,
+   "fin": 5.106,
+   "frase": 2
+  },
+  {
+   "texto": "es",
+   "inicio": 5.146,
+   "fin": 5.275,
+   "frase": 2
+  },
+  {
+   "texto": "Guaminí.",
+   "inicio": 5.315,
+   "fin": 5.931,
+   "frase": 2
+  },
+  {
+   "texto": "Tres",
+   "inicio": 6.371,
+   "fin": 6.611,
+   "frase": 3
+  },
+  {
+   "texto": "mil",
+   "inicio": 6.651,
+   "fin": 6.836,
+   "frase": 3
+  },
+  {
+   "texto": "vecinos.",
+   "inicio": 6.876,
+   "fin": 7.492,
+   "frase": 3
+  },
+  {
+   "texto": "Ciento",
+   "inicio": 7.532,
+   "fin": 7.885,
+   "frase": 3
+  },
+  {
+   "texto": "cincuenta",
+   "inicio": 7.925,
+   "fin": 8.447,
+   "frase": 3
+  },
+  {
+   "texto": "años.",
+   "inicio": 8.487,
+   "fin": 8.934,
+   "frase": 3
+  },
+  {
+   "texto": "Y",
+   "inicio": 8.974,
+   "fin": 9.054,
+   "frase": 3
+  },
+  {
+   "texto": "nadie",
+   "inicio": 9.086,
+   "fin": 9.383,
+   "frase": 3
+  },
+  {
+   "texto": "es",
+   "inicio": 9.423,
+   "fin": 9.552,
+   "frase": 3
+  },
+  {
+   "texto": "un",
+   "inicio": 9.592,
+   "fin": 9.72,
+   "frase": 3
+  },
+  {
+   "texto": "desconocido.",
+   "inicio": 9.76,
+   "fin": 10.601,
+   "frase": 3
+  },
+  {
+   "texto": "Es",
+   "inicio": 11.441,
+   "fin": 11.569,
+   "frase": 4
+  },
+  {
+   "texto": "la",
+   "inicio": 11.609,
+   "fin": 11.738,
+   "frase": 4
+  },
+  {
+   "texto": "vereda",
+   "inicio": 11.778,
+   "fin": 12.131,
+   "frase": 4
+  },
+  {
+   "texto": "donde",
+   "inicio": 12.171,
+   "fin": 12.468,
+   "frase": 4
+  },
+  {
+   "texto": "la",
+   "inicio": 12.508,
+   "fin": 12.637,
+   "frase": 4
+  },
+  {
+   "texto": "charla",
+   "inicio": 12.677,
+   "fin": 13.03,
+   "frase": 4
+  },
+  {
+   "texto": "no",
+   "inicio": 13.07,
+   "fin": 13.199,
+   "frase": 4
+  },
+  {
+   "texto": "tiene",
+   "inicio": 13.239,
+   "fin": 13.536,
+   "frase": 4
+  },
+  {
+   "texto": "apuro.",
+   "inicio": 13.576,
+   "fin": 14.079,
+   "frase": 4
+  },
+  {
+   "texto": "La",
+   "inicio": 14.419,
+   "fin": 14.547,
+   "frase": 5
+  },
+  {
+   "texto": "laguna",
+   "inicio": 14.587,
+   "fin": 14.941,
+   "frase": 5
+  },
+  {
+   "texto": "que",
+   "inicio": 14.981,
+   "fin": 15.165,
+   "frase": 5
+  },
+  {
+   "texto": "cambia",
+   "inicio": 15.205,
+   "fin": 15.559,
+   "frase": 5
+  },
+  {
+   "texto": "de",
+   "inicio": 15.599,
+   "fin": 15.727,
+   "frase": 5
+  },
+  {
+   "texto": "color",
+   "inicio": 15.767,
+   "fin": 16.064,
+   "frase": 5
+  },
+  {
+   "texto": "con",
+   "inicio": 16.104,
+   "fin": 16.289,
+   "frase": 5
+  },
+  {
+   "texto": "cada",
+   "inicio": 16.329,
+   "fin": 16.57,
+   "frase": 5
+  },
+  {
+   "texto": "tarde.",
+   "inicio": 16.61,
+   "fin": 17.113,
+   "frase": 5
+  },
+  {
+   "texto": "Y",
+   "inicio": 17.453,
+   "fin": 17.533,
+   "frase": 6
+  },
+  {
+   "texto": "las",
+   "inicio": 17.566,
+   "fin": 17.75,
+   "frase": 6
+  },
+  {
+   "texto": "esquinas",
+   "inicio": 17.79,
+   "fin": 18.256,
+   "frase": 6
+  },
+  {
+   "texto": "que",
+   "inicio": 18.296,
+   "fin": 18.481,
+   "frase": 6
+  },
+  {
+   "texto": "todavía",
+   "inicio": 18.521,
+   "fin": 18.93,
+   "frase": 6
+  },
+  {
+   "texto": "tienen",
+   "inicio": 18.97,
+   "fin": 19.323,
+   "frase": 6
+  },
+  {
+   "texto": "el",
+   "inicio": 19.363,
+   "fin": 19.492,
+   "frase": 6
+  },
+  {
+   "texto": "apellido",
+   "inicio": 19.532,
+   "fin": 19.997,
+   "frase": 6
+  },
+  {
+   "texto": "de",
+   "inicio": 20.037,
+   "fin": 20.166,
+   "frase": 6
+  },
+  {
+   "texto": "alguien.",
+   "inicio": 20.206,
+   "fin": 20.822,
+   "frase": 6
+  },
+  {
+   "texto": "Antes",
+   "inicio": 21.662,
+   "fin": 21.959,
+   "frase": 7
+  },
+  {
+   "texto": "de",
+   "inicio": 21.999,
+   "fin": 22.127,
+   "frase": 7
+  },
+  {
+   "texto": "los",
+   "inicio": 22.167,
+   "fin": 22.352,
+   "frase": 7
+  },
+  {
+   "texto": "fortines,",
+   "inicio": 22.392,
+   "fin": 22.974,
+   "frase": 7
+  },
+  {
+   "texto": "esta",
+   "inicio": 23.014,
+   "fin": 23.255,
+   "frase": 7
+  },
+  {
+   "texto": "tierra",
+   "inicio": 23.295,
+   "fin": 23.648,
+   "frase": 7
+  },
+  {
+   "texto": "ya",
+   "inicio": 23.688,
+   "fin": 23.816,
+   "frase": 7
+  },
+  {
+   "texto": "tenía",
+   "inicio": 23.856,
+   "fin": 24.153,
+   "frase": 7
+  },
+  {
+   "texto": "nombre:",
+   "inicio": 24.193,
+   "fin": 24.753,
+   "frase": 7
+  },
+  {
+   "texto": "Guaminí,",
+   "inicio": 24.793,
+   "fin": 25.319,
+   "frase": 7
+  },
+  {
+   "texto": "una",
+   "inicio": 25.359,
+   "fin": 25.543,
+   "frase": 7
+  },
+  {
+   "texto": "palabra",
+   "inicio": 25.583,
+   "fin": 25.993,
+   "frase": 7
+  },
+  {
+   "texto": "mapuche",
+   "inicio": 26.033,
+   "fin": 26.442,
+   "frase": 7
+  },
+  {
+   "texto": "que",
+   "inicio": 26.482,
+   "fin": 26.667,
+   "frase": 7
+  },
+  {
+   "texto": "habla",
+   "inicio": 26.707,
+   "fin": 27.004,
+   "frase": 7
+  },
+  {
+   "texto": "de",
+   "inicio": 27.044,
+   "fin": 27.172,
+   "frase": 7
+  },
+  {
+   "texto": "una",
+   "inicio": 27.212,
+   "fin": 27.397,
+   "frase": 7
+  },
+  {
+   "texto": "isla",
+   "inicio": 27.437,
+   "fin": 27.678,
+   "frase": 7
+  },
+  {
+   "texto": "en",
+   "inicio": 27.718,
+   "fin": 27.847,
+   "frase": 7
+  },
+  {
+   "texto": "el",
+   "inicio": 27.887,
+   "fin": 28.015,
+   "frase": 7
+  },
+  {
+   "texto": "agua.",
+   "inicio": 28.055,
+   "fin": 28.502,
+   "frase": 7
+  },
+  {
+   "texto": "En",
+   "inicio": 29.042,
+   "fin": 29.171,
+   "frase": 8
+  },
+  {
+   "texto": "mil",
+   "inicio": 29.211,
+   "fin": 29.396,
+   "frase": 8
+  },
+  {
+   "texto": "ochocientos",
+   "inicio": 29.436,
+   "fin": 30.07,
+   "frase": 8
+  },
+  {
+   "texto": "setenta",
+   "inicio": 30.11,
+   "fin": 30.519,
+   "frase": 8
+  },
+  {
+   "texto": "y",
+   "inicio": 30.559,
+   "fin": 30.639,
+   "frase": 8
+  },
+  {
+   "texto": "seis",
+   "inicio": 30.671,
+   "fin": 30.912,
+   "frase": 8
+  },
+  {
+   "texto": "llegó",
+   "inicio": 30.952,
+   "fin": 31.249,
+   "frase": 8
+  },
+  {
+   "texto": "el",
+   "inicio": 31.289,
+   "fin": 31.418,
+   "frase": 8
+  },
+  {
+   "texto": "fortín,",
+   "inicio": 31.458,
+   "fin": 31.927,
+   "frase": 8
+  },
+  {
+   "texto": "a",
+   "inicio": 31.967,
+   "fin": 32.047,
+   "frase": 8
+  },
+  {
+   "texto": "orillas",
+   "inicio": 32.08,
+   "fin": 32.489,
+   "frase": 8
+  },
+  {
+   "texto": "de",
+   "inicio": 32.529,
+   "fin": 32.658,
+   "frase": 8
+  },
+  {
+   "texto": "la",
+   "inicio": 32.698,
+   "fin": 32.826,
+   "frase": 8
+  },
+  {
+   "texto": "Laguna",
+   "inicio": 32.866,
+   "fin": 33.22,
+   "frase": 8
+  },
+  {
+   "texto": "del",
+   "inicio": 33.26,
+   "fin": 33.444,
+   "frase": 8
+  },
+  {
+   "texto": "Monte.",
+   "inicio": 33.484,
+   "fin": 33.988,
+   "frase": 8
+  },
+  {
+   "texto": "Después",
+   "inicio": 34.428,
+   "fin": 34.837,
+   "frase": 9
+  },
+  {
+   "texto": "vinieron",
+   "inicio": 34.877,
+   "fin": 35.343,
+   "frase": 9
+  },
+  {
+   "texto": "los",
+   "inicio": 35.383,
+   "fin": 35.567,
+   "frase": 9
+  },
+  {
+   "texto": "que",
+   "inicio": 35.607,
+   "fin": 35.792,
+   "frase": 9
+  },
+  {
+   "texto": "se",
+   "inicio": 35.832,
+   "fin": 35.961,
+   "frase": 9
+  },
+  {
+   "texto": "quedaron,",
+   "inicio": 36.001,
+   "fin": 36.582,
+   "frase": 9
+  },
+  {
+   "texto": "y",
+   "inicio": 36.622,
+   "fin": 36.702,
+   "frase": 9
+  },
+  {
+   "texto": "levantaron",
+   "inicio": 36.735,
+   "fin": 37.313,
+   "frase": 9
+  },
+  {
+   "texto": "la",
+   "inicio": 37.353,
+   "fin": 37.481,
+   "frase": 9
+  },
+  {
+   "texto": "iglesia",
+   "inicio": 37.521,
+   "fin": 37.931,
+   "frase": 9
+  },
+  {
+   "texto": "ladrillo",
+   "inicio": 37.971,
+   "fin": 38.436,
+   "frase": 9
+  },
+  {
+   "texto": "por",
+   "inicio": 38.476,
+   "fin": 38.661,
+   "frase": 9
+  },
+  {
+   "texto": "ladrillo.",
+   "inicio": 38.701,
+   "fin": 39.373,
+   "frase": 9
+  },
+  {
+   "texto": "En",
+   "inicio": 39.813,
+   "fin": 39.941,
+   "frase": 10
+  },
+  {
+   "texto": "mil",
+   "inicio": 39.981,
+   "fin": 40.166,
+   "frase": 10
+  },
+  {
+   "texto": "novecientos",
+   "inicio": 40.206,
+   "fin": 40.84,
+   "frase": 10
+  },
+  {
+   "texto": "treinta",
+   "inicio": 40.88,
+   "fin": 41.29,
+   "frase": 10
+  },
+  {
+   "texto": "y",
+   "inicio": 41.33,
+   "fin": 41.41,
+   "frase": 10
+  },
+  {
+   "texto": "siete,",
+   "inicio": 41.442,
+   "fin": 41.855,
+   "frase": 10
+  },
+  {
+   "texto": "Francisco",
+   "inicio": 41.895,
+   "fin": 42.417,
+   "frase": 10
+  },
+  {
+   "texto": "Salamone",
+   "inicio": 42.457,
+   "fin": 42.923,
+   "frase": 10
+  },
+  {
+   "texto": "dibujó",
+   "inicio": 42.963,
+   "fin": 43.316,
+   "frase": 10
+  },
+  {
+   "texto": "un",
+   "inicio": 43.356,
+   "fin": 43.484,
+   "frase": 10
+  },
+  {
+   "texto": "palacio",
+   "inicio": 43.524,
+   "fin": 43.934,
+   "frase": 10
+  },
+  {
+   "texto": "con",
+   "inicio": 43.974,
+   "fin": 44.159,
+   "frase": 10
+  },
+  {
+   "texto": "un",
+   "inicio": 44.199,
+   "fin": 44.327,
+   "frase": 10
+  },
+  {
+   "texto": "reloj",
+   "inicio": 44.367,
+   "fin": 44.664,
+   "frase": 10
+  },
+  {
+   "texto": "que",
+   "inicio": 44.704,
+   "fin": 44.889,
+   "frase": 10
+  },
+  {
+   "texto": "mira",
+   "inicio": 44.929,
+   "fin": 45.17,
+   "frase": 10
+  },
+  {
+   "texto": "al",
+   "inicio": 45.21,
+   "fin": 45.338,
+   "frase": 10
+  },
+  {
+   "texto": "futuro.",
+   "inicio": 45.378,
+   "fin": 45.938,
+   "frase": 10
+  },
+  {
+   "texto": "Y",
+   "inicio": 46.478,
+   "fin": 46.558,
+   "frase": 11
+  },
+  {
+   "texto": "las",
+   "inicio": 46.59,
+   "fin": 46.775,
+   "frase": 11
+  },
+  {
+   "texto": "calles",
+   "inicio": 46.815,
+   "fin": 47.168,
+   "frase": 11
+  },
+  {
+   "texto": "de",
+   "inicio": 47.208,
+   "fin": 47.337,
+   "frase": 11
+  },
+  {
+   "texto": "tierra",
+   "inicio": 47.377,
+   "fin": 47.73,
+   "frase": 11
+  },
+  {
+   "texto": "se",
+   "inicio": 47.77,
+   "fin": 47.899,
+   "frase": 11
+  },
+  {
+   "texto": "hicieron",
+   "inicio": 47.939,
+   "fin": 48.404,
+   "frase": 11
+  },
+  {
+   "texto": "asfalto,",
+   "inicio": 48.444,
+   "fin": 48.97,
+   "frase": 11
+  },
+  {
+   "texto": "a",
+   "inicio": 49.01,
+   "fin": 49.09,
+   "frase": 11
+  },
+  {
+   "texto": "pala",
+   "inicio": 49.122,
+   "fin": 49.363,
+   "frase": 11
+  },
+  {
+   "texto": "y",
+   "inicio": 49.403,
+   "fin": 49.483,
+   "frase": 11
+  },
+  {
+   "texto": "hormigonera.",
+   "inicio": 49.515,
+   "fin": 50.356,
+   "frase": 11
+  },
+  {
+   "texto": "Muchos",
+   "inicio": 50.796,
+   "fin": 51.149,
+   "frase": 12
+  },
+  {
+   "texto": "de",
+   "inicio": 51.189,
+   "fin": 51.318,
+   "frase": 12
+  },
+  {
+   "texto": "sus",
+   "inicio": 51.358,
+   "fin": 51.542,
+   "frase": 12
+  },
+  {
+   "texto": "nombres",
+   "inicio": 51.582,
+   "fin": 51.992,
+   "frase": 12
+  },
+  {
+   "texto": "no",
+   "inicio": 52.032,
+   "fin": 52.16,
+   "frase": 12
+  },
+  {
+   "texto": "están",
+   "inicio": 52.2,
+   "fin": 52.497,
+   "frase": 12
+  },
+  {
+   "texto": "en",
+   "inicio": 52.537,
+   "fin": 52.666,
+   "frase": 12
+  },
+  {
+   "texto": "ningún",
+   "inicio": 52.706,
+   "fin": 53.059,
+   "frase": 12
+  },
+  {
+   "texto": "libro.",
+   "inicio": 53.099,
+   "fin": 53.602,
+   "frase": 12
+  },
+  {
+   "texto": "Pero",
+   "inicio": 53.642,
+   "fin": 53.883,
+   "frase": 12
+  },
+  {
+   "texto": "están",
+   "inicio": 53.923,
+   "fin": 54.22,
+   "frase": 12
+  },
+  {
+   "texto": "en",
+   "inicio": 54.26,
+   "fin": 54.389,
+   "frase": 12
+  },
+  {
+   "texto": "cada",
+   "inicio": 54.429,
+   "fin": 54.67,
+   "frase": 12
+  },
+  {
+   "texto": "vereda.",
+   "inicio": 54.71,
+   "fin": 55.269,
+   "frase": 12
+  },
+  {
+   "texto": "En",
+   "inicio": 56.109,
+   "fin": 56.238,
+   "frase": 13
+  },
+  {
+   "texto": "mil",
+   "inicio": 56.278,
+   "fin": 56.462,
+   "frase": 13
+  },
+  {
+   "texto": "novecientos",
+   "inicio": 56.502,
+   "fin": 57.137,
+   "frase": 13
+  },
+  {
+   "texto": "ochenta",
+   "inicio": 57.177,
+   "fin": 57.586,
+   "frase": 13
+  },
+  {
+   "texto": "y",
+   "inicio": 57.626,
+   "fin": 57.706,
+   "frase": 13
+  },
+  {
+   "texto": "cinco,",
+   "inicio": 57.738,
+   "fin": 58.152,
+   "frase": 13
+  },
+  {
+   "texto": "el",
+   "inicio": 58.192,
+   "fin": 58.32,
+   "frase": 13
+  },
+  {
+   "texto": "agua",
+   "inicio": 58.36,
+   "fin": 58.601,
+   "frase": 13
+  },
+  {
+   "texto": "avanzó",
+   "inicio": 58.641,
+   "fin": 58.994,
+   "frase": 13
+  },
+  {
+   "texto": "sobre",
+   "inicio": 59.034,
+   "fin": 59.331,
+   "frase": 13
+  },
+  {
+   "texto": "el",
+   "inicio": 59.371,
+   "fin": 59.5,
+   "frase": 13
+  },
+  {
+   "texto": "pueblo.",
+   "inicio": 59.54,
+   "fin": 60.099,
+   "frase": 13
+  },
+  {
+   "texto": "Y",
+   "inicio": 60.139,
+   "fin": 60.219,
+   "frase": 13
+  },
+  {
+   "texto": "el",
+   "inicio": 60.252,
+   "fin": 60.38,
+   "frase": 13
+  },
+  {
+   "texto": "pueblo",
+   "inicio": 60.42,
+   "fin": 60.774,
+   "frase": 13
+  },
+  {
+   "texto": "se",
+   "inicio": 60.814,
+   "fin": 60.942,
+   "frase": 13
+  },
+  {
+   "texto": "defendió.",
+   "inicio": 60.982,
+   "fin": 61.654,
+   "frase": 13
+  },
+  {
+   "texto": "Ese",
+   "inicio": 62.094,
+   "fin": 62.279,
+   "frase": 14
+  },
+  {
+   "texto": "mismo",
+   "inicio": 62.319,
+   "fin": 62.616,
+   "frase": 14
+  },
+  {
+   "texto": "año,",
+   "inicio": 62.656,
+   "fin": 62.957,
+   "frase": 14
+  },
+  {
+   "texto": "un",
+   "inicio": 62.997,
+   "fin": 63.125,
+   "frase": 14
+  },
+  {
+   "texto": "grupo",
+   "inicio": 63.165,
+   "fin": 63.462,
+   "frase": 14
+  },
+  {
+   "texto": "de",
+   "inicio": 63.502,
+   "fin": 63.631,
+   "frase": 14
+  },
+  {
+   "texto": "vecinos",
+   "inicio": 63.671,
+   "fin": 64.08,
+   "frase": 14
+  },
+  {
+   "texto": "fundó",
+   "inicio": 64.12,
+   "fin": 64.417,
+   "frase": 14
+  },
+  {
+   "texto": "los",
+   "inicio": 64.457,
+   "fin": 64.642,
+   "frase": 14
+  },
+  {
+   "texto": "Bomberos",
+   "inicio": 64.682,
+   "fin": 65.148,
+   "frase": 14
+  },
+  {
+   "texto": "Voluntarios.",
+   "inicio": 65.188,
+   "fin": 66.028,
+   "frase": 14
+  },
+  {
+   "texto": "Porque",
+   "inicio": 66.468,
+   "fin": 66.821,
+   "frase": 15
+  },
+  {
+   "texto": "acá,",
+   "inicio": 66.861,
+   "fin": 67.162,
+   "frase": 15
+  },
+  {
+   "texto": "cuando",
+   "inicio": 67.202,
+   "fin": 67.555,
+   "frase": 15
+  },
+  {
+   "texto": "a",
+   "inicio": 67.595,
+   "fin": 67.675,
+   "frase": 15
+  },
+  {
+   "texto": "uno",
+   "inicio": 67.708,
+   "fin": 67.892,
+   "frase": 15
+  },
+  {
+   "texto": "le",
+   "inicio": 67.932,
+   "fin": 68.061,
+   "frase": 15
+  },
+  {
+   "texto": "pasa",
+   "inicio": 68.101,
+   "fin": 68.342,
+   "frase": 15
+  },
+  {
+   "texto": "algo,",
+   "inicio": 68.382,
+   "fin": 68.739,
+   "frase": 15
+  },
+  {
+   "texto": "nos",
+   "inicio": 68.779,
+   "fin": 68.964,
+   "frase": 15
+  },
+  {
+   "texto": "pasa",
+   "inicio": 69.004,
+   "fin": 69.245,
+   "frase": 15
+  },
+  {
+   "texto": "a",
+   "inicio": 69.285,
+   "fin": 69.365,
+   "frase": 15
+  },
+  {
+   "texto": "todos.",
+   "inicio": 69.397,
+   "fin": 69.9,
+   "frase": 15
+  },
+  {
+   "texto": "Y",
+   "inicio": 70.74,
+   "fin": 70.82,
+   "frase": 16
+  },
+  {
+   "texto": "detrás",
+   "inicio": 70.853,
+   "fin": 71.206,
+   "frase": 16
+  },
+  {
+   "texto": "de",
+   "inicio": 71.246,
+   "fin": 71.374,
+   "frase": 16
+  },
+  {
+   "texto": "cada",
+   "inicio": 71.414,
+   "fin": 71.655,
+   "frase": 16
+  },
+  {
+   "texto": "historia,",
+   "inicio": 71.695,
+   "fin": 72.277,
+   "frase": 16
+  },
+  {
+   "texto": "algo",
+   "inicio": 72.317,
+   "fin": 72.558,
+   "frase": 16
+  },
+  {
+   "texto": "que",
+   "inicio": 72.598,
+   "fin": 72.783,
+   "frase": 16
+  },
+  {
+   "texto": "no",
+   "inicio": 72.823,
+   "fin": 72.951,
+   "frase": 16
+  },
+  {
+   "texto": "sale",
+   "inicio": 72.991,
+   "fin": 73.232,
+   "frase": 16
+  },
+  {
+   "texto": "en",
+   "inicio": 73.272,
+   "fin": 73.401,
+   "frase": 16
+  },
+  {
+   "texto": "las",
+   "inicio": 73.441,
+   "fin": 73.625,
+   "frase": 16
+  },
+  {
+   "texto": "fotos:",
+   "inicio": 73.665,
+   "fin": 74.169,
+   "frase": 16
+  },
+  {
+   "texto": "la",
+   "inicio": 74.509,
+   "fin": 74.637,
+   "frase": 17
+  },
+  {
+   "texto": "escuela",
+   "inicio": 74.677,
+   "fin": 75.087,
+   "frase": 17
+  },
+  {
+   "texto": "pública,",
+   "inicio": 75.127,
+   "fin": 75.652,
+   "frase": 17
+  },
+  {
+   "texto": "el",
+   "inicio": 75.692,
+   "fin": 75.821,
+   "frase": 17
+  },
+  {
+   "texto": "hospital,",
+   "inicio": 75.861,
+   "fin": 76.443,
+   "frase": 17
+  },
+  {
+   "texto": "el",
+   "inicio": 76.483,
+   "fin": 76.611,
+   "frase": 17
+  },
+  {
+   "texto": "agua",
+   "inicio": 76.651,
+   "fin": 76.892,
+   "frase": 17
+  },
+  {
+   "texto": "que",
+   "inicio": 76.932,
+   "fin": 77.117,
+   "frase": 17
+  },
+  {
+   "texto": "llega",
+   "inicio": 77.157,
+   "fin": 77.454,
+   "frase": 17
+  },
+  {
+   "texto": "a",
+   "inicio": 77.494,
+   "fin": 77.574,
+   "frase": 17
+  },
+  {
+   "texto": "cada",
+   "inicio": 77.606,
+   "fin": 77.847,
+   "frase": 17
+  },
+  {
+   "texto": "casa,",
+   "inicio": 77.887,
+   "fin": 78.244,
+   "frase": 17
+  },
+  {
+   "texto": "la",
+   "inicio": 78.284,
+   "fin": 78.413,
+   "frase": 17
+  },
+  {
+   "texto": "obra",
+   "inicio": 78.453,
+   "fin": 78.694,
+   "frase": 17
+  },
+  {
+   "texto": "que",
+   "inicio": 78.734,
+   "fin": 78.918,
+   "frase": 17
+  },
+  {
+   "texto": "alguien",
+   "inicio": 78.958,
+   "fin": 79.368,
+   "frase": 17
+  },
+  {
+   "texto": "decidió",
+   "inicio": 79.408,
+   "fin": 79.817,
+   "frase": 17
+  },
+  {
+   "texto": "hacer.",
+   "inicio": 79.857,
+   "fin": 80.36,
+   "frase": 17
+  },
+  {
+   "texto": "Hoy,",
+   "inicio": 80.8,
+   "fin": 81.101,
+   "frase": 18
+  },
+  {
+   "texto": "el",
+   "inicio": 81.141,
+   "fin": 81.27,
+   "frase": 18
+  },
+  {
+   "texto": "palacio",
+   "inicio": 81.31,
+   "fin": 81.719,
+   "frase": 18
+  },
+  {
+   "texto": "de",
+   "inicio": 81.759,
+   "fin": 81.888,
+   "frase": 18
+  },
+  {
+   "texto": "Salamone",
+   "inicio": 81.928,
+   "fin": 82.393,
+   "frase": 18
+  },
+  {
+   "texto": "se",
+   "inicio": 82.433,
+   "fin": 82.562,
+   "frase": 18
+  },
+  {
+   "texto": "está",
+   "inicio": 82.602,
+   "fin": 82.843,
+   "frase": 18
+  },
+  {
+   "texto": "restaurando.",
+   "inicio": 82.883,
+   "fin": 83.723,
+   "frase": 18
+  },
+  {
+   "texto": "Porque",
+   "inicio": 84.063,
+   "fin": 84.417,
+   "frase": 19
+  },
+  {
+   "texto": "los",
+   "inicio": 84.457,
+   "fin": 84.641,
+   "frase": 19
+  },
+  {
+   "texto": "pueblos",
+   "inicio": 84.681,
+   "fin": 85.091,
+   "frase": 19
+  },
+  {
+   "texto": "también",
+   "inicio": 85.131,
+   "fin": 85.54,
+   "frase": 19
+  },
+  {
+   "texto": "se",
+   "inicio": 85.58,
+   "fin": 85.709,
+   "frase": 19
+  },
+  {
+   "texto": "sostienen",
+   "inicio": 85.749,
+   "fin": 86.27,
+   "frase": 19
+  },
+  {
+   "texto": "con",
+   "inicio": 86.31,
+   "fin": 86.495,
+   "frase": 19
+  },
+  {
+   "texto": "decisiones.",
+   "inicio": 86.535,
+   "fin": 87.319,
+   "frase": 19
+  },
+  {
+   "texto": "No",
+   "inicio": 88.159,
+   "fin": 88.288,
+   "frase": 20
+  },
+  {
+   "texto": "es",
+   "inicio": 88.328,
+   "fin": 88.456,
+   "frase": 20
+  },
+  {
+   "texto": "fácil.",
+   "inicio": 88.496,
+   "fin": 89.0,
+   "frase": 20
+  },
+  {
+   "texto": "Las",
+   "inicio": 89.04,
+   "fin": 89.224,
+   "frase": 20
+  },
+  {
+   "texto": "rutas,",
+   "inicio": 89.264,
+   "fin": 89.678,
+   "frase": 20
+  },
+  {
+   "texto": "el",
+   "inicio": 89.718,
+   "fin": 89.846,
+   "frase": 20
+  },
+  {
+   "texto": "trabajo,",
+   "inicio": 89.886,
+   "fin": 90.412,
+   "frase": 20
+  },
+  {
+   "texto": "los",
+   "inicio": 90.452,
+   "fin": 90.637,
+   "frase": 20
+  },
+  {
+   "texto": "chicos",
+   "inicio": 90.677,
+   "fin": 91.03,
+   "frase": 20
+  },
+  {
+   "texto": "que",
+   "inicio": 91.07,
+   "fin": 91.254,
+   "frase": 20
+  },
+  {
+   "texto": "se",
+   "inicio": 91.294,
+   "fin": 91.423,
+   "frase": 20
+  },
+  {
+   "texto": "van",
+   "inicio": 91.463,
+   "fin": 91.648,
+   "frase": 20
+  },
+  {
+   "texto": "a",
+   "inicio": 91.688,
+   "fin": 91.768,
+   "frase": 20
+  },
+  {
+   "texto": "estudiar.",
+   "inicio": 91.8,
+   "fin": 92.472,
+   "frase": 20
+  },
+  {
+   "texto": "Pero",
+   "inicio": 92.912,
+   "fin": 93.153,
+   "frase": 21
+  },
+  {
+   "texto": "cada",
+   "inicio": 93.193,
+   "fin": 93.434,
+   "frase": 21
+  },
+  {
+   "texto": "mañana",
+   "inicio": 93.474,
+   "fin": 93.827,
+   "frase": 21
+  },
+  {
+   "texto": "alguien",
+   "inicio": 93.867,
+   "fin": 94.276,
+   "frase": 21
+  },
+  {
+   "texto": "levanta",
+   "inicio": 94.316,
+   "fin": 94.726,
+   "frase": 21
+  },
+  {
+   "texto": "la",
+   "inicio": 94.766,
+   "fin": 94.894,
+   "frase": 21
+  },
+  {
+   "texto": "persiana,",
+   "inicio": 94.934,
+   "fin": 95.516,
+   "frase": 21
+  },
+  {
+   "texto": "alguien",
+   "inicio": 95.556,
+   "fin": 95.966,
+   "frase": 21
+  },
+  {
+   "texto": "siembra,",
+   "inicio": 96.006,
+   "fin": 96.531,
+   "frase": 21
+  },
+  {
+   "texto": "alguien",
+   "inicio": 96.571,
+   "fin": 96.981,
+   "frase": 21
+  },
+  {
+   "texto": "enseña.",
+   "inicio": 97.021,
+   "fin": 97.58,
+   "frase": 21
+  },
+  {
+   "texto": "Y",
+   "inicio": 97.92,
+   "fin": 98.0,
+   "frase": 22
+  },
+  {
+   "texto": "el",
+   "inicio": 98.032,
+   "fin": 98.161,
+   "frase": 22
+  },
+  {
+   "texto": "pueblo",
+   "inicio": 98.201,
+   "fin": 98.554,
+   "frase": 22
+  },
+  {
+   "texto": "sigue.",
+   "inicio": 98.594,
+   "fin": 99.098,
+   "frase": 22
+  },
+  {
+   "texto": "Porque",
+   "inicio": 99.938,
+   "fin": 100.291,
+   "frase": 23
+  },
+  {
+   "texto": "un",
+   "inicio": 100.331,
+   "fin": 100.459,
+   "frase": 23
+  },
+  {
+   "texto": "pueblo",
+   "inicio": 100.499,
+   "fin": 100.853,
+   "frase": 23
+  },
+  {
+   "texto": "no",
+   "inicio": 100.893,
+   "fin": 101.021,
+   "frase": 23
+  },
+  {
+   "texto": "es",
+   "inicio": 101.061,
+   "fin": 101.19,
+   "frase": 23
+  },
+  {
+   "texto": "un",
+   "inicio": 101.23,
+   "fin": 101.358,
+   "frase": 23
+  },
+  {
+   "texto": "punto",
+   "inicio": 101.398,
+   "fin": 101.695,
+   "frase": 23
+  },
+  {
+   "texto": "en",
+   "inicio": 101.735,
+   "fin": 101.864,
+   "frase": 23
+  },
+  {
+   "texto": "el",
+   "inicio": 101.904,
+   "fin": 102.032,
+   "frase": 23
+  },
+  {
+   "texto": "mapa.",
+   "inicio": 102.072,
+   "fin": 102.519,
+   "frase": 23
+  },
+  {
+   "texto": "Es",
+   "inicio": 103.059,
+   "fin": 103.188,
+   "frase": 24
+  },
+  {
+   "texto": "la",
+   "inicio": 103.228,
+   "fin": 103.357,
+   "frase": 24
+  },
+  {
+   "texto": "memoria",
+   "inicio": 103.397,
+   "fin": 103.806,
+   "frase": 24
+  },
+  {
+   "texto": "de",
+   "inicio": 103.846,
+   "fin": 103.974,
+   "frase": 24
+  },
+  {
+   "texto": "los",
+   "inicio": 104.014,
+   "fin": 104.199,
+   "frase": 24
+  },
+  {
+   "texto": "abuelos.",
+   "inicio": 104.239,
+   "fin": 104.855,
+   "frase": 24
+  },
+  {
+   "texto": "La",
+   "inicio": 104.895,
+   "fin": 105.023,
+   "frase": 24
+  },
+  {
+   "texto": "mano",
+   "inicio": 105.063,
+   "fin": 105.304,
+   "frase": 24
+  },
+  {
+   "texto": "del",
+   "inicio": 105.344,
+   "fin": 105.529,
+   "frase": 24
+  },
+  {
+   "texto": "vecino.",
+   "inicio": 105.569,
+   "fin": 106.128,
+   "frase": 24
+  },
+  {
+   "texto": "Y",
+   "inicio": 106.168,
+   "fin": 106.248,
+   "frase": 24
+  },
+  {
+   "texto": "los",
+   "inicio": 106.281,
+   "fin": 106.466,
+   "frase": 24
+  },
+  {
+   "texto": "que",
+   "inicio": 106.506,
+   "fin": 106.69,
+   "frase": 24
+  },
+  {
+   "texto": "mañana",
+   "inicio": 106.73,
+   "fin": 107.083,
+   "frase": 24
+  },
+  {
+   "texto": "lo",
+   "inicio": 107.123,
+   "fin": 107.252,
+   "frase": 24
+  },
+  {
+   "texto": "van",
+   "inicio": 107.292,
+   "fin": 107.477,
+   "frase": 24
+  },
+  {
+   "texto": "a",
+   "inicio": 107.517,
+   "fin": 107.597,
+   "frase": 24
+  },
+  {
+   "texto": "cuidar.",
+   "inicio": 107.629,
+   "fin": 108.189,
+   "frase": 24
+  },
+  {
+   "texto": "Ciento",
+   "inicio": 109.029,
+   "fin": 109.382,
+   "frase": 25
+  },
+  {
+   "texto": "cincuenta",
+   "inicio": 109.422,
+   "fin": 109.944,
+   "frase": 25
+  },
+  {
+   "texto": "años",
+   "inicio": 109.984,
+   "fin": 110.224,
+   "frase": 25
+  },
+  {
+   "texto": "después,",
+   "inicio": 110.264,
+   "fin": 110.79,
+   "frase": 25
+  },
+  {
+   "texto": "Guaminí",
+   "inicio": 110.83,
+   "fin": 111.24,
+   "frase": 25
+  },
+  {
+   "texto": "sigue",
+   "inicio": 111.28,
+   "fin": 111.577,
+   "frase": 25
+  },
+  {
+   "texto": "siendo",
+   "inicio": 111.617,
+   "fin": 111.97,
+   "frase": 25
+  },
+  {
+   "texto": "eso:",
+   "inicio": 112.01,
+   "fin": 112.401,
+   "frase": 25
+  },
+  {
+   "texto": "un",
+   "inicio": 112.941,
+   "fin": 113.069,
+   "frase": 26
+  },
+  {
+   "texto": "lugar",
+   "inicio": 113.109,
+   "fin": 113.406,
+   "frase": 26
+  },
+  {
+   "texto": "donde",
+   "inicio": 113.446,
+   "fin": 113.743,
+   "frase": 26
+  },
+  {
+   "texto": "nadie",
+   "inicio": 113.783,
+   "fin": 114.081,
+   "frase": 26
+  },
+  {
+   "texto": "es",
+   "inicio": 114.121,
+   "fin": 114.249,
+   "frase": 26
+  },
+  {
+   "texto": "un",
+   "inicio": 114.289,
+   "fin": 114.418,
+   "frase": 26
+  },
+  {
+   "texto": "desconocido.",
+   "inicio": 114.458,
+   "fin": 115.298,
+   "frase": 26
+  }
+ ],
+ "bloques": [
+  {
+   "palabras": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "inicio": 0.35,
+   "fin": 1.997,
+   "salida": 1.957,
+   "lineas": [
+    "Acá, si un día no saludás,"
+   ]
+  },
+  {
+   "palabras": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+   ],
+   "inicio": 1.987,
+   "fin": 4.226,
+   "salida": 4.676,
+   "lineas": [
+    "alguien te pregunta",
+    "si te pasa algo."
+   ]
+  },
+  {
+   "palabras": [
+    13,
+    14,
+    15
+   ],
+   "inicio": 4.816,
+   "fin": 5.931,
+   "salida": 6.291,
+   "lineas": [
+    "Esto es Guaminí."
+   ]
+  },
+  {
+   "palabras": [
+    16,
+    17,
+    18
+   ],
+   "inicio": 6.321,
+   "fin": 7.492,
+   "salida": 7.452,
+   "lineas": [
+    "Tres mil vecinos."
+   ]
+  },
+  {
+   "palabras": [
+    19,
+    20,
+    21
+   ],
+   "inicio": 7.482,
+   "fin": 8.934,
+   "salida": 8.894,
+   "lineas": [
+    "Ciento cincuenta años."
+   ]
+  },
+  {
+   "palabras": [
+    22,
+    23,
+    24,
+    25,
+    26
+   ],
+   "inicio": 8.924,
+   "fin": 10.601,
+   "salida": 11.051,
+   "lineas": [
+    "Y nadie es un desconocido."
+   ]
+  },
+  {
+   "palabras": [
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35
+   ],
+   "inicio": 11.391,
+   "fin": 14.079,
+   "salida": 14.339,
+   "lineas": [
+    "Es la vereda donde la",
+    "charla no tiene apuro."
+   ]
+  },
+  {
+   "palabras": [
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44
+   ],
+   "inicio": 14.369,
+   "fin": 17.113,
+   "salida": 17.373,
+   "lineas": [
+    "La laguna que cambia de",
+    "color con cada tarde."
+   ]
+  },
+  {
+   "palabras": [
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54
+   ],
+   "inicio": 17.403,
+   "fin": 20.822,
+   "salida": 21.272,
+   "lineas": [
+    "Y las esquinas que todavía",
+    "tienen el apellido de alguien."
+   ]
+  },
+  {
+   "palabras": [
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63
+   ],
+   "inicio": 21.612,
+   "fin": 24.753,
+   "salida": 24.713,
+   "lineas": [
+    "Antes de los fortines,",
+    "esta tierra ya tenía nombre:"
+   ]
+  },
+  {
+   "palabras": [
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    72,
+    73,
+    74,
+    75
+   ],
+   "inicio": 24.743,
+   "fin": 28.502,
+   "salida": 28.952,
+   "lineas": [
+    "Guaminí, una palabra mapuche que",
+    "habla de una isla en el agua."
+   ]
+  },
+  {
+   "palabras": [
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84
+   ],
+   "inicio": 28.992,
+   "fin": 31.927,
+   "salida": 31.887,
+   "lineas": [
+    "En mil ochocientos setenta",
+    "y seis llegó el fortín,"
+   ]
+  },
+  {
+   "palabras": [
+    85,
+    86,
+    87,
+    88,
+    89,
+    90,
+    91
+   ],
+   "inicio": 31.917,
+   "fin": 33.988,
+   "salida": 34.348,
+   "lineas": [
+    "a orillas de la Laguna del Monte."
+   ]
+  },
+  {
+   "palabras": [
+    92,
+    93,
+    94,
+    95,
+    96,
+    97
+   ],
+   "inicio": 34.378,
+   "fin": 36.582,
+   "salida": 36.542,
+   "lineas": [
+    "Después vinieron",
+    "los que se quedaron,"
+   ]
+  },
+  {
+   "palabras": [
+    98,
+    99,
+    100,
+    101,
+    102,
+    103,
+    104
+   ],
+   "inicio": 36.572,
+   "fin": 39.373,
+   "salida": 39.733,
+   "lineas": [
+    "y levantaron la iglesia",
+    "ladrillo por ladrillo."
+   ]
+  },
+  {
+   "palabras": [
+    105,
+    106,
+    107,
+    108,
+    109,
+    110
+   ],
+   "inicio": 39.763,
+   "fin": 41.855,
+   "salida": 41.815,
+   "lineas": [
+    "En mil novecientos",
+    "treinta y siete,"
+   ]
+  },
+  {
+   "palabras": [
+    111,
+    112,
+    113,
+    114,
+    115,
+    116,
+    117,
+    118,
+    119,
+    120,
+    121
+   ],
+   "inicio": 41.845,
+   "fin": 45.338,
+   "salida": 45.298,
+   "lineas": [
+    "Francisco Salamone dibujó un",
+    "palacio con un reloj que mira al"
+   ]
+  },
+  {
+   "palabras": [
+    122
+   ],
+   "inicio": 45.328,
+   "fin": 45.938,
+   "salida": 46.388,
+   "lineas": [
+    "futuro."
+   ]
+  },
+  {
+   "palabras": [
+    123,
+    124,
+    125,
+    126,
+    127,
+    128,
+    129,
+    130
+   ],
+   "inicio": 46.428,
+   "fin": 48.97,
+   "salida": 48.93,
+   "lineas": [
+    "Y las calles de tierra",
+    "se hicieron asfalto,"
+   ]
+  },
+  {
+   "palabras": [
+    131,
+    132,
+    133,
+    134
+   ],
+   "inicio": 48.96,
+   "fin": 50.356,
+   "salida": 50.716,
+   "lineas": [
+    "a pala y hormigonera."
+   ]
+  },
+  {
+   "palabras": [
+    135,
+    136,
+    137,
+    138,
+    139,
+    140,
+    141,
+    142,
+    143
+   ],
+   "inicio": 50.746,
+   "fin": 53.602,
+   "salida": 53.562,
+   "lineas": [
+    "Muchos de sus nombres no",
+    "están en ningún libro."
+   ]
+  },
+  {
+   "palabras": [
+    144,
+    145,
+    146,
+    147,
+    148
+   ],
+   "inicio": 53.592,
+   "fin": 55.269,
+   "salida": 55.719,
+   "lineas": [
+    "Pero están en cada vereda."
+   ]
+  },
+  {
+   "palabras": [
+    149,
+    150,
+    151,
+    152,
+    153,
+    154
+   ],
+   "inicio": 56.059,
+   "fin": 58.152,
+   "salida": 58.112,
+   "lineas": [
+    "En mil novecientos",
+    "ochenta y cinco,"
+   ]
+  },
+  {
+   "palabras": [
+    155,
+    156,
+    157,
+    158,
+    159,
+    160
+   ],
+   "inicio": 58.142,
+   "fin": 60.099,
+   "salida": 60.059,
+   "lineas": [
+    "el agua avanzó sobre el pueblo."
+   ]
+  },
+  {
+   "palabras": [
+    161,
+    162,
+    163,
+    164,
+    165
+   ],
+   "inicio": 60.089,
+   "fin": 61.654,
+   "salida": 62.014,
+   "lineas": [
+    "Y el pueblo se defendió."
+   ]
+  },
+  {
+   "palabras": [
+    166,
+    167,
+    168,
+    169,
+    170,
+    171,
+    172,
+    173,
+    174,
+    175
+   ],
+   "inicio": 62.044,
+   "fin": 65.148,
+   "salida": 65.108,
+   "lineas": [
+    "Ese mismo año, un grupo de",
+    "vecinos fundó los Bomberos"
+   ]
+  },
+  {
+   "palabras": [
+    176
+   ],
+   "inicio": 65.138,
+   "fin": 66.028,
+   "salida": 66.388,
+   "lineas": [
+    "Voluntarios."
+   ]
+  },
+  {
+   "palabras": [
+    177,
+    178,
+    179,
+    180,
+    181,
+    182,
+    183,
+    184
+   ],
+   "inicio": 66.418,
+   "fin": 68.739,
+   "salida": 68.699,
+   "lineas": [
+    "Porque acá, cuando",
+    "a uno le pasa algo,"
+   ]
+  },
+  {
+   "palabras": [
+    185,
+    186,
+    187,
+    188
+   ],
+   "inicio": 68.729,
+   "fin": 69.9,
+   "salida": 70.35,
+   "lineas": [
+    "nos pasa a todos."
+   ]
+  },
+  {
+   "palabras": [
+    189,
+    190,
+    191,
+    192,
+    193
+   ],
+   "inicio": 70.69,
+   "fin": 72.277,
+   "salida": 72.237,
+   "lineas": [
+    "Y detrás de cada historia,"
+   ]
+  },
+  {
+   "palabras": [
+    194,
+    195,
+    196,
+    197,
+    198,
+    199,
+    200
+   ],
+   "inicio": 72.267,
+   "fin": 74.169,
+   "salida": 74.429,
+   "lineas": [
+    "algo que no sale en las fotos:"
+   ]
+  },
+  {
+   "palabras": [
+    201,
+    202,
+    203,
+    204,
+    205
+   ],
+   "inicio": 74.459,
+   "fin": 76.443,
+   "salida": 76.403,
+   "lineas": [
+    "la escuela pública, el hospital,"
+   ]
+  },
+  {
+   "palabras": [
+    206,
+    207,
+    208,
+    209,
+    210,
+    211,
+    212
+   ],
+   "inicio": 76.433,
+   "fin": 78.244,
+   "salida": 78.204,
+   "lineas": [
+    "el agua que llega a cada casa,"
+   ]
+  },
+  {
+   "palabras": [
+    213,
+    214,
+    215,
+    216,
+    217,
+    218
+   ],
+   "inicio": 78.234,
+   "fin": 80.36,
+   "salida": 80.72,
+   "lineas": [
+    "la obra que alguien decidió hacer."
+   ]
+  },
+  {
+   "palabras": [
+    219,
+    220,
+    221,
+    222,
+    223,
+    224,
+    225,
+    226
+   ],
+   "inicio": 80.75,
+   "fin": 83.723,
+   "salida": 83.983,
+   "lineas": [
+    "Hoy, el palacio de Salamone",
+    "se está restaurando."
+   ]
+  },
+  {
+   "palabras": [
+    227,
+    228,
+    229,
+    230,
+    231,
+    232,
+    233,
+    234
+   ],
+   "inicio": 84.013,
+   "fin": 87.319,
+   "salida": 87.769,
+   "lineas": [
+    "Porque los pueblos también",
+    "se sostienen con decisiones."
+   ]
+  },
+  {
+   "palabras": [
+    235,
+    236,
+    237
+   ],
+   "inicio": 88.109,
+   "fin": 89.0,
+   "salida": 88.96,
+   "lineas": [
+    "No es fácil."
+   ]
+  },
+  {
+   "palabras": [
+    238,
+    239,
+    240,
+    241,
+    242,
+    243,
+    244,
+    245,
+    246,
+    247,
+    248
+   ],
+   "inicio": 88.99,
+   "fin": 92.472,
+   "salida": 92.832,
+   "lineas": [
+    "Las rutas, el trabajo, los",
+    "chicos que se van a estudiar."
+   ]
+  },
+  {
+   "palabras": [
+    249,
+    250,
+    251,
+    252,
+    253,
+    254,
+    255
+   ],
+   "inicio": 92.862,
+   "fin": 95.516,
+   "salida": 95.476,
+   "lineas": [
+    "Pero cada mañana alguien",
+    "levanta la persiana,"
+   ]
+  },
+  {
+   "palabras": [
+    256,
+    257,
+    258,
+    259
+   ],
+   "inicio": 95.506,
+   "fin": 97.58,
+   "salida": 97.84,
+   "lineas": [
+    "alguien siembra, alguien enseña."
+   ]
+  },
+  {
+   "palabras": [
+    260,
+    261,
+    262,
+    263
+   ],
+   "inicio": 97.87,
+   "fin": 99.098,
+   "salida": 99.548,
+   "lineas": [
+    "Y el pueblo sigue."
+   ]
+  },
+  {
+   "palabras": [
+    264,
+    265,
+    266,
+    267,
+    268,
+    269,
+    270,
+    271,
+    272,
+    273
+   ],
+   "inicio": 99.888,
+   "fin": 102.519,
+   "salida": 102.969,
+   "lineas": [
+    "Porque un pueblo no es",
+    "un punto en el mapa."
+   ]
+  },
+  {
+   "palabras": [
+    274,
+    275,
+    276,
+    277,
+    278,
+    279
+   ],
+   "inicio": 103.009,
+   "fin": 104.855,
+   "salida": 104.815,
+   "lineas": [
+    "Es la memoria de los abuelos."
+   ]
+  },
+  {
+   "palabras": [
+    280,
+    281,
+    282,
+    283
+   ],
+   "inicio": 104.845,
+   "fin": 106.128,
+   "salida": 106.088,
+   "lineas": [
+    "La mano del vecino."
+   ]
+  },
+  {
+   "palabras": [
+    284,
+    285,
+    286,
+    287,
+    288,
+    289,
+    290,
+    291
+   ],
+   "inicio": 106.118,
+   "fin": 108.189,
+   "salida": 108.639,
+   "lineas": [
+    "Y los que mañana lo van a cuidar."
+   ]
+  },
+  {
+   "palabras": [
+    292,
+    293,
+    294,
+    295
+   ],
+   "inicio": 108.979,
+   "fin": 110.79,
+   "salida": 110.75,
+   "lineas": [
+    "Ciento cincuenta años después,"
+   ]
+  },
+  {
+   "palabras": [
+    296,
+    297,
+    298,
+    299
+   ],
+   "inicio": 110.78,
+   "fin": 112.401,
+   "salida": 112.851,
+   "lineas": [
+    "Guaminí sigue siendo eso:"
+   ]
+  },
+  {
+   "palabras": [
+    300,
+    301,
+    302,
+    303,
+    304,
+    305,
+    306
+   ],
+   "inicio": 112.891,
+   "fin": 115.298,
+   "salida": 115.748,
+   "lineas": [
+    "un lugar donde nadie",
+    "es un desconocido."
+   ]
+  }
+ ]
+}
