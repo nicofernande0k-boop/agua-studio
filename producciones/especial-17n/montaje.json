@@ -1,0 +1,883 @@
+{
+ "fps": 30,
+ "frames": 5016,
+ "placa": 4659,
+ "tomas": [
+  {
+   "id": "e00",
+   "desde": 0,
+   "hasta": 75,
+   "fuente": "f:plaza_1945.jpg",
+   "epigrafe": "PLAZA DE MAYO · 17 DE OCTUBRE DE 1945",
+   "tipo": "doc",
+   "clip": "esp/clips/e00.mp4",
+   "ancho": 543,
+   "alto": 379
+  },
+  {
+   "id": "e01",
+   "desde": 75,
+   "hasta": 134,
+   "fuente": "v:6",
+   "fundido": 10,
+   "tipo": "video",
+   "ancho": 896,
+   "alto": 576,
+   "clip": "esp/clips/e01.mp4"
+  },
+  {
+   "id": "e02",
+   "desde": 134,
+   "hasta": 202,
+   "fuente": "v:5",
+   "tipo": "doc",
+   "ancho": 896,
+   "alto": 576,
+   "clip": "esp/clips/e02.mp4"
+  },
+  {
+   "id": "e03",
+   "desde": 202,
+   "hasta": 320,
+   "fuente": "f:cordobazo_humo.jpg",
+   "epigrafe": "CÓRDOBA · 1969",
+   "fundido": 6,
+   "tipo": "foto",
+   "clip": "esp/clips/e03.mp4"
+  },
+  {
+   "id": "e04",
+   "desde": 320,
+   "hasta": 402,
+   "fuente": "f:rucci_paraguas.jpg",
+   "epigrafe": "PERÓN VUELVE · EZEIZA, 17 DE NOVIEMBRE DE 1972",
+   "lluvia": true,
+   "fundido": 12,
+   "tipo": "foto",
+   "clip": "esp/clips/e04.mp4"
+  },
+  {
+   "id": "e05",
+   "desde": 402,
+   "hasta": 450,
+   "fuente": "v:7",
+   "fundido": 14,
+   "tipo": "video",
+   "ancho": 896,
+   "alto": 576,
+   "clip": "esp/clips/e05.mp4"
+  },
+  {
+   "id": "e06",
+   "desde": 450,
+   "hasta": 504,
+   "fuente": "v:102",
+   "tipo": "video",
+   "ancho": 896,
+   "alto": 576,
+   "clip": "esp/clips/e06.mp4"
+  },
+  {
+   "id": "e07",
+   "desde": 504,
+   "hasta": 556,
+   "fuente": "v:26",
+   "tipo": "video",
+   "ancho": 896,
+   "alto": 576,
+   "clip": "esp/clips/e07.mp4"
+  },
+  {
+   "id": "e08",
+   "desde": 556,
+   "hasta": 600,
+   "fuente": "v:16",
+   "tipo": "video",
+   "ancho": 896,
+   "alto": 576,
+   "clip": "esp/clips/e08.mp4"
+  },
+  {
+   "id": "e09",
+   "desde": 600,
+   "hasta": 669,
+   "fuente": "v:56",
+   "fundido": 8,
+   "tipo": "video",
+   "ancho": 896,
+   "alto": 576,
+   "clip": "esp/clips/e09.mp4"
+  },
+  {
+   "id": "e10",
+   "desde": 669,
+   "hasta": 753,
+   "fuente": "v:83",
+   "fundido": 10,
+   "tipo": "video",
+   "ancho": 896,
+   "alto": 576,
+   "clip": "esp/clips/e10.mp4"
+  },
+  {
+   "id": "e11",
+   "desde": 753,
+   "hasta": 836,
+   "fuente": "v:17",
+   "tipo": "video",
+   "ancho": 896,
+   "alto": 576,
+   "clip": "esp/clips/e11.mp4"
+  },
+  {
+   "id": "e12",
+   "desde": 836,
+   "hasta": 861,
+   "fuente": "v:25",
+   "tipo": "video",
+   "ancho": 896,
+   "alto": 576,
+   "clip": "esp/clips/e12.mp4"
+  },
+  {
+   "id": "e13",
+   "desde": 861,
+   "hasta": 925,
+   "fuente": "v:18",
+   "tipo": "doc",
+   "ancho": 896,
+   "alto": 576,
+   "clip": "esp/clips/e13.mp4"
+  },
+  {
+   "id": "e14",
+   "desde": 925,
+   "hasta": 964,
+   "fuente": "v:19",
+   "fundido": 8,
+   "tipo": "video",
+   "ancho": 896,
+   "alto": 576,
+   "clip": "esp/clips/e14.mp4"
+  },
+  {
+   "id": "e15",
+   "desde": 964,
+   "hasta": 1015,
+   "fuente": "v:75",
+   "tipo": "video",
+   "ancho": 896,
+   "alto": 576,
+   "clip": "esp/clips/e15.mp4"
+  },
+  {
+   "id": "e16",
+   "desde": 1015,
+   "hasta": 1076,
+   "fuente": "f:represion.jpg",
+   "tipo": "doc",
+   "clip": "esp/clips/e16.mp4",
+   "ancho": 250,
+   "alto": 167
+  },
+  {
+   "id": "e17",
+   "desde": 1076,
+   "hasta": 1188,
+   "fuente": "f:carpa_blanca_1997.jpg",
+   "epigrafe": "CARPA BLANCA DOCENTE · 1997",
+   "fundido": 8,
+   "tipo": "foto",
+   "clip": "esp/clips/e17.mp4"
+  },
+  {
+   "id": "e18",
+   "desde": 1188,
+   "hasta": 1227,
+   "fuente": "v:70",
+   "tipo": "video",
+   "ancho": 896,
+   "alto": 576,
+   "clip": "esp/clips/e18.mp4"
+  },
+  {
+   "id": "e19",
+   "desde": 1227,
+   "hasta": 1280,
+   "fuente": "v:111",
+   "tipo": "video",
+   "ancho": 896,
+   "alto": 576,
+   "clip": "esp/clips/e19.mp4"
+  },
+  {
+   "id": "e20",
+   "desde": 1280,
+   "hasta": 1318,
+   "fuente": "v:100",
+   "tipo": "video",
+   "ancho": 896,
+   "alto": 576,
+   "clip": "esp/clips/e20.mp4"
+  },
+  {
+   "id": "e21",
+   "desde": 1318,
+   "hasta": 1386,
+   "fuente": "v:87",
+   "tipo": "doc",
+   "ancho": 896,
+   "alto": 576,
+   "clip": "esp/clips/e21.mp4"
+  },
+  {
+   "id": "e22",
+   "desde": 1386,
+   "hasta": 1473,
+   "fuente": "f:rucci_lluvia.jpg",
+   "lluvia": true,
+   "fundido": 10,
+   "tipo": "foto",
+   "clip": "esp/clips/e22.mp4"
+  },
+  {
+   "id": "e23",
+   "desde": 1473,
+   "hasta": 1526,
+   "fuente": "v:65",
+   "fundido": 10,
+   "tipo": "video",
+   "ancho": 896,
+   "alto": 576,
+   "clip": "esp/clips/e23.mp4"
+  },
+  {
+   "id": "e24",
+   "desde": 1526,
+   "hasta": 1566,
+   "fuente": "v:73",
+   "tipo": "video",
+   "ancho": 896,
+   "alto": 576,
+   "clip": "esp/clips/e24.mp4"
+  },
+  {
+   "id": "e25",
+   "desde": 1566,
+   "hasta": 1644,
+   "fuente": "v:24",
+   "tipo": "video",
+   "ancho": 896,
+   "alto": 576,
+   "clip": "esp/clips/e25.mp4"
+  },
+  {
+   "id": "e26",
+   "desde": 1644,
+   "hasta": 1707,
+   "fuente": "v:98",
+   "tipo": "video",
+   "ancho": 896,
+   "alto": 576,
+   "clip": "esp/clips/e26.mp4"
+  },
+  {
+   "id": "e27",
+   "desde": 1707,
+   "hasta": 1749,
+   "fuente": "v:77",
+   "tipo": "video",
+   "ancho": 896,
+   "alto": 576,
+   "clip": "esp/clips/e27.mp4"
+  },
+  {
+   "id": "e28",
+   "desde": 1749,
+   "hasta": 1794,
+   "fuente": "v:94",
+   "tipo": "video",
+   "ancho": 896,
+   "alto": 576,
+   "clip": "esp/clips/e28.mp4"
+  },
+  {
+   "id": "e29",
+   "desde": 1794,
+   "hasta": 1853,
+   "fuente": "v:101",
+   "tipo": "video",
+   "ancho": 896,
+   "alto": 576,
+   "clip": "esp/clips/e29.mp4"
+  },
+  {
+   "id": "e30",
+   "desde": 1853,
+   "hasta": 1930,
+   "fuente": "v:67",
+   "tipo": "video",
+   "ancho": 896,
+   "alto": 576,
+   "clip": "esp/clips/e30.mp4"
+  },
+  {
+   "id": "e31",
+   "desde": 1930,
+   "hasta": 1985,
+   "fuente": "f:ferroviarios_1961.jpg",
+   "epigrafe": "HUELGA FERROVIARIA · 1961",
+   "tipo": "foto",
+   "clip": "esp/clips/e31.mp4"
+  },
+  {
+   "id": "e32",
+   "desde": 1985,
+   "hasta": 2035,
+   "fuente": "v:68",
+   "tipo": "doc",
+   "ancho": 896,
+   "alto": 576,
+   "clip": "esp/clips/e32.mp4"
+  },
+  {
+   "id": "e33",
+   "desde": 2035,
+   "hasta": 2098,
+   "fuente": "v:99",
+   "fundido": 8,
+   "tipo": "video",
+   "ancho": 896,
+   "alto": 576,
+   "clip": "esp/clips/e33.mp4"
+  },
+  {
+   "id": "e34",
+   "desde": 2098,
+   "hasta": 2168,
+   "fuente": "f:peron_exilio.jpg",
+   "epigrafe": "PERÓN PARTE AL EXILIO · 1955",
+   "fundido": 10,
+   "tipo": "doc",
+   "clip": "esp/clips/e34.mp4",
+   "ancho": 695,
+   "alto": 512
+  },
+  {
+   "id": "e35",
+   "desde": 2168,
+   "hasta": 2218,
+   "fuente": "v:55",
+   "fundido": 8,
+   "tipo": "video",
+   "ancho": 896,
+   "alto": 576,
+   "clip": "esp/clips/e35.mp4"
+  },
+  {
+   "id": "e36",
+   "desde": 2218,
+   "hasta": 2274,
+   "fuente": "v:74",
+   "tipo": "doc",
+   "ancho": 896,
+   "alto": 576,
+   "clip": "esp/clips/e36.mp4"
+  },
+  {
+   "id": "e37",
+   "desde": 2274,
+   "hasta": 2315,
+   "fuente": "v:27",
+   "fundido": 10,
+   "tipo": "video",
+   "ancho": 896,
+   "alto": 576,
+   "clip": "esp/clips/e37.mp4"
+  },
+  {
+   "id": "e38",
+   "desde": 2315,
+   "hasta": 2366,
+   "fuente": "v:54",
+   "tipo": "video",
+   "ancho": 896,
+   "alto": 576,
+   "clip": "esp/clips/e38.mp4"
+  },
+  {
+   "id": "e39",
+   "desde": 2366,
+   "hasta": 2438,
+   "fuente": "v:11",
+   "fundido": 8,
+   "tipo": "video",
+   "ancho": 896,
+   "alto": 576,
+   "clip": "esp/clips/e39.mp4"
+  },
+  {
+   "id": "e40",
+   "desde": 2438,
+   "hasta": 2474,
+   "fuente": "v:39",
+   "fundido": 10,
+   "tipo": "video",
+   "ancho": 896,
+   "alto": 576,
+   "clip": "esp/clips/e40.mp4"
+  },
+  {
+   "id": "e41",
+   "desde": 2474,
+   "hasta": 2531,
+   "fuente": "v:40",
+   "tipo": "video",
+   "ancho": 896,
+   "alto": 576,
+   "clip": "esp/clips/e41.mp4"
+  },
+  {
+   "id": "e42",
+   "desde": 2531,
+   "hasta": 2591,
+   "fuente": "f:marcha_obrera_2005.jpg",
+   "fundido": 6,
+   "tipo": "foto",
+   "clip": "esp/clips/e42.mp4"
+  },
+  {
+   "id": "e43",
+   "desde": 2591,
+   "hasta": 2644,
+   "fuente": "v:86",
+   "tipo": "video",
+   "ancho": 896,
+   "alto": 576,
+   "clip": "esp/clips/e43.mp4"
+  },
+  {
+   "id": "e44",
+   "desde": 2644,
+   "hasta": 2692,
+   "fuente": "f:universidad_2024.jpg",
+   "epigrafe": "MARCHA UNIVERSITARIA · 2024",
+   "tipo": "foto",
+   "clip": "esp/clips/e44.mp4"
+  },
+  {
+   "id": "e45",
+   "desde": 2692,
+   "hasta": 2732,
+   "fuente": "v:10",
+   "tipo": "video",
+   "ancho": 896,
+   "alto": 576,
+   "clip": "esp/clips/e45.mp4"
+  },
+  {
+   "id": "e46",
+   "desde": 2732,
+   "hasta": 2772,
+   "fuente": "v:2",
+   "tipo": "video",
+   "ancho": 896,
+   "alto": 576,
+   "clip": "esp/clips/e46.mp4"
+  },
+  {
+   "id": "e47",
+   "desde": 2772,
+   "hasta": 2831,
+   "fuente": "v:85",
+   "tipo": "video",
+   "ancho": 896,
+   "alto": 576,
+   "clip": "esp/clips/e47.mp4"
+  },
+  {
+   "id": "e48",
+   "desde": 2831,
+   "hasta": 2907,
+   "fuente": "v:81",
+   "fundido": 8,
+   "tipo": "video",
+   "ancho": 896,
+   "alto": 576,
+   "clip": "esp/clips/e48.mp4"
+  },
+  {
+   "id": "e49",
+   "desde": 2907,
+   "hasta": 2949,
+   "fuente": "v:80",
+   "fundido": 10,
+   "tipo": "video",
+   "ancho": 896,
+   "alto": 576,
+   "clip": "esp/clips/e49.mp4"
+  },
+  {
+   "id": "e50",
+   "desde": 2949,
+   "hasta": 2988,
+   "fuente": "v:23",
+   "tipo": "video",
+   "ancho": 896,
+   "alto": 576,
+   "clip": "esp/clips/e50.mp4"
+  },
+  {
+   "id": "e51",
+   "desde": 2988,
+   "hasta": 3076,
+   "fuente": "v:110",
+   "tipo": "doc",
+   "ancho": 896,
+   "alto": 576,
+   "clip": "esp/clips/e51.mp4"
+  },
+  {
+   "id": "e52",
+   "desde": 3076,
+   "hasta": 3136,
+   "fuente": "v:62",
+   "fundido": 10,
+   "tipo": "video",
+   "ancho": 896,
+   "alto": 576,
+   "clip": "esp/clips/e52.mp4"
+  },
+  {
+   "id": "e53",
+   "desde": 3136,
+   "hasta": 3201,
+   "fuente": "v:61",
+   "tipo": "video",
+   "ancho": 896,
+   "alto": 576,
+   "clip": "esp/clips/e53.mp4"
+  },
+  {
+   "id": "e54",
+   "desde": 3201,
+   "hasta": 3264,
+   "fuente": "v:63",
+   "tipo": "video",
+   "ancho": 896,
+   "alto": 576,
+   "clip": "esp/clips/e54.mp4"
+  },
+  {
+   "id": "e55",
+   "desde": 3264,
+   "hasta": 3325,
+   "fuente": "v:30",
+   "tipo": "video",
+   "ancho": 896,
+   "alto": 576,
+   "clip": "esp/clips/e55.mp4"
+  },
+  {
+   "id": "e56",
+   "desde": 3325,
+   "hasta": 3384,
+   "fuente": "v:52",
+   "tipo": "video",
+   "ancho": 896,
+   "alto": 576,
+   "clip": "esp/clips/e56.mp4"
+  },
+  {
+   "id": "e57",
+   "desde": 3384,
+   "hasta": 3433,
+   "fuente": "v:109",
+   "fundido": 10,
+   "tipo": "video",
+   "ancho": 896,
+   "alto": 576,
+   "clip": "esp/clips/e57.mp4"
+  },
+  {
+   "id": "e58",
+   "desde": 3433,
+   "hasta": 3493,
+   "fuente": "v:20",
+   "tipo": "video",
+   "ancho": 896,
+   "alto": 576,
+   "clip": "esp/clips/e58.mp4"
+  },
+  {
+   "id": "e59",
+   "desde": 3493,
+   "hasta": 3570,
+   "fuente": "v:106",
+   "tipo": "video",
+   "ancho": 896,
+   "alto": 576,
+   "clip": "esp/clips/e59.mp4"
+  },
+  {
+   "id": "e60",
+   "desde": 3570,
+   "hasta": 3633,
+   "fuente": "v:46",
+   "grande": "AQUÍ NADIE SOBRA",
+   "grande_desde": 3577,
+   "tipo": "doc",
+   "ancho": 896,
+   "alto": 576,
+   "clip": "esp/clips/e60.mp4"
+  },
+  {
+   "id": "e61",
+   "desde": 3633,
+   "hasta": 3685,
+   "fuente": "v:78",
+   "tipo": "video",
+   "ancho": 896,
+   "alto": 576,
+   "clip": "esp/clips/e61.mp4"
+  },
+  {
+   "id": "e62",
+   "desde": 3685,
+   "hasta": 3741,
+   "fuente": "v:95",
+   "tipo": "video",
+   "ancho": 896,
+   "alto": 576,
+   "clip": "esp/clips/e62.mp4"
+  },
+  {
+   "id": "e63",
+   "desde": 3741,
+   "hasta": 3824,
+   "fuente": "v:1",
+   "tipo": "video",
+   "ancho": 896,
+   "alto": 576,
+   "clip": "esp/clips/e63.mp4"
+  },
+  {
+   "id": "e64",
+   "desde": 3824,
+   "hasta": 3848,
+   "fuente": "v:82",
+   "tipo": "video",
+   "ancho": 896,
+   "alto": 576,
+   "clip": "esp/clips/e64.mp4"
+  },
+  {
+   "id": "e65",
+   "desde": 3848,
+   "hasta": 3897,
+   "fuente": "f:niunamenos_noche.jpg",
+   "epigrafe": "NI UNA MENOS",
+   "tipo": "foto",
+   "clip": "esp/clips/e65.mp4"
+  },
+  {
+   "id": "e66",
+   "desde": 3897,
+   "hasta": 3967,
+   "fuente": "f:jovenes_bombo.jpg",
+   "tipo": "foto",
+   "clip": "esp/clips/e66.mp4"
+  },
+  {
+   "id": "e67",
+   "desde": 3967,
+   "hasta": 4023,
+   "fuente": "v:72",
+   "tipo": "video",
+   "ancho": 896,
+   "alto": 576,
+   "clip": "esp/clips/e67.mp4"
+  },
+  {
+   "id": "e68",
+   "desde": 4023,
+   "hasta": 4086,
+   "fuente": "v:3",
+   "tipo": "video",
+   "ancho": 896,
+   "alto": 576,
+   "clip": "esp/clips/e68.mp4"
+  },
+  {
+   "id": "e69",
+   "desde": 4086,
+   "hasta": 4167,
+   "fuente": "v:103",
+   "fundido": 6,
+   "tipo": "video",
+   "ancho": 896,
+   "alto": 576,
+   "clip": "esp/clips/e69.mp4"
+  },
+  {
+   "id": "e70",
+   "desde": 4167,
+   "hasta": 4242,
+   "fuente": "v:69",
+   "tipo": "video",
+   "ancho": 896,
+   "alto": 576,
+   "clip": "esp/clips/e70.mp4"
+  },
+  {
+   "id": "e71",
+   "desde": 4242,
+   "hasta": 4272,
+   "fuente": "v:4",
+   "tipo": "video",
+   "ancho": 896,
+   "alto": 576,
+   "clip": "esp/clips/e71.mp4"
+  },
+  {
+   "id": "e72",
+   "desde": 4272,
+   "hasta": 4302,
+   "fuente": "f:vallese.jpg",
+   "tipo": "doc",
+   "clip": "esp/clips/e72.mp4",
+   "ancho": 400,
+   "alto": 286
+  },
+  {
+   "id": "e73",
+   "desde": 4302,
+   "hasta": 4332,
+   "fuente": "v:22",
+   "tipo": "video",
+   "ancho": 896,
+   "alto": 576,
+   "clip": "esp/clips/e73.mp4"
+  },
+  {
+   "id": "e74",
+   "desde": 4332,
+   "hasta": 4362,
+   "fuente": "f:cordobazo_luzyfuerza.jpg",
+   "tipo": "foto",
+   "clip": "esp/clips/e74.mp4"
+  },
+  {
+   "id": "e75",
+   "desde": 4362,
+   "hasta": 4392,
+   "fuente": "v:66",
+   "tipo": "video",
+   "ancho": 896,
+   "alto": 576,
+   "clip": "esp/clips/e75.mp4"
+  },
+  {
+   "id": "e76",
+   "desde": 4392,
+   "hasta": 4422,
+   "fuente": "f:cgt_martires_1965.jpg",
+   "tipo": "doc",
+   "clip": "esp/clips/e76.mp4",
+   "ancho": 446,
+   "alto": 303
+  },
+  {
+   "id": "e77",
+   "desde": 4422,
+   "hasta": 4452,
+   "fuente": "v:28",
+   "tipo": "video",
+   "ancho": 896,
+   "alto": 576,
+   "clip": "esp/clips/e77.mp4"
+  },
+  {
+   "id": "e78",
+   "desde": 4452,
+   "hasta": 4482,
+   "fuente": "v:64",
+   "tipo": "video",
+   "ancho": 896,
+   "alto": 576,
+   "clip": "esp/clips/e78.mp4"
+  },
+  {
+   "id": "e79",
+   "desde": 4482,
+   "hasta": 4512,
+   "fuente": "v:93",
+   "tipo": "video",
+   "ancho": 896,
+   "alto": 576,
+   "clip": "esp/clips/e79.mp4"
+  },
+  {
+   "id": "e80",
+   "desde": 4512,
+   "hasta": 4542,
+   "fuente": "v:49",
+   "tipo": "video",
+   "ancho": 896,
+   "alto": 576,
+   "clip": "esp/clips/e80.mp4"
+  },
+  {
+   "id": "e81",
+   "desde": 4542,
+   "hasta": 4572,
+   "fuente": "v:33",
+   "tipo": "video",
+   "ancho": 896,
+   "alto": 576,
+   "clip": "esp/clips/e81.mp4"
+  },
+  {
+   "id": "e82",
+   "desde": 4572,
+   "hasta": 4608,
+   "fuente": "v:113",
+   "tipo": "video",
+   "ancho": 896,
+   "alto": 576,
+   "clip": "esp/clips/e82.mp4"
+  },
+  {
+   "id": "e83",
+   "desde": 4608,
+   "hasta": 4659,
+   "fuente": "v:84",
+   "tipo": "doc",
+   "ancho": 896,
+   "alto": 576,
+   "clip": "esp/clips/e83.mp4"
+  },
+  {
+   "id": "e84",
+   "desde": 4659,
+   "hasta": 4815,
+   "fuente": "v:97",
+   "fundido": 12,
+   "tipo": "video",
+   "ancho": 896,
+   "alto": 576,
+   "clip": "esp/clips/e84.mp4"
+  },
+  {
+   "id": "e85",
+   "desde": 4815,
+   "hasta": 5016,
+   "fuente": "v:105",
+   "fundido": 30,
+   "tipo": "video",
+   "ancho": 896,
+   "alto": 576,
+   "clip": "esp/clips/e85.mp4"
+  }
+ ]
+}

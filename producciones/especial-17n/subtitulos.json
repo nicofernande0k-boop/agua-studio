@@ -1,0 +1,499 @@
+{
+ "bloques": [
+  {
+   "inicio": -0.08,
+   "fin": 3.56,
+   "lineas": [
+    "En primer lugar,",
+    "no se desespere,"
+   ],
+   "oculto": false,
+   "salida": 4.26
+  },
+  {
+   "inicio": 4.56,
+   "fin": 7.8,
+   "lineas": [
+    "y en caso de zafarrancho,",
+    "no siga las reglas"
+   ],
+   "oculto": false,
+   "salida": 7.7
+  },
+  {
+   "inicio": 7.72,
+   "fin": 10.34,
+   "lineas": [
+    "que el huracán",
+    "querrá imponerle."
+   ],
+   "oculto": false,
+   "salida": 10.72
+  },
+  {
+   "inicio": 10.74,
+   "fin": 12.86,
+   "lineas": [
+    "Refúgiese en la casa",
+    "y asegure los postigos"
+   ],
+   "oculto": false,
+   "salida": 12.76
+  },
+  {
+   "inicio": 12.78,
+   "fin": 16.0,
+   "lineas": [
+    "una vez que todos los suyos",
+    "estén a salvo."
+   ],
+   "oculto": false,
+   "salida": 16.52
+  },
+  {
+   "inicio": 16.54,
+   "fin": 19.46,
+   "lineas": [
+    "Comparta el mate y la charla",
+    "con los compañeros,"
+   ],
+   "oculto": false,
+   "salida": 19.94
+  },
+  {
+   "inicio": 19.96,
+   "fin": 22.32,
+   "lineas": [
+    "los besos furtivos",
+    "y las noches clandestinas"
+   ],
+   "oculto": false,
+   "salida": 22.22
+  },
+  {
+   "inicio": 22.24,
+   "fin": 24.26,
+   "lineas": [
+    "con quien le asegure ternura."
+   ],
+   "oculto": false,
+   "salida": 24.96
+  },
+  {
+   "inicio": 25.2,
+   "fin": 27.68,
+   "lineas": [
+    "No deje que la estupidez",
+    "se imponga,"
+   ],
+   "oculto": false,
+   "salida": 27.98
+  },
+  {
+   "inicio": 28.0,
+   "fin": 28.72,
+   "lineas": [
+    "defiéndase."
+   ],
+   "oculto": false,
+   "salida": 28.62
+  },
+  {
+   "inicio": 28.64,
+   "fin": 31.82,
+   "lineas": [
+    "A la estética, ética."
+   ],
+   "oculto": false,
+   "salida": 32.01
+  },
+  {
+   "inicio": 32.03,
+   "fin": 33.48,
+   "lineas": [
+    "Esté siempre atento."
+   ],
+   "oculto": false,
+   "salida": 33.76
+  },
+  {
+   "inicio": 33.78,
+   "fin": 35.32,
+   "lineas": [
+    "No les bastará empobrecerlo"
+   ],
+   "oculto": false,
+   "salida": 35.22
+  },
+  {
+   "inicio": 35.24,
+   "fin": 38.96,
+   "lineas": [
+    "y lo querrán someter",
+    "con su propia tristeza."
+   ],
+   "oculto": false,
+   "salida": 39.64
+  },
+  {
+   "inicio": 39.66,
+   "fin": 41.42,
+   "lineas": [
+    "Ríase estentóreamente."
+   ],
+   "oculto": false,
+   "salida": 42.12
+  },
+  {
+   "inicio": 42.64,
+   "fin": 42.72,
+   "lineas": [
+    "Mófese."
+   ],
+   "oculto": false,
+   "salida": 43.42
+  },
+  {
+   "inicio": 43.94,
+   "fin": 46.46,
+   "lineas": [
+    "Será imprescindible",
+    "cenar juntos cada día"
+   ],
+   "oculto": false,
+   "salida": 46.36
+  },
+  {
+   "inicio": 46.38,
+   "fin": 48.28,
+   "lineas": [
+    "hasta que la tormenta pase."
+   ],
+   "oculto": false,
+   "salida": 48.98
+  },
+  {
+   "inicio": 49.18,
+   "fin": 52.0,
+   "lineas": [
+    "Son cosas simples, sencillas,"
+   ],
+   "oculto": false,
+   "salida": 52.16
+  },
+  {
+   "inicio": 52.18,
+   "fin": 53.98,
+   "lineas": [
+    "pero no por ello menos eficaces."
+   ],
+   "oculto": false,
+   "salida": 54.68
+  },
+  {
+   "inicio": 54.88,
+   "fin": 56.02,
+   "lineas": [
+    "Diga hacia el costado:"
+   ],
+   "oculto": false,
+   "salida": 55.92
+  },
+  {
+   "inicio": 55.94,
+   "fin": 59.16,
+   "lineas": [
+    "«Buen día», «por favor»",
+    "y «gracias»."
+   ],
+   "oculto": false,
+   "salida": 59.8
+  },
+  {
+   "inicio": 59.82,
+   "fin": 61.28,
+   "lineas": [
+    "Y «la concha de tu madre»"
+   ],
+   "oculto": false,
+   "salida": 61.8
+  },
+  {
+   "inicio": 61.82,
+   "fin": 63.66,
+   "lineas": [
+    "cuando lo soliciten desde arriba."
+   ],
+   "oculto": false,
+   "salida": 64.36
+  },
+  {
+   "inicio": 64.42,
+   "fin": 65.74,
+   "lineas": [
+    "Tírele con lo que tenga,"
+   ],
+   "oculto": false,
+   "salida": 66.14
+  },
+  {
+   "inicio": 66.16,
+   "fin": 67.02,
+   "lineas": [
+    "pero nunca solo."
+   ],
+   "oculto": false,
+   "salida": 67.72
+  },
+  {
+   "inicio": 67.82,
+   "fin": 69.2,
+   "lineas": [
+    "Ellos saben cómo emboscarlo"
+   ],
+   "oculto": false,
+   "salida": 69.1
+  },
+  {
+   "inicio": 69.12,
+   "fin": 71.26,
+   "lineas": [
+    "en la desprevenida",
+    "soledad de una tarde."
+   ],
+   "oculto": false,
+   "salida": 71.96
+  },
+  {
+   "inicio": 72.36,
+   "fin": 75.06,
+   "lineas": [
+    "Recuerde que los artistas",
+    "serán siempre nuestros."
+   ],
+   "oculto": false,
+   "salida": 75.72
+  },
+  {
+   "inicio": 75.74,
+   "fin": 77.64,
+   "lineas": [
+    "Y el olvido será feroz"
+   ],
+   "oculto": false,
+   "salida": 77.54
+  },
+  {
+   "inicio": 77.56,
+   "fin": 80.2,
+   "lineas": [
+    "con la comparsa de impostores",
+    "que los acompaña."
+   ],
+   "oculto": false,
+   "salida": 80.9
+  },
+  {
+   "inicio": 81.24,
+   "fin": 83.32,
+   "lineas": [
+    "Todo va a estar bien,",
+    "si me hace caso."
+   ],
+   "oculto": false,
+   "salida": 84.02
+  },
+  {
+   "inicio": 84.6,
+   "fin": 86.12,
+   "lineas": [
+    "Sobreviviremos nuevamente."
+   ],
+   "oculto": false,
+   "salida": 86.42
+  },
+  {
+   "inicio": 86.44,
+   "fin": 87.68,
+   "lineas": [
+    "Estamos curtidos."
+   ],
+   "oculto": false,
+   "salida": 88.16
+  },
+  {
+   "inicio": 88.18,
+   "fin": 90.7,
+   "lineas": [
+    "Cuidemos a los pibes",
+    "que querrán podarnos."
+   ],
+   "oculto": false,
+   "salida": 90.83
+  },
+  {
+   "inicio": 90.85,
+   "fin": 93.56,
+   "lineas": [
+    "Solo es menester",
+    "bien pertrecharse"
+   ],
+   "oculto": false,
+   "salida": 93.46
+  },
+  {
+   "inicio": 93.48,
+   "fin": 95.94,
+   "lineas": [
+    "y no escatimarnos amabilidades."
+   ],
+   "oculto": false,
+   "salida": 96.64
+  },
+  {
+   "inicio": 96.9,
+   "fin": 99.48,
+   "lineas": [
+    "Deberemos dejar a mano",
+    "los poemas indispensables,"
+   ],
+   "oculto": false,
+   "salida": 99.6
+  },
+  {
+   "inicio": 99.62,
+   "fin": 102.18,
+   "lineas": [
+    "el vino tinto y la guitarra."
+   ],
+   "oculto": false,
+   "salida": 102.56
+  },
+  {
+   "inicio": 102.58,
+   "fin": 103.88,
+   "lineas": [
+    "Sonreírles a nuestros viejos"
+   ],
+   "oculto": false,
+   "salida": 103.78
+  },
+  {
+   "inicio": 103.8,
+   "fin": 106.0,
+   "lineas": [
+    "como vacuna",
+    "contra la angustia diaria."
+   ],
+   "oculto": false,
+   "salida": 106.66
+  },
+  {
+   "inicio": 106.68,
+   "fin": 108.28,
+   "lineas": [
+    "Ser piadosos con los amigos."
+   ],
+   "oculto": false,
+   "salida": 108.9
+  },
+  {
+   "inicio": 108.92,
+   "fin": 111.84,
+   "lineas": [
+    "No confundir a los ingenuos",
+    "con los traidores."
+   ],
+   "oculto": false,
+   "salida": 111.74
+  },
+  {
+   "inicio": 111.76,
+   "fin": 115.62,
+   "lineas": [
+    "Y aun con estos,",
+    "tener el perdón fácil"
+   ],
+   "oculto": false,
+   "salida": 115.52
+  },
+  {
+   "inicio": 115.54,
+   "fin": 119.22,
+   "lineas": [
+    "para cuando vuelvan",
+    "con las ilusiones forreadas."
+   ],
+   "oculto": false,
+   "salida": 119.12
+  },
+  {
+   "inicio": 121.22,
+   "fin": 124.51,
+   "lineas": [
+    "Y eso sí: ser perseverantes",
+    "y tenaces."
+   ],
+   "oculto": false,
+   "salida": 124.7
+  },
+  {
+   "inicio": 124.72,
+   "fin": 127.42,
+   "lineas": [
+    "Escribir religiosamente",
+    "todos los días,"
+   ],
+   "oculto": false,
+   "salida": 127.6
+  },
+  {
+   "inicio": 127.62,
+   "fin": 129.28,
+   "lineas": [
+    "todas las tardes,",
+    "todas las noches."
+   ],
+   "oculto": false,
+   "salida": 129.9
+  },
+  {
+   "inicio": 129.92,
+   "fin": 131.92,
+   "lineas": [
+    "Aun sostenidos en terquedades,"
+   ],
+   "oculto": false,
+   "salida": 132.3
+  },
+  {
+   "inicio": 132.32,
+   "fin": 133.62,
+   "lineas": [
+    "si la fe se desmorona."
+   ],
+   "oculto": false,
+   "salida": 134.16
+  },
+  {
+   "inicio": 134.18,
+   "fin": 136.38,
+   "lineas": [
+    "En eso no habrá tregua",
+    "para nadie."
+   ],
+   "oculto": false,
+   "salida": 136.28
+  },
+  {
+   "inicio": 136.3,
+   "fin": 141.2,
+   "lineas": [
+    "La poesía les duele",
+    "a estos hijos de puta."
+   ],
+   "oculto": false,
+   "salida": 141.9
+  }
+ ]
+}
