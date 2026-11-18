@@ -239,17 +239,15 @@ def png_texto(i, texto):
 
 
 def png_titulo(nombre, lineas):
-    im = Image.new("RGBA", (3840, 2160), (0, 0, 0, 0))
-    sombra = Image.new("RGBA", im.size, (0, 0, 0, 0))
-    for capa, col in ((sombra, (0, 0, 0, 200)), (im, None)):
-        d = ImageDraw.Draw(capa)
-        for (texto, fuente, tam, y, c) in lineas:
-            f = ImageFont.truetype(fuente, tam)
-            w = d.textlength(texto, font=f)
-            d.text(((3840 - w) / 2 + (0 if col is None else 0), y + (10 if col else 0)), texto, font=f, fill=col or c)
-        if capa is sombra:
-            sombra = sombra.filter(ImageFilter.GaussianBlur(24))
-            im = Image.alpha_composite(im, sombra)
+    sombra = Image.new("RGBA", (3840, 2160), (0, 0, 0, 0))
+    texto = Image.new("RGBA", (3840, 2160), (0, 0, 0, 0))
+    ds, dt = ImageDraw.Draw(sombra), ImageDraw.Draw(texto)
+    for (tx, fuente, tam, y, c) in lineas:
+        f = ImageFont.truetype(fuente, tam)
+        x = (3840 - dt.textlength(tx, font=f)) / 2
+        ds.text((x, y + 10), tx, font=f, fill=(0, 0, 0, 200))
+        dt.text((x, y), tx, font=f, fill=c)
+    im = Image.alpha_composite(sombra.filter(ImageFilter.GaussianBlur(24)), texto)
     return guardar(im, nombre)
 
 
