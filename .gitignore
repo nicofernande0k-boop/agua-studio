@@ -21,3 +21,5 @@ public/esp/clips/
 public/esp/audio/
 # Episodio 004: versión con la canción comercial (no se publica en el repositorio público)
 producciones/004-guamini/entregables/*4k.mp4
+# 004 v4: versión con la canción comercial (sin derechos: no se publica)
+producciones/004-guamini/entregables-v4/*con-cancion.mp4
