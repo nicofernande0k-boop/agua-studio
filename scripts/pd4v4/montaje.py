@@ -104,6 +104,29 @@ for m, (a, b) in enumerate(MOV):
         pass
 tomas.append((CIERRE[0][0], CIERRE[0][1], 0.6))
 tomas.append((CIERRE[1][0], CIERRE[1][1], 1.6))
+if os.environ.get("PLAN"):
+    PL = json.load(open(os.environ["PLAN"]))
+    tomas = [(APERTURA[0][0], 0.0, 1.4), (APERTURA[1][0], APERTURA[1][1], 1.4)]
+    ent = PL["frases"]
+    for e_i, (k, lista) in enumerate(ent):
+        a = beat(OFF + frases[k]["inicio"] - 0.25) if e_i else OFF
+        b = beat(OFF + frases[ent[e_i + 1][0]]["inicio"] - 0.25) if e_i + 1 < len(ent) else beat(OFF + frases[-1]["fin"] + 0.4)
+        paso = (b - a) / len(lista)
+        for q, n in enumerate(lista):
+            t0 = a if q == 0 else beat(a + q * paso)
+            if n in PL["fundido_largo"]:
+                fd = 1.2
+            elif k in PL["rapidas"]:
+                fd = 0.0
+            else:
+                fd = 0.5
+            tomas.append((n, t0, fd))
+    a = beat(OFF + frases[-1]["fin"] + 0.4); b = FINAL - 2 * BAR
+    ep = PL["epico"]; paso = (b - a) / len(ep)
+    for q, n in enumerate(ep):
+        tomas.append((n, beat(a + q * paso), 0.0))
+    tomas.append((CIERRE[0][0], CIERRE[0][1], 0.6))
+    tomas.append((CIERRE[1][0], CIERRE[1][1], 1.6))
 # limpiar: los inicios deben crecer
 lim_t = []
 for n, ini, fd in tomas:
